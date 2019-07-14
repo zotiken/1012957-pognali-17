@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="main-header-logo logotype-pognali">
+            <img class="logotype-pognali__image" src="img/site-logo.png" alt="Погнали?">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-navigation">
+                    <li class="site-navigation__item">
+                        <a href="">О сервисе</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="">Направления</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="">Попутчики</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list user-navigation">
+                    <li class="user-navigation__item">
+                        <a class="user-navigation__signin" href="">авторизация</a>
+                    </li>
+                    <li class="user-navigation__item">
+                        <a class="user-navigation__telefon" href="">8 800 555-86-28</a>
+                    </li>
+                    <li class="user-navigation__item">
+                        <a class="user-navigation__email" href="">mail@htmlacademy.ru</a>
+                    </li>
+                    <li class="user-navigation__item user-social">
+                        <a class="user-social__facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
+                            <span class="visually-hidden">Facebook</span></a>
+                        <a class="user-social__vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
+                            <span class="visually-hidden">VKontakte</span></a>
+                        <a class="user-social__instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-content">
+            <b>В путешествие с крутыми попутчиками!</b>
+            <img src="img/traveller-illustration.png" alt="путешественник">
+            <ul class="header-content__list user-navigation">
+                <li class="user-navigation__item">
+                    <a class="user-navigation__signin " href="">авторизация</a>
+                </li>
+                <li class="user-navigation__item">
+                    <a class="user-navigation__telefon user-navigation__item--Orangeicom" href="">8 800 555-86-28</a>
+                </li>
+                <li class="user-navigation__item">
+                    <a class="user-navigation__email user-navigation__item--Yellowicon" href="">mail@htmlacademy.ru</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="catalog-main">
+        <h1 class="visually-hidden">Выбор попутчика</h1>
+        <!-- филтер попутчиков -->
+        <section class="fellow-travellers-filter">
+            <h2 class="fellow-travellers-filter-title">Фильтрация по критэриям</h2>
+        </section>
+        <section class="fellow-travellers">
+            <h2 class="fellow-travellers__title">Попутчики</h2>
+            <div class="fellow-travellers__item">
+                <a class="fellow-travellers__avatar-link" href="">
+                    <img class="fellow-travellers__avatar-mini" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика">
+                </a>
+                <div class="fellow-travellers__info">
+                    <h3 class="fellow-travellers__name"><a href="#">Таня Фирсова</a></h3>
+                    <p class="fellow-travellers__name">
+                        <a href="" class="fellow-travellers__name">#ЗОЖ</a>
+                        <a href="" class="fellow-travellers__name">#ПП</a>
+                        <a href="" class="fellow-travellers__name">#Фитнес</a>
+                        <a href="" class="fellow-travellers__name">#пляж</a>
+                        <a href="" class="fellow-travellers__name">#авокадо</a>
+                        <a href="" class="fellow-travellers__name">#смузи</a>
+                    </p>
+                    <div class="wpapper">
+                        <h3>хочет посетить:</h3>
+                        <img class="country__flag" src="#" alt="флаг Таиланда">
+                        <img class="country__flag" src="#" alt="флаг Таиланда">
+                        <img class="country__flag" src="#" alt="флаг Сейшельские Острова">
+                    </div>
+
+                    <div class="fellow-travellers__vehicle">
+                        <h3>транспорт:</h3>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">самолет</span>
+                            <img src="img/plane-s.png" alt="самолет" class="type-of-transport__plan">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">автобус</span>
+                            <img src="img/bus.png" alt="автобус" class="type-of-transport__bus">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">велосипед</span>
+                            <img src="img/bike.png" alt="велосипед" class="type-of-transport__bike">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">бег</span>
+                            <img src="img/run.png" alt="бег" class="type-of-transport__run">
+                        </a>
+                    </div>
+                    <div class="fellow-travellers__level">
+                        <h3 class="fellow-travellers__level-title">левел:</h3>
+                        <b>99</b>
+                    </div>
+                </div>
+                <a class="fellow-travellers-link  button" href="#">Позвать!</a>
+            </div>
+            <div class="fellow-travellers__item">
+                <a class="fellow-travellers__avatar-link" href="#">
+                    <img class="fellow-travellers__avatar--mini" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика">
+                </a>
+                <div class="fellow-travellers__info">
+                    <h3 class="fellow-travellers__name"><a href="#">Петя Демин</a></h3>
+                    <p class="fellow-travellers__name">
+                        <a href="" class="fellow-travellers__name">#бургер</a>
+                        <a href="" class="fellow-travellers__name">#бар</a>
+                        <a href="" class="fellow-travellers__name">#футбол</a>
+                        <a href="" class="fellow-travellers__name">#концерт</a>
+                        <a href="" class="fellow-travellers__name">#крафт</a>
+                    </p>
+                    <div class="wpapper">
+                        <img class="country__flag" src="#" alt="флаг Германии">
+                        <img class="country__flag" src="#" alt="флаг Чехии">
+                    </div>
+
+                    <div class="fellow-travellers__vehicle">
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">самолет</span>
+                            <img src="img/plane-s.png" alt="самолет" class="type-of-transport__plan">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">автобус</span>
+                            <img src="img/bus-s.png" alt="автобус" class="type-of-transport__bus">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">велосипед</span>
+                            <img src="img/bike.png" alt="велосипед" class="type-of-transport__bike">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">бег</span>
+                            <img src="img/run-s.png" alt="бег" class="type-of-transport__run">
+                        </a>
+                    </div>
+                    <div class="fellow-travellers__level">
+                        <h3 class="fellow-travellers__level-title">левел:</h3>
+                        <b>80</b>
+                    </div>
+                </div>
+                <a class="fellow-travellers-link  button" href="#">Позвать!</a>
+            </div>
+            <div class="fellow-travellers__item">
+                <a class="fellow-travellers__avatar-link" href="#">
+                    <img class="fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика">
+                </a>
+                <div class="fellow-travellers__info">
+                    <h3 class="fellow-travellers__name"><a href="#">Марк Смолов</a></h3>
+                    <p class="fellow-travellers__name">
+                        <a href="" class="fellow-travellers__name">#рэп</a>
+                        <a href="" class="fellow-travellers__name">#тату</a>
+                        <a href="" class="fellow-travellers__name">#хайпбист</a>
+                        <a href="" class="fellow-travellers__name">#кроссовки</a>
+                        <a href="" class="fellow-travellers__name">#суприм</a>
+                    </p>
+                    <div class="wpapper">
+                        <img class="country__flag" src="#" alt="флаг США">
+                        <img class="country__flag" src="#" alt="флаг Австралия">
+                        <img class="country__flag" src="#" alt="флаг Доминикана">
+
+                    </div>
+
+                    <div class="fellow-travellers__vehicle">
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">самолет</span>
+                            <img src="img/plane-s.png" alt="самолет" class="type-of-transport__plan">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">автобус</span>
+                            <img src="img/bus.png" alt="автобус" class="type-of-transport__bus">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">велосипед</span>
+                            <img src="img/bike-s.png" alt="велосипед" class="type-of-transport__bike">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">бег</span>
+                            <img src="img/run.png" alt="бег" class="type-of-transport__run">
+                        </a>
+                    </div>
+                    <div class="fellow-travellers__level">
+                        <h3 class="fellow-travellers__level-title">левел:</h3>
+                        <b>25</b>
+                    </div>
+                </div>
+                <a class="fellow-travellers-link  button" href="#">Позвать!</a>
+            </div>
+            <div class="fellow-travellers__item">
+                <a class="fellow-travellers__avatar-link" href="#">
+                    <img class="fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика">
+                </a>
+                <div class="fellow-travellers__info">
+                    <h3 class="fellow-travellers__name"><a href="#">Лариса Роговая</a></h3>
+                    <p class="fellow-travellers__name">
+                        <a href="" class="fellow-travellers__name">#образование</a>
+                        <a href="" class="fellow-travellers__name">#карьера</a>
+                        <a href="" class="fellow-travellers__name">#учеба</a>
+                        <a href="" class="fellow-travellers__name">#линкедин</a>
+                    </p>
+                    <div class="wpapper">
+                        <img class="country__flag" src="#" alt="флаг Великобритания">
+                        <img class="country__flag" src="#" alt="флаг Германия">
+                    </div>
+
+                    <div class="fellow-travellers__vehicle">
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">самолет</span>
+                            <img src="img/plane-s.png" alt="самолет" class="type-of-transport__plan">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">автобус</span>
+                            <img src="img/bus-s.png" alt="автобус" class="type-of-transport__bus">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">велосипед</span>
+                            <img src="img/bike.png" alt="велосипед" class="type-of-transport__bike">
+                        </a>
+                        <a class="fellow-travellers__vehicle-item type-of-transport">
+                            <span class="visually-hidden">бег</span>
+                            <img src="img/run.png" alt="бег" class="type-of-transport__run">
+                        </a>
+                    </div>
+                    <div class="fellow-travellers__level">
+                        <h3 class="fellow-travellers__level-title">левел:</h3>
+                        <b>50</b>
+                    </div>
+                </div>
+                <a class="fellow-travellers-link  button" href="#">Позвать!</a>
+            </div>
+            <a class="fellow-travellers__show-more">Показать еще</a>
+            <div>
+                <button class="fellow-travellers__prev-list" type="button">предыдущие</button>
+                <button class="fellow-travellers__next-list" type="button">следующие</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer-logo logotype-pognali">
+            <img class="logotype-pognali__image--dark" src="img/site-logo-blue.png" alt="Погнали?">
+        </a>
+        <ul class="footer-social user-navigation">
+            <li class="user-navigation__item user-social">
+                <a class="user-social__facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
+                    <span class="visually-hidden">Facebook</span></a>
+                <a class="user-social__vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
+                    <span class="visually-hidden">VKontakte</span></a>
+                <a class="user-social__instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
+            </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    </footer>
+</body>
+
+</html>

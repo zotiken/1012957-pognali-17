@@ -134,13 +134,15 @@
             <button class="country__to-all" type="button">Показать все</button>
         </section>
         <section class="fellow-travellers">
-            <h2 class="fellow-travellers__title">Направления</h2>
+            <h2 class="fellow-travellers__title">Попутчики</h2>
             <p class="fellow-travellers__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
             </p>
             <b class="fellow-travellers__invite">Теперь можно легко найти единомышленников!</b>
 
             <div class="fellow-travellers__item">
-                <img class="fellow-travellers__avatar" src="img/av-firsova.jpg" width="270" height="270" alt="фотография попутчика">
+                <a class="fellow-travellers__avatar-link" href="#">
+                    <img class="fellow-travellers__avatar" src="img/av-firsova.jpg" width="270" height="270" alt="фотография попутчика">
+                </a>
                 <div class="fellow-travellers__info">
                     <h3 class="fellow-travellers__name"><a href="#">Таня Фирсова</a></h3>
                     <p class="fellow-travellers__name">
@@ -170,14 +172,16 @@
                         </a>
                     </div>
                     <div class="wpapper">
-                        <img class="country__flag" src="#" alt="флаг Таиланда">
-                        <img class="country__flag" src="#" alt="флаг Таиланда">
-                        <img class="country__flag" src="#" alt="флаг Сейшельские Острова">
+                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Шри ланки">
+                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Таиланда">
+                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Сейшельски[е] Островов">
                     </div>
                 </div>
             </div>
             <div class="fellow-travellers__item">
-                <img class="fellow-travellers__avatar" src="img/av-demin.jpg" width="270" height="270" alt="фотография попутчика">
+                <a class="fellow-travellers__avatar-link" href="#">
+                    <img class="fellow-travellers__avatar" src="img/av-demin.jpg" width="270" height="270" alt="фотография попутчика">
+                </a>
                 <div class="fellow-travellers__info">
                     <h3 class="fellow-travellers__name"><a href="#">Петя Демин</a></h3>
                     <p class="fellow-travellers__name">
@@ -206,8 +210,8 @@
                         </a>
                     </div>
                     <div class="wpapper">
-                        <img class="country__flag" src="#" alt="флаг Германии">
-                        <img class="country__flag" src="#" alt="флаг Чехии">
+                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Германии">
+                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Чехии">
                     </div>
                 </div>
             </div>
@@ -228,7 +232,7 @@
             <form action="https://echo.htmlacademy.ru" method="POST">
                 <b>Заинтересовались?</b>
                 <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь.</a></p>
-                <input type="email" name="" id="" placeholder="email" required>
+                <input type="email" name="email" placeholder="email" required>
                 <input type="submit" value=">">
                 <p>Остались вопросы? Мы с радостью на них ответим!</p>
                 <ul class="user-navigation">
@@ -248,9 +252,7 @@
             <div class="whereabouts-maps">
                 <iframe src="https://yandex.ru/map-widget/v1/-/CCsfeZKz" width="320" height="307"></iframe>
             </div>
-
         </section>
-
     </main>
     <footer class="footer">
         <a class="footer-logo logotype-pognali">
