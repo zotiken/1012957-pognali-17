@@ -8,8 +8,8 @@
 
 <body>
     <header class="main-header">
-        <a class="main-header-logo logotype-pognali">
-            <img class="logotype-pognali__image" src="img/site-logo.png" alt="Погнали?">
+        <a class="main-header__logo" href="\index.html">
+            <img src="img/site-logo.png" alt="Погнали?">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Меню</button>
@@ -25,24 +25,20 @@
                         <a href="">Попутчики</a>
                     </li>
                 </ul>
-                <ul class="main-nav__list user-navigation">
-                    <li class="user-navigation__item">
-                        <a class="user-navigation__signin" href="">авторизация</a>
-                    </li>
-                    <li class="user-navigation__item">
-                        <a class="user-navigation__telefon" href="">8 800 555-86-28</a>
-                    </li>
-                    <li class="user-navigation__item">
-                        <a class="user-navigation__email" href="">mail@htmlacademy.ru</a>
-                    </li>
-                    <li class="user-navigation__item user-social">
-                        <a class="user-social__facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
+                <div class="main-nav__list user-navigation">
+                    <div class="user-navigation__items">
+                        <a class="user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
+                        <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
+                        <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
+                    </div>
+                    <div class="user-navigation__items user-social">
+                        <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
                             <span class="visually-hidden">Facebook</span></a>
-                        <a class="user-social__vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
+                        <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
                             <span class="visually-hidden">VKontakte</span></a>
-                        <a class="user-social__instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
-                    </li>
-                </ul>
+                        <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="header-content">
@@ -71,7 +67,7 @@
             <h2 class="fellow-travellers__title">Попутчики</h2>
             <div class="fellow-travellers__item">
                 <a class="fellow-travellers__avatar-link" href="">
-                    <img class="fellow-travellers__avatar-mini" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика">
+                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика">
                 </a>
                 <div class="fellow-travellers__info">
                     <h3 class="fellow-travellers__name"><a href="#">Таня Фирсова</a></h3>
@@ -83,11 +79,11 @@
                         <a href="" class="fellow-travellers__name">#авокадо</a>
                         <a href="" class="fellow-travellers__name">#смузи</a>
                     </p>
-                    <div class="wpapper">
+                    <div class="flags-wpapper">
                         <h3>хочет посетить:</h3>
-                        <img class="country__flag" src="#" alt="флаг Таиланда">
-                        <img class="country__flag" src="#" alt="флаг Таиланда">
-                        <img class="country__flag" src="#" alt="флаг Сейшельские Острова">
+                        <img class="country-flag" src="#" alt="флаг Таиланда">
+                        <img class="country-flag" src="#" alt="флаг Таиланда">
+                        <img class="country-flag" src="#" alt="флаг Сейшельские Острова">
                     </div>
 
                     <div class="fellow-travellers__vehicle">
@@ -118,7 +114,7 @@
             </div>
             <div class="fellow-travellers__item">
                 <a class="fellow-travellers__avatar-link" href="#">
-                    <img class="fellow-travellers__avatar--mini" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика">
+                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика">
                 </a>
                 <div class="fellow-travellers__info">
                     <h3 class="fellow-travellers__name"><a href="#">Петя Демин</a></h3>
@@ -129,9 +125,9 @@
                         <a href="" class="fellow-travellers__name">#концерт</a>
                         <a href="" class="fellow-travellers__name">#крафт</a>
                     </p>
-                    <div class="wpapper">
-                        <img class="country__flag" src="#" alt="флаг Германии">
-                        <img class="country__flag" src="#" alt="флаг Чехии">
+                    <div class="flags-wpapper">
+                        <img class="country-flag" src="#" alt="флаг Германии">
+                        <img class="country-flag" src="#" alt="флаг Чехии">
                     </div>
 
                     <div class="fellow-travellers__vehicle">
@@ -161,7 +157,7 @@
             </div>
             <div class="fellow-travellers__item">
                 <a class="fellow-travellers__avatar-link" href="#">
-                    <img class="fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика">
+                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика">
                 </a>
                 <div class="fellow-travellers__info">
                     <h3 class="fellow-travellers__name"><a href="#">Марк Смолов</a></h3>
@@ -172,10 +168,10 @@
                         <a href="" class="fellow-travellers__name">#кроссовки</a>
                         <a href="" class="fellow-travellers__name">#суприм</a>
                     </p>
-                    <div class="wpapper">
-                        <img class="country__flag" src="#" alt="флаг США">
-                        <img class="country__flag" src="#" alt="флаг Австралия">
-                        <img class="country__flag" src="#" alt="флаг Доминикана">
+                    <div class="flags-wpapper">
+                        <img class="country-flag" src="#" alt="флаг США">
+                        <img class="country-flag" src="#" alt="флаг Австралия">
+                        <img class="country-flag" src="#" alt="флаг Доминикана">
 
                     </div>
 
@@ -206,7 +202,7 @@
             </div>
             <div class="fellow-travellers__item">
                 <a class="fellow-travellers__avatar-link" href="#">
-                    <img class="fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика">
+                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика">
                 </a>
                 <div class="fellow-travellers__info">
                     <h3 class="fellow-travellers__name"><a href="#">Лариса Роговая</a></h3>
@@ -216,9 +212,9 @@
                         <a href="" class="fellow-travellers__name">#учеба</a>
                         <a href="" class="fellow-travellers__name">#линкедин</a>
                     </p>
-                    <div class="wpapper">
-                        <img class="country__flag" src="#" alt="флаг Великобритания">
-                        <img class="country__flag" src="#" alt="флаг Германия">
+                    <div class="flags-wpapper">
+                        <img class="country-flag" src="#" alt="флаг Великобритания">
+                        <img class="country-flag" src="#" alt="флаг Германия">
                     </div>
 
                     <div class="fellow-travellers__vehicle">
@@ -254,18 +250,16 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="footer-logo logotype-pognali">
+        <a class="logotype logotype--dark">
             <img class="logotype-pognali__image--dark" src="img/site-logo-blue.png" alt="Погнали?">
         </a>
-        <ul class="footer-social user-navigation">
-            <li class="user-navigation__item user-social">
-                <a class="user-social__facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
-                    <span class="visually-hidden">Facebook</span></a>
-                <a class="user-social__vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
-                    <span class="visually-hidden">VKontakte</span></a>
-                <a class="user-social__instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
-            </li>
-        </ul>
+        <div class="footer-social user-social">
+            <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
+                <span class="visually-hidden">Facebook</span></a>
+            <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
+                <span class="visually-hidden">VKontakte</span></a>
+            <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
+        </div>
         <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
 </body>

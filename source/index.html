@@ -8,13 +8,13 @@
 
 <body>
     <header class="main-header">
-        <a class="main-header-logo logotype-pognali">
-            <img class="logotype-pognali__image" src="img/site-logo.png" alt="Погнали?">
+        <a class="main-header__logo">
+            <img src="img/site-logo.png" alt="Погнали?">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Меню</button>
             <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-navigation">
+                <ul class="main-nav__list site-navigation ">
                     <li class="site-navigation__item">
                         <a href="">О сервисе</a>
                     </li>
@@ -25,40 +25,32 @@
                         <a href="">Попутчики</a>
                     </li>
                 </ul>
-                <ul class="main-nav__list user-navigation">
-                    <li class="user-navigation__item">
-                        <a class="user-navigation__signin" href="">авторизация</a>
-                    </li>
-                    <li class="user-navigation__item">
-                        <a class="user-navigation__telefon" href="">8 800 555-86-28</a>
-                    </li>
-                    <li class="user-navigation__item">
-                        <a class="user-navigation__email" href="">mail@htmlacademy.ru</a>
-                    </li>
-                    <li class="user-navigation__item user-social">
-                        <a class="user-social__facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
+                <div class="main-nav__list user-navigation">
+                    <div class="user-navigation__items">
+                        <a class="user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
+                        <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
+                        <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
+                    </div>
+                    <div class="user-navigation__items user-social">
+                        <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
                             <span class="visually-hidden">Facebook</span></a>
-                        <a class="user-social__vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
+                        <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
                             <span class="visually-hidden">VKontakte</span></a>
-                        <a class="user-social__instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
-                    </li>
-                </ul>
+                        <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="header-content">
             <b>В путешествие с крутыми попутчиками!</b>
             <img src="img/traveller-illustration.png" alt="путешественник">
-            <ul class="header-content__list user-navigation">
-                <li class="user-navigation__item">
-                    <a class="user-navigation__signin " href="">авторизация</a>
-                </li>
-                <li class="user-navigation__item">
-                    <a class="user-navigation__telefon user-navigation__item--Orangeicom" href="">8 800 555-86-28</a>
-                </li>
-                <li class="user-navigation__item">
-                    <a class="user-navigation__email user-navigation__item--Yellowicon" href="">mail@htmlacademy.ru</a>
-                </li>
-            </ul>
+            <div class="user-navigation">
+                <div class="user-navigation__items">
+                    <a class="user-navigation-link user-navigation-link--signin  button" href="">авторизация</a>
+                    <a class="user-navigation-link user-navigation-link--telefon user-navigation-link--orangeicom" href="">8 800 555-86-28</a>
+                    <a class="user-navigation-link user-navigation-link--email user-navigation-link--yellowicon" href="">mail@htmlacademy.ru</a>
+                </div>
+            </div>
         </div>
     </header>
     <main class="site-main">
@@ -76,26 +68,15 @@
         <section class="selection-stages">
             <h2 class="selection-stages__title">Этапы подбора попутчика</h2>
             <ul class="selection-stages-list">
-                <li class="selection-stage-list__item">
-                    <a href="#">Выберите
-            направление</a>
-                    <b>1</b>
-                </li>
-                <li class="selection-stage-list__item">
-                    <a href="#">Изучите идеи
-            путешественников</a>
-                    <b>2</b>
-                </li>
-                <li class="selection-stage-list__item">
-                    <a href="#">Находите тех,
-            кто похож на вас</a>
-                    <b>3</b>
-                </li>
-                <li class="selection-stage-list__item">
-                    <a href="#">Путешествуйте
-            вместе!</a>
-                    <b>4</b>
-                </li>
+                <li class="selection-stage-list__item" block-id="1">Выберите направление</li>
+                <li class="selection-stage-list__item" block-id="2">Изучите идеи путешественников</li>
+                <li class="selection-stage-list__item" block-id="3">Находите тех, кто похож на вас</li>
+                <li class="selection-stage-list__item" block-id="4">Путешествуйте вместе!</li>
+            </ul>
+            <!-- selection-stage-list__item:before {
+                 content: attr(block-id);
+                  ...
+                 } -->
             </ul>
         </section>
         <section class="about-services">
@@ -106,8 +87,8 @@
         <section class="directions">
             <h2 class="directions__title">Направления</h2>
             <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-            <a class="direction__item" href="#">
-                <div class="direction__item-info country">
+            <a class="direction-item" href="#">
+                <div class="direction-item__info country">
                     <h3 class="country__title">Тайланд</h3>
                     <p class="country__catchphrase">Джунгли зовут!</p>
                     <img class="country__flag" src="#" alt="флаг Таиланда">
@@ -115,23 +96,23 @@
                     </p>
                 </div>
             </a>
-            <a class="direction__item" href="#">
-                <div class="direction__item-info country">
+            <a class="direction-item" href="#">
+                <div class="direction-item__info country">
                     <h3 class="country__title">Франция</h3>
                     <p class="country__catchphrase">Трэ бьен, манифик!</p>
                     <img class="country__flag" src="#" alt="флаг Франции">
                     <p class="country__popularity"><span class="visually-hidden">Кол-во посещений</span><span class="country__stats">12518</span></p>
                 </div>
             </a>
-            <a class="direction__item" href="#">
-                <div class="direction__item-info country">
+            <a class="direction-item" href="#">
+                <div class="direction-item__info country">
                     <h3 class="country__title">Чехия</h3>
                     <p class="country__catchphrase">Закоулки старой Европы</p>
                     <img class="country__flag" src="#" alt="флаг Чехии">
                     <p class="country__popularity"><span class="visually-hidden">Кол-во посещений</span><span class="country__stats">5326</span></p>
                 </div>
             </a>
-            <button class="country__to-all" type="button">Показать все</button>
+            <button class="directions__to-all" type="button">Показать все</button>
         </section>
         <section class="fellow-travellers">
             <h2 class="fellow-travellers__title">Попутчики</h2>
@@ -172,9 +153,9 @@
                         </a>
                     </div>
                     <div class="wpapper">
-                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Шри ланки">
-                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Таиланда">
-                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Сейшельски[е] Островов">
+                        <img class="country-flag wishes-to-visit" src="#" alt="флаг Шри ланки">
+                        <img class="country-flag wishes-to-visit" src="#" alt="флаг Таиланда">
+                        <img class="country-flag wishes-to-visit" src="#" alt="флаг Сейшельски[е] Островов">
                     </div>
                 </div>
             </div>
@@ -210,8 +191,8 @@
                         </a>
                     </div>
                     <div class="wpapper">
-                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Германии">
-                        <img class="country__flag wishes-to-visit" src="#" alt="флаг Чехии">
+                        <img class="country-flag wishes-to-visit" src="#" alt="флаг Германии">
+                        <img class="country-flag wishes-to-visit" src="#" alt="флаг Чехии">
                     </div>
                 </div>
             </div>
@@ -255,8 +236,8 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="footer-logo logotype-pognali">
-            <img class="logotype-pognali__image--dark" src="img/site-logo-blue.png" alt="Погнали?">
+        <a class="logotype logotype--dark">
+            <img src="img/site-logo-blue.png" alt="Погнали?">
         </a>
         <ul class="footer-social user-navigation">
             <li class="user-navigation__item user-social">
