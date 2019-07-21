@@ -1,0 +1,117 @@
+.user-navigation__item {
+  list-style: none;
+}
+.user-navigation__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-navigation-link {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 23px;
+  line-height: 22px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161c35;
+}
+.user-navigation-link--signin {
+  width: 270px;
+  border-radius: 20px;
+  background-color: #ffd74b;
+}
+.user-navigation-link--telefon::before,
+.user-navigation-link--email::before {
+  display: block;
+  position: absolute;
+  margin-left: -62px;
+  margin-top: -15px;
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.user-navigation-link--telefon-yellow,
+.user-navigation-link--email-yellow {
+  text-align: left;
+  color: #ffd74b;
+}
+.user-navigation-link--telefon-yellow::before,
+.user-navigation-link--email-yellow::before {
+  margin-left: -62px;
+  margin-top: -13px;
+}
+.user-navigation-link--telefon::before {
+  background-image: url(../img/contacts-phone-y.svg);
+}
+.user-navigation-link--email::before {
+  background-image: url(../img/contacts-mail-y.svg);
+}
+.user-navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-left: 62px;
+  text-align-last: left;
+}
+.content .user-navigation__items {
+  position: absolute;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.content .user-navigation-link {
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161c35;
+  border-radius: 20px;
+  background-color: #ffd74b;
+}
+.content .user-navigation-link--signin {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+.content .user-navigation-link--telicon,
+.content .user-navigation-link--mailicon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.content .user-navigation-link--telicon::before,
+.content .user-navigation-link--mailicon::before {
+  position: relative;
+  display: inline-block;
+  content: "";
+}
+.content .user-navigation-link--telicon {
+  background-color: #ff8d30;
+}
+.content .user-navigation-link--telicon::before {
+  margin-top: 10px;
+  background: #ff8d30 url(../img/topmenu-phone.svg) no-repeat top / cover;
+  width: 21px;
+  height: 21px;
+}
+.content .user-navigation-link--mailicon {
+  background-color: #ffbd30;
+}
+.content .user-navigation-link--mailicon::before {
+  margin-top: 12px;
+  background: #ffbd30 url(../img/topmenu-mail.svg) no-repeat top / cover;
+  width: 18px;
+  height: 14px;
+}
+.content .user-navigation-link--signin {
+  order: ;
+}

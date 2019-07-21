@@ -1,0 +1,27 @@
+.reviews {
+  margin-bottom: 33px;
+}
+.reviews-wrapper {
+  margin: 0 25px;
+}
+.reviews-list {
+  margin: 0 25px;
+}
+.reviews-item {
+  width: 170px;
+  color: #ffffff;
+}
+.reviews-item__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Bloggersans-light", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+  line-height: 22px;
+}
+.reviews-item__author {
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+}

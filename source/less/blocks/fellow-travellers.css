@@ -1,0 +1,113 @@
+.fellow-travellers {
+  padding: 0 25px;
+  z-index: 5;
+  background-color: #161c36;
+  background-image: url(../img/blue\back.png), url(../img/smolov-back-desktop@1x.png), url(../img/rogovaya-back-mobile@1x.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 100px, 130px 100px, 30px 400px;
+  position: relative;
+  margin-top: -45px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  border-radius: 0 0 25px 25px;
+}
+.fellow-travellers-wrapper {
+  padding: 0 25px;
+}
+.fellow-travellers__title {
+  color: #ff8d30;
+  font-size: 24px;
+}
+.fellow-travellers__description {
+  font-family: "Bloggersans-light";
+  font-size: 16px;
+  width: 200px;
+  line-height: 22px;
+  color: #444444;
+}
+.fellow-travellers__invite {
+  color: #ffffff;
+  line-height: 22px;
+  margin-bottom: 60px;
+}
+.fellow-travellers__item {
+  padding-bottom: 10px;
+  width: 270px;
+}
+.fellow-travellers__avatar-link {
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+.fellow-travellers__avatar {
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+.fellow-travellers__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 27px;
+  padding-left: 47px;
+  padding-right: 46px;
+  padding-bottom: 22px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+.fellow-travellers__name {
+  margin: 0;
+}
+.fellow-travellers__name a {
+  text-decoration: none;
+  font-size: 21px;
+  color: #161c35;
+}
+.fellow-travellers__interest {
+  text-align: center;
+}
+.fellow-travellers__interest-item {
+  text-decoration: none;
+  color: #444444;
+  font-family: "Bloggersans";
+  line-height: 18px;
+}
+.fellow-travellers-wpapper-flags {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  position: absolute;
+  top: -10px;
+}
+.fellow-travellers .country__flag {
+  margin: 0;
+  padding: 0;
+  margin: 0 12px;
+  position: relative;
+  margin-top: -4px;
+}
+.fellow-travellers .country__flag--germany {
+  background-position: bottom right -52px;
+}
+.fellow-travellers__to-all {
+  margin-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-style: 18px;
+  width: 100%;
+  border-radius: 10px;
+  text-align-last: left;
+}
+.fellow-travellers__to-all::before {
+  width: 0;
+  height: 0;
+  display: block;
+  content: "";
+  position: absolute;
+  right: 40px;
+  border-style: solid;
+  border-width: 7px 5px 7px 10px;
+  border-color: transparent transparent transparent #1d2e5b;
+}

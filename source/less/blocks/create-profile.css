@@ -1,0 +1,71 @@
+.create-profile {
+  padding: 0 25px;
+  z-index: 4;
+  background-color: #edeff6;
+  position: relative;
+  margin-top: -45px;
+  padding-top: 82px;
+  padding-bottom: 30px;
+  border-radius: 0 0 25px 25px;
+}
+.create-profile-wrapper {
+  margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.create-profile__link {
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-right: 128px;
+  padding-bottom: 44px;
+  width: 270px;
+  display: block;
+  text-decoration: none;
+  background-image: url(../img/rates@1x.png);
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  background-size: 40%;
+  color: #ff8d30;
+  font-size: 24px;
+  line-height: 24px;
+}
+.create-profile-price {
+  text-decoration: none;
+  color: #192144;
+}
+.advantages {
+  width: 190px;
+  padding-bottom: 32px;
+}
+.advantages-item {
+  padding: 0;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: "Bloggersans-light", serif;
+  color: #444444;
+  border-top: 1px solid rgba(3, 3, 3, 0.05);
+}
+.advantages-item:last-child {
+  border-bottom: 1px solid rgba(3, 3, 3, 0.05);
+}
+.advantages-item::before {
+  margin-left: 200px;
+  margin-top: -10px;
+  position: absolute;
+  content: attr(pos-id);
+  display: block;
+  line-height: 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #ffa530;
+  text-align: center;
+}
+.advantages-item[pos-id="2"]::before {
+  background-color: #ffbd30;
+}
+.advantages-item[pos-id="3"]::before {
+  background-color: #ffd74b;
+}
