@@ -1,11 +1,13 @@
 // @import url(../blocks/var_style.less);
 .main-nav {
   position: relative;
-.create-profile  &-list {
+
+  .create-profile &-list {
     &__wrapper {
       display: flex;
     }
   }
+
   &__wrapper {
     // toggle
     display: none;
@@ -38,14 +40,16 @@
       height: 2px;
       background: #ffffff;
     }
+
     &--close {
       position: absolute;
       margin-left: 250px;
       width: 19px;
       height: 19px;
       border: none;
-      background-image: url(../img/close.svg);
+      background-image: url("../img/close.svg");
       background-repeat: no-repeat;
+
       &::after,
       &::before {
         content: "";

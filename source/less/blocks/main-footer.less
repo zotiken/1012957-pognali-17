@@ -1,4 +1,4 @@
-@import url(../blocks/var_style.less);
+
 .main-footer {
   position: relative;
   display: flex;
@@ -8,7 +8,6 @@
   padding: 0 25px;
   z-index: 8;
   background-color: @white;
-  position: relative;
   margin-top: -25px;
   padding-top: 38px;
   padding-bottom: 30px;
@@ -21,6 +20,7 @@
     font-family: @Bloggersans, serif;
     padding-top: 22px;
     border-top: 1px solid @litegray;
+
     &::before {
       width: 27px;
       height: 34px;
@@ -29,8 +29,7 @@
       position: absolute;
       right: 25px;
       margin-top: -10px;
-      background-image: url(../img/htmlacademy.svg);
+      background-image: url("../img/htmlacademy.svg");
     }
   }
-
 }
