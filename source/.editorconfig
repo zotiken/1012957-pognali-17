@@ -16,5 +16,5 @@ indent_size = 4
 [*.md]
 trim_trailing_whitespace = false
 
-[*.svg]
-indent_style = space
+# [*.svg]
+# indent_style = space
