@@ -1,8 +1,5 @@
-// @import url(../blocks/var_style.less);
 .header-content {
-  margin-bottom: 50px;
-  background: @background url("../img/globe-back-mobile@1x.jpg") 50% top/cover;
-  background-size: 100% 115%;
+  // margin-bottom: 50px;
 
   &-wrapper {
     margin: 0 25px;
@@ -13,13 +10,54 @@
   }
 
   &__title {
+    padding-bottom: 37px;
     font-size: 36px;
     color: @white;
     text-align: center;
   }
 
   &__traveller {
+    width: 320px;
+    height: 255px;
     display: block;
     margin: 0 auto;
+    background: @background url("../img/globe-back-mobile@1x.jpg") no-repeat
+      top/cover;
+    background-size: 100% 170%;
+    background-position: 50% 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    // margin-bottom: 50px;
+    // background-color: #161c36;
+    &-wrapper {
+      //   margin: 0 25px;
+      //   display: flex;
+      //   justify-content: center;
+      //   flex-wrap: wrap;
+      //   flex-direction: column;
+    }
+
+    &__title {
+      margin: 0 auto;
+      margin-top: 81px;
+      width: 395px;
+      font-size: 60px;
+      line-height: 70px;
+      color: @white;
+      text-align: center;
+    }
+
+    &__traveller {
+      position: absolute;
+      width: 768px;
+      height: 598px;
+      background: url("../img/traveller-illustration-tablet@1x.png") no-repeat,
+        #161c36 url("../img/globe-back-tablet@1x.jpg") no-repeat;
+      background-size: auto 80%, auto 105%;
+      background-position: 60% 0%, 50% 100%;
+    }
   }
 }

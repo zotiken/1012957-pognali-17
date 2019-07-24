@@ -10,7 +10,8 @@
   }
 
   &--tai {
-    background: @litegray url("../img/thailand-mobile@1x.jpg") no-repeat top/cover;
+    background: @litegray url("../img/thailand-mobile@1x.jpg") no-repeat
+      top/cover;
     background-size: 100%;
   }
 
@@ -74,5 +75,97 @@
     right: 23px;
     font-family: @Bloggersans-medium;
     color: @greyish-brown-30;
+  }
+}
+
+@media (min-width: 768px) {
+  .country {
+    padding-top: 0;
+    background-position: 100% 100%;
+
+    &--catalog {
+      padding-top: 0;
+    }
+
+    &--visit {
+      padding-top: 0;
+    }
+
+    &--tai {
+      background: @litegray url("../img/thailand-desktop@1x.jpg") no-repeat;
+      background-size: 40%;
+      background-position: 100% 100%;
+    }
+
+    &--france {
+      background: @litegray url("../img/france-desktop@1x.jpg") no-repeat;
+      background-size: 40%;
+      background-position: 100% 100%;
+    }
+
+    &--czech {
+      background: @litegray url("../img/czech-desktop@1x.jpg") no-repeat;
+      background-size: 40%;
+      background-position: 100% 100%;
+    }
+
+    &__info {
+      width: 328px;
+      position: relative;
+      padding-left: 30px;
+      padding-right: 26px;
+      padding-bottom: 25px;
+      background-color: @white;
+      border-radius: 10px 0 0 10px;
+    }
+
+    &__title {
+      // margin: 0;
+      // padding-top: 28px;
+      padding-bottom: 6px;
+      font-size: 24px;
+      // color: #161c35;
+    }
+
+    &__flag {
+      position: absolute;
+      margin-top: -60px;
+      margin-left: 320px;
+      width: 70px;
+      height: 47px;
+      background-image: url("../img/flags.png");
+      background-size: 420%;
+
+      &--tai {
+        background-position: 0 0;
+      }
+
+      &--france {
+        background-position: bottom right -52px;
+      }
+
+      &--czech {
+        background-position: bottom right;
+      }
+    }
+
+    &__catchphrase {
+      // margin: 0;
+      font-size: 24px;
+      // font-family: @Bloggersans-medium;
+      // color: @greyish-brown-30;
+      // line-height: 18px;
+    }
+
+    &__popularity {
+      margin-top: 20px;
+      margin-bottom: 0;
+      position: static;
+      font-style: 20px;
+      // top: 16px;
+      // right: 23px;
+      // font-family: @Bloggersans-medium;
+      // color: @greyish-brown-30;
+    }
   }
 }

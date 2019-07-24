@@ -1,13 +1,13 @@
-// @import url(../blocks/var_style.less);
 .reviews {
   margin-bottom: 33px;
 
   &-wrapper {
     margin: 0 25px;
+    margin-top: 50px;
   }
 
   &-list {
-    margin: 0 25px;
+    // margin: 0 25px;
   }
 
   &-item {
@@ -28,6 +28,48 @@
       font-size: 16px;
       text-align: left;
       color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    margin-bottom: 163px;
+    z-index: 1;
+
+    &-wrapper {
+      margin: 0 25px;
+      margin-top: 50px;
+    }
+
+    &-list {
+
+    }
+
+    &-item {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      margin-top: 59px;
+      width: 42%;
+      color: #ffffff;
+
+      &__text {
+        margin: 0;
+        padding: 0;
+        font-family: @Bloggersans-light, sans-serif;
+        font-size: 28px;
+        text-align: left;
+        color: #ffffff;
+        line-height: 33px;
+      }
+
+      &__author {
+        font-size: 21px;
+        line-height: 25px;
+        text-align: left;
+        color: #ffffff;
+      }
     }
   }
 }

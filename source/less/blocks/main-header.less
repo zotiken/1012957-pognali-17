@@ -1,6 +1,13 @@
 .main-header {
   margin-top: 27px;
 
+  &__logo {
+    display: block;
+    width: 100px;
+    height: 19px;
+    background-image: url("../img/logo-mobile-white@1x.png");
+  }
+
   &--catalog {
     position: relative;
     z-index: 5;
@@ -11,12 +18,47 @@
   }
 
   &-wrapper {
+    // скролл меню--
+    // position: fixed;
+    // z-index: 10;
+    // --
     margin: 0 25px;
     display: flex;
     justify-content: space-between;
 
     &--catalog {
       background-color: @dark;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    margin-top: 43px;
+    &__logo {
+      display: block;
+      width: 166px;
+      height: 42px;
+      background-image: url("../img/logo-tablet-white@1x.png");
+    }
+    // &--catalog {
+    //   position: relative;
+    //   z-index: 5;
+    //   background-color: @dark;
+    //   margin-top: 0;
+    //   padding-top: 19px;
+    //   padding-bottom: 70px;
+    // }
+
+    &-wrapper {
+      //   margin: 0 25px;
+      //   display: flex;
+      //   justify-content: space-between;
+
+      //   &--catalog {
+      //     background-color: @dark;
+      //   }
+      // }
     }
   }
 }

@@ -12,14 +12,13 @@
     <header class="main-header">
         <div class="main-header-wrapper">
             <a class="main-header__logo">
-                <img src="img/site-logo.png" alt="Погнали?" />
             </a>
             <nav class="main-nav">
-                <button class="main-nav__toggle " type="button">
+                <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
                 <div class="main-nav__wrapper">
-                    <img src="img/site-logo-blue.png" width="96" height="17" alt="Погнали?" />
+                    <a class="main-nav__logo"></a>
                     <button class="main-nav__toggle main-nav__toggle--close" type="button">
             <span class="visually-hidden">закрыть</span>
           </button>
@@ -35,26 +34,27 @@
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
+                    <a class="user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
+
                     <section class="main-nav-list user-navigation">
                         <h2 class="visually-hidden">Меню пользователя</h2>
-                        <div class="main-nav-list__wrapper">
-                            <div class="user-navigation__items">
-                                <a class="user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
+                        <!-- <div class="main-nav-list__wrapper"> -->
+                        <div class="user-navigation__items">
 
-                                <div class="user-navigation-wrapper">
-                                    <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
-                                    <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
-                                </div>
-
-                                <div class="user-navigation-social user-social">
-                                    <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
-                                        <span class="visually-hidden">Facebook</span></a>
-                                    <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
-                                        <span class="visually-hidden">VKontakte</span></a>
-                                    <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
-                                        <span class="visually-hidden"> Instagram</span></a>
-                                </div>
+                            <div class="user-navigation-wrapper">
+                                <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
+                                <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
                             </div>
+
+                            <div class="user-navigation-social user-social">
+                                <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
+                                    <span class="visually-hidden">Facebook</span></a>
+                                <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
+                                    <span class="visually-hidden">VKontakte</span></a>
+                                <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
+                                    <span class="visually-hidden"> Instagram</span></a>
+                            </div>
+                            <!-- </div> -->
                         </div>
                     </section>
                 </div>
@@ -65,7 +65,9 @@
                 <p class="header-content__title">
                     <b>В путешествие с крутыми попутчиками!</b>
                 </p>
-                <img class="header-content__traveller" src="img/traveller-illustration.png" width="192" height="255" alt="путешественник" />
+            </div>
+            <div class="header-content__traveller"></div>
+            <div class="header-content-wrapper">
                 <div class="user-navigation content">
                     <div class="user-navigation__items">
                         <a class="user-navigation-link user-navigation-link--signin  button" href="">авторизация</a>
@@ -75,60 +77,56 @@
                 class="visually-hidden">mail@htmlacademy.ru</span></a>
                     </div>
                 </div>
+                <section class="header-content reviews">
+                    <div class="reviews-wrapper">
+                        <h2 class="visually-hidden">Отзывы о сервисе</h2>
+                        <div class="reviews-list">
+                            <div class="reviews-item">
+                                <p class="reviews-item__text">
+                                    «Лучшее приложение, что я видел в жизни!»
+                                </p>
+                                <p class="reviews-item__author">
+                                    Мурат Эльтазин
+                                    <span class="reveiws-author-info">главный редактор газеты «гаджетлайф»</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="header-content selection-stages">
+                    <!-- <div class="selection-stages-wrapper"> -->
+                    <h2 class="selection-stages__title visually-hidden">
+                        Этапы подбора попутчика
+                    </h2>
+                    <ul class="selection-stages-list">
+                        <li class="selection-stages-list__item" data-id="1">
+                            <span class="selection-stages-list__text">Выберите направление</span>
+                        </li>
+                        <li class="selection-stages-list__item" data-id="2">
+                            <span class="selection-stages-list__text">Изучите идеи путешественников</span>
+                        </li>
+                        <li class="selection-stages-list__item" data-id="3">
+                            <span class="selection-stages-list__text">Находите тех, кто похож на вас</span>
+                        </li>
+                        <li class="selection-stages-list__item" data-id="4">
+                            <span class="selection-stages-list__text">Путешествуйте вместе!</span>
+                        </li>
+                    </ul>
+                    <!-- </div> -->
+                </section>
             </div>
+        </div>
         </div>
     </header>
     <main class="site-main">
         <h1 class="visually-hidden">Сеpвис путушествий с крутыми попутчиками</h1>
-        <section class="reviews">
-            <div class="reviews-wrapper">
-                <h2 class="visually-hidden">Отзывы о сервисе</h2>
-                <div class="reviews-list">
-                    <div class="reviews-item">
-                        <p class="reviews-item__text">
-                            «Лучшее приложение, что я видел в жизни!»
-                        </p>
-                        <p class="reviews-item__author">
-                            Мурат Эльтазин
-                            <span class="reveiws-author-info">главный редактор газеты «гаджетлайф»</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="selection-stages">
-            <div class="selection-stages-wrapper">
-                <h2 class="selection-stages__title visually-hidden">
-                    Этапы подбора попутчика
-                </h2>
-                <ul class="selection-stages-list">
-                    <li class="selection-stages-list__item" data-id="1">
-                        <span class="selection-stages-list__text">Выберите направление</span>
-                    </li>
-                    <li class="selection-stages-list__item" data-id="2">
-                        <span class="selection-stages-list__text">Изучите идеи путешественников</span>
-                    </li>
-                    <li class="selection-stages-list__item" data-id="3">
-                        <span class="selection-stages-list__text">Находите тех, кто похож на вас</span>
-                    </li>
-                    <li class="selection-stages-list__item" data-id="4">
-                        <span class="selection-stages-list__text">Путешествуйте вместе!</span>
-                    </li>
-                </ul>
-            </div>
-            <!-- selection-stage-list__item:before {
-                 content: attr(block-id);
-                  ...
-                 } -->
-        </section>
         <section class="about-services">
             <div class="about-services-wrapper">
                 <h2 class="about-services__title">О сервисе</h2>
                 <p class="about-services__text">
                     Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
                 </p>
-                <b class="about-services__invite">А если найдете кого-то близкого по духу — скорее зовите в
-          совместный трип!</b>
+                <p class="about-services__invite"><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
             </div>
         </section>
         <section class="directions">
