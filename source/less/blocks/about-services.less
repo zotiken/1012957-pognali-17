@@ -1,5 +1,7 @@
-// @import url(../blocks/var_style.less);
 .about-services {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
   z-index: 7;
   position: relative;
   padding: 0 24px;
@@ -8,61 +10,56 @@
   background: @blue url("../img/about-mobile@1x.png") 100% 100% no-repeat;
   border-radius: 0 0 25px 25px;
 
-  &-wrapper {
+  @media (min-width: @screen-md) {
+    min-width:@screen-md;
+    max-width:@screen-xl;
+    padding: 0 40px;
+    padding-top: 56px;
+    padding-bottom: 88px;
+  }
+
+  @media (min-width: @screen-xl) {
+  }
+
+
+  &_wrapper {
     padding: 0 25px;
+
+    @media (min-width: @screen-md) {
+      padding: 0 35px;
+    }
   }
 
   &__title {
     color: @orange;
     font-size: 24px;
+
+    @media (min-width: @screen-md) {
+      font-size: 45px;
+      line-height: 45px;
+    }
   }
 
   &__text {
     margin-bottom: 25px;
     color: @white;
-    font-family: @Bloggersans-light;
+    font-weight: 300;
     line-height: 22px;
+
+    @media (min-width: @screen-md) {
+      width: 298px;
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
 
   &__invite {
     color: @white;
     line-height: 22px;
-  }
-}
 
-@media (min-width: 768px) {
-  .about-services {
-    // z-index: 7;
-    // position: relative;
-    padding: 0 40px;
-    padding-top: 56px;
-    padding-bottom: 88px;
-    // background: @blue url("../img/about-mobile@1x.png") 100% 100% no-repeat;
-    // border-radius: 0 0 25px 25px;
-
-    &-wrapper {
-      padding: 0 35px;
-    }
-
-    &__title {
-      font-size: 45px;
-      line-height: 45px;
-      // color: @orange;
-    }
-
-    &__text {
-      width: 298px;
-      font-size: 28px;
-      // margin-bottom: 25px;
-      // color: @white;
-      // font-family: @Bloggersans-light;
-      line-height: 33px;
-    }
-
-    &__invite {
+    @media (min-width: @screen-md) {
       width: 291px;
       font-size: 21px;
-      // color: @white;
       line-height: 25px;
     }
   }

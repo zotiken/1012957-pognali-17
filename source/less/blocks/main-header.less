@@ -1,11 +1,13 @@
 .main-header {
-  margin-top: 27px;
+  width: 320px;
+  margin: 0 auto;
 
-  &__logo {
-    display: block;
-    width: 100px;
-    height: 19px;
-    background-image: url("../img/logo-mobile-white@1x.png");
+  @media (min-width: @screen-md) {
+    width: @screen-md;
+  }
+
+  @media (min-width: @screen-xl) {
+    width: @screen-xl;
   }
 
   &--catalog {
@@ -17,48 +19,33 @@
     padding-bottom: 70px;
   }
 
-  &-wrapper {
-    // скролл меню--
-    // position: fixed;
-    // z-index: 10;
-    // --
-    margin: 0 25px;
-    display: flex;
-    justify-content: space-between;
+  &__logo {
+    display: block;
+    width: 100px;
+    height: 19px;
+    background-image: url("../img/logo-mobile-white@1x.png");
 
-    &--catalog {
-      background-color: @dark;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .main-header {
-    margin-top: 43px;
-    &__logo {
+    @media (min-width: @screen-md) {
       display: block;
       width: 166px;
       height: 42px;
       background-image: url("../img/logo-tablet-white@1x.png");
     }
-    // &--catalog {
-    //   position: relative;
-    //   z-index: 5;
-    //   background-color: @dark;
-    //   margin-top: 0;
-    //   padding-top: 19px;
-    //   padding-bottom: 70px;
-    // }
+  }
 
-    &-wrapper {
-      //   margin: 0 25px;
-      //   display: flex;
-      //   justify-content: space-between;
+  &__wrapper {
+    // скролл меню--
+    // position: fixed;
+    // z-index: 10;
+    // --
+    position: relative;
+    padding: 0 25px;
+    // padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
 
-      //   &--catalog {
-      //     background-color: @dark;
-      //   }
-      // }
+    &--catalog {
+      background-color: @dark;
     }
   }
 }

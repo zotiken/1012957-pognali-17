@@ -1,5 +1,7 @@
-
 .main-footer {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
   position: relative;
   display: flex;
   align-items: center;
@@ -13,11 +15,23 @@
   padding-bottom: 30px;
   border-radius: 25px 25px 0 0;
 
+  @media (min-width: @screen-md) {
+    min-width: @screen-md;
+    width: 80vw;
+    max-width: @screen-xl;
+    flex-direction: row;
+  }
+
+  @media (min-width: @screen-xl) {
+    width: @screen-xl;
+  }
+
+
   &__copyright {
     width: 270px;
     text-decoration: none;
     color: @greyish-brown;
-    font-family: @Bloggersans, serif;
+    font-weight: normal;
     padding-top: 22px;
     border-top: 1px solid @litegray;
 

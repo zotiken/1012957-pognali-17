@@ -1,43 +1,122 @@
-// @import url(../blocks/var_style.less);
 .main-nav {
+  box-sizing: border-box;
+  padding-top: 27px;
   position: relative;
+  min-width: 320px;
+  min-height: 73px;
 
-  .create-profile &-list {
-    &__wrapper {
+  @media (min-width: @screen-md) {
+    min-width: 768px;
+    position: static;
+    display: block;
+  }
+
+  &__list {
+    @media (min-width: @screen-md) {
+      display: none;
+    }
+
+    @media (min-width: @screen-xl) {
+      align-items: center;
       display: flex;
+
+      & .user-navigation-social {
+        display: none;
+      }
     }
   }
 
   &__wrapper {
     // toggle
     display: none;
-    //------------flex------
+    //------------block------
     z-index: 7;
     box-sizing: border-box;
     padding: 25px;
     position: absolute;
-    left: -270px;
-    top: -25px;
+    // 270px  1версия
+    margin-left: -25px;
+    margin-top: -25px;
     width: 320px;
     height: 100vh;
+    max-height: 568px;
     flex-direction: column;
     background-color: @white;
+
+    @media (min-width: @screen-md) {
+      padding-top: 27px;
+      display: flex;
+      align-items: center;
+      // //------------flex------
+      // z-index: auto;
+      // box-sizing: border-box;
+      // padding: 0;
+      margin-left: -25px;
+      // top: auto;
+      min-width: 768px;
+      max-width: @screen-xl;
+      height: auto;
+      // flex-direction: row;
+      background-color: transparent;
+    }
+
+    @media (min-width: @screen-xl) {
+      padding-left: 200px;
+      min-width: @screen-xl;
+      flex-direction: row;
+    }
   }
+
   &__block-logo {
     display: inline-block;
   }
+
   &__logo {
+    // -- 1 версия
+    position: absolute;
+    z-index: 10;
+    // --
     display: inline-block;
+    margin-top: 27px;
     width: 100px;
     height: 19px;
     background-image: url("../img/logo-mobile-blue@1x.png");
+
+    @media (min-width: @screen-md) {
+      //  block
+      display: block;
+      box-sizing: border-box;
+      width: 166px;
+      min-height: 42px;
+      background-image: url("../img/logo-tablet-blue@1x.png");
+    }
   }
 
   &__toggle {
+    // -- not-js
+    display: none;
+    // --1 версия
+    position: absolute;
+    padding-top: 15px;
+    margin-left: 40%;
+    transform: translate(50%, 0);
+    margin-top: 27px;
+    z-index: 10;
+    // --
     width: 25px;
     height: 10px;
     background: none;
     border: none;
+
+    @media (min-width: @screen-md) {
+      // margin-top: 15px;
+      display: block;
+    }
+
+    @media (min-width: @screen-xl) {
+      // margin-top: 15px;
+      display: none;
+    }
 
     &::after,
     &::before {
@@ -60,6 +139,17 @@
       background-image: url("../img/close.svg");
       background-repeat: no-repeat;
 
+      @media (min-width: @screen-md) {
+        // block
+        display: none;
+        min-height: 19px;
+        width: 19px;
+        height: 19px;
+        border: none;
+        background-image: url("../img/close.svg");
+        background-repeat: no-repeat;
+      }
+
       &::after,
       &::before {
         content: "";
@@ -78,71 +168,6 @@
 
     &::before {
       margin-top: 3.5px;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav {
-    position: static;
-    display: flex;
-    margin-left: 167px;
-    margin-right: auto;
-    &-list {
-      display: none;
-    }
-    &__wrapper {
-      // toggle
-      display: block;
-      //------------flex------
-      z-index: auto;
-      box-sizing: border-box;
-      padding: 0;
-      left: auto;
-      top: auto;
-      width: auto;
-      height: auto;
-      flex-direction: row;
-      background-color: transparent;
-    }
-    // &__wrapper {
-    //   // toggle
-    //   display: none;
-    //   //------------flex------
-    //   z-index: 7;
-    //   box-sizing: border-box;
-    //   padding: 25px;
-    //   position: absolute;
-    //   left: -718px;
-    //   top: -45px;
-    //   width: 768px;
-    //   height: 100vh;
-    //   flex-direction: column;
-    //   background-color: @white;
-    // }
-
-    &__logo {
-      //  block
-      display: none;
-      box-sizing: border-box;
-      width: 166px;
-      min-height: 42px;
-      background-image: url("../img/logo-tablet-blue@1x.png");
-    }
-
-    &__toggle {
-      margin-top: 15px;
-      &--close {
-        // block
-        display: none;
-        min-height: 19px;
-        // margin-left: 250px;
-        width: 19px;
-        height: 19px;
-        border: none;
-        background-image: url("../img/close.svg");
-        background-repeat: no-repeat;
-      }
     }
   }
 }

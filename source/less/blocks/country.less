@@ -1,28 +1,58 @@
 .country {
   padding-top: 99px;
 
+  @media (min-width: @screen-md) {
+    padding-top: 0;
+    background-position: 100% 100%;
+  }
+
   &--catalog {
     padding-top: 0;
+
+    @media (min-width: @screen-md) {
+      padding-top: 0;
+    }
   }
 
   &--visit {
     padding-top: 0;
+
+    @media (min-width: @screen-md) {
+      padding-top: 0;
+    }
   }
 
   &--tai {
-    background: @litegray url("../img/thailand-mobile@1x.jpg") no-repeat
-      top/cover;
+    background: @litegray url("../img/thailand-mobile@1x.jpg") no-repeat top/cover;
     background-size: 100%;
+
+    @media (min-width: @screen-md) {
+      background: @litegray url("../img/thailand-desktop@1x.jpg") no-repeat;
+      background-size: 40%;
+      background-position: 100% 100%;
+    }
   }
 
   &--france {
     background: @litegray url("../img/france-mobile@1x.jpg") no-repeat top/cover;
     background-size: 100%;
+
+    @media (min-width: @screen-md) {
+      background: @litegray url("../img/france-desktop@1x.jpg") no-repeat;
+      background-size: 40%;
+      background-position: 100% 100%;
+    }
   }
 
   &--czech {
     background: @litegray url("../img/czech-mobile@1x.jpg") no-repeat top/cover;
     background-size: 100%;
+
+    @media (min-width: @screen-md) {
+      background: @litegray url("../img/czech-desktop@1x.jpg") no-repeat;
+      background-size: 40%;
+      background-position: 100% 100%;
+    }
   }
 
   &__info {
@@ -32,6 +62,16 @@
     padding-bottom: 23px;
     background-color: @white;
     border-radius: 10px 10px 0 0;
+
+    @media (min-width: @screen-md) {
+      width: 328px;
+      position: relative;
+      padding-left: 30px;
+      padding-right: 26px;
+      padding-bottom: 25px;
+      background-color: @white;
+      border-radius: 10px 0 0 10px;
+    }
   }
 
   &__title {
@@ -40,6 +80,11 @@
 
     font-size: 21px;
     color: #161c35;
+
+    @media (min-width: @screen-md) {
+      padding-bottom: 6px;
+      font-size: 24px;
+    }
   }
 
   &__flag {
@@ -49,85 +94,7 @@
     height: 24px;
     background-image: url("../img/flags.png");
 
-    &--tai {
-      background-position: 0 0;
-    }
-
-    &--france {
-      background-position: bottom right -52px;
-    }
-
-    &--czech {
-      background-position: bottom right;
-    }
-  }
-
-  &__catchphrase {
-    margin: 0;
-    font-family: @Bloggersans-medium;
-    color: @greyish-brown-30;
-    line-height: 18px;
-  }
-
-  &__popularity {
-    position: absolute;
-    top: 16px;
-    right: 23px;
-    font-family: @Bloggersans-medium;
-    color: @greyish-brown-30;
-  }
-}
-
-@media (min-width: 768px) {
-  .country {
-    padding-top: 0;
-    background-position: 100% 100%;
-
-    &--catalog {
-      padding-top: 0;
-    }
-
-    &--visit {
-      padding-top: 0;
-    }
-
-    &--tai {
-      background: @litegray url("../img/thailand-desktop@1x.jpg") no-repeat;
-      background-size: 40%;
-      background-position: 100% 100%;
-    }
-
-    &--france {
-      background: @litegray url("../img/france-desktop@1x.jpg") no-repeat;
-      background-size: 40%;
-      background-position: 100% 100%;
-    }
-
-    &--czech {
-      background: @litegray url("../img/czech-desktop@1x.jpg") no-repeat;
-      background-size: 40%;
-      background-position: 100% 100%;
-    }
-
-    &__info {
-      width: 328px;
-      position: relative;
-      padding-left: 30px;
-      padding-right: 26px;
-      padding-bottom: 25px;
-      background-color: @white;
-      border-radius: 10px 0 0 10px;
-    }
-
-    &__title {
-      // margin: 0;
-      // padding-top: 28px;
-      padding-bottom: 6px;
-      font-size: 24px;
-      // color: #161c35;
-    }
-
-    &__flag {
+    @media (min-width: @screen-md) {
       position: absolute;
       margin-top: -60px;
       margin-left: 320px;
@@ -135,37 +102,68 @@
       height: 47px;
       background-image: url("../img/flags.png");
       background-size: 420%;
+    }
 
-      &--tai {
+
+    &--tai {
+      background-position: 0 0;
+
+      @media (min-width: @screen-md) {
         background-position: 0 0;
       }
+    }
 
-      &--france {
+    &--france {
+      background-position: bottom right -52px;
+
+      @media (min-width: @screen-md) {
         background-position: bottom right -52px;
       }
+    }
 
-      &--czech {
+    &--czech {
+      background-position: bottom right;
+
+      @media (min-width: @screen-md) {
         background-position: bottom right;
       }
     }
-
-    &__catchphrase {
-      // margin: 0;
-      font-size: 24px;
-      // font-family: @Bloggersans-medium;
-      // color: @greyish-brown-30;
-      // line-height: 18px;
+    &--germany {
+      background-position: bottom right -52px;
     }
 
-    &__popularity {
+    &--visit{
+      padding: 0;
+      margin: 0 12px;
+      position: relative;
+      margin-top: -4px;
+
+    }
+  }
+
+  &__catchphrase {
+    margin: 0;
+    font-weight: 500;
+    color: @greyish-brown-30;
+    line-height: 18px;
+
+    @media (min-width: @screen-md) {
+      font-size: 24px;
+    }
+  }
+
+  &__popularity {
+    position: absolute;
+    top: 16px;
+    right: 23px;
+    font-weight: 500;
+    color: @greyish-brown-30;
+
+    @media (min-width: @screen-md) {
       margin-top: 20px;
       margin-bottom: 0;
       position: static;
       font-style: 20px;
-      // top: 16px;
-      // right: 23px;
-      // font-family: @Bloggersans-medium;
-      // color: @greyish-brown-30;
     }
   }
 }

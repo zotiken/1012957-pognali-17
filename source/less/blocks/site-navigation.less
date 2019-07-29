@@ -1,23 +1,33 @@
-// @import url(../blocks/var_style.less);
-// @import url(../blocks/fonts.less);
 .site-navigation {
   padding: 0;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 121px;
   margin-bottom: 58px;
   text-align: center;
+
+  @media (min-width: @screen-md) {
+  }
+
+  @media (min-width: @screen-xl) {
+    margin: 0;
+  }
 
   &__item {
     padding: 0;
     margin: 0;
     list-style: none;
+    text-transform: uppercase;
 
     a {
       text-decoration: none;
       text-align: center;
-      font-family: @Bloggersans-medium;
+      font-weight: 500;
       font-size: 30px;
       color: @black;
+
+      @media (min-width: @screen-xl) {
+        color: @white;
+      }
     }
   }
 }

@@ -1,5 +1,3 @@
-// @import url(../blocks/var_style.less);
-
 .feedback-block {
   position: relative;
   padding: 0 25px;
@@ -10,16 +8,26 @@
   padding-bottom: 30px;
   border-radius: 0 0 25px 25px;
 
-  &-wrapper {
+  &__wrapper {
     margin: 0 25px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @media (min-width: @screen-md) {}
+
+    @media (min-width: @screen-xl) {}
+
   }
 
   &__title {
     color: @orange;
     font-size: 24px;
+
+    @media (min-width: @screen-md) {
+      text-align: center;
+    }
+
   }
 
   &__text {
@@ -27,9 +35,13 @@
     padding: 0;
     width: 200px;
     color: @white;
-    font-family: @Bloggersans-light;
+    font-weight: 300;
     line-height: 22px;
     text-align: center;
+
+    @media (min-width: @screen-md) {
+      width: 606px;
+    }
 
     a {
       text-decoration: none;
@@ -37,50 +49,15 @@
     }
   }
 
-  &-form {
+  &__form {
     margin-top: 32px;
     width: 270px;
-  }
-}
 
-.feedback {
-  &__email {
-    width: 225px;
-
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 18px;
-    padding: 24px;
-    color: @greyish-brown-30;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 32px;
-  }
-
-  &__submit {
-    display: block;
-    position: absolute;
-    margin-top: -99px;
-    margin-left: 213px;
-    width: 60px;
-    padding: 24.5px;
-    border: none;
-    border-radius: 0 10px 10px 0;
-    background-color: @yellow;
-    background-image: url("../img/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 14px;
-  }
-
-  &__question {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 36px;
-    width: 220px;
-    color: @white;
-    font-family: @Bloggersans-light;
-    line-height: 22px;
-    text-align: center;
+    @media (min-width: @screen-md) {
+      padding-left: 75px;
+      padding-right: 75px;
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 }

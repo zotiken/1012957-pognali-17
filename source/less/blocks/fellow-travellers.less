@@ -1,4 +1,3 @@
-// @import url(../blocks/var_style.less);
 
 .fellow-travellers {
   position: relative;
@@ -28,7 +27,7 @@
     margin-bottom: 20px;
   }
 
-  &-wrapper {
+  &__wrapper {
     padding: 0 25px;
   }
 
@@ -52,7 +51,7 @@
   }
 
   &__description {
-    font-family: @Bloggersans-light;
+    font-weight: 300;
     font-size: 16px;
     width: 200px;
     line-height: 22px;
@@ -65,10 +64,26 @@
     margin-bottom: 60px;
   }
 
+  &__items{
+    @media (min-width: @screen-md) {
+    display: flex;
+    justify-content: space-between;
+    }
+
+  }
+
   &__item {
     box-sizing: border-box;
     margin-bottom: 10px;
     width: 270px;
+
+    @media (min-width: @screen-md) {
+      width: 285px;
+    }
+
+    @media (min-width: @screen-xl) {
+      margin: 0;
+    }
 
     &--filter {
       margin-top: 65px;
@@ -86,9 +101,19 @@
   &__avatar {
     display: block;
     border-radius: 10px 10px 0 0;
+
+    @media (min-width: @screen-md) {
+      width: 285px;
+    }
+
+    @media (min-width: @screen-xl) {
+
+    }
   }
 
   &__info {
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +158,7 @@
     &-item {
       text-decoration: none;
       color: @greyish-brown;
-      font-family: @Bloggersans, serif;
+      font-weight: normal;
       line-height: 18px;
     }
   }
@@ -155,7 +180,7 @@
       h3 {
         font-size: 15px;
         margin-top: 0;
-        font-family: @Bloggersans, serif;
+        font-weight: normal;
         color: @greyish-brown;
       }
     }
@@ -166,11 +191,11 @@
       margin-top: 0;
       margin-bottom: 20px;
       font-size: 15px;
-      font-family: @Bloggersans, serif;
+      font-weight: normal;
       color: @greyish-brown;
     }
-
-    &-item {
+  }
+    &__vehicle-item {
       display: inline-block;
       width: 33px;
       height: 33px;
@@ -182,6 +207,7 @@
         background-color: @litegray;
         border-radius: 50%;
       }
+
       &--bike {
         background-image: url("../../img/bike.png");
       }
@@ -200,9 +226,9 @@
         background-image: url("../..//img/run.png");
       }
     }
-  }
 
-  &-link {
+
+    &__vehicle-link {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -213,29 +239,16 @@
     font-size: 17px;
   }
 
-  &__level {
-    &-title {
-      margin-top: 0;
-      font-size: 15px;
-      font-family: @Bloggersans, serif;
-      color: @greyish-brown;
-    }
-
-    &-value {
-      font-size: 24px;
-      color: #1d2e5b;
-    }
+  &__level-title {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: @greyish-brown;
   }
 
-  .country__flag {
-    padding: 0;
-    margin: 0 12px;
-    position: relative;
-    margin-top: -4px;
-
-    &--germany {
-      background-position: bottom right -52px;
-    }
+  &__level-value {
+    font-size: 24px;
+    color: #1d2e5b;
   }
 
   &__to-all {
@@ -270,14 +283,14 @@
     padding-top: 200px;
     padding-bottom: 17px;
     border-radius: 0 0 20px 20px;
-
-    &-title {
+  }
+    &-filter-title {
       margin: 0;
       font-size: 16px;
       text-transform: uppercase;
       text-align: center;
     }
-  }
+
 
   &-navigation {
     width: 270px;
