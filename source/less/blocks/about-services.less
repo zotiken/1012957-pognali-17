@@ -1,28 +1,21 @@
 .about-services {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   z-index: 7;
   position: relative;
-  padding: 0 24px;
   padding-top: 36px;
   padding-bottom: 84px;
-  background: @blue url("../img/about-mobile@1x.png") 100% 100% no-repeat;
+  background: @background url("../img/about-mobile@1x.png") 100% 100% no-repeat;
   border-radius: 0 0 25px 25px;
 
   @media (min-width: @screen-md) {
-    min-width:@screen-md;
-    max-width:@screen-xl;
-    padding: 0 40px;
     padding-top: 56px;
     padding-bottom: 88px;
+    background: @background url("../img/about-tablet@1x.png") 100% 100% no-repeat;
   }
 
-  @media (min-width: @screen-xl) {
-  }
-
-
-  &_wrapper {
+  &__wrapper {
     padding: 0 25px;
 
     @media (min-width: @screen-md) {
@@ -35,6 +28,7 @@
     font-size: 24px;
 
     @media (min-width: @screen-md) {
+      margin: 43px 0;
       font-size: 45px;
       line-height: 45px;
     }
@@ -50,6 +44,7 @@
       width: 298px;
       font-size: 28px;
       line-height: 33px;
+      margin-bottom: 38px;
     }
   }
 
@@ -61,6 +56,38 @@
       width: 291px;
       font-size: 21px;
       line-height: 25px;
+      margin-bottom: 53px;
+    }
+  }
+
+  &__more {
+    display: none;
+
+    @media (min-width: @screen-md) {
+      display: block;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      font-size: 24px;
+      line-height: 24px;
+      width: 274px;
+      border-radius: 20px;
+      text-align-last: left;
+      font-weight: 700;
+
+      &::before {
+        width: 0;
+        height: 0;
+        display: block;
+        content: "";
+        position: absolute;
+        margin-left: 210px;
+        margin-top: 5px;
+        border-style: solid;
+        border-width: 7px 5px 7px 10px;
+        border-color: transparent transparent transparent #1d2e5b;
+      }
     }
   }
 }

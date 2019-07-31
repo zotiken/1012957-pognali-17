@@ -6,9 +6,11 @@
   min-height: 73px;
 
   @media (min-width: @screen-md) {
-    min-width: 768px;
+    min-width: @screen-md;
+    max-width: @screen-xl;
     position: static;
     display: block;
+    box-sizing: border-box;
   }
 
   &__list {
@@ -34,7 +36,6 @@
     box-sizing: border-box;
     padding: 25px;
     position: absolute;
-    // 270px  1версия
     margin-left: -25px;
     margin-top: -25px;
     width: 320px;
@@ -44,19 +45,14 @@
     background-color: @white;
 
     @media (min-width: @screen-md) {
-      padding-top: 27px;
+      padding: 0 40px;
+      padding-top: 40px;
       display: flex;
       align-items: center;
-      // //------------flex------
-      // z-index: auto;
-      // box-sizing: border-box;
-      // padding: 0;
       margin-left: -25px;
-      // top: auto;
       min-width: 768px;
       max-width: @screen-xl;
       height: auto;
-      // flex-direction: row;
       background-color: transparent;
     }
 
@@ -72,10 +68,8 @@
   }
 
   &__logo {
-    // -- 1 версия
     position: absolute;
     z-index: 10;
-    // --
     display: inline-block;
     margin-top: 27px;
     width: 100px;
@@ -83,8 +77,8 @@
     background-image: url("../img/logo-mobile-blue@1x.png");
 
     @media (min-width: @screen-md) {
-      //  block
       display: block;
+      margin-top: 40px;
       box-sizing: border-box;
       width: 166px;
       min-height: 42px;
@@ -95,26 +89,23 @@
   &__toggle {
     // -- not-js
     display: none;
-    // --1 версия
     position: absolute;
-    padding-top: 15px;
+    padding: 15px;
     margin-left: 40%;
     transform: translate(50%, 0);
     margin-top: 27px;
     z-index: 10;
-    // --
     width: 25px;
     height: 10px;
     background: none;
     border: none;
 
     @media (min-width: @screen-md) {
-      // margin-top: 15px;
       display: block;
+      margin-top: 55px;
     }
 
     @media (min-width: @screen-xl) {
-      // margin-top: 15px;
       display: none;
     }
 
@@ -131,7 +122,6 @@
 
     &--close {
       display: inline-block;
-      // position: absolute;
       margin-left: 140px;
       width: 19px;
       height: 19px;
@@ -140,7 +130,6 @@
       background-repeat: no-repeat;
 
       @media (min-width: @screen-md) {
-        // block
         display: none;
         min-height: 19px;
         width: 19px;

@@ -1,16 +1,14 @@
-
 .fellow-travellers {
   position: relative;
-  padding: 0 25px;
   z-index: 5;
-  background-color: @blue;
+  background-color: @background;
   background-image: url("../img/blue\back.png"),
     url("../img/smolov-back-desktop@1x.png"),
     url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100px, 130px 100px, 30px 400px;
-  margin-top: -45px;
-  padding-top: 120px;
+  margin-top: -20px;
+  padding-top: 95px;
   padding-bottom: 30px;
   border-radius: 0 0 25px 25px;
 
@@ -18,6 +16,12 @@
     background-image: none;
     background-color: transparent;
     margin-top: -120px;
+  }
+
+  @media (min-width: @screen-md) {
+    padding-top: 143px;
+    padding-bottom: 80px;
+    border-radius: 0 0 35px 35px;
   }
 
   &__box {
@@ -29,12 +33,22 @@
 
   &__wrapper {
     padding: 0 25px;
+
+    @media (min-width: @screen-md) {
+      padding: 0 35px;
+    }
   }
 
   &__title {
     margin: 0;
     color: @orange;
     font-size: 24px;
+
+    @media (min-width: @screen-md) {
+      font-size: 45px;
+      line-height: 45px;
+      margin-top: 61px;
+    }
 
     &--catalog {
       box-sizing: border-box;
@@ -55,21 +69,35 @@
     font-size: 16px;
     width: 200px;
     line-height: 22px;
-    color: @greyish-brown;
+    color: @white;
+
+    @media (min-width: @screen-md) {
+      width: 68.5%;
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 46px;
+    }
   }
 
   &__invite {
     color: @white;
     line-height: 22px;
     margin-bottom: 60px;
+
+    @media (min-width: @screen-md) {
+      width: 42%;
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 62px;
+    }
   }
 
-  &__items{
+  &__items {
     @media (min-width: @screen-md) {
-    display: flex;
-    justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
     }
-
   }
 
   &__item {
@@ -104,10 +132,7 @@
 
     @media (min-width: @screen-md) {
       width: 285px;
-    }
-
-    @media (min-width: @screen-xl) {
-
+      border-radius: 20px 20px 0 0;
     }
   }
 
@@ -126,6 +151,10 @@
     padding-bottom: 22px;
     background-color: @white;
     border-radius: 10px;
+
+    @media (min-width: @screen-md) {
+      border-radius: 0 0 20px 20px;
+    }
 
     &--catalog {
       padding-left: 20px;
@@ -154,13 +183,13 @@
 
   &__interest {
     text-align: left;
+  }
 
-    &-item {
-      text-decoration: none;
-      color: @greyish-brown;
-      font-weight: normal;
-      line-height: 18px;
-    }
+  &__interest-item {
+    text-decoration: none;
+    color: @greyish-brown;
+    font-weight: normal;
+    line-height: 18px;
   }
 
   &__flags {
@@ -195,40 +224,40 @@
       color: @greyish-brown;
     }
   }
-    &__vehicle-item {
-      display: inline-block;
-      width: 33px;
-      height: 33px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 60%;
 
-      &--catalog {
-        background-color: @litegray;
-        border-radius: 50%;
-      }
+  &__vehicle-item {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 60%;
 
-      &--bike {
-        background-image: url("../../img/bike.png");
-      }
-
-      &--plane {
-        background-image: url("../../img/plane-s.png");
-        background-size: 50%;
-      }
-
-      &--bus {
-        background-image: url("../../img/bus.png");
-        background-size: 50%;
-      }
-
-      &--run {
-        background-image: url("../..//img/run.png");
-      }
+    &--catalog {
+      background-color: @litegray;
+      border-radius: 50%;
     }
 
+    &--bike {
+      background-image: url("../../img/bike.png");
+    }
 
-    &__vehicle-link {
+    &--plane {
+      background-image: url("../../img/plane-s.png");
+      background-size: 50%;
+    }
+
+    &--bus {
+      background-image: url("../../img/bus.png");
+      background-size: 50%;
+    }
+
+    &--run {
+      background-image: url("../..//img/run.png");
+    }
+  }
+
+  &__vehicle-link {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -252,12 +281,14 @@
   }
 
   &__to-all {
+    position: relative;
     margin-top: 20px;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
-    font-style: 18px;
+    font-size: 18px;
+    font-weight: 700;
     width: 100%;
     border-radius: 10px;
     text-align-last: left;
@@ -273,9 +304,19 @@
       border-width: 7px 5px 7px 10px;
       border-color: transparent transparent transparent #1d2e5b;
     }
+
+    @media (min-width: @screen-md) {
+      border-radius: 20px;
+      padding-left: 34px;
+      padding-right: 34px;
+      padding-top: 31px;
+      padding-bottom: 32px;
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
-  &-filter {
+  &__filter {
     position: absolute;
     margin-top: -20px;
     width: 320px;
@@ -284,22 +325,22 @@
     padding-bottom: 17px;
     border-radius: 0 0 20px 20px;
   }
-    &-filter-title {
-      margin: 0;
-      font-size: 16px;
-      text-transform: uppercase;
-      text-align: center;
-    }
 
+  &__filter-title {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-  &-navigation {
+  &__navigation {
     width: 270px;
     display: flex;
     flex-direction: column;
     padding-top: 16px;
     padding-bottom: 16px;
 
-    &__show-more {
+    &__navigation-show-more {
       margin-bottom: 27px;
       padding-left: 93px;
       text-transform: uppercase;
@@ -317,12 +358,12 @@
       }
     }
 
-    &__list {
+    &__navigation-list {
       width: 270px;
       display: flex;
     }
 
-    &__prev-list {
+    &__navigation-prev-list {
       display: block;
       width: 50%;
       height: 50px;
@@ -336,7 +377,7 @@
       margin-right: 2px;
     }
 
-    &__next-list {
+    &__navigation-next-list {
       display: block;
       height: 50px;
       width: 50%;

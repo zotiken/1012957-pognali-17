@@ -3,12 +3,7 @@
   padding-bottom: 32px;
 
   @media (min-width: @screen-md) {
-    width: 100%;
-  }
-
-  @media (min-width: @screen-xl) {
-
-
+    width: 90%;
   }
 
   &__item {
@@ -19,10 +14,6 @@
     font-weight: 300;
     color: @greyish-brown;
     border-top: 1px solid rgba(3, 3, 3, 0.05);
-
-    &:last-child {
-      border-bottom: 1px solid rgba(3, 3, 3, 0.05);
-    }
 
     &::before {
       margin-left: 200px;
@@ -38,12 +29,36 @@
       text-align: center;
     }
 
+    @media (min-width: @screen-md) {
+      padding-top: 23px;
+      padding-bottom: 21px;
+
+      &::before {
+        margin-left: -90px;
+        margin-top: -20px;
+        width: 67px;
+        height: 67px;
+        font-size: 28px;
+        line-height: 67px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px solid rgba(3, 3, 3, 0.05);
+    }
+
     &[data-id="2"]::before {
       background-color: @liteorange;
     }
 
     &[data-id="3"]::before {
       background-color: @yellow;
+    }
+  }
+
+  &__coast {
+    @media (min-width: @screen-md) {
+      float: right;
     }
   }
 }

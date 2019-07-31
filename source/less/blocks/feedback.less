@@ -1,7 +1,10 @@
 .feedback {
-  &__email {
-    width: 225px;
+  position: relative;
 
+  &__email {
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 700;
     text-decoration: none;
     font-size: 18px;
     line-height: 18px;
@@ -12,16 +15,20 @@
     margin-bottom: 32px;
 
     @media (min-width: @screen-md) {
-      width: 100%;
+      padding: 0 35px;
+      height: 81px;
+      font-size: 24px;
+      line-height: 24px;
+      border-radius: 20px;
+      margin-bottom: 61px;
     }
-
   }
 
   &__submit {
     display: block;
     position: absolute;
-    margin-top: -99px;
-    margin-left: 213px;
+    right: 0;
+    top: 0;
     width: 60px;
     padding: 24.5px;
     border: none;
@@ -33,7 +40,9 @@
     background-size: 14px;
 
     @media (min-width: @screen-md) {
-      margin-left: 556px;
+      width: 82px;
+      height: 81px;
+      border-radius: 0 20px 20px 0;
     }
   }
 
@@ -51,6 +60,5 @@
       display: inline-block;
       width: 100%;
     }
-
   }
 }

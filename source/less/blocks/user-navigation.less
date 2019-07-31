@@ -1,7 +1,11 @@
 .user-navigation {
+  @media (min-width: @screen-md) {
+    margin-left: 51px;
+  }
 
   &__item {
     list-style: none;
+    margin-bottom: 45px;
   }
 
   &__items {
@@ -25,24 +29,31 @@
     text-transform: uppercase;
     color: #161c35;
     border-radius: 20px;
-    // background-color: @yellow;
 
     @media (min-width: @screen-md) {
       margin-bottom: 0;
+      font-size: 28px;
+      line-height: 28px;
     }
 
     &--signin {
-      // width: 270px;
       border-radius: 20px;
       background-color: @yellow;
       width: auto;
+      font-weight: 700;
+      font-size: 17px;
       padding-top: 10px;
       padding-bottom: 6px;
 
       @media (min-width: @screen-md) {
+        font-size: 20px;
         display: block;
         margin-left: auto;
         width: 188px;
+        padding-top: 17px;
+        padding-bottom: 14px;
+        padding-left: 28px;
+        padding-right: 31px;
       }
 
       @media (min-width: @screen-xl) {
@@ -66,15 +77,15 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }
+    }
 
-      &-yellow {
-        text-align: left;
-        color: #ffd74b;
+    &--yellow {
+      text-align: left;
+      color: #ffd74b;
 
-        &::before {
-          margin-left: -62px;
-          margin-top: -13px;
-        }
+      &::before {
+        margin-left: -62px;
+        margin-top: -13px;
       }
     }
 
@@ -89,6 +100,7 @@
         background-image: url("../img/contacts-mail-y.svg");
       }
     }
+
     &--telicon,
     &--mailicon {
       display: inline-block;

@@ -1,18 +1,16 @@
 .directions {
-  padding: 0 25px;
   z-index: 6;
   background-color: @litegray;
   position: relative;
-  margin-top: -45px;
+  margin-top: -20px;
   padding-top: 132px;
   padding-bottom: 30px;
   border-radius: 0 0 25px 25px;
 
-  @media (min-width: 768px) {
-    padding: 0 40px;
-    margin-top: -45px;
-    padding-top: 112px;
-    padding-bottom: 30px;
+  @media (min-width: @screen-md) {
+    padding-top: 57px;
+    background: @litegray url("../img/flags-back@1x.png") 90% 20% no-repeat;
+    border-radius: 0 0 35px 35px;
   }
 
   &__wrapper {
@@ -28,8 +26,8 @@
     font-size: 24px;
 
     @media (min-width: 768px) {
-    font-size: 45px;
-    line-height: 45px;
+      font-size: 45px;
+      line-height: 45px;
     }
   }
 
@@ -41,9 +39,10 @@
     color: @greyish-brown;
 
     @media (min-width: 768px) {
-    font-size: 28px;
-    line-height: 33px;
-    width: 340px;
+      font-size: 28px;
+      line-height: 33px;
+      width: 340px;
+      margin-bottom: 113px;
     }
   }
 
@@ -56,20 +55,23 @@
 
     @media (min-width: 768px) {
       padding-bottom: 0;
-    width: 616px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
+      width: 616px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      border-radius: 20px;
     }
-
   }
 
   &__to-all {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
-    font-style: 18px;
+    font-size: 18px;
+    font-weight: 700;
     width: 100%;
     border-radius: 10px;
     text-align-last: left;
@@ -80,13 +82,37 @@
       display: block;
       content: "";
       position: absolute;
-      right: 40px;
+      top: 40%;
+      right: 34px;
       border-style: solid;
       border-width: 7px 5px 7px 10px;
       border-color: transparent transparent transparent #1d2e5b;
     }
+
     @media (min-width: 768px) {
-    padding-top: 24px;
+      margin: 0 35px;
+      margin-top: 47px;
+      margin-bottom: 50px;
+      width: 618px;
+      font-size: 24px;
+      border-radius: 20px;
+      padding-left: 34px;
+      padding-right: 34px;
+      padding-top: 31px;
+      padding-bottom: 32px;
+      line-height: 24px;
+
+      &::before {
+        width: 0;
+        height: 0;
+        display: block;
+        content: "";
+        position: absolute;
+        margin-left: 550px;
+        border-style: solid;
+        border-width: 7px 5px 7px 10px;
+        border-color: transparent transparent transparent #1d2e5b;
+      }
     }
   }
 }
