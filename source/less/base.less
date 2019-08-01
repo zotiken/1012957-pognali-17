@@ -1,0 +1,43 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Blogger Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background: @background;
+
+  @media (min-width: @screen-md) {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  @media (min-width: @screen-xl) {
+    font-size: 24px;
+  }
+}
+
+.catalog {
+  background-color: @litegray;
+}
+
+.wrapper {
+  padding: 0 24px;
+
+  @media (min-width: @screen-md) {
+    padding: 0 40px;
+  }
+}

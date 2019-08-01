@@ -1,0 +1,83 @@
+.create-profile {
+  z-index: 4;
+  background-color: @litegray;
+  position: relative;
+  margin-top: -25px;
+  padding-top: 62px;
+  padding-bottom: 30px;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: @screen-md) {
+    border-radius: 0 0 35px 35px;
+    padding-bottom: 80px;
+  }
+
+  &__wrapper {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: @screen-md) {
+      margin: 0 35px;
+    }
+  }
+
+  &__link {
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-right: 128px;
+    padding-bottom: 44px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    background-size: 40%;
+    color: @orange;
+    font-size: 24px;
+    line-height: 24px;
+
+    @media (min-width: @screen-md) {
+      padding-top: 13px;
+      padding-right: 0;
+      padding-bottom: 74px;
+
+      font-size: 45px;
+      line-height: 45px;
+      background-image: none;
+      text-align: center;
+    }
+  }
+
+  &__block {
+    @media (min-width: @screen-md) {
+      padding-left: 56px;
+      margin-bottom: 54px;
+    }
+  }
+
+  &__price {
+    text-decoration: none;
+    color: #192144;
+
+    @media (min-width: @screen-md) {
+      padding-left: 56px;
+
+      &::before {
+        margin-left: -90px;
+        margin-top: -20px;
+        position: absolute;
+        content: attr(data-id);
+        display: block;
+        line-height: 34px;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        background-color: #e2e5f2;
+        text-align: center;
+      }
+    }
+  }
+}

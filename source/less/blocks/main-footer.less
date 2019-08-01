@@ -1,0 +1,49 @@
+.main-footer {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+  z-index: 8;
+  background-color: @white;
+  margin-top: -25px;
+  padding-top: 38px;
+  padding-bottom: 30px;
+  border-radius: 25px 25px 0 0;
+
+  @media (min-width: @screen-md) {
+    min-width: @screen-md;
+    width: 80vw;
+    max-width: @screen-xl;
+    flex-direction: row;
+  }
+
+  @media (min-width: @screen-xl) {
+    width: @screen-xl;
+  }
+
+
+  &__copyright {
+    width: 270px;
+    text-decoration: none;
+    color: @greyish-brown;
+    font-weight: normal;
+    padding-top: 22px;
+    border-top: 1px solid @litegray;
+
+    &::before {
+      width: 27px;
+      height: 34px;
+      display: block;
+      content: "";
+      position: absolute;
+      right: 25px;
+      margin-top: -10px;
+      background-image: url("../img/htmlacademy.svg");
+    }
+  }
+}

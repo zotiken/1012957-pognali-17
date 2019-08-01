@@ -1,0 +1,101 @@
+.whereabouts {
+  &__block {
+    position: relative;
+    z-index: 2;
+    background-color: @yellow;
+    margin-top: -25px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  &__wrapper {
+    @media (min-width: @screen-xl) {
+      display: flex;
+    }
+  }
+
+  &__adress {
+    width: 143px;
+    text-transform: uppercase;
+    margin-left: 86px;
+    margin-bottom: 35px;
+    font-family: "Blogger Sans", serif;
+    font-weight: 700;
+
+    @media (min-width: @screen-md) {
+      margin: 0 auto;
+      margin-bottom: 35px;
+      width: 430px;
+      font-size: 28px;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      margin-left: -62px;
+      margin-top: -7px;
+      content: "";
+      width: 45px;
+      height: 45px;
+      background-color: #121936;
+      background-image: url("../img/contacts-location\ -\ Copy.svg");
+      border-radius: 50%;
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-style: 18px;
+    width: 100%;
+    color: #1d2e5b;
+    border-radius: 10px;
+    text-align-last: left;
+    border: 2px solid #192144;
+
+    &::before {
+      width: 0;
+      height: 0;
+      display: block;
+      content: "";
+      position: absolute;
+      right: 40px;
+      border-style: solid;
+      border-width: 7px 5px 7px 10px;
+      border-color: transparent transparent transparent #1d2e5b;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 324px;
+    }
+  }
+
+
+  &__maps {
+    z-index: 1;
+    position: relative;
+    margin-top: -15px;
+  }
+
+  &__maps-win {
+    @media (min-width: @screen-md) {
+      width: @screen-md;
+      height: 491px;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: @screen-xl;
+      height: 436px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.main-header {
+  &__container {
+    box-sizing: border-box;
+    width: @screen-sm;
+    margin: 0 auto;
+
+    @media (min-width: @screen-md) {
+      width: @screen-md;
+      max-width: @screen-xl;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: @screen-xl;
+    }
+  }
+
+  &--catalog {
+    position: relative;
+    z-index: 5;
+    background-color: @dark;
+    margin-top: 0;
+    padding-top: 19px;
+    padding-bottom: 70px;
+  }
+
+  &__logo {
+    display: block;
+    width: 100px;
+    height: 19px;
+    background-image: url("../img/logo-mobile-white@1x.png");
+
+    @media (min-width: @screen-md) {
+      display: block;
+      width: 166px;
+      height: 42px;
+      background-image: url("../img/logo-tablet-white@1x.png");
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+
+    &--catalog {
+      background-color: @dark;
+    }
+
+    @media (min-width: @screen-md) {
+      padding: 0 40px;
+    }
+  }
+}
