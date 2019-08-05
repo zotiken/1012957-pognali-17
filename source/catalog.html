@@ -8,270 +8,352 @@
 </head>
 
 <body class="catalog">
-    <header class="main-header main-header--catalog">
-        <div class="main-header__container">
-            <div class="main-header-wrapper main-header-wrapper--catalog">
-                <a class="main-nav__logo"></a>
-                <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Меню</span>
-              </button>
+    <header class="main-header">
+        <div class="main-header__container main-header__container--catalog">
+            <div class="main-header__wrapper">
+                <div class="main-nav__block-logo">
+                    <a class="main-nav__logo logotype"></a>
+                </div>
                 <nav class="main-nav">
-                    <div class="main-nav__wrapper">
-                        <ul class="main-nav__list site-navigation">
-                            <li class="site-navigation__item">
-                                <a href="">О сервисе</a>
-                            </li>
-                            <li class="site-navigation__item">
-                                <a href="">Направления</a>
-                            </li>
-                            <li class="site-navigation__item">
-                                <a href="">Попутчики</a>
-                            </li>
-                        </ul>
-                        <a class="user-navigation__link user-navigation__link--signin button" href="">авторизация</a>
-                        <section class="main-nav__list user-navigation">
-                            <h2 class="visually-hidden">Меню пользователя</h2>
-                            <div class="user-navigation__items">
-                                <div class="user-navigation__wrapper">
-                                    <a class="user-navigation__link user-navigation__link--telefon" href="">8 800 555-86-28</a>
-                                    <a class="user-navigation__link user-navigation__link--email" href="">mail@htmlacademy.ru</a>
-                                </div>
-                                <div class="user-navigation__social user-social">
-                                    <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
-                                        <span class="visually-hidden">Facebook</span></a>
-                                    <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
-                                        <span class="visually-hidden">VKontakte</span></a>
-                                    <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
-                                        <span class="visually-hidden"> Instagram</span></a>
-                                </div>
-                            </div>
-                        </section>
+                    <ul class="main-nav__site site-navigation">
+                        <li class="site-navigation__item">
+                            <a href="">О сервисе</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Направления</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Попутчики</a>
+                        </li>
+                    </ul>
+                    <!-- <a class="user-navigation__link user-navigation__link--signin button" href="">авторизация</a> -->
+                    <div class="main-nav__user user-navigation">
+                        <div class="user-navigation__items">
+                            <a class="user-navigation__link user-navigation__link--signin  button" href="">авторизация</a>
+                            <a class="user-navigation__link  user-navigation__link--telicon" href="">
+                                <span class="visually-hidden">8800555-86-28</span></a>
+                            <a class="user-navigation__link  user-navigation__link--mailicon" href="">
+                                <span class="visually-hidden">mail@htmlacademy.ru</span></a>
+                        </div>
                     </div>
+                    <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
                 </nav>
             </div>
-    </header>
-    <main class="catalog-main">
-        <div class="site-main__container">
-            <h1 class="visually-hidden">Выбор попутчика</h1>
-            <!-- филтер попутчиков -->
-            <section class="fellow-travellers__filter">
-                <h2 class="fellow-travellers__filter-title">Фильтрация по странам</h2>
-            </section>
+            <div class="main-header__menu menu">
+                <div class="menu__wrapper">
+                    <div class="menu__block-logo">
+                        <a class="menu__logo logotype"></a>
+                    </div>
+                    <button class="menu__toggle" type="button"></button>
 
-            <section class="fellow-travellers fellow-travellers--catalog">
+                    <ul class="menu__block site-navigation">
+                        <li class="site-navigation__item">
+                            <a href="">О сервисе</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Направления</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Попутчики</a>
+                        </li>
+                    </ul>
+                    <a class="menu__item user-navigation__link user-navigation__link--signin button" href="">авторизация</a>
+                    <section class="menu__block user-navigation">
+                        <h2 class="visually-hidden">Меню пользователя</h2>
+                        <div class="user-navigation__items">
+                            <div class="user-navigation__wrapper">
+                                <a class="user-navigation__link user-navigation__link--telefon" href="">8 800 555-86-28</a>
+                                <a class="user-navigation__link user-navigation__link--email" href="">mail@htmlacademy.ru</a>
+                            </div>
+                            <div class="menu__block user-navigation__social user-social">
+                                <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
+                                    <span class="visually-hidden">Facebook</span></a>
+                                <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
+                                    <span class="visually-hidden">VKontakte</span></a>
+                                <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
+                                    <span class="visually-hidden"> Instagram</span></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="main-header__catalog-title-nav ">
                 <h2 class="fellow-travellers__title fellow-travellers__title--catalog">
                     Попутчики
                 </h2>
-                <div class="fellow-travellers__item fellow-travellers__item--filter">
-                    <!-- filter -->
-                </div>
-
-                <div class="fellow-travellers__item">
-                    <div class="fellow-travellers__info fellow-travellers__info--catalog">
-                        <div class="fellow-travellers__box">
-                            <a class="fellow-travellers__avatar-link" href="">
-                                <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
-                            </a>
-
-                            <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
-                                <a href="#">Таня Фирсова</a>
-                            </h3>
-                        </div>
-                        <p class="fellow-travellers__interest">
-                            <a href="" class="fellow-travellers__interest-item">#ЗОЖ</a>
-                            <a href="" class="fellow-travellers__interest-item">#ПП</a>
-                            <a href="" class="fellow-travellers__interest-item">#Фитнес</a>
-                            <a href="" class="fellow-travellers__interest-item">#пляж</a>
-                            <a href="" class="fellow-travellers__interest-item">#авокадо</a>
-                            <a href="" class="fellow-travellers__interest-item">#смузи</a>
+                <a class="fellow-travellers__header-link " href="/index.html">На главную</a>
+            </div>
+    </header>
+    <main class="site-main">
+        <div class="site-main__container">
+            <h1 class="visually-hidden">Выбор попутчика</h1>
+            <!-- филтер попутчиков -->
+            <section class="fellow-travellers__filter country-filter">
+                <div class="country-filter__header">
+                    <h2 class="country-filter__title">Фильтрация по странам</h2>
+                    <div class="country-filter__region">
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="euro"><label class="country-filter__item-value" for="euro">Европа</label>
                         </p>
-                        <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
-                            <h3>хочет посетить:</h3>
-                            <img class="country-flag" src="#" alt="флаг Таиланда" />
-                            <img class="country-flag" src="#" alt="флаг Таиланда" />
-                            <img class="country-flag" src="#" alt="флаг Сейшельские Острова" />
-                        </div>
-                        <div class="fellow-travellers__box">
-                            <div class="fellow-travellers__vehicle">
-                                <h3>транспорт:</h3>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
-                                    <span class="visually-hidden">самолет</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
-                                    <span class="visually-hidden">автобус</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
-                                    <span class="visually-hidden">велосипед</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run">
-                                    <span class="visually-hidden">бег</span>
-                                </a>
-                            </div>
-                            <div class="fellow-travellers__level">
-                                <h3 class="fellow-travellers__level-title">левел:</h3>
-                                <p class="fellow-travellers__level-value">99</p>
-                            </div>
-                        </div>
-                        <a class="fellow-travellers__link  button" href="#">Позвать!</a>
-                    </div>
-                </div>
-
-                <div class="fellow-travellers__item">
-                    <div class="fellow-travellers__info fellow-travellers__info--catalog">
-                        <div class="fellow-travellers__box">
-                            <a class="fellow-travellers__avatar-link" href="#">
-                                <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика" />
-                            </a>
-
-                            <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
-                                <a href="#">Петя Демин</a>
-                            </h3>
-                        </div>
-                        <p class="fellow-travellers__interest">
-                            <a href="" class="fellow-travellers__interest-item">#бургер</a>
-                            <a href="" class="fellow-travellers__interest-item">#бар</a>
-                            <a href="" class="fellow-travellers__interest-item">#футбол</a>
-                            <a href="" class="fellow-travellers__interest-item">#концерт</a>
-                            <a href="" class="fellow-travellers__interest-item">#крафт</a>
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="asia"><label class="country-filter__item-value" for="asia">Азия</label>
                         </p>
-                        <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
-                            <h3>хочет посетить:</h3>
-                            <img class="country-flag" src="#" alt="флаг Германии" />
-                            <img class="country-flag" src="#" alt="флаг Чехии" />
-                        </div>
-                        <div class="fellow-travellers__box">
-                            <div class="fellow-travellers__vehicle">
-                                <h3>транспорт:</h3>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
-                                    <span class="visually-hidden">самолет</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
-                                    <span class="visually-hidden">автобус</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
-                                    <span class="visually-hidden">велосипед</span>
-                                </a> fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
-                                <span class="visually-hidden">бег</span>
-                                </a>
-                            </div>
-                            <div class="fellow-travellers__level">
-                                <h3 class="fellow-travellers__level-title">левел:</h3>
-                                <p class="fellow-travellers__level-value">80</p>
-                            </div>
-                        </div>
-                        <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="america"><label class="country-filter__item-value" for="america">Америка</label>
+                        </p>
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="island"><label class="country-filter__item-value" for="island">Острова</label>
+                        </p>
                     </div>
-                </div>
+                    <button class="country-filter__toggle" type="button">
+            <span class="visually-hidden">показать все</span>
+          </button>
 
-                <div class="fellow-travellers__item">
-                    <div class="fellow-travellers__info fellow-travellers__info--catalog">
-                        <div class="fellow-travellers__box">
-                            <a class="fellow-travellers__avatar-link" href="#">
-                                <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика" />
-                            </a>
-                            <h3 class="fellow-travellers__name  fellow-travellers__name--catalog">
-                                <a href="#">Марк Смолов</a>
-                            </h3>
-                        </div>
-                        <p class="fellow-travellers__interest">
-                            <a href="" class="fellow-travellers__interest-item">#рэп</a>
-                            <a href="" class="fellow-travellers__interest-item">#тату</a>
-                            <a href="" class="fellow-travellers__interest-item">#хайпбист</a>
-                            <a href="" class="fellow-travellers__interest-item">#кроссовки</a>
-                            <a href="" class="fellow-travellers__interest-item">#суприм</a>
-                        </p>
-                        <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
-                            <h3>хочет посетить:</h3>
-                            <img class="country-flag" src="#" alt="флаг США" />
-                            <img class="country-flag" src="#" alt="флаг Австралия" />
-                            <img class="country-flag" src="#" alt="флаг Доминикана" />
-                        </div>
-                        <div class="fellow-travellers__box">
-                            <div class="fellow-travellers__vehicle">
-                                <h3>транспорт:</h3>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
-                                    <span class="visually-hidden">самолет</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
-                                    <span class="visually-hidden">автобус</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
-                                    <span class="visually-hidden">велосипед</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
-                                    <span class="visually-hidden">бег</span>
-                                </a>
-                            </div>
-                            <div class="fellow-travellers__level">
-                                <h3 class="fellow-travellers__level-title">левел:</h3>
-                                <p class="fellow-travellers__level-value">25</p>
-                            </div>
-                        </div>
-                        <a class="fellow-travellers__link  button" href="#">Позвать!</a>
-                    </div>
                 </div>
-                <div class="fellow-travellers__item">
-                    <div class="fellow-travellers__info fellow-travellers__info--catalog">
-                        <div class="fellow-travellers__box">
-                            <a class="fellow-travellers__avatar-link" href="#">
-                                <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика" />
-                            </a>
-                            <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
-                                <a href="#">Лариса Роговая</a>
-                            </h3>
-                        </div>
-                        <p class="fellow-travellers__interest">
-                            <a href="" class="fellow-travellers__interest-item">#образование</a
-              >
-              <a href="" class="fellow-travellers__interest-item">#карьера</a>
-                            <a href="" class="fellow-travellers__interest-item">#учеба</a>
-                            <a href="" class="fellow-travellers__interest-item">#линкедин</a>
-                        </p>
-                        <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
-                            <h3>хочет посетить:</h3>
-                            <img class="country-flag" src="#" alt="флаг Великобритания" />
-                            <img class="country-flag" src="#" alt="флаг Германия" />
-                        </div>
-                        <div class="fellow-travellers__box">
-                            <div class="fellow-travellers__vehicle">
-                                <h3>транспорт:</h3>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
-                                    <span class="visually-hidden">самолет</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
-                                    <span class="visually-hidden">автобус</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
-                                    <span class="visually-hidden">велосипед</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
-                                    <span class="visually-hidden">бег</span>
-                                </a>
-                            </div>
-                            <div class="fellow-travellers__level">
-                                <h3 class="fellow-travellers__level-title">левел:</h3>
-                                <p class="fellow-travellers__level-value">50</p>
-                            </div>
-                        </div>
-                        <a class="fellow-travellers__link  button" href="#">Позвать!</a>
-                    </div>
-                </div>
-                <div class="fellow-travellers__navigation">
-                    <a class="fellow-travellers__navigation-show-more">Показать еще</a>
-                    <div class="fellow-travellers__navigation-list">
-                        <button class="fellow-travellers__navigation-prev-list" type="button">
-              <span class="visually-hidden">предыдущие</span>
-            </button>
-                        <button class="fellow-travellers__navigation-next-list" type="button">
-              <span class="visually-hidden">следующие</span>
-            </button>
-                    </div>
+                <div class="country-filter__index">
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="a"><label class="country-filter__letter-value" for="a">а</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="b"><label class="country-filter__letter-value" for="b">б</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="v"><label class="country-filter__letter-value" for="v">в</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="g"><label class="country-filter__letter-value" for="g">г</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="d"><label class="country-filter__letter-value" for="d">д</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="e"><label class="country-filter__letter-value" for="e">е</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="ee"><label class="country-filter__letter-value" for="ee">ё</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">ж</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="z"><label class="country-filter__letter-value" for="z">з</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="i"><label class="country-filter__letter-value" for="i">и</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="ii"><label class="country-filter__letter-value" for="ii">й</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="k"><label class="country-filter__letter-value" for="k">к</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="l"><label class="country-filter__letter-value" for="l">л</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="m"><label class="country-filter__letter-value" for="m">м</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="n"><label class="country-filter__letter-value" for="n">н</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="o"><label class="country-filter__letter-value" for="o">о</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="p"><label class="country-filter__letter-value" for="p">п</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="r"><label class="country-filter__letter-value" for="r">р</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="c"><label class="country-filter__letter-value" for="c">с</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="t"><label class="country-filter__letter-value" for="t">т</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">у</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">ф</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">х</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">ц</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">ч</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">ш</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">щ</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="A"><label class="country-filter__letter-value" for="euro">э</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="yu"><label class="country-filter__letter-value" for="yu">ю</label>
+                    <input class="country-filter__letter visually-hidden" type="radio" name="same" id="ya"><label class="country-filter__letter-value" for="ya">я</label>
                 </div>
             </section>
+            <section class="fellow-travellers fellow-travellers--catalog">
+                <div class="fellow-travellers__wrapper fellow-travellers__wrapper--filter">
+                    <div class="fellow-travellers__item fellow-travellers__item--filter">
+                        <!-- filter -->
+                    </div>
+                </div>
+                <div class="fellow-travellers__wrapper">
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link" href="">
+                                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
+                                </a>
+
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                    <a href="#">Таня Фирсова</a>
+                                </h3>
+                            </div>
+                            <p class="fellow-travellers__interest">
+                                <a href="" class="fellow-travellers__interest-item">#ЗОЖ</a>
+                                <a href="" class="fellow-travellers__interest-item">#ПП</a>
+                                <a href="" class="fellow-travellers__interest-item">#Фитнес</a>
+                                <a href="" class="fellow-travellers__interest-item">#пляж</a>
+                                <a href="" class="fellow-travellers__interest-item">#авокадо</a>
+                                <a href="" class="fellow-travellers__interest-item">#смузи</a>
+                            </p>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг Таиланда" />
+                                <img class="country-flag" src="#" alt="флаг Таиланда" />
+                                <img class="country-flag" src="#" alt="флаг Сейшельские Острова" />
+                            </div>
+                            <div class="fellow-travellers__box">
+                                <div class="fellow-travellers__vehicle">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">99</p>
+                                </div>
+                            </div>
+                            <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                        </div>
+                    </div>
+
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link" href="#">
+                                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика" />
+                                </a>
+
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                    <a href="#">Петя Демин</a>
+                                </h3>
+                            </div>
+                            <p class="fellow-travellers__interest">
+                                <a href="" class="fellow-travellers__interest-item">#бургер</a>
+                                <a href="" class="fellow-travellers__interest-item">#бар</a>
+                                <a href="" class="fellow-travellers__interest-item">#футбол</a>
+                                <a href="" class="fellow-travellers__interest-item">#концерт</a>
+                                <a href="" class="fellow-travellers__interest-item">#крафт</a>
+                            </p>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг Германии" />
+                                <img class="country-flag" src="#" alt="флаг Чехии" />
+                            </div>
+                            <div class="fellow-travellers__box">
+                                <div class="fellow-travellers__vehicle">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a> fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                    <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">80</p>
+                                </div>
+                            </div>
+                            <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                        </div>
+                    </div>
+
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link" href="#">
+                                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика" />
+                                </a>
+                                <h3 class="fellow-travellers__name  fellow-travellers__name--catalog">
+                                    <a href="#">Марк Смолов</a>
+                                </h3>
+                            </div>
+                            <p class="fellow-travellers__interest">
+                                <a href="" class="fellow-travellers__interest-item">#рэп</a>
+                                <a href="" class="fellow-travellers__interest-item">#тату</a>
+                                <a href="" class="fellow-travellers__interest-item">#хайпбист</a>
+                                <a href="" class="fellow-travellers__interest-item">#кроссовки</a>
+                                <a href="" class="fellow-travellers__interest-item">#суприм</a>
+                            </p>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг США" />
+                                <img class="country-flag" src="#" alt="флаг Австралия" />
+                                <img class="country-flag" src="#" alt="флаг Доминикана" />
+                            </div>
+                            <div class="fellow-travellers__box">
+                                <div class="fellow-travellers__vehicle">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">25</p>
+                                </div>
+                            </div>
+                            <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                        </div>
+                    </div>
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link" href="#">
+                                    <img class="fellow-travellers__avatar fellow-travellers__avatar--mini" src="img/av-smolov-min.png" width="70" height="70" alt="фотография попутчика" />
+                                </a>
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                    <a href="#">Лариса Роговая</a>
+                                </h3>
+                            </div>
+                            <p class="fellow-travellers__interest">
+                                <a href="" class="fellow-travellers__interest-item">#образование</a>
+                                <a href="" class="fellow-travellers__interest-item">#карьера</a>
+                                <a href="" class="fellow-travellers__interest-item">#учеба</a>
+                                <a href="" class="fellow-travellers__interest-item">#линкедин</a>
+                            </p>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг Великобритания" />
+                                <img class="country-flag" src="#" alt="флаг Германия" />
+                            </div>
+                            <div class="fellow-travellers__box">
+                                <div class="fellow-travellers__vehicle">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">50</p>
+                                </div>
+                            </div>
+                            <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                        </div>
+                    </div>
+                    <div class="fellow-travellers__navigation">
+                        <a class="fellow-travellers__navigation-show-more">Показать еще</a>
+                        <div class="fellow-travellers__navigation-list">
+                            <button class="fellow-travellers__navigation-prev-list" type="button">
+                <span class="visually-hidden">предыдущие</span>
+              </button>
+                            <button class="fellow-travellers__navigation-next-list" type="button">
+                <span class="visually-hidden">следующие</span>
+              </button>
+                        </div>
+                    </div>
+            </section>
+            </div>
         </div>
     </main>
     <footer class="main-footer">
-        <a class="logotype logotype--dark">
+        <a class="main-footer__logo logotype logotype--dark">
             <img src="img/site-logo-blue.png" alt="Погнали?" />
         </a>
         <div class="main-footer__social user-social user-social--footer">
@@ -282,9 +364,8 @@
             <a class="user-social__item user-social__item--instagram user-social__item--circle" href="#">
                 <span class="visually-hidden"> Instagram</span></a>
         </div>
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a
-      >
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
-  </body>
+</body>
 
 </html>

@@ -13,6 +13,15 @@
       width: @screen-xl;
       background: transparent;
     }
+
+    &--catalog {
+      border-radius: 0 0 25px 25px;
+
+      @media (min-width: @screen-md) {
+      border-radius: 0 0 35px 35px;
+      }
+
+    }
   }
 
   &--catalog {
@@ -52,6 +61,25 @@
     @media (min-width: @screen-md) {
       padding: 0 5.21%;
       padding-top: 40px;
+    }
+  }
+
+  &__catalog-title-nav {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 25px;
+    padding-top: 59px;
+    border-radius: 0 0 20px 20px;
+    background-color: @dark;
+
+    @media (min-width: @screen-md) {
+      padding: 0 77px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding-bottom: 65px;
+      padding-top: 136px;
+      border-radius: 0 0 45px 45px;
     }
   }
 }

@@ -1,0 +1,131 @@
+.country-filter {
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__toggle {
+    box-sizing: border-box;
+    // -- not-js
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 10px;
+    background: none;
+    border: none;
+
+    @media (min-width: @screen-md) {
+      display: block;
+      transform: translate(-50%, 0);
+    }
+
+    @media (min-width: @screen-xl) {
+      display: none;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-left: -50%;
+      width: 100%;
+      height: 2px;
+      background: black;
+    }
+
+    &--close {
+      display: inline-block;
+      margin-left: 140px;
+      width: 19px;
+      height: 19px;
+      border: none;
+      background-image: url("../img/close.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @screen-md) {
+        display: none;
+        min-height: 19px;
+        width: 19px;
+        height: 19px;
+        border: none;
+        background-image: url("../img/close.svg");
+        background-repeat: no-repeat;
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        display: none;
+        position: absolute;
+        margin-left: -5px;
+        width: 25px;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
+
+    &::after {
+      margin-top: -3.5px;
+    }
+
+    &::before {
+      margin-top: 3.5px;
+    }
+  }
+
+  &__region {
+    display: none;
+
+    @media (min-width: @screen-md) {
+    display: flex;
+    }
+  }
+
+  &__item-value {
+    color: @dark-blue-grey;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    list-style: none;
+    text-transform: uppercase;
+
+    &:checked + .country-filter__item-value {
+      color: @black;
+    }
+  }
+
+  &__index{
+    display: flex;
+    flex-wrap: wrap;
+    width: 225px;
+  }
+
+  &__letter-value {
+    color: @dark-blue-grey;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+    display: block;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+  }
+
+  &__letter {
+    &:checked + .country-filter__letter-value {
+      color: @black;
+    }
+  }
+
+}
