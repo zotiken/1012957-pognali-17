@@ -1,16 +1,17 @@
 .main-header {
   &__container {
     box-sizing: border-box;
-    width: @screen-sm;
+    width: 100%;
     margin: 0 auto;
+    background-color: #161c35;
 
     @media (min-width: @screen-md) {
-      width: @screen-md;
-      max-width: @screen-xl;
+      background-color:#192144;
     }
 
     @media (min-width: @screen-xl) {
       width: @screen-xl;
+      background: transparent;
     }
   }
 
@@ -39,7 +40,8 @@
 
   &__wrapper {
     position: relative;
-    padding: 0 25px;
+    padding: 0 7.81%;
+    padding-top: 27px;
     display: flex;
     justify-content: space-between;
 
@@ -48,7 +50,8 @@
     }
 
     @media (min-width: @screen-md) {
-      padding: 0 40px;
+      padding: 0 5.21%;
+      padding-top: 40px;
     }
   }
 }

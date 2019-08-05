@@ -3,6 +3,12 @@
     margin-left: 51px;
   }
 
+  @media (min-width: @screen-xl) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
   &__item {
     list-style: none;
     margin-bottom: 45px;
@@ -47,17 +53,20 @@
 
       @media (min-width: @screen-md) {
         font-size: 20px;
+        line-height: 30px;
         display: block;
         margin-left: auto;
-        width: 188px;
-        padding-top: 17px;
-        padding-bottom: 14px;
+        padding-top: 12px;
+        padding-bottom: 8px;
         padding-left: 28px;
         padding-right: 31px;
+        border-radius: 25px;
       }
 
       @media (min-width: @screen-xl) {
         order: 3;
+        z-index: 2;
+
       }
     }
 
@@ -106,12 +115,22 @@
       display: inline-block;
       width: 40px;
       height: 40px;
-      border-radius: 20px;
+      border-radius: 50%;
 
       &::before {
         position: relative;
         display: inline-block;
         content: "";
+      }
+
+      @media (min-width: @screen-md) {
+        display: none;
+      }
+
+      @media (min-width: @screen-xl) {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
       }
     }
 
@@ -125,6 +144,10 @@
       background: @orange url("../img/topmenu-phone.svg") no-repeat top/cover;
       width: 21px;
       height: 21px;
+
+      @media (min-width: @screen-xl) {
+        margin-top: 13px;
+      }
     }
 
     &--mailicon {
@@ -137,6 +160,10 @@
       background: @liteorange url("../img/topmenu-mail.svg") no-repeat top/cover;
       width: 18px;
       height: 14px;
+
+      @media (min-width: @screen-xl) {
+        margin-top: 17px;
+      }
     }
   }
 

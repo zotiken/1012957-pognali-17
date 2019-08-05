@@ -1,0 +1,60 @@
+.menu {
+  min-height: 568px;
+  z-index: 1;
+  display: none;
+  background-color: @white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  @media (min-width: @screen-md) {
+    min-height: 910px;
+  }
+
+  @media (min-width: @screen-xl) {
+  }
+
+  &__wrapper {
+    padding: 25px;
+
+    @media (min-width: @screen-md) {
+      padding: 40px;
+    }
+  }
+
+  &__block-logo {
+    margin: auto 0;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 79px;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 100px;
+    height: 19px;
+    background-image: url(../img/logo-mobile-blue@1x.png);
+  }
+
+  &__toggle {
+    display: inline-block;
+    float: right;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background: none;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @screen-md) {
+      display: inline-block;
+      float: none;
+    }
+  }
+
+  &__item {
+    @media (min-width: @screen-md) {
+      display: none;
+    }
+  }
+}

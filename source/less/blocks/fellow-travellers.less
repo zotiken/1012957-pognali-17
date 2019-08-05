@@ -12,6 +12,11 @@
   padding-bottom: 30px;
   border-radius: 0 0 25px 25px;
 
+  @media (min-width: @screen-xl) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &--catalog {
     background-image: none;
     background-color: transparent;
@@ -36,6 +41,10 @@
 
     @media (min-width: @screen-md) {
       padding: 0 35px;
+    }
+
+    @media (min-width: @screen-xl) {
+      flex-basis: 50%;
     }
   }
 
@@ -101,6 +110,7 @@
   }
 
   &__item {
+    margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 10px;
     width: 270px;
@@ -300,6 +310,8 @@
       content: "";
       position: absolute;
       right: 40px;
+      top: 50%;
+      transform: translate(0, -50%);
       border-style: solid;
       border-width: 7px 5px 7px 10px;
       border-color: transparent transparent transparent #1d2e5b;
@@ -313,6 +325,10 @@
       padding-bottom: 32px;
       font-size: 24px;
       line-height: 24px;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 280px;
     }
   }
 

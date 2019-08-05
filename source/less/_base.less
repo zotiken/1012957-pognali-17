@@ -1,3 +1,4 @@
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -19,6 +20,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   background: @background;
+  min-width: @screen-sm;
 
   @media (min-width: @screen-md) {
     font-weight: 700;
@@ -35,9 +37,13 @@ body {
 }
 
 .wrapper {
-  padding: 0 24px;
+  padding: 0 7.4%;
 
   @media (min-width: @screen-md) {
-    padding: 0 40px;
+    padding: 0 5.21%;
+  }
+
+  @media (min-width: @screen-xl) {
+    padding: 0 4.17%;
   }
 }

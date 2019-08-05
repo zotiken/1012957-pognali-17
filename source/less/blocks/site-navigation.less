@@ -1,12 +1,18 @@
 .site-navigation {
   padding: 0;
   margin: 0;
-  margin-top: 121px;
+  // margin-top: 121px;
   margin-bottom: 58px;
   text-align: center;
 
+  @media (min-width: @screen-md) {
+    text-align: left;
+  }
+
   @media (min-width: @screen-xl) {
+    text-align: center;
     margin: 0;
+    padding-left: 145px;
   }
 
   &__item {
@@ -20,11 +26,22 @@
       text-align: center;
       font-weight: 500;
       font-size: 30px;
+      line-height: 30px;
       color: @black;
+
+      @media (min-width: @screen-md) {
+        font-size: 60px;
+        text-align: left;
+      }
 
       @media (min-width: @screen-xl) {
         color: @white;
+        font-size: 20px;
       }
+    }
+
+    @media (min-width: @screen-xl) {
+      padding: 18px;
     }
   }
 }
