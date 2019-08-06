@@ -12,43 +12,73 @@
     <header class="main-header">
         <div class="main-header__container">
             <div class="main-header__wrapper">
-                <a class="main-nav__logo"></a>
-                <button class="main-nav__toggle" type="button">
-                  <span class="visually-hidden">Меню</span>
-                  </button>
+                <div class="main-nav__block-logo">
+                    <a class="main-nav__logo logotype"></a>
+                </div>
                 <nav class="main-nav">
-                    <div class="main-nav__wrapper">
-                        <ul class="main-nav__list site-navigation">
-                            <li class="site-navigation__item">
-                                <a href="">О сервисе</a>
-                            </li>
-                            <li class="site-navigation__item">
-                                <a href="">Направления</a>
-                            </li>
-                            <li class="site-navigation__item">
-                                <a href="">Попутчики</a>
-                            </li>
-                        </ul>
-                        <a class="user-navigation__link user-navigation__link--signin button" href="">авторизация</a>
-                        <section class="main-nav__list user-navigation">
-                            <h2 class="visually-hidden">Меню пользователя</h2>
-                            <div class="user-navigation__items">
-                                <div class="user-navigation__wrapper">
-                                    <a class="user-navigation__link user-navigation__link--telefon" href="">8 800 555-86-28</a>
-                                    <a class="user-navigation__link user-navigation__link--email" href="">mail@htmlacademy.ru</a>
-                                </div>
-                                <div class="user-navigation__social user-social">
-                                    <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
-                                        <span class="visually-hidden">Facebook</span></a>
-                                    <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
-                                        <span class="visually-hidden">VKontakte</span></a>
-                                    <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
-                                        <span class="visually-hidden"> Instagram</span></a>
-                                </div>
-                            </div>
-                        </section>
+                    <ul class="main-nav__site site-navigation">
+                        <li class="site-navigation__item">
+                            <a href="">О сервисе</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Направления</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Попутчики</a>
+                        </li>
+                    </ul>
+                    <!-- <a class="user-navigation__link user-navigation__link--signin button" href="">авторизация</a> -->
+                    <div class="main-nav__user user-navigation">
+                        <div class="user-navigation__items">
+                            <a class="user-navigation__link user-navigation__link--signin  button" href="">авторизация</a>
+                            <a class="user-navigation__link  user-navigation__link--telicon" href="">
+                                <span class="visually-hidden">8800555-86-28</span></a>
+                            <a class="user-navigation__link  user-navigation__link--mailicon" href="">
+                                <span class="visually-hidden">mail@htmlacademy.ru</span></a>
+                        </div>
                     </div>
+                    <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
                 </nav>
+            </div>
+            <div class="main-header__menu menu">
+                <div class="menu__wrapper">
+                    <div class="menu__block-logo">
+                        <a class="menu__logo logotype"></a>
+                    </div>
+                    <button class="menu__toggle" type="button"></button>
+
+                    <ul class="menu__block site-navigation">
+                        <li class="site-navigation__item">
+                            <a href="">О сервисе</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Направления</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Попутчики</a>
+                        </li>
+                    </ul>
+                    <a class="menu__item user-navigation__link user-navigation__link--signin button" href="">авторизация</a>
+                    <section class="menu__block user-navigation">
+                        <h2 class="visually-hidden">Меню пользователя</h2>
+                        <div class="user-navigation__items">
+                            <div class="user-navigation__wrapper">
+                                <a class="user-navigation__link user-navigation__link--telefon" href="">8 800 555-86-28</a>
+                                <a class="user-navigation__link user-navigation__link--email" href="">mail@htmlacademy.ru</a>
+                            </div>
+                            <div class="menu__block user-navigation__social user-social">
+                                <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
+                                    <span class="visually-hidden">Facebook</span></a>
+                                <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
+                                    <span class="visually-hidden">VKontakte</span></a>
+                                <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
+                                    <span class="visually-hidden"> Instagram</span></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
             <div class="header-content">
                 <div class="header-content__wrapper">
@@ -67,7 +97,7 @@
                                 <span class="visually-hidden">mail@htmlacademy.ru</span></a>
                         </div>
                     </div>
-                    <section class="header-content reviews">
+                    <section class="header-content__reviews reviews">
                         <div class="reviews__wrapper">
                             <h2 class="visually-hidden">Отзывы о сервисе</h2>
                             <div class="reviews__list">
@@ -80,7 +110,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="header-content selection-stages">
+                    <section class="header-content__selection selection-stages">
                         <h2 class="selection-stages__title visually-hidden">
                             Этапы подбора попутчика
                         </h2>
@@ -251,8 +281,8 @@
                     </div>
                 </div>
                 <button class="fellow-travellers__to-all button" type="button">
-        Показать всеx
-      </button>
+          Показать всеx
+        </button>
             </section>
             <section class="modal modal-bisness-price">
                 <h2 class="modal-bisness-price__title">Бизнес-тарифы</h2>
@@ -267,8 +297,8 @@
                     Ваш продакт-плейсмент Индивидуально
                 </p>
                 <button class="modal-bisness-price__close button" type="button">
-        Закрыть окно
-      </button>
+          Закрыть окно
+        </button>
             </section>
             <section class="create-profile wrapper">
                 <div class="create-profile__wrapper">
@@ -322,7 +352,7 @@
                         <h2 class="visually-hidden whereabouts__title">Наш адрес:</h2>
                         <p class="whereabouts__adress">ул. Большая Конюшенная, 19/8</p>
                         <a class="whereabouts__link button" href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323055%2C59.938631&mode=routes&rtext=~59.938631%2C30.323055&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&z=15">Проложить
-            маршрут</a>
+              маршрут</a>
                     </div>
                 </div>
                 <div class="whereabouts__maps">
@@ -332,7 +362,7 @@
         </div>
     </main>
     <footer class="main-footer">
-        <a class="logotype logotype--dark">
+        <a class="main-footer__logo logotype logotype--dark">
             <img src="img/site-logo-blue.png" alt="Погнали?" />
         </a>
         <div class="main-footer__social user-social user-social--footer">
