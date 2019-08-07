@@ -1,0 +1,168 @@
+.travel-filter {
+  &__wrapper {
+    list-style: none;
+    padding: 0;
+
+    @media (min-width: @screen-md) {
+      padding: 38px;
+      margin: 0;
+    }
+
+    @media (min-width: @screen-xl) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @screen-md) {
+      font-size: 30px;
+      padding-bottom: 37px;
+    }
+  }
+
+  &__dropdown {
+    a {
+      text-decoration: none;
+    }
+
+    [data-toggle="dropdown"] {
+      position: relative;
+      display: block;
+      color: #1d2e5b;
+      font-size: 16px;
+      font-weight: 700;
+      // background: blue;
+      // @include double-shadow($blue);
+      // @include hover-style($blue);
+      // @include text-shadow(0 -1px 0 rgba(0,0,0,0.3));
+      padding: 10px;
+      border-bottom: 1px solid #f3c72b;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: @screen-md) {
+      display: flex;
+
+      [data-toggle="dropdown"] {
+        width: 126px;
+        border: none;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      display: block;
+
+      [data-toggle="dropdown"] {
+        width: auto;
+        border-bottom: 1px solid #f3c72b;
+      }
+    }
+  }
+
+  &__dropdown-menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0;
+
+      a {
+        display: block;
+        padding: 10px 10px;
+      }
+    }
+
+    @media (min-width: @screen-md) {
+      display: flex;
+      width: 100%;
+
+      li {
+        width: 33%;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      display: block;
+      width: auto;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+
+  &__icon-arrow {
+    position: absolute;
+    display: block;
+    font-size: 0.7em;
+    color: black;
+    top: 15px;
+    right: 10px;
+
+    &::before {
+      content: "\25BC";
+    }
+
+    @media (min-width: @screen-md) {
+      display: inline-block;
+      top: 6px;
+      right: auto;
+      font-size: 20px;
+      font-style: normal;
+
+      &::before {
+        content: ":";
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      display: block;
+      top: 15px;
+      right: 10px;
+
+      &::before {
+        content: "\25BC";
+      }
+    }
+  }
+
+  &__item-value {
+    font-size: 20px;
+    color: @greyish-brown;
+  }
+
+  &__level {
+    display: flex;
+    width: 100%;
+  }
+
+  &__level-input {
+    width: 100%;
+
+    @media (min-width: @screen-md) {
+      width: 75px;
+    }
+
+    @media (min-width: @screen-xl) {
+width: 100%;
+    }
+  }
+
+  &__show {
+    background-color: @white;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    color: @dark;
+
+    @media (min-width: @screen-md) {
+      font-size: 20px;
+      border-radius: 25px;
+    }
+  }
+}
