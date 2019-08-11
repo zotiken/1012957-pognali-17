@@ -2,24 +2,27 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="body body--catalog">
-    <header class="main-header main-header--catalog">
-        <div class="main-header-wrapper main-header-wrapper--catalog">
-            <a class="main-header__logo">
-                <img src="img/site-logo.png" alt="Погнали?">
-            </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle " type="button"><span class="visually-hidden">Меню</span></button>
-                <div class="main-nav__wrapper">
-                    <img src="img/site-logo-blue.png" width="96" height="17" alt="Погнали?">
-                    <button class="main-nav__toggle main-nav__toggle--close" type="button">
-            <span class="visually-hidden">закрыть</span></button>
-                    <ul class="main-nav-list site-navigation">
+<body class="catalog">
+    <header class="main-header">
+        <div class="main-header__container main-header__container--catalog">
+            <div class="main-header__wrapper main-header__wrapper--catalog">
+                <div class="main-nav__block-logo">
+                    <a class="main-nav__logo logotype">
+                        <picture>
+                            <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
+                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="погнали" />
+                        </picture>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__site site-navigation">
                         <li class="site-navigation__item">
                             <a href="">О сервисе</a>
                         </li>
@@ -30,51 +33,796 @@
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
-                    <section class="main-nav-list user-navigation">
+                    <!-- <a class="user-navigation__link user-navigation__link--signin button" href="">авторизация</a> -->
+                    <div class="main-nav__user user-navigation">
+                        <div class="user-navigation__items">
+                            <a class="user-navigation__link user-navigation__link--signin  button" href="">авторизация</a>
+                            <a class="user-navigation__link  user-navigation__link--telicon" href="">
+                                <span class="visually-hidden">8800555-86-28</span></a>
+                            <a class="user-navigation__link  user-navigation__link--mailicon" href="">
+                                <span class="visually-hidden">mail@htmlacademy.ru</span></a>
+                        </div>
+                    </div>
+                    <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+                </nav>
+            </div>
+            <div class="main-header__menu menu">
+                <div class="menu__wrapper">
+                    <div class="menu__block-logo">
+                        <a class="menu__logo logotype"></a>
+                    </div>
+                    <button class="menu__toggle" type="button"></button>
+
+                    <ul class="menu__block site-navigation">
+                        <li class="site-navigation__item">
+                            <a href="">О сервисе</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Направления</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="">Попутчики</a>
+                        </li>
+                    </ul>
+                    <a class="menu__item user-navigation__link user-navigation__link--signin button" href="">авторизация</a>
+                    <section class="menu__block user-navigation">
                         <h2 class="visually-hidden">Меню пользователя</h2>
-                        <div class="main-nav-list__wrapper">
-                            <div class="user-navigation__items">
-                                <a class="user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
-                                <div class="user-navigation-wrapper">
-                                    <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
-                                    <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
-                                </div>
-                                <div class="user-navigation-social user-social">
-                                    <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21">
-                                        <span class="visually-hidden">Facebook</span></a>
-                                    <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12">
-                                        <span class="visually-hidden">VKontakte</span></a>
-                                    <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18"> <span class="visually-hidden"> Instagram</span></a>
-                                </div>
+                        <div class="user-navigation__items">
+                            <div class="user-navigation__wrapper">
+                                <a class="user-navigation__link user-navigation__link--telefon" href="">8 800 555-86-28</a>
+                                <a class="user-navigation__link user-navigation__link--email" href="">mail@htmlacademy.ru</a>
+                            </div>
+                            <div class="menu__block user-navigation__social user-social">
+                                <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
+                                    <span class="visually-hidden">Facebook</span></a>
+                                <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
+                                    <span class="visually-hidden">VKontakte</span></a>
+                                <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
+                                    <span class="visually-hidden"> Instagram</span></a>
                             </div>
                         </div>
                     </section>
                 </div>
-            </nav>
-        </div>
-        <!-- <div class="header-content">
-            <div class="header-content-wrapper">
-                <p class="header-content__title"><b>В путешествие с крутыми попутчиками!</b></p>
-                <img class="header-content__traveller" src="img/traveller-illustration.png" width="192" height="255" alt="путешественник">
-                <div class="user-navigation content">
-                    <div class="user-navigation__items">
-                        <a class="user-navigation-link user-navigation-link--signin  button" href="">авторизация</a>
-                        <a class="user-navigation-link  user-navigation-link--telicon" href=""><span class="visually-hidden">8 800555-86-28</span></a>
-                        <a class="user-navigation-link  user-navigation-link--mailicon" href=""><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+            </div>
+            <div class="main-header__form-title-nav ">
+                <div class="fellow-travellers__info fellow-travellers__info--form">
+                    <div class="fellow-travellers__background"></div>
+                    <div class="fellow-travellers__wrapper fellow-travellers__wrapper--form">
+                        <h2 class="fellow-travellers__title fellow-travellers__title--form">
+                            Направления
+                        </h2>
+
+                        <div class="fellow-travellers__level fellow-travellers__level--form">
+                            <p class="fellow-travellers__level-value fellow-travellers__level-value--form">80</p>
+                        </div>
+
+                        <div class="fellow-travellers__box fellow-travellers__box--form">
+                            <h3 class="fellow-travellers__name fellow-travellers__name--form visually-hidden">
+                                <a href="#">Петя Демин</a>
+                            </h3>
+                            <picture>
+                                <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@1x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/av-demin.jpg 1x, img/av-demin.jpg 2x">
+                                <img class="fellow-travellers__avatar fellow-travellers__avatar--form" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика" />
+                            </picture>
+                            </a>
+                        </div>
+
+                        <a class="fellow-travellers__link fellow-travellers__link--foto button" href="#"><span>Сменить</span>
+              фото</a>
+
+                        <fieldset class="fellow-travellers__interest fellow-travellers__interest--form">
+                            <legend>тэги:</legend>
+                            <a href="" class="fellow-travellers__interest-item">#бургер</a>
+                            <a href="" class="fellow-travellers__interest-item">#бар</a>
+                            <a href="" class="fellow-travellers__interest-item">#футбол</a>
+                            <a href="" class="fellow-travellers__interest-item">#концерт</a>
+                            <a href="" class="fellow-travellers__interest-item">#крафт</a>
+                        </fieldset>
+                        <div class="fellow-travellers__box fellow-travellers__box--vehicle fellow-travellers__box--vehicle-form">
+                            <fieldset class="fellow-travellers__vehicle fellow-travellers__vehicle--form">
+                                <legend>транспорт:</legend>
+                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--plane">
+                                    <span class="visually-hidden">самолет</span>
+                                </a>
+                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--bus">
+                                    <span class="visually-hidden">автобус</span>
+                                </a>
+                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--bike">
+                                    <span class="visually-hidden">велосипед</span>
+                                </a>
+                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--run">
+                                    <span class="visually-hidden">бег</span>
+                                </a>
+                            </fieldset>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+    </header>
+    <main class="site-form">
+        <h2 class="visually-hidden">форма путешествинника</h2>
+        <section class="travel-plan">
+            <div class="travel-plan__wrapper">
+                <h3 class="travel-plan__title">Мои планы:</h3>
+                <ul class="travel-plan__container ">
+                    <li class="travel-plan__item road-map">
+                        <div class="road-map__wrapper">
+                            <h4 class="road-map__title"><span>1.</span> Франция, Италия</h4>
+                        </div>
+                    </li>
+                    <li class="travel-plan__item road-map">
+                        <div class="road-map__wrapper">
+                            <h4 class="road-map__title"><span>2.</span> Тайланд, Индонезия</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="add-plane">
+            <div class="add-plane__wrapper">
+                <h3 class="add-plane__title">Добавить план:</h3>
+                <div class="add-plane__item step">
+                    <div class="step__wrapper">
+                        <h4 class="step__title">Шаг 1. Даты пребывания</h4>
+                    </div>
+                </div>
+                <div class="add-plane__item step">
+                    <div class="step__wrapper">
+                        <h4 class="step__title">Шаг 2. Маршрут</h4>
+                    </div>
+                </div>
+                <div class="add-plane__item step">
+                    <div class="step__wrapper">
+                        <h4 class="step__title">Шаг 3. Развлечения</h4>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- <div class="site-main__container">
+            <h1 class="visually-hidden">Выбор попутчика</h1>
+            филтер попутчиков
+            <section class="fellow-travellers__filter country-filter">
+                <div class="country-filter__header">
+                    <h2 class="country-filter__title">Фильтрация по странам</h2>
+                    <div class="country-filter__region">
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="euro" checked><label class="country-filter__item-value" for="euro">Европа</label>
+                        </p>
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="asia"><label class="country-filter__item-value" for="asia">Азия</label>
+                        </p>
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="america"><label class="country-filter__item-value" for="america">Америка</label>
+                        </p>
+                        <p><input class="country-filter__item visually-hidden" type="radio" name="same" id="island"><label class="country-filter__item-value" for="island">Острова</label>
+                        </p>
+                    </div>
+                    <button class="country-filter__toggle" type="button">
+            <span class="country-filter__toggle-text">свернуть</span>
+          </button>
+
+                </div>
+                <div class="country-filter__wrapper">
+                    <div class="country-filter__index">
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="a" checked><label class="country-filter__letter-value" for="a">а</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--А">
+                                <a href="#">Афганистан</a>
+                                <a href="#">Алгерия</a>
+                                <a href="#">Албания</a>
+                                <a href="#">Андорра</a>
+                                <a href="#">Аргентина</a>
+                                <a href="#">Армения</a>
+                                <a href="#">Австралия</a>
+                                <a href="#">Австрия</a>
+                                <a href="#">Азербайджан</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="b"><label class="country-filter__letter-value" for="b">б</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--B">
+                                <a href="#">Багамские Острова</a>
+                                <a href="#">Бангладеш</a>
+                                <a href="#">Барбадос</a>
+                                <a href="#">Бахрейн</a>
+                                <a href="#">Белоруссия</a>
+                                <a href="#">Белиз</a>
+                                <a href="#">Бельгия</a>
+                                <a href="#">Бенин</a>
+                                <a href="#">Болгария</a>
+                                <a href="#">Боливия</a>
+                                <a href="#">Босния и Герцеговина</a>
+                                <a href="#">Ботсвана</a>
+                                <a href="#">Бразилия</a>
+                                <a href="#">Бруней</a>
+                                <a href="#">Буркина-Фасо</a>
+                                <a href="#">Бурунди</a>
+                                <a href="#">Бутан</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="v"><label class="country-filter__letter-value" for="v">в</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--V">
+                                <a href="#">Вануату</a>
+                                <a href="#">Великобритания</a>
+                                <a href="#">Венесуэла</a>
+                                <a href="#">Восточный Тимор</a>
+                                <a href="#">Вьетнам</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="g"><label class="country-filter__letter-value" for="g">г</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--G">
+                                <a href="#">Габон</a>
+                                <a href="#">Гаити</a>
+                                <a href="#">Гайана</a>
+                                <a href="#">Гамбия</a>
+                                <a href="#">Гана</a>
+                                <a href="#">Гватемала</a>
+                                <a href="#">Гвинея</a>
+                                <a href="#">Гвинея-Бисау</a>
+                                <a href="#">Германия</a>
+                                <a href="#">Гондурас</a>
+                                <a href="#">Гренада</a>
+                                <a href="#">Греция</a>
+                                <a href="#">Грузия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="d"><label class="country-filter__letter-value" for="d">д</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--d">
+                                <a href="#">Дания</a>
+                                <a href="#">Джибути</a>
+                                <a href="#">Доминика</a>
+                                <a href="#">Доминикана</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="e"><label class="country-filter__letter-value" for="e">е</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--E">
+                                <a href="#">Египет</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ee"><label class="country-filter__letter-value country-filter__letter-value--empty" for="ee">ё</label>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value country-filter__letter-value--empty" for="euro">ж</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="z"><label class="country-filter__letter-value" for="z">з</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--z">
+                                <a href="#">Замбия</a>
+                                <a href="#">Зимбабве</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="i"><label class="country-filter__letter-value" for="i">и</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--i">
+                                <a href="#">Израиль</a>
+                                <a href="#">Индия</a>
+                                <a href="#">Индонезия</a>
+                                <a href="#">Иордания</a>
+                                <a href="#">Ирак</a>
+                                <a href="#">Иран</a>
+                                <a href="#">Исландия</a>
+                                <a href="#">Испания</a>
+                                <a href="#">Италия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ii"><label class="country-filter__letter-value country-filter__letter-value--empty" for="ii">й</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="k"><label class="country-filter__letter-value" for="k">к</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--k">
+                                <a href="#">Кабо-Верде</a>
+                                <a href="#">Казахстан</a>
+                                <a href="#">Камбоджа</a>
+                                <a href="#">Камерун</a>
+                                <a href="#">Канада</a>
+                                <a href="#">Катар</a>
+                                <a href="#">Кения</a>
+                                <a href="#">Кипр</a>
+                                <a href="#">Киргизия</a>
+                                <a href="#">Кирибати</a>
+                                <a href="#">Китай</a>
+                                <a href="#">Колумбия</a>
+                                <a href="#">Коморы</a>
+                                <a href="#">Конго</a>
+                                <a href="#">КНДР</a>
+                                <a href="#">Республика Корея</a>
+                                <a href="#">Коста-Рика</a>
+                                <a href="#">Кот-д’Ивуар</a>
+                                <a href="#">Куба</a>
+                                <a href="#">Кувейт</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="l"><label class="country-filter__letter-value" for="l">л</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--l">
+                                <a href="#">Лаос</a>
+                                <a href="#">Латвия</a>
+                                <a href="#">Лесото</a>
+                                <a href="#">Либерия</a>
+                                <a href="#">Ливан</a>
+                                <a href="#">Ливия</a>
+                                <a href="#">Литва</a>
+                                <a href="#">Лихтенштейн</a>
+                                <a href="#">Люксембург</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="m"><label class="country-filter__letter-value" for="m">м</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--m">
+                                <a href="#">Маврикий</a>
+                                <a href="#">Мавритания</a>
+                                <a href="#">Мадагаскар</a>
+                                <a href="#">Малави</a>
+                                <a href="#">Малайзия</a>
+                                <a href="#">Мали</a>
+                                <a href="#">Мальдивы</a>
+                                <a href="#">Мальта</a>
+                                <a href="#">Марокко</a>
+                                <a href="#">Маршалловы Острова</a>
+                                <a href="#">Мексика</a>
+                                <a href="#">Мозамбик</a>
+                                <a href="#">Молдавия</a>
+                                <a href="#">Монако</a>
+                                <a href="#">Монголия</a>
+                                <a href="#">Мьянма</a>
+                            </div>
+                        </div>
+
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="n"><label class="country-filter__letter-value" for="n">н</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--n">
+                                <a href="#">Намибия</a>
+                                <a href="#">Науру</a>
+                                <a href="#">Непал</a>
+                                <a href="#">Нигер</a>
+                                <a href="#">Нигерия</a>
+                                <a href="#">Нидерланды</a>
+                                <a href="#">Никарагуа</a>
+                                <a href="#">Новая Зеландия</a>
+                                <a href="#">Норвегия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="o"><label class="country-filter__letter-value" for="o">о</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--o">
+                                <a href="#">ОАЭ</a>
+                                <a href="#"> Оман</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="p"><label class="country-filter__letter-value" for="p">п</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="r"><label class="country-filter__letter-value" for="r">р</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="c"><label class="country-filter__letter-value" for="c">с</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="t"><label class="country-filter__letter-value" for="t">т</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">у</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ф</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">х</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value country-filter__letter-value--empty" for="euro">ц</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ч</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ш</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value country-filter__letter-value--empty" for="euro">щ</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">э</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="yu"><label class="country-filter__letter-value" for="yu">ю</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ya"><label class="country-filter__letter-value" for="ya">я</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country-filter__sumbol country-filter__sumbol--A country-filter__sumbol--common ">
+                        <a href="#">Афганистан</a>
+                        <a href="#">Алгерия</a>
+                        <a href="#">Албания</a>
+                        <a href="#">Андорра</a>
+                        <a href="#">Аргентина</a>
+                        <a href="#">Армения</a>
+                        <a href="#">Австралия</a>
+                        <a href="#">Австрия</a>
+                        <a href="#">Азербайджанм</a>
+                    </div>
+                </div>
+                <button class="country-filter__close button">свернуть</button>
+            </section>
+            <section class="fellow-travellers fellow-travellers--catalog">
+                <div class="fellow-travellers__wrapper fellow-travellers__wrapper--filter">
+                    <div class="fellow-travellers__item fellow-travellers__item--filter travel-filter">
+                        filter
+                        <h2 class="travel-filter__title">Подберите идеального попутчика
+                        </h2>
+                        <ul class="travel-filter__wrapper">
+                            <li class="travel-filter__dropdown">
+                                <a href="#" data-toggle="dropdown">Хобби <i class="travel-filter__icon-arrow"></i></a>
+                                <ul class="travel-filter__dropdown-menu">
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Спортзал</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Кальян</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Диван</label></li>
+                                </ul>
+                            </li>
+                            <li class="travel-filter__dropdown">
+                                <a href="#" data-toggle="dropdown">Музыка <i class="travel-filter__icon-arrow"></i></a>
+                                <ul class="travel-filter__dropdown-menu">
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Тяжелый рок</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Русский рэп</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Евроденс</label></li>
+                                </ul>
+                            </li>
+                            <li class="travel-filter__dropdown">
+                                <a href="#" data-toggle="dropdown">Еда <i class="travel-filter__icon-arrow"></i></a>
+                                <ul class="travel-filter__dropdown-menu">
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Мясоед</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Сидит на ПП</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="euro" checked><label class="travel-filter__item-value" for="euro">Веган-сыроед</label></li>
+                                </ul>
+                            </li>
+                            <li class="travel-filter__dropdown">
+                                <a href="#" data-toggle="dropdown">Транспорт <i class="travel-filter__icon-arrow"></i></a>
+                                <ul class="travel-filter__dropdown-menu">
+                                    <div class="fellow-travellers__vehicle">
+                                        <a href="#" class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                            <span class="visually-hidden">самолет</span>
+                                        </a>
+                                        <a href="#" class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                            <span class="visually-hidden">автобус</span>
+                                        </a>
+                                        <a href="#" class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                            <span class="visually-hidden">велосипед</span>
+                                        </a>
+                                        <a href="#" class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                            <span class="visually-hidden">бег</span>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="travel-filter__dropdown">
+                                <a href="#" data-toggle="dropdown">левел <i class="travel-filter__icon-arrow"></i></a>
+                                <ul class="travel-filter__dropdown-menu travel-filter__level">
+                                    <li><input class="travel-filter__item travel-filter__level-input" type="number" name="" id=""></li>
+                                    <li><input class="travel-filter__item travel-filter__level-input" type="number" name="" id=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="travel-filter__show button">показать</button>
+
+                    </div>
+                </div>
+                <div class="fellow-travellers__wrapper">
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="">
+                                    <picture>
+                                        <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, firsova-desktop@1x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/av-firsova.jpg 1x, img/av-firsova.png 2x">
+                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
+                                    </picture>
+                                </a>
+
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                    <a href="#">Таня Фирсова</a>
+                                </h3>
+                                <p class="fellow-travellers__interest fellow-travellers__interest--catalog">
+                                    <a href="" class="fellow-travellers__interest-item">#ЗОЖ</a>
+                                    <a href="" class="fellow-travellers__interest-item">#ПП</a>
+                                    <a href="" class="fellow-travellers__interest-item">#Фитнес</a>
+                                    <a href="" class="fellow-travellers__interest-item">#пляж</a>
+                                    <a href="" class="fellow-travellers__interest-item">#авокадо</a>
+                                    <a href="" class="fellow-travellers__interest-item">#смузи</a>
+                                </p>
+                                <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                            </div>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг Таиланда" />
+                                <img class="country-flag" src="#" alt="флаг Таиланда" />
+                                <img class="country-flag" src="#" alt="флаг Сейшельские Острова" />
+                            </div>
+                            <div class="fellow-travellers__box fellow-travellers__box--vehicle">
+                                <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="#">
+                                    <picture>
+                                        <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="фотография попутчика" />
+                                    </picture>
+                                </a>
+                                <h3 class="fellow-travellers__name  fellow-travellers__name--catalog">
+                                    <a href="#">Марк Смолов</a>
+                                </h3>
+                                <p class="fellow-travellers__interest fellow-travellers__interest--catalog">
+                                    <a href="" class="fellow-travellers__interest-item">#рэп</a>
+                                    <a href="" class="fellow-travellers__interest-item">#тату</a>
+                                    <a href="" class="fellow-travellers__interest-item">#хайпбист</a>
+                                    <a href="" class="fellow-travellers__interest-item">#кроссовки</a>
+                                    <a href="" class="fellow-travellers__interest-item">#суприм</a>
+                                </p>
+                                <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                            </div>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг США" />
+                                <img class="country-flag" src="#" alt="флаг Австралия" />
+                                <img class="country-flag" src="#" alt="флаг Доминикана" />
+                            </div>
+                            <div class="fellow-travellers__box fellow-travellers__box--vehicle">
+                                <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fellow-travellers__item--catalog">
+                        <div class="fellow-travellers__info fellow-travellers__info--catalog">
+                            <div class="fellow-travellers__box">
+                                <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="#">
+                                    <picture>
+                                        <source media="(min-width: 1439px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="фотография попутчика" />
+                                    </picture>
+                                </a>
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                    <a href="#">Лариса Роговая</a>
+                                </h3>
+                                <p class="fellow-travellers__interest fellow-travellers__interest--catalog">
+                                    <a href="" class="fellow-travellers__interest-item">#образование</a>
+                                    <a href="" class="fellow-travellers__interest-item">#карьера</a>
+                                    <a href="" class="fellow-travellers__interest-item">#учеба</a>
+                                    <a href="" class="fellow-travellers__interest-item">#линкедин</a>
+                                </p>
+                                <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                            </div>
+                            <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
+                                <h3>хочет посетить:</h3>
+                                <img class="country-flag" src="#" alt="флаг Великобритания" />
+                                <img class="country-flag" src="#" alt="флаг Германия" />
+                            </div>
+                            <div class="fellow-travellers__box fellow-travellers__box--vehicle">
+                                <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
+                                    <h3>транспорт:</h3>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
+                                <div class="fellow-travellers__level">
+                                    <h3 class="fellow-travellers__level-title">левел:</h3>
+                                    <p class="fellow-travellers__level-value">50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fellow-travellers__block">
+                        <a class="fellow-travellers__show-more">Показать еще</a>
+                    </div>
+
+                    <div class="fellow-travellers__navigation">
+                        <ul class="fellow-travellers__pagination pagination-list">
+                            <li class="pagination-list__item pagination-list__item--current"><a href="#">1</a></li>
+                            <li class="pagination-list__item"><a href="#">2</a></li>
+                            <li class="pagination-list__item"><a href="#">3</a></li>
+                            <li class="pagination-list__item"><a href="#">4</a></li>
+                        </ul>
+                        <div class="fellow-travellers__navigation--list">
+                            <button class="fellow-travellers__navigation--prev-list" type="button">
+                <span class="visually-hidden">предыдущие</span>
+              </button>
+                            <button class="fellow-travellers__navigation--next-list" type="button">
+                <span class="visually-hidden">следующие</span>
+              </button>
+                        </div>
+                    </div>
+            </section>
             </div>
         </div> -->
-    </header>
-    <main class="catalog-main">
-        <h1 class="visually-hidden">Выбор попутчика</h1>
-        <section class="fellow-travellers fellow-travellers--catalog">
-            <h2 class="fellow-travellers__title fellow-travellers__title--catalog">Направления</h2>
-        </section>
     </main>
     <footer class="main-footer">
-        <a class="logotype logotype--dark">
-            <img src="img/site-logo-blue.png" alt="Погнали?">
+        <a class="main-footer__logo logotype logotype--dark">
+            <picture>
+                <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
+                <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="погнали" />
+            </picture>
         </a>
         <div class="main-footer__social user-social user-social--footer">
             <a class="user-social__item user-social__item--facebook user-social__item--circle" href="#">

@@ -13,7 +13,13 @@
         <div class="main-header__container main-header__container--catalog">
             <div class="main-header__wrapper main-header__wrapper--catalog">
                 <div class="main-nav__block-logo">
-                    <a class="main-nav__logo logotype"></a>
+                    <a class="main-nav__logo logotype">
+                        <picture>
+                            <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
+                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="погнали" />
+                        </picture>
+                    </a>
                 </div>
                 <nav class="main-nav">
                     <ul class="main-nav__site site-navigation">
@@ -111,38 +117,361 @@
                 </div>
                 <div class="country-filter__wrapper">
                     <div class="country-filter__index">
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="a" checked><label class="country-filter__letter-value" for="a">а</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="b"><label class="country-filter__letter-value" for="b">б</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="v"><label class="country-filter__letter-value" for="v">в</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="g"><label class="country-filter__letter-value" for="g">г</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="d"><label class="country-filter__letter-value" for="d">д</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="e"><label class="country-filter__letter-value" for="e">е</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ee"><label class="country-filter__letter-value" for="ee">ё</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ж</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="z"><label class="country-filter__letter-value" for="z">з</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="i"><label class="country-filter__letter-value" for="i">и</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ii"><label class="country-filter__letter-value" for="ii">й</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="k"><label class="country-filter__letter-value" for="k">к</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="l"><label class="country-filter__letter-value" for="l">л</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="m"><label class="country-filter__letter-value" for="m">м</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="n"><label class="country-filter__letter-value" for="n">н</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="o"><label class="country-filter__letter-value" for="o">о</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="p"><label class="country-filter__letter-value" for="p">п</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="r"><label class="country-filter__letter-value" for="r">р</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="c"><label class="country-filter__letter-value" for="c">с</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="t"><label class="country-filter__letter-value" for="t">т</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">у</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ф</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">х</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ц</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ч</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ш</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">щ</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">э</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="yu"><label class="country-filter__letter-value" for="yu">ю</label>
-                        <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ya"><label class="country-filter__letter-value" for="ya">я</label>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="a" checked><label class="country-filter__letter-value" for="a">а</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--А">
+                                <a href="#">Афганистан</a>
+                                <a href="#">Алгерия</a>
+                                <a href="#">Албания</a>
+                                <a href="#">Андорра</a>
+                                <a href="#">Аргентина</a>
+                                <a href="#">Армения</a>
+                                <a href="#">Австралия</a>
+                                <a href="#">Австрия</a>
+                                <a href="#">Азербайджан</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="b"><label class="country-filter__letter-value" for="b">б</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--B">
+                                <a href="#">Багамские Острова</a>
+                                <a href="#">Бангладеш</a>
+                                <a href="#">Барбадос</a>
+                                <a href="#">Бахрейн</a>
+                                <a href="#">Белоруссия</a>
+                                <a href="#">Белиз</a>
+                                <a href="#">Бельгия</a>
+                                <a href="#">Бенин</a>
+                                <a href="#">Болгария</a>
+                                <a href="#">Боливия</a>
+                                <a href="#">Босния и Герцеговина</a>
+                                <a href="#">Ботсвана</a>
+                                <a href="#">Бразилия</a>
+                                <a href="#">Бруней</a>
+                                <a href="#">Буркина-Фасо</a>
+                                <a href="#">Бурунди</a>
+                                <a href="#">Бутан</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="v"><label class="country-filter__letter-value" for="v">в</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--V">
+                                <a href="#">Вануату</a>
+                                <a href="#">Великобритания</a>
+                                <a href="#">Венесуэла</a>
+                                <a href="#">Восточный Тимор</a>
+                                <a href="#">Вьетнам</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="g"><label class="country-filter__letter-value" for="g">г</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--G">
+                                <a href="#">Габон</a>
+                                <a href="#">Гаити</a>
+                                <a href="#">Гайана</a>
+                                <a href="#">Гамбия</a>
+                                <a href="#">Гана</a>
+                                <a href="#">Гватемала</a>
+                                <a href="#">Гвинея</a>
+                                <a href="#">Гвинея-Бисау</a>
+                                <a href="#">Германия</a>
+                                <a href="#">Гондурас</a>
+                                <a href="#">Гренада</a>
+                                <a href="#">Греция</a>
+                                <a href="#">Грузия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="d"><label class="country-filter__letter-value" for="d">д</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--d">
+                                <a href="#">Дания</a>
+                                <a href="#">Джибути</a>
+                                <a href="#">Доминика</a>
+                                <a href="#">Доминикана</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="e"><label class="country-filter__letter-value" for="e">е</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--E">
+                                <a href="#">Египет</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ee"><label class="country-filter__letter-value country-filter__letter-value--empty" for="ee">ё</label>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value country-filter__letter-value--empty" for="euro">ж</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="z"><label class="country-filter__letter-value" for="z">з</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--z">
+                                <a href="#">Замбия</a>
+                                <a href="#">Зимбабве</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="i"><label class="country-filter__letter-value" for="i">и</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--i">
+                                <a href="#">Израиль</a>
+                                <a href="#">Индия</a>
+                                <a href="#">Индонезия</a>
+                                <a href="#">Иордания</a>
+                                <a href="#">Ирак</a>
+                                <a href="#">Иран</a>
+                                <a href="#">Исландия</a>
+                                <a href="#">Испания</a>
+                                <a href="#">Италия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ii"><label class="country-filter__letter-value country-filter__letter-value--empty" for="ii">й</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="k"><label class="country-filter__letter-value" for="k">к</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--k">
+                                <a href="#">Кабо-Верде</a>
+                                <a href="#">Казахстан</a>
+                                <a href="#">Камбоджа</a>
+                                <a href="#">Камерун</a>
+                                <a href="#">Канада</a>
+                                <a href="#">Катар</a>
+                                <a href="#">Кения</a>
+                                <a href="#">Кипр</a>
+                                <a href="#">Киргизия</a>
+                                <a href="#">Кирибати</a>
+                                <a href="#">Китай</a>
+                                <a href="#">Колумбия</a>
+                                <a href="#">Коморы</a>
+                                <a href="#">Конго</a>
+                                <a href="#">КНДР</a>
+                                <a href="#">Республика Корея</a>
+                                <a href="#">Коста-Рика</a>
+                                <a href="#">Кот-д’Ивуар</a>
+                                <a href="#">Куба</a>
+                                <a href="#">Кувейт</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="l"><label class="country-filter__letter-value" for="l">л</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--l">
+                                <a href="#">Лаос</a>
+                                <a href="#">Латвия</a>
+                                <a href="#">Лесото</a>
+                                <a href="#">Либерия</a>
+                                <a href="#">Ливан</a>
+                                <a href="#">Ливия</a>
+                                <a href="#">Литва</a>
+                                <a href="#">Лихтенштейн</a>
+                                <a href="#">Люксембург</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="m"><label class="country-filter__letter-value" for="m">м</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--m">
+                                <a href="#">Маврикий</a>
+                                <a href="#">Мавритания</a>
+                                <a href="#">Мадагаскар</a>
+                                <a href="#">Малави</a>
+                                <a href="#">Малайзия</a>
+                                <a href="#">Мали</a>
+                                <a href="#">Мальдивы</a>
+                                <a href="#">Мальта</a>
+                                <a href="#">Марокко</a>
+                                <a href="#">Маршалловы Острова</a>
+                                <a href="#">Мексика</a>
+                                <a href="#">Мозамбик</a>
+                                <a href="#">Молдавия</a>
+                                <a href="#">Монако</a>
+                                <a href="#">Монголия</a>
+                                <a href="#">Мьянма</a>
+                            </div>
+                        </div>
+
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="n"><label class="country-filter__letter-value" for="n">н</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--n">
+                                <a href="#">Намибия</a>
+                                <a href="#">Науру</a>
+                                <a href="#">Непал</a>
+                                <a href="#">Нигер</a>
+                                <a href="#">Нигерия</a>
+                                <a href="#">Нидерланды</a>
+                                <a href="#">Никарагуа</a>
+                                <a href="#">Новая Зеландия</a>
+                                <a href="#">Норвегия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="o"><label class="country-filter__letter-value" for="o">о</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--o">
+                                <a href="#">ОАЭ</a>
+                                <a href="#"> Оман</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="p"><label class="country-filter__letter-value" for="p">п</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="r"><label class="country-filter__letter-value" for="r">р</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="c"><label class="country-filter__letter-value" for="c">с</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="t"><label class="country-filter__letter-value" for="t">т</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">у</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ф</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">х</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value country-filter__letter-value--empty" for="euro">ц</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ч</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">ш</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list country-filter__list--empty">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value country-filter__letter-value--empty" for="euro">щ</label>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="A"><label class="country-filter__letter-value" for="euro">э</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="yu"><label class="country-filter__letter-value" for="yu">ю</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
+                        <div class="country-filter__list">
+                            <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="ya"><label class="country-filter__letter-value" for="ya">я</label>
+                            <div class="country-filter__sumbol country-filter__sumbol--p">
+                                <a href="#">Пакистан</a>
+                                <a href="#">Палау</a>
+                                <a href="#">Панама</a>
+                                <a href="#">Папуа — Новая Гвинея</a>
+                                <a href="#">Парагвай</a>
+                                <a href="#">Перу</a>
+                                <a href="#">Польша</a>
+                                <a href="#">Португалия</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="country-filter__sumbol country-filter__sumbol--A">
+                    <div class="country-filter__sumbol country-filter__sumbol--A country-filter__sumbol--common ">
                         <a href="#">Афганистан</a>
                         <a href="#">Алгерия</a>
                         <a href="#">Албания</a>
@@ -224,8 +553,8 @@
                             <div class="fellow-travellers__box">
                                 <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="">
                                     <picture>
-                                        <!-- <source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x"> -->
-                                        <source media="(min-width: 768px)" srcset="img/av-firsova.jpg 1x, av-firsova.png 2x">
+                                        <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, firsova-desktop@1x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/av-firsova.jpg 1x, img/av-firsova.png 2x">
                                         <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
                                     </picture>
                                 </a>
@@ -278,9 +607,9 @@
                             <div class="fellow-travellers__box">
                                 <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="#">
                                     <picture>
-                                        <!-- <source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x"> -->
-                                        <source media="(min-width: 768px)" srcset="img/av-firsova.jpg 1x, av-firsova.png 2x">
-                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
+                                        <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@1x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/av-demin.jpg 1x, img/av-demin.jpg 2x">
+                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-demin-min.png" width="70" height="70" alt="фотография попутчика" />
                                     </picture>
                                 </a>
 
@@ -330,9 +659,9 @@
                             <div class="fellow-travellers__box">
                                 <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="#">
                                     <picture>
-                                        <!-- <source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x"> -->
-                                        <source media="(min-width: 768px)" srcset="img/av-firsova.jpg 1x, av-firsova.png 2x">
-                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
+                                        <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="фотография попутчика" />
                                     </picture>
                                 </a>
                                 <h3 class="fellow-travellers__name  fellow-travellers__name--catalog">
@@ -381,9 +710,9 @@
                             <div class="fellow-travellers__box">
                                 <a class="fellow-travellers__avatar-link fellow-travellers__avatar-link--catalog" href="#">
                                     <picture>
-                                        <!-- <source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x"> -->
-                                        <source media="(min-width: 768px)" srcset="img/av-firsova.jpg 1x, av-firsova.png 2x">
-                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
+                                        <source media="(min-width: 1439px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                                        <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="фотография попутчика" />
                                     </picture>
                                 </a>
                                 <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
@@ -451,7 +780,11 @@
     </main>
     <footer class="main-footer">
         <a class="main-footer__logo logotype logotype--dark">
-            <img src="img/site-logo-blue.png" alt="Погнали?" />
+            <picture>
+                <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
+                <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="погнали" />
+            </picture>
         </a>
         <div class="main-footer__social user-social user-social--footer">
             <a class="user-social__item user-social__item--facebook user-social__item--circle" href="#">
