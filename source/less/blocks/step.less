@@ -1,0 +1,43 @@
+.step {
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: @screen-md) {
+    border-radius: 30px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @screen-xl) {
+    border-radius: 60px;
+    margin-bottom: 44px;
+  }
+
+  &__wrapper {
+    padding: 24px;
+
+    @media (min-width: @screen-md) {
+      padding: 0 43px;
+      padding-top: 43px;
+      padding-bottom: 55px;
+    }
+
+    @media (min-width: @screen-xl) {
+      padding-top: 100px;
+      padding-bottom: 105px;
+      padding-left: 12.1%;
+      padding-right: 12.3%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 31px;
+    color: #1d2e5b;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 60px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+}

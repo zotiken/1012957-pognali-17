@@ -12,8 +12,14 @@
     <header class="main-header">
         <div class="main-header__container">
             <div class="main-header__wrapper">
-                <div class="main-nav__block-logo">
-                    <a class="main-nav__logo logotype"></a>
+                <div class="main-header__block-logo">
+                    <a class="main-header__logo logotype">
+                        <picture>
+                            <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
+                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="погнали" />
+                        </picture>
+                    </a>
                 </div>
                 <nav class="main-nav">
                     <ul class="main-nav__site site-navigation">
@@ -27,13 +33,13 @@
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
-                    <!-- <a class="user-navigation__link user-navigation__link--signin button" href="">авторизация</a> -->
+                    <!-- <a class="user-navigation-link user-navigation-link--signin button" href="">авторизация</a> -->
                     <div class="main-nav__user user-navigation">
                         <div class="user-navigation__items">
-                            <a class="user-navigation__link user-navigation__link--signin  button" href="">авторизация</a>
-                            <a class="user-navigation__link  user-navigation__link--telicon" href="">
+                            <a class="user-navigation-link user-navigation-link--signin  button" href="">авторизация</a>
+                            <a class="user-navigation-link  user-navigation-link--telicon" href="">
                                 <span class="visually-hidden">8800555-86-28</span></a>
-                            <a class="user-navigation__link  user-navigation__link--mailicon" href="">
+                            <a class="user-navigation-link  user-navigation-link--mailicon" href="">
                                 <span class="visually-hidden">mail@htmlacademy.ru</span></a>
                         </div>
                     </div>
@@ -60,13 +66,13 @@
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
-                    <a class="menu__item user-navigation__link user-navigation__link--signin button" href="">авторизация</a>
+                    <a class="menu__item user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
                     <section class="menu__block user-navigation">
                         <h2 class="visually-hidden">Меню пользователя</h2>
                         <div class="user-navigation__items">
                             <div class="user-navigation__wrapper">
-                                <a class="user-navigation__link user-navigation__link--telefon" href="">8 800 555-86-28</a>
-                                <a class="user-navigation__link user-navigation__link--email" href="">mail@htmlacademy.ru</a>
+                                <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
+                                <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
                             </div>
                             <div class="menu__block user-navigation__social user-social">
                                 <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
@@ -90,10 +96,10 @@
                 <div class="header-content__wrapper">
                     <div class="header-content__navigation user-navigation">
                         <div class="header-content__navigation-items  user-navigation__items">
-                            <a class="user-navigation__link user-navigation__link--signin  button" href="">авторизация</a>
-                            <a class="user-navigation__link  user-navigation__link--telicon" href="">
+                            <a class="user-navigation-link user-navigation-link--signin  button" href="">авторизация</a>
+                            <a class="user-navigation-link  user-navigation-link--telicon" href="">
                                 <span class="visually-hidden">8800555-86-28</span></a>
-                            <a class="user-navigation__link  user-navigation__link--mailicon" href="">
+                            <a class="user-navigation-link  user-navigation-link--mailicon" href="">
                                 <span class="visually-hidden">mail@htmlacademy.ru</span></a>
                         </div>
                     </div>
@@ -337,10 +343,10 @@
                         <p class="feedback__question">Мы с радостью на них ответим!</p>
                         <ul class="user-navigation">
                             <li class="user-navigation__item">
-                                <a class="user-navigation__link user-navigation__link--telefon user-navigation__link--telefon user-navigation__link--yellow" href="">8 800 555-86-28</a>
+                                <a class="user-navigation-link user-navigation-link--telefon user-navigation-link--telefon user-navigation-link--yellow" href="">8 800 555-86-28</a>
                             </li>
                             <li class="user-navigation__item">
-                                <a class="user-navigation__link user-navigation__link--email user-navigation__link--email user-navigation__link--yellow" href="">mail@htmlacademy.ru</a>
+                                <a class="user-navigation-link user-navigation-link--email user-navigation-link--email user-navigation-link--yellow" href="">mail@htmlacademy.ru</a>
                             </li>
                         </ul>
                     </div>
@@ -363,7 +369,12 @@
     </main>
     <footer class="main-footer">
         <a class="main-footer__logo logotype logotype--dark">
-            <img src="img/site-logo-blue.png" alt="Погнали?" />
+            <picture>
+                <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
+                <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+            </picture>
+            <!-- <img src="img/site-logo-blue.png" alt="Погнали?" /> -->
         </a>
         <div class="main-footer__social user-social user-social--footer">
             <a class="user-social__item user-social__item--facebook user-social__item--circle" href="#">

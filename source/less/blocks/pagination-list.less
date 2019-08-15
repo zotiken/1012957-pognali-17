@@ -1,0 +1,49 @@
+.pagination-list {
+  display: none;
+
+  @media (min-width: @screen-md) {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    &__item {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        box-sizing: border-box;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        color: @dark;
+        font-size: 20px;
+        line-height: 50px;
+
+        &:hover {
+          background-color: rgba(248, 247, 244, 0.3);
+        }
+
+        &:active {
+          color: #323232;
+          background-color: rgba(248, 247, 244, 1);
+        }
+      }
+
+      &--current {
+        a {
+          color: #323232;
+          background-color: @yellow;
+
+          &:hover {
+            background-color: @white;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
