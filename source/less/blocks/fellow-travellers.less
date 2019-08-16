@@ -7,8 +7,8 @@
     url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100px, 130px 100px, 30px 400px;
-  margin-top: -20px;
-  padding-top: 95px;
+  margin-top: -30px;
+  padding-top: 101px;
   padding-bottom: 30px;
   border-radius: 0 0 25px 25px;
 
@@ -131,7 +131,7 @@
   }
 
   &__wrapper {
-    padding: 0 7.81%;
+    padding: 0 9.81%;
 
     @media (min-width: @screen-md) {
       padding: 0 5.4%;
@@ -280,7 +280,6 @@
 
       @media (min-width: @screen-xl) {
         padding-top: 151px;
-        // margin-bottom: 79px;
         width: 58%;
       }
     }
@@ -289,9 +288,10 @@
   &__description {
     font-weight: 300;
     font-size: 16px;
-    width: 200px;
+    width: 220px;
     line-height: 22px;
     color: @white;
+    margin-bottom: 22px;
 
     @media (min-width: @screen-md) {
       width: 68.5%;
@@ -304,7 +304,7 @@
   &__invite {
     color: @white;
     line-height: 22px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
 
     @media (min-width: @screen-md) {
       width: 42%;
@@ -323,6 +323,7 @@
   }
 
   &__item {
+    position: relative;
     margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -419,13 +420,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -20px;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-left: 47px;
-    padding-right: 46px;
-    padding-bottom: 22px;
+    padding-right: 44px;
+    padding-bottom: 17px;
     background-color: @white;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 
     @media (min-width: @screen-md) {
       border-radius: 0 0 20px 20px;
@@ -492,7 +492,8 @@
   }
 
   &__interest {
-    text-align: left;
+    text-align: center;
+    margin-top: 13px;
 
     &--catalog {
       @media (min-width: @screen-md) {
@@ -591,7 +592,7 @@
     margin: 0 auto;
     justify-content: space-around;
     position: absolute;
-    top: -10px;
+    top: -8px;
 
     &--catalog {
       margin: 0;
@@ -628,6 +629,15 @@
         }
       }
     }
+  }
+
+  &__circle {
+    border-radius: 50%;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 16px;
+    left: 16px;
   }
 
   &__vehicle {
@@ -669,8 +679,8 @@
 
   &__vehicle-item {
     display: inline-block;
-    width: 33px;
-    height: 33px;
+    width: 26px;
+    height: 26px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 60%;
@@ -711,6 +721,9 @@
   }
 
   &__level {
+    position: absolute;
+    top: 16px;
+    left: 17px;
     box-sizing: border-box;
 
     &--form {
@@ -763,11 +776,11 @@
 
   &__to-all {
     position: relative;
-    margin-top: 20px;
-    padding-left: 24px;
+    margin-top: 10px;
+    padding-left: 26px;
     padding-right: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
     width: 100%;
@@ -780,7 +793,7 @@
       display: block;
       content: "";
       position: absolute;
-      right: 40px;
+      right: 20px;
       top: 50%;
       transform: translate(0, -50%);
       border-style: solid;

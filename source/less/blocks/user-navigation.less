@@ -11,6 +11,10 @@
   &__item {
     list-style: none;
     margin-bottom: 45px;
+
+    &--feedback {
+      margin-bottom: 25px;
+    }
   }
 
   &__items {
@@ -39,10 +43,8 @@
 }
 
 .user-navigation-link {
-  z-index: 9;
   display: block;
   box-sizing: border-box;
-  margin-bottom: 23px;
   line-height: 22px;
   text-decoration: none;
   font-size: 17px;
@@ -55,6 +57,11 @@
     margin-bottom: 0;
     font-size: 28px;
     line-height: 28px;
+    z-index: 9;
+  }
+
+  &--menu {
+    margin-bottom: 24px;
   }
 
   &--signin {
@@ -150,6 +157,7 @@
 
   &--telicon {
     background-color: @orange;
+    order: 1;
   }
 
   &--telicon::before {

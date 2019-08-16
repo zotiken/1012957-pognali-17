@@ -29,15 +29,33 @@
     }
   }
 
-  &__title {
-    margin: 0;
+  &__container-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 31px;
-    color: #1d2e5b;
 
     @media (min-width: @screen-md) {
       margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: #1d2e5b;
+
+    @media (min-width: @screen-md) {
       font-size: 36px;
     }
+  }
+
+  &__indicator {
+    margin: 0;
+    display: flex;
+  }
+
+  &__indicator-item {
+    width: 20px;
   }
 
   &__item {

@@ -4,9 +4,9 @@
   width: 100%;
   z-index: 7;
   position: relative;
-  padding-top: 36px;
-  padding-bottom: 84px;
-  background: @background url("../img/about-mobile@1x.png") 100% 100% no-repeat;
+  padding-top: 18px;
+  padding-bottom: 65px;
+  background: @background url("../img/about-mobile@1x.png") 60% 10% no-repeat;
   border-radius: 0 0 25px 25px;
 
   @media (min-width: @screen-md) {
@@ -30,8 +30,10 @@
   }
 
   &__title {
+    font-weight: 300;
     color: @orange;
     font-size: 24px;
+    margin-bottom: 17px;
 
     @media (min-width: @screen-md) {
       margin: 43px 0;
@@ -45,10 +47,11 @@
   }
 
   &__text {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
     color: @white;
     font-weight: 300;
     line-height: 22px;
+    padding-right: 10px;
 
     @media (min-width: @screen-md) {
       width: 298px;
