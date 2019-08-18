@@ -11,6 +11,10 @@
   &__item {
     list-style: none;
     margin-bottom: 45px;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 39px;
+    }
   }
 
   &__items {
@@ -84,6 +88,7 @@
     }
   }
 
+<<<<<<< HEAD
   &--telefon,
   &--email {
     &::before {
@@ -99,6 +104,32 @@
       background-size: 18px;
       background-repeat: no-repeat;
       background-position: 50% 50%;
+=======
+    &--telefon,
+    &--email {
+      &::before {
+        display: block;
+        position: absolute;
+        margin-left: -62px;
+        margin-top: -15px;
+        content: "";
+        width: 45px;
+        height: 45px;
+        background-color: #121936;
+        border-radius: 50%;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+
+      @media (min-width: @screen-md) {
+        &::before {
+          width: 67px;
+          height: 67px;
+          background-size: 27px;
+        }
+      }
+>>>>>>> decor
     }
   }
 
@@ -106,9 +137,23 @@
     text-align: left;
     color: #ffd74b;
 
+<<<<<<< HEAD
     &::before {
       margin-left: -62px;
       margin-top: -13px;
+=======
+      &::before {
+        margin-left: -62px;
+        margin-top: -13px;
+      }
+
+      @media (min-width: @screen-md) {
+        &::before {
+        margin-left: -91px;
+        margin-top: -22px;
+        }
+      }
+>>>>>>> decor
     }
   }
 

@@ -16,8 +16,13 @@
 
   @media (min-width: @screen-md) {
     max-width: @screen-xl;
+    padding: 0 5.2%;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -65px;
+    border-radius: 65px 65px 0 0;
+    padding-top: 50px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: @screen-xl) {
@@ -48,7 +53,19 @@
     @media (min-width: @screen-md) {
       border: none;
       width: auto;
+<<<<<<< HEAD
       padding-right: 40px;
+=======
+      padding-top: 0;
+      padding-right: 52px;
+      font-size: 20px;
+
+      &::before {
+        margin-top: auto;
+        right: 1px;
+        top: -4px;
+      }
+>>>>>>> decor
     }
 
     @media (min-width: @screen-xl) {
