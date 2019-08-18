@@ -12,6 +12,10 @@
   &__item {
     list-style: none;
     margin-bottom: 45px;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 39px;
+    }
   }
 
   &__items {
@@ -85,6 +89,14 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }
+
+      @media (min-width: @screen-md) {
+        &::before {
+          width: 67px;
+          height: 67px;
+          background-size: 27px;
+        }
+      }
     }
 
     &--yellow {
@@ -94,6 +106,13 @@
       &::before {
         margin-left: -62px;
         margin-top: -13px;
+      }
+
+      @media (min-width: @screen-md) {
+        &::before {
+        margin-left: -91px;
+        margin-top: -22px;
+        }
       }
     }
 

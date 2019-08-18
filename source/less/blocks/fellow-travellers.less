@@ -13,9 +13,10 @@
   border-radius: 0 0 25px 25px;
 
   @media (min-width: @screen-md) {
-    padding-top: 143px;
-    padding-bottom: 80px;
-    border-radius: 0 0 35px 35px;
+    margin-top: -65px;
+    padding-top: 146px;
+    padding-bottom: 88px;
+    border-radius: 0 0 65px 65px;
   }
 
   @media (min-width: @screen-xl) {
@@ -23,14 +24,12 @@
     flex-wrap: wrap;
   }
 
-
   &--catalog {
     background-image: none;
     background-color: transparent;
     padding-top: 0;
     margin-top: 0;
   }
-
 
   &__box {
     width: 230px;
@@ -43,7 +42,7 @@
     padding: 0 25px;
 
     @media (min-width: @screen-md) {
-      padding: 0 35px;
+      padding: 0 5.4%;
     }
 
     @media (min-width: @screen-xl) {
@@ -77,6 +76,7 @@
     font-size: 24px;
 
     @media (min-width: @screen-md) {
+      margin-left: -3px;
       font-size: 45px;
       line-height: 45px;
       margin-top: 61px;
@@ -116,10 +116,11 @@
     color: @white;
 
     @media (min-width: @screen-md) {
-      width: 68.5%;
+      width: 69.5%;
       font-size: 28px;
       line-height: 33px;
-      margin-bottom: 46px;
+      margin-bottom: 42px;
+      margin-top: 55px;
     }
   }
 
@@ -132,15 +133,16 @@
       width: 42%;
       font-size: 21px;
       line-height: 25px;
-      margin-bottom: 62px;
+      margin-bottom: 57px;
     }
   }
 
   &__items {
     @media (min-width: @screen-md) {
+      padding: 0 12px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 80px;
+      margin-bottom: 51px;
     }
   }
 
@@ -196,14 +198,16 @@
     position: relative;
     margin-top: -20px;
     padding-top: 27px;
-    padding-left: 47px;
-    padding-right: 46px;
+    padding-left: 31px;
+    padding-right: 30px;
     padding-bottom: 22px;
     background-color: @white;
     border-radius: 10px;
 
     @media (min-width: @screen-md) {
       border-radius: 0 0 20px 20px;
+      padding-bottom: 22px;
+      margin-top: 0;
     }
 
     &--catalog {
@@ -219,6 +223,7 @@
     margin: 0;
 
     a {
+      font-weight: bold;
       text-decoration: none;
       font-size: 21px;
       color: #161c35;
@@ -231,10 +236,22 @@
       font-size: 20px;
       color: #1d2e5b;
     }
+
+    @media (min-width: @screen-md) {
+      a {
+        font-size: 24px;
+      }
+    }
   }
 
   &__interest {
     text-align: left;
+
+    @media (min-width: @screen-md) {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
   }
 
   &__interest-item {
@@ -264,6 +281,10 @@
         font-weight: normal;
         color: @greyish-brown;
       }
+    }
+
+    @media (min-width: @screen-md) {
+
     }
   }
 
@@ -307,7 +328,12 @@
     &--run {
       background-image: url("../..//img/run.png");
     }
-  }
+
+    @media (min-width: @screen-md) {
+      width: 24px;
+      height: 24px;
+    }
+    }
 
   &__vehicle-link {
     text-decoration: none;
@@ -360,13 +386,19 @@
     }
 
     @media (min-width: @screen-md) {
+      width: 90%;
+      margin-left: 5%;
       border-radius: 20px;
       padding-left: 34px;
       padding-right: 34px;
-      padding-top: 31px;
-      padding-bottom: 32px;
+      padding-top: 29px;
+      padding-bottom: 27px;
       font-size: 24px;
       line-height: 24px;
+
+      &::before {
+        right: 31px;
+      }
     }
 
     @media (min-width: @screen-xl) {

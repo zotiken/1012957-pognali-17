@@ -21,7 +21,6 @@
 
     @media (min-width: @screen-md) {
       background: @litegray url("../img/thailand-desktop@1x.jpg") no-repeat;
-      background-size: 40%;
       background-position: 100% 100%;
     }
   }
@@ -32,7 +31,6 @@
 
     @media (min-width: @screen-md) {
       background: @litegray url("../img/france-desktop@1x.jpg") no-repeat;
-      background-size: 40%;
       background-position: 100% 100%;
     }
   }
@@ -43,34 +41,34 @@
 
     @media (min-width: @screen-md) {
       background: @litegray url("../img/czech-desktop@1x.jpg") no-repeat;
-      background-size: 40%;
       background-position: 100% 100%;
     }
   }
 
   &__info {
     position: relative;
-    padding-left: 24px;
+    padding-left: 32px;
     padding-right: 26px;
     padding-bottom: 23px;
     background-color: @white;
     border-radius: 10px 10px 0 0;
 
     @media (min-width: @screen-md) {
-      width: 328px;
+      width: 378px;
       padding-left: 30px;
-      padding-bottom: 25px;
+      padding-bottom: 18px;
       border-radius: 20px 0 0 20px;
     }
   }
 
   &__title {
     margin: 0;
-    padding-top: 28px;
+    padding-top: 32px;
     font-size: 21px;
     color: #161c35;
 
     @media (min-width: @screen-md) {
+      padding-top: 29px;
       padding-bottom: 6px;
       font-size: 24px;
     }
@@ -84,10 +82,10 @@
     background-image: url("../img/flags.png");
 
     @media (min-width: @screen-md) {
-      margin-top: -60px;
-      margin-left: 320px;
-      width: 70px;
-      height: 47px;
+      margin-top: -64px;
+      margin-left: 369px;
+      width: 72px;
+      height: 48px;
       background-size: 420%;
     }
 
@@ -96,7 +94,7 @@
     }
 
     &--france {
-      background-position: bottom right -52px;
+      background-position: bottom right -100px;
     }
 
     &--czech {
@@ -105,6 +103,10 @@
 
     &--germany {
       background-position: bottom right -52px;
+
+      @media (min-width: @screen-md) {
+        background-position: bottom right -50px;
+      }
     }
 
     &--visit {
@@ -112,6 +114,13 @@
       margin: 0 12px;
       position: relative;
       margin-top: -4px;
+
+      @media (min-width: @screen-md) {
+        width: 35px;
+        height: 24px;
+        margin: 0 10px;
+        margin-top: 0;
+      }
     }
   }
 
@@ -122,7 +131,7 @@
     line-height: 18px;
 
     @media (min-width: @screen-md) {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
@@ -134,6 +143,7 @@
     color: @greyish-brown-30;
 
     @media (min-width: @screen-md) {
+      padding-left: 28px;
       margin-top: 20px;
       margin-bottom: 0;
       position: static;
