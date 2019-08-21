@@ -5,6 +5,11 @@
     width: 90%;
   }
 
+  @media (min-width: @screen-xl) {
+    padding-right: 131px;
+    box-sizing: border-box;
+  }
+
   &__item {
     width: 120%;
     position: relative;
@@ -17,8 +22,8 @@
     border-top: 1px solid rgba(3, 3, 3, 0.05);
 
     &::before {
-      right: -40px;
-      margin-top: -10px;
+      right: -57px;
+      margin-top: -11px;
       position: absolute;
       content: attr(data-id);
       display: block;

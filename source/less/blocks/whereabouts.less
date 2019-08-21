@@ -3,10 +3,10 @@
     position: relative;
     z-index: 2;
     background-color: @yellow;
-    margin-top: -35px;
-    padding-top: 70px;
-    padding-bottom: 30px;
-    border-radius: 0 0 25px 25px;
+    margin-top: -30px;
+    padding-top: 51px;
+    padding-bottom: 33px;
+    border-radius: 0 0 30px 30px;
 
     @media (min-width: @screen-md) {
       border-radius: 0 0 65px 65px;
@@ -16,7 +16,7 @@
     }
 
     @media (min-width: @screen-xl) {
-      padding-top: 84px;
+      padding-top: 125px;
       padding-bottom: 60px;
     }
   }
@@ -28,14 +28,15 @@
 
     @media (min-width: @screen-xl) {
       display: flex;
-      margin-right: 74px;
+      margin-right: 0;
+      padding: 0 5.7%;
     }
   }
 
   &__adress {
     width: 143px;
     text-transform: uppercase;
-    margin-left: 86px;
+    margin-left: 66px;
     margin-bottom: 35px;
     font-family: "Blogger Sans", serif;
     font-weight: 700;
@@ -73,13 +74,15 @@
     }
 
     @media (min-width: @screen-xl) {
-      margin: auto;
+      margin: auto 0;
+      margin-left: auto;
+      padding-right: 12.5%;
 
       &::before {
         width: 90px;
         height: 90px;
         margin-top: -30px;
-        margin-left: -110px;
+        margin-left: -122px;
         background-size: 28px;
       }
     }
@@ -93,8 +96,8 @@
     font-weight: 700;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 21px;
+    padding-bottom: 19px;
     font-size: 18px;
     width: 100%;
     color: #1d2e5b;
@@ -136,30 +139,42 @@
   }
 
   &__maps {
-    padding-top: 20px;
+    position: relative;
     background-color: @white;
     z-index: 1;
-    position: relative;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-bottom: -20px;
 
     @media (min-width: @screen-md) {
-      padding-top: 65px;
       margin-top: -65px;
-      padding-bottom: 27px;
-        }
+    }
   }
 
   &__maps-win {
     width: 100%;
     border: none;
+    // margin-top: 20px;
+    margin-bottom: 20px;
 
     @media (min-width: @screen-md) {
       height: 491px;
+      margin-top: 65px;
+      margin-bottom: 59px;
     }
 
     @media (min-width: @screen-xl) {
       width: @screen-xl;
       height: 436px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+    @media (min-width: @screen-md) {
+      height: 461px;
     }
   }
 }
