@@ -130,6 +130,18 @@
 
     @media (min-width: @screen-xl) {
       display: flex;
+
+      &::before {
+        width: 60px;
+        height: 2px;
+        display: block;
+        content: "";
+        position: absolute;
+        left: 42px;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: @white;
+      }
     }
   }
 

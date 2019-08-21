@@ -65,20 +65,24 @@
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
+<<<<<<< HEAD
                     <a class="menu__item  button" href="">авторизация</a>
+=======
+                    <a class="menu__item user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
+>>>>>>> catalog-pp
                     <section class="menu__block user-navigation">
-                        <h2 class="visually-hidden">Меню пользователя</h2>
+                        <h2 class="visually-hidden">Меню пользователяz</h2>
                         <div class="user-navigation__items">
                             <div class="user-navigation__wrapper">
                                 <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
                                 <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
                             </div>
                             <div class="menu__block user-navigation__social user-social">
-                                <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
-                                    <span class="visually-hidden">Facebook</span></a>
-                                <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
+                                <a class="user-social__item user-social__item--vkontakte" href="">
                                     <span class="visually-hidden">VKontakte</span></a>
-                                <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
+                                <a class="user-social__item user-social__item--vkontakte" href="">
+                                    <span class="visually-hidden">VKontakte</span></a>
+                                <a class="user-social__item user-social__item--instagram" href="">
                                     <span class="visually-hidden"> Instagram</span></a>
                             </div>
                         </div>
@@ -500,7 +504,11 @@
                             </li>
                             <li class="travel-filter__dropdown">
                                 <a href="#" data-toggle="dropdown">Музыка <i class="travel-filter__icon-arrow"></i></a>
+<<<<<<< HEAD
                                 <ul class="travel-filter__dropdown-menu">
+=======
+                                <ul class="travel-filter__dropdown-menu visible-block">
+>>>>>>> catalog-pp
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="rock" checked><label class="travel-filter__item-value" for="euro">Тяжелый рок</label></li>
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="rus-rep" checked><label class="travel-filter__item-value" for="euro">Русский рэп</label></li>
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="dance" checked><label class="travel-filter__item-value" for="euro">Евроденс</label></li>
@@ -516,8 +524,13 @@
                             </li>
                             <li class="travel-filter__dropdown">
                                 <a href="#" data-toggle="dropdown">Транспорт <i class="travel-filter__icon-arrow"></i></a>
+<<<<<<< HEAD
                                 <ul class="travel-filter__dropdown-menu">
                                     <li class="fellow-travellers__vehicle">
+=======
+                                <ul class="travel-filter__dropdown-menu visible-block">
+                                    <li class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
+>>>>>>> catalog-pp
                                         <a href="#" class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
                                             <span class="visually-hidden">самолет</span>
                                         </a>
@@ -535,10 +548,19 @@
                             </li>
                             <li class="travel-filter__dropdown">
                                 <a href="#" data-toggle="dropdown">левел <i class="travel-filter__icon-arrow"></i></a>
+<<<<<<< HEAD
                                 <ul class="travel-filter__dropdown-menu travel-filter__level">
                                     <li><input class="travel-filter__item travel-filter__level-input" type="number" name="level" id="min">
                                     </li>
                                     <li><input class="travel-filter__item travel-filter__level-input" type="number" name="level" id="max">
+=======
+                                <ul class="travel-filter__dropdown-menu travel-filter__level visible-block">
+                                    <li><input class="travel-filter__item travel-filter__level-input" type="number" name="level" id="min">
+                                        <input class="travel-filter__item travel-filter__level-input" type="number" name="level" id="max">
+                                    </li>
+                                    <li>
+                                        <div class="travel-filter__item travel-filter__level-range"></div>
+>>>>>>> catalog-pp
                                     </li>
                                 </ul>
                             </li>
@@ -573,9 +595,9 @@
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <img class="country-flag" src="#" alt="флаг Таиланда" />
-                                <img class="country-flag" src="#" alt="флаг Таиланда" />
-                                <img class="country-flag" src="#" alt="флаг Сейшельские Острова" />
+                                <a class="country__flag  country__flag--catalog" href="#">Шри Ланка</a>
+                                <a class="country__flag  country__flag--catalog" href="#">Тайланд</a>
+                                <a class="country__flag  country__flag--catalog" href="#">Сейшелы</a>
                             </div>
                             <div class="fellow-travellers__box fellow-travellers__box--vehicle">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
@@ -593,10 +615,16 @@
                                         <span class="visually-hidden">бег</span>
                                     </a>
                                 </div>
-                                <div class="fellow-travellers__level">
+                                <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="99">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <p class="fellow-travellers__level-value">99</p>
+                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                            <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
+                                              stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
+                                                          A1 1 0 0 1 100 60" />
+                                            <text class="circ-text" text-anchor="middle" x="100" y="110" font-size="32px" fill="#1d2e5b">100</text>
+                                        </svg>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -626,8 +654,8 @@
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <img class="country-flag" src="#" alt="флаг Германии" />
-                                <img class="country-flag" src="#" alt="флаг Чехии" />
+                                <a class="country__flag  country__flag--catalog" href="#">Шри Ланка</a>
+                                <a class="country__flag  country__flag--catalog" href="#">Тайланд</a>
                             </div>
                             <div class="fellow-travellers__box fellow-travellers__box--vehicle">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
@@ -645,9 +673,14 @@
                                         <span class="visually-hidden">бег</span>
                                     </a>
                                 </div>
-                                <div class="fellow-travellers__level">
+                                <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="99">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <p class="fellow-travellers__level-value">80</p>
+                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                            <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
+                                              stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
+                                                          A1 1 0 0 1 100 60" />
+                                            <text class="circ-text" text-anchor="middle" x="100" y="110" font-size="32px" fill="#1d2e5b">100</text>
+                                        </svg>
                                 </div>
                             </div>
                         </div>
@@ -677,9 +710,9 @@
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <img class="country-flag" src="#" alt="флаг США" />
-                                <img class="country-flag" src="#" alt="флаг Австралия" />
-                                <img class="country-flag" src="#" alt="флаг Доминикана" />
+                                <a class="country__flag  country__flag--catalog" href="#">Шри Ланка</a>
+                                <a class="country__flag  country__flag--catalog" href="#">Тайланд</a>
+                                <a class="country__flag  country__flag--catalog" href="#">Сейшелы</a>
                             </div>
                             <div class="fellow-travellers__box fellow-travellers__box--vehicle">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
@@ -697,9 +730,14 @@
                                         <span class="visually-hidden">бег</span>
                                     </a>
                                 </div>
-                                <div class="fellow-travellers__level">
+                                <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="99">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <p class="fellow-travellers__level-value">25</p>
+                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                            <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
+                                              stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
+                                                          A1 1 0 0 1 100 60" />
+                                            <text class="circ-text" text-anchor="middle" x="100" y="110" font-size="32px" fill="#1d2e5b">100</text>
+                                        </svg>
                                 </div>
                             </div>
                         </div>
@@ -727,8 +765,8 @@
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <img class="country-flag" src="#" alt="флаг Великобритания" />
-                                <img class="country-flag" src="#" alt="флаг Германия" />
+                                <a class="country__flag  country__flag--catalog" href="#">Шри Ланка</a>
+                                <a class="country__flag  country__flag--catalog" href="#">Тайланд</a>
                             </div>
                             <div class="fellow-travellers__box fellow-travellers__box--vehicle">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
@@ -746,9 +784,14 @@
                                         <span class="visually-hidden">бег</span>
                                     </a>
                                 </div>
-                                <div class="fellow-travellers__level">
+                                <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="99">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <p class="fellow-travellers__level-value">50</p>
+                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                            <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
+                                              stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
+                                                          A1 1 0 0 1 100 60" />
+                                            <text class="circ-text" text-anchor="middle" x="100" y="110" font-size="32px" fill="#1d2e5b">100</text>
+                                        </svg>
                                 </div>
                             </div>
                         </div>

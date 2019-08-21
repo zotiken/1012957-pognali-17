@@ -49,7 +49,7 @@
     position: relative;
     padding-left: 32px;
     padding-right: 26px;
-    padding-bottom: 23px;
+    padding-bottom: 16px;
     background-color: @white;
     border-radius: 10px 10px 0 0;
 
@@ -58,6 +58,10 @@
       padding-left: 30px;
       padding-bottom: 18px;
       border-radius: 20px 0 0 20px;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 57%;
     }
   }
 
@@ -89,6 +93,11 @@
       background-size: 420%;
     }
 
+    @media (min-width: @screen-xl) {
+      margin-top: -57px;
+      margin-left: 313px;
+    }
+
     &--tai {
       background-position: 0 0;
     }
@@ -109,11 +118,44 @@
       }
     }
 
+    &--catalog {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      background: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      color: #1d2e5b;
+      padding-left: 38px;
+      padding-bottom: 3px;
+
+      &::before {
+        margin-left: -40px;
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 18px;
+        background-image: url(../img/flags.png);
+        background-position: 0 0;
+      }
+
+      @media (min-width: @screen-md) {
+        width: 35px;
+        height: 24px;
+        margin: 0 10px;
+        margin-top: 0;
+      }
+    }
+
     &--visit {
       padding: 0;
-      margin: 0 12px;
+      margin: 0 9px;
       position: relative;
-      margin-top: -4px;
+      margin-top: -2px;
 
       @media (min-width: @screen-md) {
         width: 35px;

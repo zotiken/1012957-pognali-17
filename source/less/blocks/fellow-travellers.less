@@ -7,10 +7,10 @@
     url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100px, 130px 100px, 30px 400px;
-  margin-top: -20px;
-  padding-top: 95px;
+  margin-top: -30px;
+  padding-top: 101px;
   padding-bottom: 30px;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: @screen-md) {
     margin-top: -65px;
@@ -22,6 +22,8 @@
   @media (min-width: @screen-xl) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 194px;
+    padding-bottom: 134px;
   }
 
   &--catalog {
@@ -29,10 +31,26 @@
     background-color: transparent;
     padding-top: 0;
     margin-top: 0;
+<<<<<<< HEAD
+=======
+    padding-bottom: 41px;
+>>>>>>> catalog-pp
 
     @media (min-width: @screen-xl) {
       flex-direction: row-reverse;
     }
+<<<<<<< HEAD
+=======
+  }
+
+  &--form {
+    background: none;
+    background-color: #161c35;
+    margin-top: auto;
+    padding-bottom: 0;
+    padding-top: 36px;
+    border-radius: 0 0 20px 20px;
+>>>>>>> catalog-pp
   }
 
 <<<<<<< HEAD
@@ -51,8 +69,13 @@
     width: 230px;
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     margin-bottom: 20px;
     flex-flow: wrap;
+=======
+    flex-flow: wrap;
+    margin-bottom: -4px;
+>>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
       width: 70%;
@@ -135,13 +158,18 @@
   }
 
   &__wrapper {
+<<<<<<< HEAD
     padding: 0 7.81%;
+=======
+    padding: 0 7.7%;
+>>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
       padding: 0 5.4%;
     }
 
     @media (min-width: @screen-xl) {
+<<<<<<< HEAD
       flex-basis: 50%;
       padding: 0;
     }
@@ -153,6 +181,20 @@
       }
     }
 
+=======
+      flex-basis: 50.8%;
+      padding: 0 73px;
+      box-sizing: border-box;
+    }
+
+    &--filter {
+      @media (min-width: @screen-xl) {
+        padding: 0;
+        flex-basis: 20%;
+      }
+    }
+
+>>>>>>> catalog-pp
     &--form {
       width: 100%;
       padding-bottom: 53px;
@@ -160,6 +202,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       background-color: #edeff6;
+<<<<<<< HEAD
 
       @media (min-width: @screen-md) {
         padding: 0 77px;
@@ -169,6 +212,17 @@
         padding-left: 129px;
         padding-right: 60px;
 
+=======
+
+      @media (min-width: @screen-md) {
+        padding: 0 77px;
+      }
+
+      @media (min-width: @screen-xl) {
+        padding-left: 129px;
+        padding-right: 60px;
+
+>>>>>>> catalog-pp
         flex-basis: 100%;
       }
     }
@@ -220,10 +274,14 @@
       margin-top: 61px;
     }
 
+    @media (min-width: @screen-xl) {
+      margin-top: 0;
+    }
+
     &--catalog {
       width: 169px;
       position: relative;
-      padding-bottom: 19px;
+      padding-bottom: 8px;
       font-size: 36px;
       color: @white;
 
@@ -285,7 +343,10 @@
 
       @media (min-width: @screen-xl) {
         padding-top: 151px;
+<<<<<<< HEAD
         // margin-bottom: 79px;
+=======
+>>>>>>> catalog-pp
         width: 58%;
       }
     }
@@ -294,29 +355,54 @@
   &__description {
     font-weight: 300;
     font-size: 16px;
-    width: 200px;
+    width: 97.6%;
     line-height: 22px;
     color: @white;
+    margin-bottom: 22px;
+
+    br {
+      display: none;
+    }
 
     @media (min-width: @screen-md) {
       width: 69.5%;
       font-size: 28px;
       line-height: 33px;
-      margin-bottom: 42px;
-      margin-top: 55px;
+      margin-bottom: 40px;
+      margin-top: 57px;
+
+      br {
+        display: block;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 81.5%;
     }
   }
 
   &__invite {
     color: @white;
     line-height: 22px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
+
+    br {
+      display: none;
+    }
 
     @media (min-width: @screen-md) {
-      width: 42%;
+      width: 43%;
       font-size: 21px;
       line-height: 25px;
       margin-bottom: 57px;
+
+      br {
+        display: block;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 48%;
     }
   }
 
@@ -325,11 +411,21 @@
       padding: 0 12px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 51px;
+      margin-bottom: 61px;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 49%;
+      box-sizing: border-box;
+      padding: 0;
+      padding-top: 4px;
+      padding-left: 20px;
+      margin-bottom: 0;
     }
   }
 
   &__item {
+    position: relative;
     margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -348,11 +444,21 @@
     }
 
     &--filter {
+<<<<<<< HEAD
       padding: 20px;
       padding-top: 26px;
       width: 100%;
       background-color: @yellow;
       border-radius: 20px;
+=======
+      padding: 0 9.2%;
+      padding-top: 27px;
+      width: 100%;
+      background-color: @yellow;
+      border-radius: 20px;
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+>>>>>>> catalog-pp
 
       @media (min-width: @screen-md) {
         padding: 4.56%;
@@ -365,6 +471,11 @@
     border-radius: 10px 10px 0 0;
 
     &--catalog {
+<<<<<<< HEAD
+=======
+      margin-left: -5px;
+
+>>>>>>> catalog-pp
       @media (min-width: @screen-md) {
         width: 190px;
       }
@@ -426,27 +537,35 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -20px;
-    padding-top: 27px;
-    padding-left: 31px;
-    padding-right: 30px;
-    padding-bottom: 22px;
+    padding-top: 25px;
+    padding-left: 47px;
+    padding-right: 44px;
+    padding-bottom: 17px;
     background-color: @white;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 
     @media (min-width: @screen-md) {
+      padding: 0 4%;
       border-radius: 0 0 20px 20px;
       padding-bottom: 22px;
       margin-top: 0;
+      padding-top: 30px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &--catalog {
       position: relative;
+<<<<<<< HEAD
       padding-left: 20px;
+=======
+      padding-left: 27px;
+>>>>>>> catalog-pp
       padding-right: 20px;
-      padding-top: 16px;
+      padding-top: 14px;
       margin-top: 0;
       margin-bottom: 10px;
+<<<<<<< HEAD
       padding-bottom: 52px;
 
       @media (min-width: @screen-md) {
@@ -463,6 +582,16 @@
         flex-direction: column;
         height: 285px;
         align-items: flex-start;
+=======
+      padding-bottom: 74px;
+      border-radius: 20px;
+
+      @media (min-width: @screen-xl) {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+>>>>>>> catalog-pp
       }
     }
 
@@ -488,27 +617,37 @@
       color: #161c35;
     }
 
-    &--catalog {
-      margin-left: 16px;
-      width: 78px;
-      margin-right: auto;
-      font-size: 20px;
-      color: #1d2e5b;
-
-      @media (min-width: @screen-md) {
-        width: 50%;
-      }
-    }
-
     @media (min-width: @screen-md) {
       a {
         font-size: 24px;
       }
     }
+
+    &--catalog {
+      margin-left: 16px;
+      width: 78px;
+      margin-right: auto;
+      font-size: 20px;
+      line-height: 20px;
+      color: #1d2e5b;
+<<<<<<< HEAD
+
+      @media (min-width: @screen-md) {
+        width: 50%;
+      }
+    }
+=======
+>>>>>>> catalog-pp
+
+      @media (min-width: @screen-md) {
+        width: 50%;
+      }
+    }
   }
 
   &__interest {
-    text-align: left;
+    text-align: center;
+    margin-top: 13px;
 
 <<<<<<< HEAD
     &--catalog {
@@ -553,6 +692,49 @@
       margin-bottom: 24px;
 >>>>>>> decor
     }
+
+    &--catalog {
+      width: 74%;
+      text-align-last: left;
+      margin-top: 16px;
+      font-size: 15px;
+      line-height: 18px;
+
+      @media (min-width: @screen-md) {
+        margin: 0;
+        width: 50%;
+      }
+    }
+
+    &--form {
+      h3 {
+        text-align: center;
+      }
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+      border-color: #edeff6;
+      text-align: center;
+      margin-bottom: 25px;
+
+      legend {
+        text-align: center;
+        color: #1d2e5b;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: @screen-md) {
+        order: 5;
+      }
+
+      @media (min-width: @screen-xl) {
+        width: 50.73%;
+        margin: 0;
+        margin-top: 59px;
+      }
+    }
   }
 
   &__interest-item {
@@ -563,11 +745,24 @@
   }
 
   &__link {
+<<<<<<< HEAD
     position: absolute;
     bottom: 25px;
     left: 50%;
     transform: translate(-50%, 0);
     color: @dark;
+=======
+    width: 55%;
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: @dark;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+>>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
       position: static;
@@ -615,12 +810,13 @@
     justify-content: space-around;
     position: absolute;
     top: -10px;
+    margin-left: -3px;
 
     &--catalog {
       margin: 0;
       margin-right: auto;
       position: static;
-      margin-bottom: 21px;
+      margin-bottom: 6px;
       flex-direction: column;
 
       h3 {
@@ -628,6 +824,7 @@
         margin-top: 0;
         font-weight: normal;
         color: @greyish-brown;
+        margin-bottom: 18px;
       }
 
       @media (min-width: @screen-md) {
@@ -652,9 +849,37 @@
       }
     }
 
-    @media (min-width: @screen-md) {
+    &--form {
+      @media (min-width: @screen-md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        order: 5;
 
+        h3 {
+          flex-basis: 100%;
+        }
+      }
+
+      @media (min-width: @screen-xl) {
+        flex-direction: column;
+        order: 2;
+        width: 253px;
+
+        h3 {
+          display: none;
+        }
+      }
     }
+  }
+
+  &__circle {
+    border-radius: 50%;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 16px;
+    left: 16px;
   }
 
   &__vehicle {
@@ -667,6 +892,19 @@
     }
 
     &--catalog {
+<<<<<<< HEAD
+=======
+      width: 73%;
+      display: flex;
+      padding-bottom: 11px;
+      padding-top: 34px;
+
+      h3 {
+        position: absolute;
+        margin-top: -33px;
+      }
+
+>>>>>>> catalog-pp
       @media (min-width: @screen-md) {
         display: flex;
         flex-direction: column;
@@ -696,8 +934,8 @@
 
   &__vehicle-item {
     display: inline-block;
-    width: 33px;
-    height: 33px;
+    width: 26px;
+    height: 26px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 60%;
@@ -705,6 +943,8 @@
     &--catalog {
       background-color: @litegray;
       border-radius: 50%;
+      width: 33px;
+      height: 33px;
     }
 
     &--bike {
@@ -729,7 +969,7 @@
       width: 24px;
       height: 24px;
     }
-    }
+  }
 
   &__vehicle-link {
     text-decoration: none;
@@ -743,8 +983,26 @@
   }
 
   &__level {
+<<<<<<< HEAD
     box-sizing: border-box;
 
+=======
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    box-sizing: border-box;
+
+    @media (min-width: @screen-xl) {
+      top: 24px;
+      left: 27px;
+    }
+
+    &--catalog {
+      position: static;
+      padding-top: 27px;
+    }
+
+>>>>>>> catalog-pp
     &--form {
       flex-basis: 50%;
       z-index: 1;
@@ -761,10 +1019,12 @@
   }
 
   &__level-title {
+    position: absolute;
     margin-top: 0;
     font-size: 15px;
     font-weight: normal;
     color: @greyish-brown;
+    margin-top: -25px;
   }
 
   &__level-value {
@@ -795,11 +1055,11 @@
 
   &__to-all {
     position: relative;
-    margin-top: 20px;
-    padding-left: 24px;
+    margin-top: 10px;
+    padding-left: 26px;
     padding-right: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
     width: 100%;
@@ -812,7 +1072,7 @@
       display: block;
       content: "";
       position: absolute;
-      right: 40px;
+      right: 20px;
       top: 50%;
       transform: translate(0, -50%);
       border-style: solid;
@@ -838,6 +1098,8 @@
 
     @media (min-width: @screen-xl) {
       width: 280px;
+      margin-top: -79px;
+      margin-left: 74px;
     }
   }
 
@@ -848,7 +1110,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 16px;
     padding-bottom: 16px;
 
     @media (min-width: @screen-md) {
@@ -913,7 +1174,10 @@
     align-items: center;
     flex-direction: column;
     padding-top: 16px;
+<<<<<<< HEAD
     padding-bottom: 16px;
+=======
+>>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
       padding: 4.56%;

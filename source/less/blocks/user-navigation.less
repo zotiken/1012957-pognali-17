@@ -1,6 +1,6 @@
 .user-navigation {
   @media (min-width: @screen-md) {
-    margin-left: 51px;
+    // margin-left: 79px;
   }
 
   @media (min-width: @screen-xl) {
@@ -8,9 +8,32 @@
     justify-content: space-around;
   }
 
+<<<<<<< HEAD
+=======
+  &--feedback {
+    margin-top: 32px;
+    padding-left: 37px;
+
+    @media (min-width: @screen-md) {
+      margin-top: 24px;
+      padding-left: 92px;
+    }
+
+    @media (min-width: @screen-xl) {
+      justify-content: space-between;
+      width: 63.6%;
+      padding-left: 23.5%;
+    }
+  }
+
+>>>>>>> catalog-pp
   &__item {
     list-style: none;
     margin-bottom: 45px;
+
+    &--feedback {
+      margin-bottom: 23px;
+    }
 
     @media (min-width: @screen-md) {
       margin-bottom: 39px;
@@ -21,6 +44,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    @media (min-width: @screen-md) {
+      align-items: flex-start;
+    }
 
     @media (min-width: @screen-xl) {
       flex-direction: row;
@@ -35,6 +63,7 @@
     margin-left: 62px;
     text-align-last: left;
 
+<<<<<<< HEAD
     @media (min-width: @screen-xl) {
       flex-direction: row;
       margin-top: 10px;
@@ -80,8 +109,47 @@
       padding-left: 28px;
       padding-right: 31px;
       border-radius: 25px;
+=======
+    @media (min-width: @screen-md) {
+      margin-left: 19%;
     }
 
+    @media (min-width: @screen-xl) {
+      flex-direction: row;
+      margin-top: 10px;
+>>>>>>> catalog-pp
+    }
+  }
+}
+
+.user-navigation-link {
+  display: block;
+  box-sizing: border-box;
+  line-height: 22px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161c35;
+  border-radius: 20px;
+
+  @media (min-width: @screen-md) {
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 28px;
+    z-index: 9;
+  }
+
+  &--menu {
+    padding-bottom: 38px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #192144;
+
+    @media (min-width: @screen-md) {
+      font-size: 28px;
+
+<<<<<<< HEAD
     @media (min-width: @screen-xl) {
       order: 3;
       z-index: 2;
@@ -107,21 +175,16 @@
 =======
     &--telefon,
     &--email {
+=======
+>>>>>>> catalog-pp
       &::before {
-        display: block;
-        position: absolute;
-        margin-left: -62px;
-        margin-top: -15px;
-        content: "";
-        width: 45px;
-        height: 45px;
-        background-color: #121936;
-        border-radius: 50%;
-        background-size: 18px;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+        margin-left: -93px;
+        margin-top: -23px;
       }
+    }
+  }
 
+<<<<<<< HEAD
       @media (min-width: @screen-md) {
         &::before {
           width: 67px;
@@ -130,9 +193,31 @@
         }
       }
 >>>>>>> decor
+=======
+  &--signin {
+    border-radius: 20px;
+    background-color: @yellow;
+    width: auto;
+    font-weight: 700;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+    @media (min-width: @screen-md) {
+      font-size: 20px;
+      line-height: 30px;
+      display: block;
+      margin-left: auto;
+      padding-top: 12px;
+      padding-bottom: 8px;
+      padding-left: 28px;
+      padding-right: 31px;
+      border-radius: 25px;
+>>>>>>> catalog-pp
     }
   }
 
+<<<<<<< HEAD
   &--yellow {
     text-align: left;
     color: #ffd74b;
@@ -154,15 +239,59 @@
         }
       }
 >>>>>>> decor
+=======
+    @media (min-width: @screen-xl) {
+      order: 3;
+      z-index: 2;
     }
   }
 
+  &--signin-menu {
+    border-radius: 20px;
+    background-color: @yellow;
+    width: auto;
+    font-weight: 700;
+    font-size: 17px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 33px;
+  }
+
+  &--telefon,
+  &--email {
+    &::before {
+      display: block;
+      position: absolute;
+      margin-left: -62px;
+      margin-top: -15px;
+      content: "";
+      width: 45px;
+      height: 45px;
+      background-color: #121936;
+      border-radius: 50%;
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+>>>>>>> catalog-pp
+    }
+  }
+
+<<<<<<< HEAD
   &--telefon {
     &::before {
       background-image: url("../img/contacts-phone-y.svg");
+=======
+    @media (min-width: @screen-md) {
+      &::before {
+        width: 67px;
+        height: 67px;
+        background-size: 27px;
+      }
+>>>>>>> catalog-pp
     }
   }
 
+<<<<<<< HEAD
   &--email {
     &::before {
       background-image: url("../img/contacts-mail-y.svg");
@@ -180,19 +309,84 @@
       position: relative;
       display: inline-block;
       content: "";
+=======
+    @media (min-width: @screen-xl) {
+      &::before {
+        width: 90px;
+        height: 90px;
+        background-size: 35px;
+      }
+    }
+  }
+
+  &--yellow {
+    text-align: left;
+    color: #ffd74b;
+
+    &::before {
+      margin-left: -62px;
+      margin-top: -13px;
     }
 
     @media (min-width: @screen-md) {
-      display: none;
+      &::before {
+        margin-left: -91px;
+        margin-top: -22px;
+      }
     }
 
+    @media (min-width: @screen-xl) {
+      &::before {
+        margin-left: -117px;
+        margin-top: -36px;
+      }
+    }
+  }
+
+  &--telefon {
+    &::before {
+      background-image: url("../img/contacts-phone-y.svg");
+>>>>>>> catalog-pp
+    }
+  }
+
+<<<<<<< HEAD
+    @media (min-width: @screen-md) {
+      display: none;
+=======
+  &--email {
+    &::before {
+      background-image: url("../img/contacts-mail-y.svg");
+>>>>>>> catalog-pp
+    }
+  }
+
+<<<<<<< HEAD
     @media (min-width: @screen-xl) {
       display: inline-block;
       width: 50px;
       height: 50px;
+=======
+  &--telicon,
+  &--mailicon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &::before {
+      position: relative;
+      display: inline-block;
+      content: "";
+    }
+
+    @media (min-width: @screen-md) {
+      display: none;
+>>>>>>> catalog-pp
     }
   }
 
+<<<<<<< HEAD
   &--telicon {
     background-color: @orange;
   }
@@ -204,6 +398,27 @@
     width: 21px;
     height: 21px;
 
+=======
+    @media (min-width: @screen-xl) {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--telicon {
+    background-color: @orange;
+    order: 1;
+  }
+
+  &--telicon::before {
+    margin-top: 10px;
+
+    background: @orange url("../img/topmenu-phone.svg") no-repeat top/cover;
+    width: 21px;
+    height: 21px;
+
+>>>>>>> catalog-pp
     @media (min-width: @screen-xl) {
       margin-top: 13px;
     }
@@ -222,6 +437,25 @@
 
     @media (min-width: @screen-xl) {
       margin-top: 17px;
+<<<<<<< HEAD
+=======
+    }
+  }
+
+  &--menu {
+    padding-bottom: 38px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #192144;
+
+    @media (min-width: @screen-md) {
+      font-size: 28px;
+
+      &::before {
+        margin-left: -93px;
+        margin-top: -23px;
+      }
+>>>>>>> catalog-pp
     }
   }
 }

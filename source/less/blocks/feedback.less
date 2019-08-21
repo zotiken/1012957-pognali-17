@@ -2,7 +2,11 @@
   position: relative;
 
   @media (min-width: @screen-md) {
-  padding: 0 5.2%;
+    padding: 0 5.2%;
+  }
+
+  @media (min-width: @screen-xl) {
+    padding-right: 6%;
   }
 
   &__email {
@@ -13,10 +17,12 @@
     font-size: 18px;
     line-height: 18px;
     padding: 24px;
+    padding-top: 22px;
+    padding-bottom: 19px;
     color: @greyish-brown-30;
     border: none;
     border-radius: 10px;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
 
     @media (min-width: @screen-md) {
       padding: 0 35px;
@@ -26,6 +32,10 @@
       border-radius: 20px;
       margin-bottom: 61px;
     }
+
+    @media (min-width: @screen-xl) {
+      margin-bottom: 71px;
+    }
   }
 
   &__submit {
@@ -34,46 +44,101 @@
     right: 0;
     top: 0;
     width: 60px;
+    height: 61px;
     padding: 24.5px;
     border: none;
     border-radius: 0 10px 10px 0;
     background-color: @yellow;
-    background-image: url("../img/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 14px;
+
+    &::before {
+      display: none;
+      width: 100px;
+      height: 30px;
+      content: attr(data-text);
+      position: absolute;
+      top: 50%;
+      left: 11%;
+      font-size: 24px;
+      font-weight: bold;
+      transform: translate(0, -50%);
+    }
+
+    &::after {
+      width: 0;
+      height: 0;
+      display: block;
+      content: "";
+      position: absolute;
+      right: 19px;
+      top: 50%;
+      transform: translate(0, -50%);
+      border-style: solid;
+      border-width: 7px 5px 7px 10px;
+      border-color: transparent transparent transparent #1d2e5b;
+    }
 
     @media (min-width: @screen-md) {
       width: 82px;
       height: 81px;
       border-radius: 0 20px 20px 0;
       right: 5.2%;
+
+      &::after {
+        right: 36px;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 24.4%;
+      right: 5.85%;
+
+      &::before {
+        display: block;
+      }
     }
   }
 
   &__question {
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 36px;
-    // width: 220px;
     color: @white;
     font-weight: 300;
     line-height: 22px;
     text-align: center;
-
-    span {
-      display: block;
-    }
 
     @media (min-width: @screen-md) {
       font-size: 28px;
       display: inline-block;
       width: 100%;
       margin-bottom: 47px;
+    }
 
-      span {
+    @media (min-width: @screen-xl) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__question-part {
+    display: block;
+
+    @media (min-width: @screen-md) {
+      display: inline-block;
+    }
+
+    @media (min-width: @screen-xl) {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: @screen-xl) {
         display: inline-block;
       }
     }
+  }
+
+  &__navigation {
+    margin-top: 29px;
   }
 }
