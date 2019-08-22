@@ -5,7 +5,8 @@
     margin-top: 24px;
 
     @media (min-width: @screen-md) {
-      padding: 38px;
+      padding: 29px 0;
+      padding-bottom: 63px;
       margin: 0;
     }
 
@@ -22,7 +23,7 @@
 
     @media (min-width: @screen-md) {
       font-size: 30px;
-      padding-bottom: 37px;
+      padding-bottom: 40px;
     }
   }
 
@@ -50,8 +51,10 @@
       display: flex;
 
       [data-toggle="dropdown"] {
-        width: 126px;
+        width: 25.5%;
         border: none;
+        font-size: 20px;
+        font-weight: 500;
       }
     }
 
@@ -62,6 +65,14 @@
         width: auto;
         border-bottom: 1px solid #f3c72b;
       }
+    }
+
+    &--vehicle {
+      align-items: center;
+    }
+
+    &--level {
+      align-items: center;
     }
   }
 
@@ -84,9 +95,21 @@
     @media (min-width: @screen-md) {
       display: flex;
       width: 100%;
+      padding-bottom: 8px;
 
       li {
         width: 33%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        &:nth-child(1) {
+          width: 37%;
+        }
+
+        &:nth-child(2) {
+          width: 38%;
+        }
       }
     }
 
@@ -97,6 +120,11 @@
       li {
         width: auto;
       }
+    }
+
+    &--vehicle {
+      padding-top: 4px;
+      margin-left: -5px;
     }
   }
 
@@ -135,10 +163,24 @@
     }
   }
 
+  &__item {
+    @media (min-width: @screen-md) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
   &__item-value {
     padding-left: 13px;
     font-size: 15px;
     color: @greyish-brown;
+
+    @media (min-width: @screen-md) {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 41px;
+      padding-left: 10px;
+    }
   }
 
   &__level {
@@ -149,6 +191,21 @@
 
     li {
       padding: 0;
+    }
+
+    @media (min-width: @screen-md) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      li {
+        &:nth-child(1) {
+          width: 30.8%;
+        }
+
+        &:nth-child(2) {
+          width: 63%;
+        }
+      }
     }
   }
 
@@ -198,6 +255,8 @@
     @media (min-width: @screen-md) {
       font-size: 20px;
       border-radius: 25px;
+      padding-top: 11px;
+      padding-bottom: 8px;
     }
   }
 }

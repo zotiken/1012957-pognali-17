@@ -54,10 +54,6 @@
     display: flex;
     justify-content: space-between;
 
-    &--catalog {
-      background-color: @dark;
-    }
-
     @media (min-width: @screen-md) {
       padding: 0 5.21%;
       padding-top: 35px;
@@ -68,6 +64,15 @@
       padding: 0 4.21%;
       padding-top: 42px;
       padding-bottom: 2px;
+    }
+
+    &--catalog {
+      background-color: @dark;
+
+      @media (min-width: @screen-md) {
+        padding-top: 40px;
+        padding-bottom: 38px;
+      }
     }
   }
 
