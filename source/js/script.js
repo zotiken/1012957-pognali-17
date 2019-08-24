@@ -1,8 +1,15 @@
 var toggleMenu = document.querySelectorAll('.toggle');
 var menuBlock = document.querySelector(".menu");
 var toggleClose = document.querySelector(".menu__toggle");
+
 var bisnessToggle = document.querySelectorAll('.bisness-toggle');
 var bisnessBlock = document.querySelector('.modal-bisness-price');
+
+var filterToggle = document.querySelectorAll('.filter-toggle');
+var filterBlockHidden = document.querySelector('.country-filter__region');
+var filterBlockHidden2 = document.querySelector('.country-filter__wrapper');
+var filterBlockHidden3 = document.querySelector('.country-filter__close ');
+
 
 
 //--------  при наличии поддержки js------------
@@ -42,6 +49,18 @@ for (let i = 0; i < level.length; i++) {
 }
 
 //
+
+// меню  фильтра
+
+for (let q = 0; q < filterToggle.length; q++) {
+    filterToggle[q].onclick = function() {
+        filterBlockHidden.classList.toggle("visible");
+        filterBlockHidden2.classList.toggle("visible");
+        filterBlockHidden3.classList.toggle("visible-block");
+    }
+}
+
+
 
 // calendar
 
