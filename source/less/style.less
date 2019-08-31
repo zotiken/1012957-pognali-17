@@ -38,21 +38,27 @@
 @import "blocks/step.less";
 @import "blocks/road-map.less";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+@import "blocks/route-select.less";
+>>>>>>> catalog-pp-4
 @import "blocks/calendar.less";
-
 
 .visible-block {
   display: block;
 
   @media (min-width: @screen-md) {
-display: flex;
+    display: flex;
   }
 }
 
-
 .visible {
   display: flex;
+
+  @media (min-width: @screen-xl) {
+    display: none;
+  }
 }
 
 .hidden {

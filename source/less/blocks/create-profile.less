@@ -86,6 +86,14 @@
     text-decoration: none;
     color: #192144;
 
+    &:hover {
+      color: rgba(22, 28, 53, 0.7);
+    }
+
+    &:active {
+      color: rgba(22, 28, 53, 0.2);
+    }
+
     @media (min-width: @screen-md) {
       padding-left: 64px;
       font-size: 20px;
@@ -103,6 +111,10 @@
         border-radius: 50%;
         background-color: #e2e5f2;
         text-align: center;
+        background-image: url("../img/user.svg");
+        background-size: 39%;
+        background-repeat: no-repeat;
+        background-position: 49%, 46%;
       }
     }
   }

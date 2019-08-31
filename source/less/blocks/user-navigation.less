@@ -1,6 +1,5 @@
 .user-navigation {
   @media (min-width: @screen-md) {
-    // margin-left: 79px;
   }
 
   @media (min-width: @screen-xl) {
@@ -123,6 +122,7 @@
 }
 
 .user-navigation-link {
+  position: relative;
   display: block;
   box-sizing: border-box;
   line-height: 22px;
@@ -137,6 +137,7 @@
     margin-bottom: 0;
     font-size: 28px;
     line-height: 28px;
+<<<<<<< HEAD
     z-index: 9;
   }
 
@@ -182,6 +183,8 @@
         margin-top: -23px;
       }
     }
+=======
+>>>>>>> catalog-pp-4
   }
 
 <<<<<<< HEAD
@@ -203,6 +206,14 @@
     padding-top: 10px;
     padding-bottom: 6px;
 
+    &:hover {
+      background-color: darken(@yellow, 15%);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
     @media (min-width: @screen-md) {
       font-size: 20px;
       line-height: 30px;
@@ -213,7 +224,11 @@
       padding-left: 28px;
       padding-right: 31px;
       border-radius: 25px;
+<<<<<<< HEAD
 >>>>>>> catalog-pp
+=======
+      z-index: 10;
+>>>>>>> catalog-pp-4
     }
   }
 
@@ -255,6 +270,14 @@
     padding-top: 16px;
     padding-bottom: 10px;
     margin-bottom: 33px;
+
+    &:hover {
+      background-color: darken(@yellow, 15%);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   &--telefon,
@@ -322,6 +345,15 @@
   &--yellow {
     text-align: left;
     color: #ffd74b;
+
+    &:hover {
+     color: rgba(255, 215, 75, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 215, 75, 0.3);
+    }
+
 
     &::before {
       margin-left: -62px;
@@ -409,44 +441,80 @@
   &--telicon {
     background-color: @orange;
     order: 1;
-  }
 
-  &--telicon::before {
-    margin-top: 10px;
+    &:hover {
+      background-color: darken(@orange, 15%);
+    }
 
-    background: @orange url("../img/topmenu-phone.svg") no-repeat top/cover;
-    width: 21px;
-    height: 21px;
-
+<<<<<<< HEAD
 >>>>>>> catalog-pp
     @media (min-width: @screen-xl) {
       margin-top: 13px;
+=======
+    &:active {
+      background-color: darken(@orange, 15%);
+      fill: rgba(0, 0, 0, 0.3);
+>>>>>>> catalog-pp-4
     }
   }
 
+  // &--telicon::before {
+  //   margin-top: 10px;
+
+  //   background: url("../img/topmenu-phone.svg") no-repeat top/cover;
+  //   width: 21px;
+  //   height: 21px;
+
+  //   @media (min-width: @screen-xl) {
+  //     margin-top: 13px;
+  //   }
+  // }
+
   &--mailicon {
     background-color: @liteorange;
-  }
 
-  &--mailicon::before {
-    margin-top: 12px;
+    &:hover {
+      background-color: darken(@liteorange, 15%);
+    }
 
-    background: @liteorange url("../img/topmenu-mail.svg") no-repeat top/cover;
-    width: 18px;
-    height: 14px;
-
+<<<<<<< HEAD
     @media (min-width: @screen-xl) {
       margin-top: 17px;
 <<<<<<< HEAD
 =======
+=======
+    &:active {
+      background-color: darken(@liteorange, 15%);
+      fill: rgba(0, 0, 0, 0.3);
+>>>>>>> catalog-pp-4
     }
   }
+
+  // &--mailicon::before {
+  //   margin-top: 12px;
+
+  //   background: url("../img/topmenu-mail.svg") no-repeat top/cover;
+  //   width: 18px;
+  //   height: 14px;
+
+  //   @media (min-width: @screen-xl) {
+  //     margin-top: 17px;
+  //   }
+  // }
 
   &--menu {
     padding-bottom: 38px;
     font-weight: bold;
     font-size: 16px;
     color: #192144;
+
+    &:hover {
+      color: rgba(25, 33, 68, 0.7);
+    }
+
+    &:active {
+      color: rgba(25, 33, 68, 0.2);
+    }
 
     @media (min-width: @screen-md) {
       font-size: 28px;
@@ -457,5 +525,12 @@
       }
 >>>>>>> catalog-pp
     }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

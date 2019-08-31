@@ -83,14 +83,13 @@
     margin-top: -80px;
     width: 35px;
     height: 24px;
-    background-image: url("../img/flags.png");
+    background-size: 100%;
 
     @media (min-width: @screen-md) {
       margin-top: -64px;
       margin-left: 369px;
       width: 72px;
       height: 48px;
-      background-size: 420%;
     }
 
     @media (min-width: @screen-xl) {
@@ -99,15 +98,27 @@
     }
 
     &--tai {
-      background-position: 0 0;
+      background-image: url("../img/thailand@2x.svg");
+    }
+
+    &--sri {
+      background-image: url("../img/Sri_Lanka@2x.svg");
+    }
+
+    &--sey {
+      background-image: url("../img/Seychelles@2x.svg");
+    }
+
+    &--belg {
+      background-image: url("../img/Belgium-3@2x.svg");
     }
 
     &--france {
-      background-position: bottom right -100px;
+      background-image: url("../img/France-3@2x.svg");
     }
 
     &--czech {
-      background-position: bottom right;
+      background-image: url("../img/Chech_republic@2x.svg");
     }
 
     &--germany {
@@ -139,7 +150,7 @@
         content: "";
         width: 26px;
         height: 18px;
-        background-image: url(../img/flags.png);
+        background-image: url("../img/flags.png");
         background-position: 0 0;
       }
 
@@ -162,6 +173,48 @@
       margin: 0 9px;
       position: relative;
       margin-top: -2px;
+
+      &::before,
+      &::after {
+        box-sizing: border-box;
+        transition: 0.4s ease-in-out;
+        color: @white;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &::before {
+        content: attr(data-info);
+        width: max-content;
+        height: 40px;
+        font-size: 16px;
+        padding: 10px;
+        background: #161c35;
+        bottom: -54px;
+        left: -88%;
+
+        @media (min-width: @screen-md) {
+          font-size: 16px;
+        }
+      }
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom-color: #161c35;
+        bottom: -15px;
+        left: 24%;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.2s ease-in-out 0.4s;
+      }
 
       @media (min-width: @screen-md) {
         width: 35px;
@@ -196,6 +249,21 @@
       margin-bottom: 0;
       position: static;
       font-size: 20px;
+    }
+  }
+
+  &__stats {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 11px;
+      top: 42%;
+      transform: translate(0, -50%);
+      left: -17px;
+      height: 11px;
+      background-image: url("../img/user.svg");
     }
   }
 }

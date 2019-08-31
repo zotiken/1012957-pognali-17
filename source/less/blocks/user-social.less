@@ -16,7 +16,7 @@
     @media (min-width: @screen-md) {
       margin-top: 0;
       margin-bottom: 0;
-      margin-left: 88px;
+      margin-left: 13%;
     }
 
     @media (min-width: @screen-xl) {
@@ -33,7 +33,19 @@
     width: 27px;
     height: 27px;
 
+
+
     &--menu {
+      fill:#cccccc;
+
+      &:hover {
+        fill: rgba(0, 0, 0, 0.7);
+      }
+
+      &:active {
+        fill: rgba(0, 0, 0, 0.3);
+      }
+
       svg {
         width: 20px;
         height: 20px;
@@ -80,6 +92,25 @@
       border-radius: 50%;
       background-color: @yellow;
 
+      &:hover {
+        background-color: #192144;
+        color: @white;
+      }
+
+      &:hover .user-social__item-icon {
+        fill: rgba(255, 255, 255, 0.7);
+      }
+
+      &:active {
+        background-color: #192144;
+        color: @white;
+        fill: rgba(255, 255, 255, 0.3);
+      }
+
+      &:active .user-social__item-icon {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+
       @media (min-width: @screen-md) {
         width: 60px;
         height: 60px;
@@ -93,6 +124,5 @@
     top: 50%;
     transform: translate(-50%, -50%);
     fill: black;
+  }
 }
-}
-

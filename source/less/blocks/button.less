@@ -4,4 +4,76 @@
   background-color: @yellow;
   border-radius: 20px;
   text-decoration: none;
+
+  &:hover {
+    background-color: darken(@yellow, 15%);
+  }
+
+  &:active {
+    background-color: darken(@yellow, 15%);
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active::before {
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.3);
+  }
+
+  &--form-next {
+    font-weight: bold;
+    font-size: 17px;
+    width: 106%;
+    margin-left: -2%;
+    padding-top: 12px;
+    padding-left: 20%;
+    padding-bottom: 9px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+
+    @media (min-width: @screen-md) {
+      font-size: 24px;
+      padding-top: 29px;
+      padding-left: 0%;
+      padding-bottom: 25px;
+      margin-bottom: 0;
+      width: 54.3%;
+      text-transform: none;
+      margin-left: 0;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 28.6%;
+    }
+  }
+
+  &--modal {
+    &:hover {
+      background-color: #f3f4f8;
+      color: rgba(22, 28, 53, 0.7);
+    }
+
+    &:active {
+      background-color: #f3f4f8;
+      color: rgba(22, 28, 53, 0.2);
+    }
+  }
+
+  &--whereabouts {
+    &:hover {
+      background-color: #161c35;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &:hover::before {
+      border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+    }
+
+    &:active {
+      background-color: #161c35;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:active::before {
+      border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
+    }
+  }
 }

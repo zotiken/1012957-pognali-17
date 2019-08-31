@@ -53,6 +53,15 @@
     a {
       text-decoration: none;
       color: @yellow;
+
+      &:hover {
+        color: @orange;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: rgba(255, 215, 75, 0.2);
+      }
     }
 
     @media (min-width: @screen-md) {
