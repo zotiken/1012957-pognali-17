@@ -1,6 +1,6 @@
 .menu {
   min-height: 568px;
-  z-index: 1;
+  z-index: 9;
   display: none;
   background-color: @white;
   width: 100%;
@@ -9,6 +9,10 @@
 
   @media (min-width: @screen-md) {
     min-height: 910px;
+  }
+
+  @media (min-width: @screen-xl) {
+    display: none;
   }
 
   &__wrapper {

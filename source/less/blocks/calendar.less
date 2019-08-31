@@ -1,7 +1,11 @@
 .calendar {
-  width: 100%;
+  width: 102%;
   text-align: center;
   border-collapse: collapse;
+
+  @media (min-width: @screen-xl) {
+    width: 100.3%;
+  }
 
   &__month {
     font-size: 20px;
@@ -10,6 +14,15 @@
     padding-bottom: 10px;
     padding-top: 10px;
     margin-bottom: 25px;
+
+    @media (min-width: @screen-md) {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1d2e5b;
+      padding-bottom: 19px;
+      padding-top: 25px;
+      margin-bottom: 30px;
+    }
   }
 
   thead {
@@ -19,8 +32,35 @@
       border-bottom: 1px solid rgba(68, 68, 68, 0.3);
     }
 
+    tr:first-child {
+      font-size: 32px;
+
+      @media (min-width: @screen-xl) {
+        font-size: 65px;
+        color: rgba(68, 68, 68, 0.3);
+      }
+    }
+
     tr:last-child {
+      height: 42px;
+      vertical-align: bottom;
       color: rgb(85, 85, 85);
+
+      @media (min-width: @screen-md) {
+        height: 66px;
+        font-size: 18px;
+      }
+
+      @media (min-width: @screen-xl) {
+        height: 55px;
+        font-size: 18px;
+        text-align: left;
+        vertical-align: middle;
+
+        td {
+          padding-left: 15px;
+        }
+      }
     }
 
     // tr:nth-child(1) td:nth-child(2) {
@@ -42,15 +82,18 @@
   &__body {
     td {
       // color: rgb(44, 86, 122);
-      width: 30px;
+      width: 14.28%;
       height: 30px;
       border: 1px solid #cbced9;
 
       @media (min-width: @screen-md) {
-        width: 143px;
-        height: 72px;
+        height: 66px;
         text-align: left;
         vertical-align: top;
+      }
+
+      @media (min-width: @screen-xl) {
+        height: 68px;
       }
     }
 

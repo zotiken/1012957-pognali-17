@@ -1,9 +1,38 @@
-.travel-filter {
+.route-select {
+  @media (min-width: @screen-md) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: @screen-xl) {
+    padding-top: 64px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 26px;
+
+    @media (min-width: @screen-md) {
+      margin-top: 0;
+      margin-bottom: 52px;
+    }
+
+    @media (min-width: @screen-xl) {
+      margin-bottom: 59px;
+    }
+  }
+
   &__wrapper {
+    display: none;
     list-style: none;
     padding: 0;
     margin-top: 24px;
     margin-bottom: -1px;
+
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
 
     @media (min-width: @screen-md) {
       padding: 29px 0;
@@ -35,6 +64,12 @@
   }
 
   &__dropdown {
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 22px;
+
     a {
       text-decoration: none;
     }
@@ -43,23 +78,29 @@
       position: relative;
       display: block;
       color: #1d2e5b;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 1.4px;
       padding: 10px 0;
-      padding-left: 1px;
       padding-bottom: 11px;
-      border-bottom: 1px solid #f3c72b;
       text-transform: uppercase;
+      padding-left: 7px;
     }
 
     @media (min-width: @screen-md) {
       display: flex;
+      margin-bottom: 15px;
+      border: none;
 
       [data-toggle="dropdown"] {
-        width: 25.5%;
-        border: none;
+        width: 65%;
         font-size: 20px;
         font-weight: 500;
+        padding-top: 27px;
+        padding-bottom: 23px;
+        padding-left: 5%;
+        letter-spacing: 2px;
       }
     }
 
@@ -67,9 +108,11 @@
       display: block;
 
       [data-toggle="dropdown"] {
-        width: auto;
-        // border-bottom: 1px solid #f3c72b;
-        padding-bottom: 7px;
+        width: 70.5%;
+        padding-left: 2.6%;
+        padding-bottom: 23px;
+        border: 1px solid #cbced9;
+        border-radius: 10px;
       }
     }
 
@@ -89,7 +132,6 @@
     padding-bottom: 11px;
 
     li {
-      position: relative;
       display: flex;
       align-items: center;
       padding: 0;
@@ -149,13 +191,28 @@
     }
   }
 
+  &__checked {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 75%;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+  }
+
   &__icon-arrow {
     position: absolute;
     display: block;
     font-size: 0.7em;
     color: black;
-    top: 15px;
-    right: 10px;
+    top: 0;
+    right: 1px;
+    width: 49px;
+    text-align: right;
+    height: 39px;
+    margin-top: 1px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), #ffffff);
 
     &::before {
       content: "\25BC";
@@ -181,6 +238,39 @@
       &::before {
         content: "\25BC";
       }
+    }
+  }
+
+  &__add-country {
+    width: 100%;
+    border: none;
+    text-align: left;
+    position: relative;
+    display: block;
+    color: #1d2e5b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    padding: 10px 0;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+    padding-left: 7px;
+    background-color: #edeff6;
+
+    @media (min-width: @screen-md) {
+      width: 70%;
+      font-size: 20px;
+      font-weight: 500;
+      padding-top: 27px;
+      padding-bottom: 23px;
+      padding-left: 5%;
+      letter-spacing: 2px;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 73.2%;
+      padding-left: 2.6%;
     }
   }
 
@@ -247,30 +337,14 @@
   }
 
   &__level-input {
-    position: relative;
     margin: 0;
     width: 51%;
     padding: 6px 0;
     display: inline-block;
     text-align: center;
 
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
     &:last-child {
       margin-left: -6px;
-
-      &::before {
-        position: absolute;
-        content: "";
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #cccccc;
-      }
     }
 
     @media (min-width: @screen-md) {
@@ -284,90 +358,48 @@
     }
   }
 
-  &__level-input-bar {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 2px;
-      background-color: #cccccc;
-      top: 50%;
-      transform: translate(0, -50%);
-    }
-  }
-
   &__level-range {
     width: 270px;
-    padding: 18px 0;
+    padding: 18px;
 
     @media (min-width: @screen-xl) {
       margin-top: 21px;
     }
   }
 
-  &__level-bar {
-    width: 100%;
-    height: 2px;
-    background-color: #cccccc;
-    position: relative;
-    display: block;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #1d2e5b;
-    }
-
-    &::before {
-      top: -4px;
-      left: 30%;
-    }
-
-    &::after {
-      top: -4px;
-      left: 96%;
-    }
-  }
-
-  &__level-between {
-    display: block;
-    width: 70%;
-    height: 2px;
-    float: right;
-    background-color: #1d2e5b;
-  }
-
   &__show {
-    background-color: @white;
+    background-color: #ffffff;
     width: 105%;
     font-size: 17px;
     font-weight: 700;
-    line-height: 30px;
-    color: @dark;
-    padding-top: 7px;
-    padding-bottom: 3px;
+    color: #161c35;
+    padding-top: 6px;
+    padding-bottom: 5px;
     padding-left: 43px;
     margin-left: -5px;
     text-align: center;
     text-transform: uppercase;
 
     @media (min-width: @screen-md) {
-      font-size: 20px;
+      font-size: 24px;
       border-radius: 25px;
-      padding-top: 12px;
-      padding-bottom: 8px;
+      position: absolute;
+      margin-top: 22px;
+      margin-left: 40px;
+      padding-right: 0;
+      padding-left: 0;
+      text-align: right;
+      width: 27%;
+      text-transform: none;
+
+      &--step-3 {
+        margin-top: 38px;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      position: static;
+      margin-left: 43.6%;
     }
   }
 }

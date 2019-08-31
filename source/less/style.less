@@ -34,20 +34,23 @@
 @import "blocks/add-plane.less";
 @import "blocks/step.less";
 @import "blocks/road-map.less";
+@import "blocks/route-select.less";
 @import "blocks/calendar.less";
-
 
 .visible-block {
   display: block;
 
   @media (min-width: @screen-md) {
-display: flex;
+    display: flex;
   }
 }
 
-
 .visible {
   display: flex;
+
+  @media (min-width: @screen-xl) {
+    display: none;
+  }
 }
 
 .hidden {

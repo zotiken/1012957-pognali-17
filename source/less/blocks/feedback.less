@@ -24,6 +24,29 @@
     border-radius: 10px;
     margin-bottom: 27px;
 
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.3);
+    }
+
+
+    &:hover::placeholder {
+      color: rgba(68, 68, 68, 0.6);
+    }
+
+    &:focus {
+      background-color: #192144;
+      color: rgba(255, 255, 255, 1);
+      box-shadow: inset -1px 0 0 3px @white;
+    }
+
+    &:focus::placeholder {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    // &:required {
+    //  outline: 2px solid red;
+    // }
+
     @media (min-width: @screen-md) {
       padding: 0 35px;
       height: 81px;

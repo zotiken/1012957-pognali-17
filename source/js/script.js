@@ -29,8 +29,8 @@ for (let q = 0; q < toggleMenu.length; q++) {
 
 // бизнес прайс
 
-for (let q = 0; q < toggleMenu.length; q++) {
-    bisnessToggle[q].onclick = function() {
+for (let e = 0; e < bisnessToggle.length; e++) {
+    bisnessToggle[e].onclick = function() {
         bisnessBlock.classList.toggle("visible");
     }
 }
@@ -59,6 +59,64 @@ for (let q = 0; q < filterToggle.length; q++) {
         filterBlockHidden3.classList.toggle("visible-block");
     }
 }
+
+//
+
+// меню стран формы
+
+// var DropDownHeader = document.querySelector('.route-select__header-dropdown');
+// var DropDownList = document.querySelector('.route-select__wrapper');
+// var CountryIndex = document.querySelectorAll('.country-filter__sumbol a');
+// // var CountryItemSelect = CountryIndex.getE
+// // for (let w = 0; w < filterToggle.length; w++) {
+// DropDownHeader.onclick = function() {
+//         DropDownList.classList.toggle("visible-block");
+//         // filterBlockHidden2.classList.toggle("visible");
+//         // filterBlockHidden3.classList.toggle("visible-block");
+//     }
+//     // }
+// for (let e = 0; e < CountryIndex.length; e++) {
+//     CountryIndex[e].onclick = function() {
+//         DropDownList.classList.toggle("visible-block");
+//         // filterBlockHidden2.classList.toggle("visible");
+//         // filterBlockHidden3.classList.toggle("visible-block");
+//         console.log(CountryIndex[e]);
+//         alert(CountryIndex[e].text);
+//         DropDownHeader.textContent = CountryIndex[e].text;
+//     }
+// }
+// console.log(CountryIndex);
+
+
+var dropdown = document.querySelectorAll('.dropdown');
+var dropdownArray = Array.prototype.slice.call(dropdown, 0);
+dropdownArray.forEach(function(el) {
+    var button = el.querySelector('a[data-toggle="dropdown"]'),
+        menu = el.querySelector('.dropdown-menu'),
+        arrow = button.querySelector('i.icon-arrow');
+
+    button.onclick = function(event) {
+        if (!menu.hasClass('visible-block')) {
+            menu.classList.add('visible-block');
+            menu.classList.remove('hidden');
+            // arrow.classList.add('open');
+            // arrow.classList.remove('close');
+            event.preventDefault();
+        } else {
+            menu.classList.remove('visible-block');
+            menu.classList.add('hidden');
+            // arrow.classList.remove('open');
+            // arrow.classList.add('close');
+            event.preventDefault();
+        }
+    };
+})
+
+Element.prototype.hasClass = function(className) {
+    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
+
+
 
 
 

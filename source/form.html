@@ -44,44 +44,87 @@
                                 <span class="visually-hidden">mail@htmlacademy.ru</span></a>
                         </div>
                     </div>
-                    <button class="main-nav__toggle" type="button">
+                    <button class="main-nav__toggle toggle" type="button">
             <span class="visually-hidden">Меню</span>
           </button>
                 </nav>
             </div>
             <div class="main-header__menu menu">
                 <div class="menu__wrapper">
-                    <div class="menu__block-logo">
-                        <a class="menu__logo logotype"></a>
-                    </div>
-                    <button class="menu__toggle" type="button"></button>
+                    <a class="menu__block-logo logotype logotype--dark">
+                        <picture>
+                            <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
+                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+                        </picture>
+                    </a>
+                    <button class="menu__toggle toggle hidden" type="button  hidden"></button>
 
                     <ul class="menu__block site-navigation">
-                        <li class="site-navigation__item">
+                        <li class="site-navigation__item site-navigation__item--menu">
                             <a href="">О сервисе</a>
                         </li>
-                        <li class="site-navigation__item">
+                        <li class="site-navigation__item site-navigation__item--menu">
                             <a href="">Направления</a>
                         </li>
-                        <li class="site-navigation__item">
+                        <li class="site-navigation__item site-navigation__item--menu">
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
-                    <a class="menu__item user-navigation-link user-navigation-link--signin button" href="">авторизация</a>
+                    <a class="menu__item user-navigation-link user-navigation-link--signin-menu button" href="">авторизация</a>
                     <section class="menu__block user-navigation">
                         <h2 class="visually-hidden">Меню пользователя</h2>
                         <div class="user-navigation__items">
                             <div class="user-navigation__wrapper">
-                                <a class="user-navigation-link user-navigation-link--telefon" href="">8 800 555-86-28</a>
-                                <a class="user-navigation-link user-navigation-link--email" href="">mail@htmlacademy.ru</a>
+                                <a class="user-navigation-link user-navigation-link--telefon user-navigation-link--menu" href="">8 800 555-86-28</a>
+                                <a class="user-navigation-link user-navigation-link--email user-navigation-link--menu" href="">mail@htmlacademy.ru</a>
                             </div>
                             <div class="menu__block user-navigation__social user-social">
-                                <a class="user-social__item user-social__item--facebook" href=""><img src="img/facebook.png" alt="facebook" width="11" height="21" />
+                                <a class="user-social__item user-social__item--facebook user-social__item--menu" href="">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                                  <g>
+                                  <path fill="#cccccc" d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                                  V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+                                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
+                                  </g>
+                                  </svg>
                                     <span class="visually-hidden">Facebook</span></a>
-                                <a class="user-social__item user-social__item--vkontakte" href=""><img src="img/vk.png" alt="vkontakte" width="23" height="12" />
-                                    <span class="visually-hidden">VKontakte</span></a>
-                                <a class="user-social__item user-social__item--instagram" href=""><img src="img/instagram.png" alt="instagram" width="18" height="18" />
-                                    <span class="visually-hidden"> Instagram</span></a>
+                                <a class="user-social__item user-social__item--vkontakte user-social__item--menu" href="">
+                                    <span class="visually-hidden">VKontakte</span>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                                    <g>
+                                    <path fill="#cccccc" d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                                    c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+                                    c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+                                    c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+                                    C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+                                    c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+                                    c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+                                    c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+                                    c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+                                    c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+                                    c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+                                    c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+                                    c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+                                    c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+                                    C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+                                    C18.4,10.9,18.5,10.9,18.6,10.9z"/>
+                                    </g>
+                                    </svg>
+                                </a>
+                                <a class="user-social__item user-social__item--instagram user-social__item--menu" href="">
+                                    <span class="visually-hidden"> Instagram</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;"
+                                        xml:space="preserve">
+                                  <style type="text/css">
+                                .st0{fill:#cccccc;}
+                                </style>
+                                <path class="st0"  d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                                M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
+                                <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                                c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
+                                <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+                                </svg>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -94,11 +137,15 @@
                         <h2 class="fellow-travellers__title fellow-travellers__title--form">
                             Направления
                         </h2>
-
-                        <div class="fellow-travellers__level fellow-travellers__level--form">
-                            <p class="fellow-travellers__level-value fellow-travellers__level-value--form">80</p>
+                        <div class="fellow-travellers__level fellow-travellers__level--form level level--form" data-level="80">
+                            <h3 class="ellow-travellers__level-title fellow-travellers__level-title--form">левел:</h3>
+                            <svg class="level__circles level__circles--form" viewbox="90 57 21 85">
+                <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
+                                                  A1 1 0 0 1 100 60" />
+                <text class="level__circles-percent circ-text" text-anchor="middle" x="100" y="100" font-size="32px" fill="#161c35">100</text>
+                <text class="level__circles-text" text-anchor="middle" x="100" y="120" font-size="14px" fill="#444444">level</text>
+              </svg>
                         </div>
-
                         <div class="fellow-travellers__box fellow-travellers__box--form">
                             <h3 class="fellow-travellers__name fellow-travellers__name--form visually-hidden">
                                 <a href="#">Петя Демин</a>
@@ -114,28 +161,32 @@
               фото</a>
 
                         <fieldset class="fellow-travellers__interest fellow-travellers__interest--form">
-                            <legend>тэги:</legend>
-                            <a href="" class="fellow-travellers__interest-item">#бургер</a>
-                            <a href="" class="fellow-travellers__interest-item">#бар</a>
-                            <a href="" class="fellow-travellers__interest-item">#футбол</a>
-                            <a href="" class="fellow-travellers__interest-item">#концерт</a>
-                            <a href="" class="fellow-travellers__interest-item">#крафт</a>
+                            <legend>тэги<span>:</span></legend>
+                            <div class="fellow-travellers__container">
+                                <a href="" class="fellow-travellers__interest-item">#бургер</a>
+                                <a href="" class="fellow-travellers__interest-item">#бар</a>
+                                <a href="" class="fellow-travellers__interest-item">#футбол</a>
+                                <a href="" class="fellow-travellers__interest-item">#концерт</a>
+                                <a href="" class="fellow-travellers__interest-item">#крафт</a>
+                            </div>
                         </fieldset>
                         <div class="fellow-travellers__box fellow-travellers__box--vehicle fellow-travellers__box--vehicle-form">
                             <fieldset class="fellow-travellers__vehicle fellow-travellers__vehicle--form">
-                                <legend>транспорт:</legend>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--plane">
-                                    <span class="visually-hidden">самолет</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--bus">
-                                    <span class="visually-hidden">автобус</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--bike">
-                                    <span class="visually-hidden">велосипед</span>
-                                </a>
-                                <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--run">
-                                    <span class="visually-hidden">бег</span>
-                                </a>
+                                <legend>транспорт <span>:</span></legend>
+                                <div class="fellow-travellers__container">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--plane">
+                                        <span class="visually-hidden">самолет</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--bus">
+                                        <span class="visually-hidden">автобус</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--bike">
+                                        <span class="visually-hidden">велосипед</span>
+                                    </a>
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--form fellow-travellers__vehicle-item--run">
+                                        <span class="visually-hidden">бег</span>
+                                    </a>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
@@ -188,21 +239,22 @@
                         <div class="step__header">
                             <div class="step__container-title">
                                 <h4 class="step__title"><span>Шаг 1.</span> Даты пребывания</h4>
-                                <p class="step__tutorial">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                                <p class="step__tutorial step__tutorial--step-1">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                             </div>
                             <ul class="step__indicator">
-                                <li class="step__indicator-item"><span>Даты</span></li>
+                                <li class="step__indicator-item step__indicator-item--checked"><span>Даты</span></li>
                                 <li class="step__indicator-item"><span>Маршрут</span></li>
                                 <li class="step__indicator-item"><span>Развлечения</span></li>
                             </ul>
                         </div>
 
                         <div class="step__value">
-                            <div>
-                                <label class="step__value-item" for=""><span>ищу попутчиков:</span><input type="number" name="" id=""></label>
-                                <label class="step__value-item" for=""><span>Длительность:</span><input type="number" name="" id=""></label>
-                            </div>
-                            <label class="step__value-item" for=""><input type="checkbox" name="" id="">Можно с детьми</label>
+                            <label class="step__value-item step__value-item--fellow-traveller" for=""><span>ищу попутчиков:</span><input type="number" name="number"
+                    id="" value="2"></label>
+                            <label class="step__value-item step__value-item--duration" for=""><span>Длительность:</span><input type="number" name="number"
+                    id="" value="2"></label>
+                            <label class="step__value-item step__value-item--kids" for=""><input type="checkbox" name="kids" id=""
+                  checked>Можно с детьми</label>
                         </div>
 
                         <table class="step__calendar calendar" id="calendar2">
@@ -222,11 +274,11 @@
                                                                                 <tbody class="calendar__body">
                         </table>
 
-                        <button class="step__button button">Следующий шаг</button>
+                        <button class="step__button button button--form-next">Следующий шаг</button>
                     </div>
                 </div>
                 <div class="add-plane__item step">
-                    <div class="step__wrapper">
+                    <div class="step__wrapper step__wrapper--step-2">
                         <div class="step__header">
                             <div class="step__container-title">
                                 <h4 class="step__title"><span>Шаг 2.</span>Маршрут</h4>
@@ -235,16 +287,17 @@
                             </div>
                             <ul class="step__indicator">
                                 <li class="step__indicator-item"><span>Даты</span></li>
-                                <li class="step__indicator-item"><span>Маршрут</span></li>
+                                <li class="step__indicator-item step__indicator-item--checked"><span>Маршрут</span></li>
                                 <li class="step__indicator-item"><span>Развлечения</span></li>
                             </ul>
                         </div>
 
-                        <div class="step__container travel-filter">
-                            <ul class="travel-filter__wrapper">
-                                <li class="travel-filter__dropdown">
-                                    <a href="#" data-toggle="dropdown">Босния и герцеговина <i class="travel-filter__icon-arrow"></i></a>
-                                    <div class="country-filter__wrapper">
+                        <div class="step__container route-select">
+                            <ul class="route-select__list">
+                                <li class="route-select__dropdown">
+                                    <a class="route-select__header-dropdown route-select__checked" data-toggle="dropdown">Босния и
+                    герцеговина <i class="route-select__icon-arrow"></i></a>
+                                    <div class="route-select__wrapper">
                                         <div class="country-filter__index">
                                             <div class="country-filter__list">
                                                 <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="a" checked><label class="country-filter__letter-value" for="a">а</label>
@@ -601,22 +654,22 @@
                                             </div>
                                         </div>
                                         <div class="country-filter__sumbol country-filter__sumbol--A country-filter__sumbol--common ">
-                                            <a href="#">Афганистан</a>
-                                            <a href="#">Алгерия</a>
-                                            <a href="#">Албания</a>
-                                            <a href="#">Андорра</a>
-                                            <a href="#">Аргентина</a>
-                                            <a href="#">Армения</a>
-                                            <a href="#">Австралия</a>
-                                            <a href="#">Австрия</a>
-                                            <a href="#">Азербайджанм</a>
+                                            <a>Афганистан</a>
+                                            <a>Алгерия</a>
+                                            <a>Албания</a>
+                                            <a>Андорра</a>
+                                            <a>Аргентина</a>
+                                            <a>Армения</a>
+                                            <a>Австралия</a>
+                                            <a>Австрия</a>
+                                            <a>Азербайджанм</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="travel-filter__dropdown">
-                                    <!--                  -->
-                                    <a href="#" data-toggle="dropdown">Чехословакия <i class="travel-filter__icon-arrow"></i></a>
-                                    <div class="country-filter__wrapper visually-hidden">
+                                <li class="route-select__dropdown">
+                                    <a class="route-select__header-dropdown route-select__checked" data-toggle="dropdown">Чехословакия <i
+                      class="route-select__icon-arrow"></i></a>
+                                    <div class="route-select__wrapper">
                                         <div class="country-filter__index">
                                             <div class="country-filter__list">
                                                 <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="a" checked><label class="country-filter__letter-value" for="a">а</label>
@@ -986,9 +1039,10 @@
                                     </div>
                                 </li>
                                 <!--  -->
-                                <li class="travel-filter__dropdown">
-                                    <a href="#" data-toggle="dropdown">Выберите страну <i class="travel-filter__icon-arrow"></i></a>
-                                    <div class="country-filter__wrapper visually-hidden">
+                                <li class="route-select__dropdown">
+                                    <a class="route-select__header-dropdown" data-toggle="dropdown">Выберите страну <i
+                      class="route-select__icon-arrow"></i></a>
+                                    <div class="route-select__wrapper">
                                         <div class="country-filter__index">
                                             <div class="country-filter__list">
                                                 <input class="country-filter__letter visually-hidden" type="radio" name="letter" id="a" checked><label class="country-filter__letter-value" for="a">а</label>
@@ -1357,68 +1411,66 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="travel-filter__dropdown">
-                                    <a href="#" data-toggle="dropdown">Транспорт <i class="travel-filter__icon-arrow"></i></a>
-                                </li>
-                                <li class="travel-filter__dropdown">
-                                    <a href="#" data-toggle="dropdown">левел <i class="travel-filter__icon-arrow"></i></a>
+                                <li class="route-select__dropdown">
+                                    <button class="route-select__add-country">Добавить страну </button>
                                 </li>
                             </ul>
-                            <button class="travel-filter__show button">Следующий шаг</button>
-
+                            <button class="route-select__button button button--form-next">Следующий шаг</button>
+                            <button class="route-select__show button ">На шаг назад</button>
                         </div>
 
                     </div>
                 </div>
                 <div class="add-plane__item step">
-                    <div class="step__wrapper">
+                    <div class="step__wrapper step__wrapper--step-3">
                         <div class="step__header">
                             <div class="step__container-title">
                                 <h4 class="step__title"><span>Шаг 3.</span>Развлечения</h4>
-                                <p class="step__tutorial">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                                <p class="step__tutorial step__tutorial--step-3">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
                                 </p>
                             </div>
                             <ul class="step__indicator">
                                 <li class="step__indicator-item"><span>Даты</span></li>
                                 <li class="step__indicator-item"><span>Маршрут</span></li>
-                                <li class="step__indicator-item"><span>Развлечения</span></li>
+                                <li class="step__indicator-item step__indicator-item--checked"><span>Развлечения</span></li>
                             </ul>
                         </div>
-                        <ul>
-                            <li>
-                                <h4>Босния и герцеговина</h4>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <ul class="step__Entertainment">
+                            <li class="step__Entertainment-in-country">
+                                <h4 class="step__Entertainment-title">Босния и герцеговина</h4>
+                                <textarea class="step__Entertainment-text" name="" id="" cols="25" rows="11" placeholder="План действий"></textarea>
                             </li>
-                            <li>
-                                <h4>Чехословакия</h4>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <li class="step__Entertainment-in-country">
+                                <h4 class="step__Entertainment-title">Чехословакия</h4>
+                                <textarea class="step__Entertainment-text" name=" " id=" " cols="25" rows="11" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
                             </li>
-                            <button class="button" type="submit">Отправить</button>
+                            <button class="step__Entertainment-button button button--form-next">Отправить</button>
+                            <button class="route-select__show route-select__show--step-3 button ">На шаг назад</button>
                         </ul>
                     </div>
                 </div>
             </form>
         </section>
     </main>
-    <footer class="main-footer">
-        <a class="main-footer__logo logotype logotype--dark">
+    <footer class="main-footer ">
+        <a class="main-footer__logo logotype logotype--dark ">
             <picture>
-                <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="погнали" />
+                <source media="(min-width: 1439px) " srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x ">
+                <source media="(min-width: 768px) " srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x ">
+                <img class="logotype__img logotype__img--catalog " src="img/logo-mobile-blue@1x.png " width="100 " height="19 " alt="погнали " />
             </picture>
         </a>
-        <div class="main-footer__social user-social user-social--footer">
-            <a class="user-social__item user-social__item--facebook user-social__item--circle" href="#">
-                <span class="visually-hidden">Facebook</span></a>
-            <a class="user-social__item user-social__item--vkontakte user-social__item--circle" href="#">
-                <span class="visually-hidden">VKontakte</span></a>
-            <a class="user-social__item user-social__item--instagram user-social__item--circle" href="#">
-                <span class="visually-hidden"> Instagram</span></a>
+        <div class="main-footer__social user-social user-social--footer ">
+            <a class="user-social__item user-social__item--facebook user-social__item--circle " href="# ">
+                <span class="visually-hidden ">Facebook</span></a>
+            <a class="user-social__item user-social__item--vkontakte user-social__item--circle " href="# ">
+                <span class="visually-hidden ">VKontakte</span></a>
+            <a class="user-social__item user-social__item--instagram user-social__item--circle " href="# ">
+                <span class="visually-hidden "> Instagram</span></a>
         </div>
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="main-footer__copyright " href="https://htmlacademy.ru/intensive/adaptive ">Разработано</a>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>
