@@ -1,0 +1,43 @@
+.spin {
+  display: flex;
+  border: 1px solid #aaaaaa;
+
+  span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 55px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    font-size: 33px;
+    font-weight: normal;
+    color: #d4d9eb;
+
+    &:hover {
+      color: rgba(29, 46, 91, 0.5);
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 1);
+    }
+
+    @media (min-width: @screen-md) {
+      width: 93px;
+      height: auto;
+      text-align: center;
+      padding-top: 30px;
+      cursor: pointer;
+      font-size: 55px;
+      font-weight: 300;
+    }
+  }
+
+  input {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+  }
+}

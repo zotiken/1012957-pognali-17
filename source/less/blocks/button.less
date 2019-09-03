@@ -18,6 +18,17 @@
     border-color: transparent transparent transparent rgba(0, 0, 0, 0.3);
   }
 
+  &--form-foto {
+    &:hover {
+      background-color: darken(#dfe3f0, 10%);
+    }
+
+    &:active {
+      background-color: darken(#dfe3f0, 10%);
+      color: rgba(22, 28, 53, 0.3);
+    }
+  }
+
   &--form-next {
     font-weight: bold;
     font-size: 17px;
@@ -74,6 +85,18 @@
 
     &:active::before {
       border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--form-show {
+    &:hover {
+      background: none;
+      color: rgba(22, 28, 53, 0.7);
+    }
+
+    &:active {
+      background: none;
+      color: rgba(22, 28, 53, 0.3);
     }
   }
 }

@@ -1,5 +1,6 @@
 .travel-filter {
   &__wrapper {
+    box-sizing: border-box;
     list-style: none;
     padding: 0;
 <<<<<<< HEAD
@@ -13,8 +14,10 @@
 
     @media (min-width: @screen-md) {
       padding: 29px 0;
-      padding-bottom: 63px;
+      padding-bottom: 35px;
       margin: 0;
+      border-top: 1px solid #f3c72b;
+      border-bottom: 1px solid #f3c72b;
     }
 
     @media (min-width: @screen-xl) {
@@ -140,6 +143,7 @@
     }
 
     @media (min-width: @screen-md) {
+      display: flex;
       width: 100%;
       padding-bottom: 8px;
 
@@ -190,10 +194,10 @@
   &__icon-arrow {
     position: absolute;
     display: block;
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: black;
     top: 15px;
-    right: 10px;
+    right: 2px;
 
     &::before {
       content: "\25BC";
@@ -223,16 +227,29 @@
   }
 
   &__item {
-    width: 18px;
-    height: 18px;
+    display: none;
 
-    @media (min-width: @screen-md) {
-      width: 25px;
-      height: 25px;
+    &:checked + .travel-filter__item-value .travel-filter__checkbox-mark {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, 0);
+        width: 9px;
+        height: 9px;
+        background-image: url("../img/tick.svg");
+
+        @media (min-width: @screen-md) {
+          width: 12px;
+          height: 12px;
+        }
+      }
     }
   }
 
   &__item-value {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     font-size: 20px;
@@ -241,15 +258,46 @@
 =======
     padding-left: 9px;
 >>>>>>> catalog-pp-3
+=======
+    width: 50%;
+    display: flex;
+    align-items: center;
+>>>>>>> pixPerfect
     font-size: 15px;
 >>>>>>> catalog-pp
     color: @greyish-brown;
 
     @media (min-width: @screen-md) {
+      width: 100%;
       font-size: 20px;
       font-weight: normal;
       line-height: 41px;
-      padding-left: 10px;
+    }
+  }
+
+  &__checkbox-mark {
+    box-sizing: border-box;
+    margin-right: 8%;
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    &:hover {
+      border: 1px solid rgba(22, 28, 53, 0.5);
+    }
+
+    &:active {
+      background-color: #e2e5f1;
+      color: rgba(22, 28, 53, 0.2);
+    }
+
+    @media (min-width: @screen-md) {
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -310,8 +358,16 @@
 
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
-      -webkit-appearance: none;
+      appearance: none;
       margin: 0;
+    }
+
+    &:hover {
+      border: 1px solid rgba(29, 46, 91, 0.7);
+    }
+
+    &:focus {
+      border: 1px solid rgba(29, 46, 91, 1);
     }
 
     &:last-child {
@@ -329,7 +385,7 @@
 >>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
-      width: 75px;
+      width: 46%;
     }
 
     @media (min-width: @screen-xl) {
@@ -365,11 +421,15 @@
       top: 50%;
       transform: translate(0, -50%);
     }
+
+    @media (min-width: @screen-md) {
+      left: 48%;
+    }
   }
 
   &__level-range {
-    width: 270px;
-    padding: 18px 0;
+    width: 100%;
+    padding: 25px 0;
 
     @media (min-width: @screen-xl) {
       margin-top: 21px;
@@ -434,10 +494,12 @@
 >>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
+      margin-top: 6px;
       font-size: 20px;
       border-radius: 25px;
       padding-top: 12px;
       padding-bottom: 8px;
+      width: 100%;
     }
   }
 }

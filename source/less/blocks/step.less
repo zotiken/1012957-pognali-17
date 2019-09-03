@@ -14,13 +14,13 @@
 
   &__wrapper {
     padding: 9%;
-    padding-right: 11%;
+    padding-right: 10%;
     padding-bottom: 10px;
 
     @media (min-width: @screen-md) {
       padding: 0 7%;
       padding-right: 8%;
-      padding-top: 48px;
+      padding-top: 47px;
       padding-bottom: 59px;
 
       &--step-2,
@@ -45,25 +45,21 @@
 <<<<<<< HEAD
 =======
   &__header {
-    // margin: 0;
-    // margin-bottom: 31px;
-    // color: #1d2e5b;
-
-    @media (min-width: @screen-md) {
-      // margin-bottom: 60px;
-      // font-size: 36px;
-      // line-height: 36px;
-    }
-
     @media (min-width: @screen-xl) {
       display: flex;
       padding-bottom: 19px;
+      border-bottom: 1px solid #cccccc;
     }
   }
 
   &__container-title {
+    @media (min-width: @screen-md) {
+      border-bottom: 1px solid #cccccc;
+    }
+
     @media (min-width: @screen-xl) {
       width: 97%;
+      border: none;
     }
   }
 
@@ -188,7 +184,7 @@
     margin-bottom: 21px;
 
     @media (min-width: @screen-md) {
-      margin-top: 25px;
+      margin-top: 31px;
       display: flex;
       flex-direction: column;
     }
@@ -196,7 +192,7 @@
     @media (min-width: @screen-xl) {
       flex-direction: row;
       flex-wrap: wrap;
-      margin-top: 31px;
+      margin-top: 30px;
       margin-bottom: 17px;
       position: relative;
     }
@@ -226,6 +222,14 @@
       align-items: center;
       font-size: 15px;
 
+      span {
+        &:last-child {
+          text-transform: none;
+          font-size: 15px;
+          letter-spacing: normal;
+        }
+      }
+
       @media (min-width: @screen-md) {
         order: 2;
         font-size: 20px;
@@ -234,15 +238,29 @@
         letter-spacing: 2px;
         padding-bottom: 24px;
         margin-bottom: 27px;
+
+        span {
+          &:last-child {
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 2px;
+          }
+        }
       }
 
       @media (min-width: @screen-xl) {
-        width: 24.9%;
+        width: 25.9%;
         padding-bottom: 0;
         margin-bottom: 0;
         position: absolute;
         right: -1%;
         top: 9%;
+
+        span {
+          &:last-child {
+            width: 100%;
+          }
+        }
       }
     }
 
@@ -257,29 +275,66 @@
       }
     }
 
-    span {
-      text-transform: uppercase;
-      color: #1d2e5b;
-      letter-spacing: 1.6px;
+    &--duration > span {
+      position: relative;
+      display: block;
+      width: 100%;
+
+      &::before {
+        position: absolute;
+        content: "дн.";
+        right: 0;
+        color: rgba(29, 46, 91, 0.3);
+
+        @media (min-width: @screen-xl) {
+          right: -117%;
+        }
+      }
 
       @media (min-width: @screen-xl) {
         width: 29.22%;
       }
     }
 
-    input[type="number"] {
-      width: 100%;
+    &--fellow-traveller > span {
+      position: relative;
       display: block;
-      height: 37px;
-      margin-bottom: 21px;
-      margin-top: 7px;
-      text-align: center;
+      width: 100%;
+
+      &::before {
+        position: absolute;
+        content: "чел.";
+        right: 0;
+        color: rgba(29, 46, 91, 0.3);
+
+        @media (min-width: @screen-xl) {
+          right: -119%;
+        }
+      }
+
+      @media (min-width: @screen-xl) {
+        width: 29.22%;
+      }
+    }
+
+    span {
+      text-transform: uppercase;
+      color: #1d2e5b;
+      font-size: 16px;
+      letter-spacing: 1.6px;
 
       @media (min-width: @screen-md) {
-        height: 64px;
-        margin-bottom: 22px;
-        margin-top: 26px;
+        font-size: 20px;
+        letter-spacing: 2px;
       }
+    }
+
+    input[type="number"] {
+      width: 100%;
+      height: 95%;
+      display: block;
+      text-align: center;
+      padding-left: 17px;
 
       @media (min-width: @screen-xl) {
         width: 23.5%;
@@ -306,8 +361,83 @@
     }
   }
 
+  &__spin {
+    margin-bottom: 21px;
+    margin-top: 7px;
+    height: 41px;
+
+    @media (min-width: @screen-md) {
+      height: 67px;
+      margin-bottom: 22px;
+      margin-top: 26px;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 23.4%;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__value-input-kids {
+    display: none;
+
+    &:checked + .step__value-item--kids .step__checkbox-mark {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, 0);
+        width: 9px;
+        height: 9px;
+        background-image: url("../img/tick.svg");
+
+        @media (min-width: @screen-md) {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  &__checkbox-mark {
+    box-sizing: border-box;
+    margin-right: 6%;
+    display: inline-block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    &:hover {
+      border: 1px solid rgba(22, 28, 53, 0.5);
+    }
+
+    &:active {
+      background-color: #e2e5f1;
+      color: rgba(22, 28, 53, 0.2);
+    }
+
+    @media (min-width: @screen-md) {
+      width: 36px;
+      height: 36px;
+      margin-right: 4%;
+    }
+
+    @media (min-width: @screen-xl) {
+      height: 36px;
+      margin-left: 10px;
+      margin-right: 21px;
+      width: 45px;
+    }
+  }
+
   &__calendar {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
     @media (min-width: @screen-md) {
       margin-bottom: 46px;
@@ -325,17 +455,53 @@
 
   &__Entertainment-in-country {
     list-style: none;
+    position: relative;
+
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      width: 9px;
+      top: 3%;
+      left: -11px;
+      height: 281px;
+      background-color: transparent;
+      border-left: 2px solid #1d2e5b;
+      border-top: 2px solid #1d2e5b;
+      border-bottom: 2px solid #1d2e5b;
+    }
 
     @media (min-width: @screen-md) {
       margin-bottom: 51px;
+
+      &:first-child::before {
+        top: 3%;
+        left: auto;
+        right: 0;
+        height: 265px;
+        border-left: none;
+        border-right: 2px solid #1d2e5b;
+      }
 
       &:nth-child(2) {
         margin-bottom: 24px;
       }
     }
+
+    @media (min-width: @screen-xl) {
+      &:first-child::before {
+        top: 3%;
+        left: auto;
+        right: 222px;
+        border-top: none;
+        border-bottom: none;
+      }
+    }
   }
 
   &__Entertainment-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-left: 11px;
     font-size: 18px;
     line-height: 18px;
@@ -343,16 +509,62 @@
     font-weight: 500;
     margin-bottom: 15px;
 
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      top: 2.2%;
+      left: -1px;
+      height: 6px;
+      background-color: #1d2e5b;
+      border-radius: 50%;
+    }
+
     @media (min-width: @screen-md) {
       font-size: 30px;
       font-weight: bold;
       margin-top: 41px;
       margin-bottom: 43px;
       padding-left: 0;
+
+      &:first-child::before {
+        display: none;
+      }
     }
 
     @media (min-width: @screen-xl) {
       margin-top: 0;
+    }
+  }
+
+  &__Entertainment-title-icon {
+    position: absolute;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 24px;
+    background-image: url("../img/Bosnia@2x.svg");
+    background-size: 100%;
+    background-position: 50%, 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 -1px 18px 19px #ffffff;
+
+    @media (min-width: @screen-md) {
+      position: absolute;
+      right: 4.3%;
+      content: "";
+      display: inline-block;
+      width: 72px;
+      height: 48px;
+    }
+
+    @media (min-width: @screen-xl) {
+      right: 11.3%;
+    }
+
+    &--czech {
+      background-image: url("../img/Chech_republic@2x.svg");
     }
   }
 

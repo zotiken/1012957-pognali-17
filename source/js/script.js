@@ -64,115 +64,141 @@ for (let q = 0; q < filterToggle.length; q++) {
 
 // меню стран формы
 
-// var DropDownHeader = document.querySelector('.route-select__header-dropdown');
-// var DropDownList = document.querySelector('.route-select__wrapper');
-// var CountryIndex = document.querySelectorAll('.country-filter__sumbol a');
-// // var CountryItemSelect = CountryIndex.getE
-// // for (let w = 0; w < filterToggle.length; w++) {
-// DropDownHeader.onclick = function() {
-//         DropDownList.classList.toggle("visible-block");
-//         // filterBlockHidden2.classList.toggle("visible");
-//         // filterBlockHidden3.classList.toggle("visible-block");
-//     }
-//     // }
-// for (let e = 0; e < CountryIndex.length; e++) {
-//     CountryIndex[e].onclick = function() {
-//         DropDownList.classList.toggle("visible-block");
-//         // filterBlockHidden2.classList.toggle("visible");
-//         // filterBlockHidden3.classList.toggle("visible-block");
-//         console.log(CountryIndex[e]);
-//         alert(CountryIndex[e].text);
-//         DropDownHeader.textContent = CountryIndex[e].text;
-//     }
-// }
+var DropDownHeader = document.querySelector('.route-select__header-dropdown');
+if (DropDownHeader) {
+    var DropDownList = document.querySelector('.route-select__wrapper');
+    var CountryIndex = document.querySelectorAll('.country-filter__sumbol a');
+    // var CountryItemSelect = CountryIndex.getE
+    // for (let w = 0; w < filterToggle.length; w++) {
+    DropDownHeader.onclick = function() {
+            DropDownList.classList.toggle("visible-block");
+            // filterBlockHidden2.classList.toggle("visible");
+            // filterBlockHidden3.classList.toggle("visible-block");
+        }
+        // }
+    for (let e = 0; e < CountryIndex.length; e++) {
+        CountryIndex[e].onclick = function() {
+            DropDownList.classList.toggle("visible-block");
+            // filterBlockHidden2.classList.toggle("visible");
+            // filterBlockHidden3.classList.toggle("visible-block");
+            console.log(CountryIndex[e]);
+            alert(CountryIndex[e].text);
+            DropDownHeader.textContent = CountryIndex[e].text;
+        }
+    }
+
+}
 // console.log(CountryIndex);
 
 
 var dropdown = document.querySelectorAll('.dropdown');
-var dropdownArray = Array.prototype.slice.call(dropdown, 0);
-dropdownArray.forEach(function(el) {
-    var button = el.querySelector('a[data-toggle="dropdown"]'),
-        menu = el.querySelector('.dropdown-menu'),
-        arrow = button.querySelector('i.icon-arrow');
+if (dropdown) {
+    var dropdownArray = Array.prototype.slice.call(dropdown, 0);
+    dropdownArray.forEach(function(el) {
+        var button = el.querySelector('a[data-toggle="dropdown"]'),
+            menu = el.querySelector('.dropdown-menu'),
+            arrow = button.querySelector('i.icon-arrow');
 
-    button.onclick = function(event) {
-        if (!menu.hasClass('visible-block')) {
-            menu.classList.add('visible-block');
-            menu.classList.remove('hidden');
-            // arrow.classList.add('open');
-            // arrow.classList.remove('close');
-            event.preventDefault();
-        } else {
-            menu.classList.remove('visible-block');
-            menu.classList.add('hidden');
-            // arrow.classList.remove('open');
-            // arrow.classList.add('close');
-            event.preventDefault();
-        }
+        button.onclick = function(event) {
+            if (!menu.hasClass('visible-block')) {
+                menu.classList.add('visible-block');
+                menu.classList.remove('hidden');
+                // arrow.classList.add('open');
+                // arrow.classList.remove('close');
+                event.preventDefault();
+            } else {
+                menu.classList.remove('visible-block');
+                menu.classList.add('hidden');
+                // arrow.classList.remove('open');
+                // arrow.classList.add('close');
+                event.preventDefault();
+            }
+        };
+    })
+
+    Element.prototype.hasClass = function(className) {
+        return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
     };
-})
 
-Element.prototype.hasClass = function(className) {
-    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
-};
+}
 
 
+// spin number
+var spins = document.querySelectorAll(".spin");
 
+if (spins) {
+    for (let t = 0; t < spins.length; t++) {
+        let span = spins[t].querySelectorAll("span"),
+            input = spins[t].querySelector("input");
+
+        input.onchange = function() { input.value = +input.value || 0; };
+        span[0].onclick = function() { input.value = Math.max(0, input.value - 1); };
+        span[1].onclick = function() { input.value -= -1; };
+    }
+}
+// console.log(spins);
+
+//
 
 
 // calendar
+var calendarRec = document.querySelectorAll(".calendar");
 
-// function Calendar2(id, year, month) {
-//     var Dlast = new Date(year, month + 1, 0).getDate(),
-//         D = new Date(year, month, Dlast),
-//         DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
-//         DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
-//         calendar = '<tr>',
-//         month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь",
-//             "Октябрь", "Ноябрь", "Декабрь"
-//         ];
-//     if (DNfirst != 0) {
-//         for (var i = 1; i < DNfirst; i++) calendar += '<td>';
-//     } else {
-//         for (var i = 0; i < 6; i++) calendar += '<td>';
-//     }
-//     for (var i = 1; i <= Dlast; i++) {
-//         if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() ==
-//             new Date().getMonth()) {
-//             calendar += '<td class="today">' + i + '<span></span>';
-//         } else {
-//             calendar += '<td class="calendar__item calendar__item--' + i + '">' + i + '<span></span>';
-//         }
-//         if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
-//             calendar += '<tr>';
-//         }
-//     }
-//     for (var i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
-//     document.querySelector('#' + id + ' tbody').innerHTML = calendar;
-//     document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D
-//         .getFullYear();
-//     document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
-//     document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
-//     if (document.querySelectorAll('#' + id + ' tbody tr').length <
-//         6
-//     ) { // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
-//         document.querySelector('#' + id + ' tbody').innerHTML +=
-//             '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
-//     }
-// }
-// Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
-// // переключатель минус месяц
-// document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-//         Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year,
-//             parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
-//     }
-//     // переключатель плюс месяц
-// document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-//         Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year,
-//             parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
-//     }
-//     //
-// Calendar2("calendar2", 2019, 2);
+if (calendarRec) {
+    function Calendar2(id, year, month) {
+        var Dlast = new Date(year, month + 1, 0).getDate(),
+            D = new Date(year, month, Dlast),
+            DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+            DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+            calendar = '<tr>',
+            month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь",
+                "Октябрь", "Ноябрь", "Декабрь"
+            ];
+        if (DNfirst != 0) {
+            for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+        } else {
+            for (var i = 0; i < 6; i++) calendar += '<td>';
+        }
+        for (var i = 1; i <= Dlast; i++) {
+            if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() ==
+                new Date().getMonth()) {
+                calendar += '<td class="today">' + i + '<span></span>';
+            } else {
+                calendar += '<td class="calendar__item calendar__item--' + i + '">' + i + '<span></span>';
+            }
+            if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
+                calendar += '<tr>';
+            }
+        }
+        for (var i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+        document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+        document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D
+            .getFullYear();
+        document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+        document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+        if (document.querySelectorAll('#' + id + ' tbody tr').length <
+            6
+        ) { // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+            document.querySelector('#' + id + ' tbody').innerHTML +=
+                '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+        }
+    }
+    Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+    // переключатель минус месяц
+    document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year,
+                parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
+        }
+        // переключатель плюс месяц
+    document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+        Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year,
+            parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
+    }
+
+}
+
+//
+Calendar2("calendar2", 2019, 2);
 
 
 // calendar end
