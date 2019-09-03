@@ -103,6 +103,19 @@
     }
   }
 
+  &__img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+
+    @media (min-width: @screen-md) {
+      width: 186px;
+      height: 140px;
+      border-radius: 0 20px 20px 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+
   &__to-all {
     position: relative;
     display: block;
