@@ -13,7 +13,7 @@
         <div class="main-header__container main-header__container--catalog">
             <div class="main-header__wrapper main-header__wrapper--catalog">
                 <div class="main-header__block-logo">
-                    <a class="main-header__logo logotype">
+                    <a href="../source/index.html" class="main-header__logo logotype">
                         <picture>
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
@@ -23,23 +23,57 @@
                 </div>
                 <nav class="main-nav">
                     <ul class="main-nav__site site-navigation">
-                        <li class="site-navigation__item">
+                        <li class="site-navigation__item site-navigation__item--header">
                             <a href="">О сервисе</a>
                         </li>
-                        <li class="site-navigation__item">
+                        <li class="site-navigation__item site-navigation__item--header">
                             <a href="">Направления</a>
                         </li>
-                        <li class="site-navigation__item">
+                        <li class="site-navigation__item site-navigation__item--header">
                             <a href="">Попутчики</a>
                         </li>
                     </ul>
                     <div class="main-nav__user user-navigation">
                         <div class="user-navigation__items">
-                            <a class="user-navigation-link user-navigation-link--signin  button" href="">авторизация</a>
-                            <a class="user-navigation-link  user-navigation-link--telicon" href="">
-                                <span class="visually-hidden">8800555-86-28</span></a>
-                            <a class="user-navigation-link  user-navigation-link--mailicon" href="">
-                                <span class="visually-hidden">mail@htmlacademy.ru</span></a>
+                            <a class="user-navigation-link user-navigation-link--signin  button" href="#">авторизация</a>
+                            <a class="user-navigation-link  user-navigation-link--telicon" href="#">
+                                <span class="visually-hidden">8800555-86-28</span>
+                                <svg class="user-navigation-link__icon" width="21" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" xml:space="preserve">
+                              <g>
+                              <g>
+                              <g>
+                              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                              c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                              C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                              c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
+                              </g>
+                              </g>
+                              <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                              <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                              <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+                              </g>
+                              </svg>
+
+                            </a>
+                            <a class="user-navigation-link  user-navigation-link--mailicon" href="#">
+                                <span class="visually-hidden">mail@htmlacademy.ru</span>
+                                <svg class="user-navigation-link__icon" version="1.1" width="21" height="21"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" xml:space="preserve">
+                                  <g>
+                                    <g>
+                                      <g>
+                                        <path class="st0"
+                                          d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z" />
+                                      </g>
+                                      <g>
+                                        <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                                          c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                                          c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                                          L11.9,7.1z" />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <button class="main-nav__toggle toggle" type="button">
@@ -47,7 +81,7 @@
           </button>
                 </nav>
             </div>
-            <div class="main-header__menu menu">
+            <div class="main-header__menu menu visible">
                 <div class="menu__wrapper">
                     <a class="menu__block-logo logotype logotype--dark">
                         <picture>
@@ -56,8 +90,7 @@
                             <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
                         </picture>
                     </a>
-                    <button class="menu__toggle toggle hidden" type="button  hidden"></button>
-
+                    <button class="menu__toggle toggle hidden" type="button"></button>
                     <ul class="menu__block site-navigation">
                         <li class="site-navigation__item site-navigation__item--menu">
                             <a href="">О сервисе</a>
@@ -74,24 +107,25 @@
                         <h2 class="visually-hidden">Меню пользователя</h2>
                         <div class="user-navigation__items">
                             <div class="user-navigation__wrapper">
-                                <a class="user-navigation-link user-navigation-link--telefon user-navigation-link--menu" href="">8 800 555-86-28</a>
+                                <a class="user-navigation-link user-navigation-link--telefon user-navigation-link--menu" href="">8 800
+                  555-86-28</a>
                                 <a class="user-navigation-link user-navigation-link--email user-navigation-link--menu" href="">mail@htmlacademy.ru</a>
                             </div>
                             <div class="menu__block user-navigation__social user-social">
                                 <a class="user-social__item user-social__item--facebook user-social__item--menu" href="">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
-                                  <g>
-                                  <path fill="#cccccc" d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                                    <svg width="11" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" xml:space="preserve">
+                    <g>
+                      <path  d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
                                   V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
-                                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
-                                  </g>
-                                  </svg>
+                                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z" />
+                    </g>
+                  </svg>
                                     <span class="visually-hidden">Facebook</span></a>
                                 <a class="user-social__item user-social__item--vkontakte user-social__item--menu" href="">
                                     <span class="visually-hidden">VKontakte</span>
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
-                                    <g>
-                                    <path fill="#cccccc" d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                                    <svg width="23" height="12" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" xml:space="preserve">
+                    <g>
+                      <path  d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
                                     c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
                                     c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
                                     c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
@@ -106,30 +140,37 @@
                                     c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
                                     c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
                                     C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
-                                    C18.4,10.9,18.5,10.9,18.6,10.9z"/>
-                                    </g>
-                                    </svg>
+                                    C18.4,10.9,18.5,10.9,18.6,10.9z" />
+                    </g>
+                  </svg>
                                 </a>
                                 <a class="user-social__item user-social__item--instagram user-social__item--menu" href="">
-                                    <span class="visually-hidden"> Instagram</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;"
-                                        xml:space="preserve">
-                                <path class="st0" fill="#cccccc"  d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
-                                M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
-                                <path class="st0" fill="#cccccc" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
-                                c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
-                                <circle class="st0" fill="#cccccc" cx="17.6" cy="5.4" r="1.3"/>
-                                </svg>
+                                    <span class="visually-hidden"> Instagram</span>
+                                    <svg width="18" height="18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve">
+                    <path class="st0"
+                      d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                                M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z" />
+                    <path class="st0"  d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                                c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z" />
+                    <circle class="st0"  cx="17.6" cy="5.4" r="1.3" />
+                  </svg>
                                 </a>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
-            <div class="main-header__catalog-title-nav fellow-travellers  fellow-travellers--form">
+            <div class="main-header__catalog-title-nav fellow-travellers  fellow-travellers--catalog-title">
                 <h2 class="fellow-travellers__title fellow-travellers__title--catalog">
                     Попутчики
                 </h2>
-                <a class="fellow-travellers__header-link " href="/index.html">На главную</a>
+                <a class="fellow-travellers__header-link " href="../source/index.html">На главную
+                  <svg width="32" height="16" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 32 16.1" xml:space="preserve">
+                <path class="st0" d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1
+                H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z"/>
+                </svg>
+                </a>
             </div>
         </div>
     </header>
@@ -150,9 +191,22 @@
                         </p>
                     </div>
                     <button class="country-filter__toggle filter-toggle " type="button">
-                      <span class="country-filter__toggle-text country-filter__toggle-text--close">свернуть</span>
-                      <span class="country-filter__toggle-text country-filter__toggle-text--all">Показать все</span>
-
+                      <span class="country-filter__toggle-text country-filter__toggle-text--close"><span>свернуть</span>
+                          <svg width="18" height="18" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 12 12"  xml:space="preserve">
+                        <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+                        L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+                        L6.9,6z"/>
+                        </svg>
+                    </span>
+                      <span class="country-filter__toggle-text country-filter__toggle-text--all"><span>Показать все</span>
+                          <svg width="18" height="18" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 27 5" style="enable-background:new 0 0 27 5;" xml:space="preserve">
+                        <circle class="st0" cx="2.5" cy="2.5" r="2.5"/>
+                        <circle class="st0" cx="13.5" cy="2.5" r="2.5"/>
+                        <circle class="st0" cx="24.5" cy="2.5" r="2.5"/>
+                        </svg>
+                    </span>
                     </button>
                 </div>
                 <div class="country-filter__wrapper">
@@ -508,26 +562,26 @@
                         <ul class="travel-filter__wrapper">
                             <li class="travel-filter__dropdown dropdown">
                                 <a href="#" data-toggle="dropdown">Хобби <i class="travel-filter__icon-arrow icon-arrow"></i></a>
-                                <ul class="travel-filter__dropdown-menu dropdown-menu">
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="sport"><label class="travel-filter__item-value" for="euro">Спортзал</label></li>
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="hookah"><label class="travel-filter__item-value" for="euro">Кальян</label></li>
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="couch"><label class="travel-filter__item-value" for="euro">Диван</label></li>
+                                <ul class="travel-filter__dropdown-menu dropdown-menu hidden">
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="sport" checked><label class="travel-filter__item-value" for="sport"><span class="travel-filter__checkbox-mark"></span>Спортзал</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="hookah"><label class="travel-filter__item-value" for="hookah"><span class="travel-filter__checkbox-mark"></span>Кальян</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="couch"><label class="travel-filter__item-value" for="couch"><span class="travel-filter__checkbox-mark"></span>Диван</label></li>
                                 </ul>
                             </li>
                             <li class="travel-filter__dropdown dropdown">
                                 <a href="#" data-toggle="dropdown">Музыка <i class="travel-filter__icon-arrow icon-arrow"></i></a>
                                 <ul class="travel-filter__dropdown-menu dropdown-menu visible-block">
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="rock" checked><label class="travel-filter__item-value" for="rock">Тяжелый рок</label></li>
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="rus-rep"><label class="travel-filter__item-value" for="rus-rep">Русский рэп</label></li>
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="dance"><label class="travel-filter__item-value" for="dance">Евроденс</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="rock" checked><label class="travel-filter__item-value" for="rock"><span class="travel-filter__checkbox-mark"></span>Тяжелый рок</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="rus-rep"><label class="travel-filter__item-value" for="rus-rep"><span class="travel-filter__checkbox-mark"></span>Русский рэп</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="dance"><label class="travel-filter__item-value" for="dance"><span class="travel-filter__checkbox-mark"></span>Евроденс</label></li>
                                 </ul>
                             </li>
                             <li class="travel-filter__dropdown dropdown">
                                 <a href="#" data-toggle="dropdown">Еда <i class="travel-filter__icon-arrow icon-arrow"></i></a>
-                                <ul class="travel-filter__dropdown-menu dropdown-menu">
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="meet"><label class="travel-filter__item-value" for="meet">Мясоед</label></li>
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="pp"><label class="travel-filter__item-value" for="pp">Сидит на ПП</label></li>
-                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="vegan"><label class="travel-filter__item-value" for="vegan">Веган-сыроед</label></li>
+                                <ul class="travel-filter__dropdown-menu dropdown-menu hidden">
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="meet" checked><label class="travel-filter__item-value" for="meet"><span class="travel-filter__checkbox-mark"></span>Мясоед</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="pp"><label class="travel-filter__item-value" for="pp"><span class="travel-filter__checkbox-mark"></span>Сидит на ПП</label></li>
+                                    <li><input class="travel-filter__item " type="checkbox" name="same" id="vegan"><label class="travel-filter__item-value" for="vegan"><span class="travel-filter__checkbox-mark"></span>Веган-сыроед</label></li>
                                 </ul>
                             </li>
                             <li class="travel-filter__dropdown dropdown travel-filter__dropdown--vehicle">
@@ -535,9 +589,9 @@
                                 <ul class="travel-filter__dropdown-menu dropdown-menu travel-filter__dropdown-menu--vehicle visible-block">
                                     <li class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
                                         <input class="fellow-travellers__check" type="checkbox" name="same" checked id="planec"><label class="fellow-travellers__check-value" for="planec">
-                                        <a  class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane" >
+                                        <a  class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--plane" data-info="Авиаперелет">
                                             <span class="visually-hidden">самолет</span>
-                                            <svg class="fellow-travellers__vehicle-icon" width="14" height="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                                            <svg class="fellow-travellers__vehicle-icon" width="14" height="16" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                                                   <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
                                                   c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
                                                   C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
@@ -549,9 +603,9 @@
                                         </a>
                                       </label>
                                         <input class="fellow-travellers__check" type="checkbox" name="bus" id="bus-c" checked><label class="fellow-travellers__check-value" for="bus-c">
-                                        <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                        <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--bus" data-info="Автотранспорт">
                                             <span class="visually-hidden">автобус</span>
-                                            <svg class="fellow-travellers__vehicle-icon" width="13" height="16" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                            <svg class="fellow-travellers__vehicle-icon" width="13" height="16" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                                               <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                                               c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
                                               C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
@@ -561,17 +615,17 @@
                                         </a>
                                       </label>
                                         <input class="fellow-travellers__check" type="checkbox" name="same" id="BikeC"><label class="fellow-travellers__check-value" for="BikeC">
-                                        <a  class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                        <a  class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--bike" data-info="Велосипед">
                                             <span class="visually-hidden">велосипед</span>
-                                            <svg class="fellow-travellers__vehicle-icon" width="19" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                            <svg class="fellow-travellers__vehicle-icon" width="19" height="17" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                                                 <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z  M14.8,8.9H19V7.1h-3.2l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                                               </svg>
                                         </a>
                                       </label>
                                         <input class="fellow-travellers__check" type="checkbox" name="same" id="runC" checked><label class="fellow-travellers__check-value" for="runC">
-                                        <a  class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                        <a  class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--run" data-info="Пешком">
                                             <span class="visually-hidden">бег</span>
-                                            <svg class="fellow-travellers__vehicle-icon" width="15" height="17" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                                            <svg class="fellow-travellers__vehicle-icon" width="15" height="17" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
                                                 xml:space="preserve">
                                               <g>
                                               <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
@@ -595,7 +649,7 @@
                                         <div class="travel-filter__level-input-bar"></div>
                                     </li>
                                     <li>
-                                        <div class="travel-filter__item travel-filter__level-range">
+                                        <div class="travel-filter__level-range">
                                             <span class="travel-filter__level-bar"><b class="travel-filter__level-between"></b></span>
                                         </div>
                                     </li>
@@ -617,7 +671,7 @@
                                         <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/av-firsova-min.png" width="70" height="70" alt="фотография попутчика" />
                                     </picture>
                                 </a>
-                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog ">
                                     <a href="#">Таня Фирсова</a>
                                 </h3>
                                 <p class="fellow-travellers__interest fellow-travellers__interest--catalog">
@@ -629,32 +683,71 @@
                                     <a href="" class="fellow-travellers__interest-item">#смузи</a>
                                 </p>
                                 <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                                <label class="fellow-travellers__like like" >
+                                    <input class="like__checkbox"  type="checkbox" name="like" checked>
+                                  <span class="like__box"></span>
+                                  <span class="like__value">1.5M</span>
+                                </label>
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <a class="country__flag  country__flag--catalog" href="#">Шри Ланка</a>
-                                <a class="country__flag  country__flag--catalog" href="#">Тайланд</a>
-                                <a class="country__flag  country__flag--catalog" href="#">Сейшелы</a>
+                                <a class="country__flag-catalog country__flag-catalog--sri" href="#">Шри Ланка</a>
+                                <a class="country__flag-catalog country__flag-catalog--tai" href="#">Тайланд</a>
+                                <a class="country__flag-catalog country__flag-catalog--sey" href="#">Сейшелы</a>
                             </div>
                             <div class="fellow-travellers__box fellow-travellers__box--vehicle">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog-info">
                                     <h3>транспорт:</h3>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane" data-info="Авиаперелет">
                                         <span class="visually-hidden">самолет</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="19" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;"
+                                            xml:space="preserve">
+                                    <path
+                                      d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                                                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                                                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                                                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                                                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                                                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                                                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                                  </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus" data-info="Автотранспорт">
                                         <span class="visually-hidden">автобус</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="24" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                          <path
+                                            d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                                                            c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                                                            C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                                                            M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                                                            H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                                        </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike" data-info="Велосипед">
                                         <span class="visually-hidden">велосипед</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="20" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                          <path
+                                            d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z  M14.8,8.9H19V7.1h-3.2l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                                        </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run" data-info="Пешком">
                                         <span class="visually-hidden">бег</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="15" height="17" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                                            xml:space="preserve">
+                                    <g>
+                                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
+                                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                                                  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                                                  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                                                  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                                                  z" />
+                                    </g>
+                                  </svg>
                                     </a>
                                 </div>
                                 <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="99">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                    <svg width="45" height="45" class="level__circles level__circles--catalog" viewbox="90 57 21 87">
                                             <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
                                               stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
                                                           A1 1 0 0 1 100 60" />
@@ -687,31 +780,72 @@
                                     <a href="" class="fellow-travellers__interest-item">#крафт</a>
                                 </p>
                                 <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                                <label class="fellow-travellers__like like">
+                                    <input class="like__checkbox"  type="checkbox" name="like">
+                                  <span class="like__box"></span>
+                                  <span class="like__value">150</span>
+                                </label>
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <a class="country__flag  country__flag--catalog" href="#">Бельгия</a>
-                                <a class="country__flag  country__flag--catalog" href="#">Чехия</a>
+                                <a class="country__flag-catalog country__flag-catalog--belg" href="#">Бельгия</a>
+                                <a class="country__flag-catalog country__flag-catalog--czech" href="#">Чехия</a>
                             </div>
-                            <div class="fellow-travellers__box fellow-travellers__box--vehicle">
+                            <div class="fellow-travellers__box fellow-travellers__box--vehicle fellow-travellers__box--demin">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog-info">
                                     <h3>транспорт:</h3>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane" data-info="Авиаперелет">
                                         <span class="visually-hidden">самолет</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="19" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;"
+                                            xml:space="preserve">
+                                  <path
+                                    d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                                                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                                                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                                                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                                                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                                                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                                                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                                </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus" data-info="Автотранспорт">
                                         <span class="visually-hidden">автобус</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="24" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                                            xml:space="preserve">
+                                        <path
+                                          d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                                                          c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                                                          C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                                                          M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                                                          H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                                      </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike" data-info="Велосипед">
                                         <span class="visually-hidden">велосипед</span>
+                                        <svg class="fellow-travellers__vehicle-icon " width="20" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                                            xml:space="preserve">
+                                        <path
+                                          d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z  M14.8,8.9H19V7.1h-3.2l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                                      </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run" data-info="Пешком">
                                         <span class="visually-hidden">бег</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked " width="15" height="17" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21"
+                                            style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                                  <g>
+                                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
+                                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                                                C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                                                c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                                                c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                                                z" />
+                                  </g>
+                                </svg>
                                     </a>
                                 </div>
                                 <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="80">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                    <svg width="45" height="45" class="level__circles level__circles--catalog" viewbox="90 57 21 87">
                                             <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
                                               stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
                                                           A1 1 0 0 1 100 60" />
@@ -743,32 +877,72 @@
                                     <a href="" class="fellow-travellers__interest-item">#суприм</a>
                                 </p>
                                 <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                                <label class="fellow-travellers__like like">
+                                    <input class="like__checkbox"  type="checkbox" name="like">
+                                  <span class="like__box"></span>
+                                  <span class="like__value">1700</span>
+                                </label>
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <a class="country__flag  country__flag--catalog" href="#">США</a>
-                                <a class="country__flag  country__flag--catalog" href="#">Австралия</a>
-                                <a class="country__flag  country__flag--catalog" href="#">Доминикана</a>
+                                <a class="country__flag-catalog country__flag-catalog--usa" href="#">США</a>
+                                <a class="country__flag-catalog country__flag-catalog--aus" href="#">Австралия</a>
+                                <a class="country__flag-catalog country__flag-catalog--dom" href="#">Доминикана</a>
                             </div>
                             <div class="fellow-travellers__box fellow-travellers__box--vehicle">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog-info">
                                     <h3>транспорт:</h3>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane" data-info="Авиаперелет">
                                         <span class="visually-hidden">самолет</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="19" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;"
+                                            xml:space="preserve">
+                                  <path
+                                    d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                                                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                                                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                                                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                                                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                                                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                                                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                                </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus" data-info="Автотранспорт">
                                         <span class="visually-hidden">автобус</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="24" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                        <path
+                                          d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                                                          c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                                                          C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                                                          M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                                                          H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                                      </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike" data-info="Велосипед">
                                         <span class="visually-hidden">велосипед</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="20" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                                            xml:space="preserve">
+                                        <path
+                                          d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z  M14.8,8.9H19V7.1h-3.2l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                                      </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run" data-info="Пешком">
                                         <span class="visually-hidden">бег</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="15" height="17" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                                            xml:space="preserve">
+                                  <g>
+                                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
+                                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                                                C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                                                c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                                                c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                                                z" />
+                                  </g>
+                                </svg>
                                     </a>
                                 </div>
                                 <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="25">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                    <svg width="45" height="45" class="level__circles level__circles--catalog" viewbox="90 57 21 87">
                                             <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
                                               stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
                                                           A1 1 0 0 1 100 60" />
@@ -788,7 +962,7 @@
                                         <img class="fellow-travellers__avatar fellow-travellers__avatar--catalog" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="фотография попутчика" />
                                     </picture>
                                 </a>
-                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog">
+                                <h3 class="fellow-travellers__name fellow-travellers__name--catalog fellow-travellers__name--online">
                                     <a href="#">Лариса Роговая</a>
                                 </h3>
                                 <p class="fellow-travellers__interest fellow-travellers__interest--catalog">
@@ -798,31 +972,71 @@
                                     <a href="" class="fellow-travellers__interest-item">#линкедин</a>
                                 </p>
                                 <a class="fellow-travellers__link  button" href="#">Позвать!</a>
+                                <label class="fellow-travellers__like like">
+                                    <input class="like__checkbox"  type="checkbox" name="like" >
+                                  <span class="like__box"></span>
+                                  <span class="like__value">23</span>
+                                </label>
                             </div>
                             <div class="fellow-travellers__flags fellow-travellers__flags--catalog country country--catalog">
                                 <h3>хочет посетить:</h3>
-                                <a class="country__flag  country__flag--catalog" href="#">Великобритания</a>
-                                <a class="country__flag  country__flag--catalog" href="#">Германия</a>
+                                <a class="country__flag-catalog country__flag-catalog--uk" href="#">Великобритания</a>
+                                <a class="country__flag-catalog country__flag-catalog--ger" href="#">Германия</a>
                             </div>
-                            <div class="fellow-travellers__box fellow-travellers__box--vehicle">
+                            <div class="fellow-travellers__box fellow-travellers__box--vehicle fellow-travellers__box--rogova">
                                 <div class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog-info">
                                     <h3>транспорт:</h3>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--plane" data-info="Авиаперелет">
                                         <span class="visually-hidden">самолет</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="19" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;"
+                                            xml:space="preserve">
+                                  <path
+                                    d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                                                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                                                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                                                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                                                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                                                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                                                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                                </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bus" data-info="Автотранспорт">
                                         <span class="visually-hidden">автобус</span>
+                                        <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="24" height="21" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                                            xml:space="preserve">
+                                        <path
+                                          d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                                                          c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                                                          C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                                                          M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                                                          H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                                      </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike">
+                                    <a class="fellow-travellers__vehicle-item  fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--bike" data-info="Велосипед">
                                         <span class="visually-hidden">велосипед</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="20" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                        <path
+                                          d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z  M14.8,8.9H19V7.1h-3.2l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                                      </svg>
                                     </a>
-                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog fellow-travellers__vehicle-item--run">
+                                    <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog  fellow-travellers__vehicle-item--run" data-info="Пешком">
                                         <span class="visually-hidden">бег</span>
+                                        <svg class="fellow-travellers__vehicle-icon" width="15" height="17" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                                            xml:space="preserve">
+                                  <g>
+                                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
+                                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                                                C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                                                c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                                                c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                                                z" />
+                                  </g>
+                                </svg>
                                     </a>
                                 </div>
                                 <div class="fellow-travellers__level fellow-travellers__level--catalog level" data-level="50">
                                     <h3 class="fellow-travellers__level-title">левел:</h3>
-                                    <svg class="level__circles level__circles--catalog" viewbox="90 57 21 87">
+                                    <svg width="45" height="45" class="level__circles level__circles--catalog" viewbox="90 57 21 87">
                                             <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30"
                                               stroke-dasharray="250,250" d="M100 60 A1 1 0 0 1 100 140
                                                           A1 1 0 0 1 100 60" />
@@ -833,9 +1047,10 @@
                         </div>
                     </div>
                     <div class="fellow-travellers__block">
-                        <a class="fellow-travellers__show-more">Показать еще</a>
+                        <a href="#" class="fellow-travellers__show-more">
+                            <svg width="18" height="18" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" xml:space="preserve">
+                              <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/></svg> Показать еще</a>
                     </div>
-
                     <div class="fellow-travellers__navigation">
                         <ul class="fellow-travellers__pagination pagination-list">
                             <li class="pagination-list__item pagination-list__item--current"><a href="#">1</a></li>
@@ -846,9 +1061,19 @@
                         <div class="fellow-travellers__navigation fellow-travellers__navigation--list">
                             <button class="fellow-travellers__navigation fellow-travellers__navigation--prev-list" type="button">
                 <span class="visually-hidden">предыдущие</span>
+                <svg width="10" height="20" version="1.1" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14"  xml:space="preserve">
+                  <polygon points="0,7.1 10,0.1 10,14 "/>
+                </svg>
               </button>
                             <button class="fellow-travellers__navigation fellow-travellers__navigation--next-list" type="button">
                 <span class="visually-hidden">следующие</span>
+                <svg width="10" height="20" version="1.1" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14"  xml:space="preserve">
+                  <polygon points="0,14 0,0.1 10,7.1 "/>
+                </svg>
               </button>
                         </div>
                     </div>
@@ -857,7 +1082,7 @@
         </div>
     </main>
     <footer class="main-footer main-footer--catalog">
-        <a class="main-footer__logo logotype logotype--dark">
+        <a href="../source/index.html" class="main-footer__logo logotype logotype--dark">
             <picture>
                 <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
@@ -866,9 +1091,9 @@
         </a>
         <div class="main-footer__social user-social user-social--footer">
             <a class="user-social__item user-social__item--facebook user-social__item--circle" href="">
-                <svg class="user-social__item-icon" width="11" height="21" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                <svg class="user-social__item-icon" width="11" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
           <g>
-          <path fill="#000000"  d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+          <path   d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
           V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
           C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
           </g>
@@ -876,9 +1101,9 @@
                 <span class="visually-hidden">Facebook</span></a>
             <a class="user-social__item user-social__item--vkontakte user-social__item--circle" href="">
                 <span class="visually-hidden">VKontakte</span>
-                <svg class="user-social__item-icon" width="23" height="12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                <svg class="user-social__item-icon" width="23" height="12" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
             <g>
-            <path fill="#000000" d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+            <path  d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
             c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
             c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
             c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
@@ -899,7 +1124,7 @@
             </a>
             <a class="user-social__item user-social__item--instagram user-social__item--circle" href="">
                 <span class="visually-hidden"> Instagram</span>
-                <svg class="user-social__item-icon" width="18" height="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                <svg class="user-social__item-icon" width="18" height="18" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
         <path class="st0"  d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
         M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
         <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
@@ -908,7 +1133,15 @@
         </svg>
             </a>
         </div>
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg width="27" height="34" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 27 34"  xml:space="preserve">
+        <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
+        l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
+        l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
+        L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
+        </svg>
+        </a>
     </footer>
     <script src="js/script.js"></script>
 </body>

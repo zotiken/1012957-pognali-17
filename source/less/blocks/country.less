@@ -129,45 +129,6 @@
       }
     }
 
-    &--catalog {
-      width: auto;
-      padding: 0;
-      margin: 0;
-      position: relative;
-      background: none;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
-      line-height: 18px;
-      font-weight: 500;
-      color: #1d2e5b;
-      padding-left: 38px;
-      padding-bottom: 3px;
-
-      &::before {
-        margin-left: -40px;
-        position: absolute;
-        content: "";
-        width: 26px;
-        height: 18px;
-        background-image: url("../img/flags.png");
-        background-position: 0 0;
-      }
-
-      @media (min-width: @screen-md) {
-        height: 24px;
-        font-size: 20px;
-        margin-right: 33px;
-        margin-top: 0;
-        padding-left: 41px;
-      }
-
-      @media (min-width: @screen-xl) {
-        margin-bottom: 9px;
-        padding-left: 63px;
-      }
-    }
-
     &--visit {
       padding: 0;
       margin: 0 9px;
@@ -222,6 +183,125 @@
         margin: 0 10px;
         margin-top: 0;
       }
+    }
+  }
+
+  &__flag-catalog {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #1d2e5b;
+    padding-left: 38px;
+    padding-bottom: 11px;
+
+    &::before {
+      margin-left: -40px;
+      position: absolute;
+      content: "";
+      margin-top: -2%;
+      width: 26px;
+      height: 18px;
+      background-size: 100%;
+    }
+
+    @media (min-width: @screen-md) {
+      &::before {
+        width: 35px;
+        height: 24px;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      &::before {
+        margin-left: -54px;
+      }
+    }
+
+    &--tai {
+      &::before {
+        background-image: url("../img/thailand@2x.svg");
+      }
+    }
+
+    &--sri {
+      &::before {
+        background-image: url("../img/Sri_Lanka@2x.svg");
+      }
+    }
+
+    &--sey {
+      &::before {
+        background-image: url("../img/Seychelles@2x.svg");
+      }
+    }
+
+    &--belg {
+      &::before {
+        background-image: url("../img/Belgium-3@2x.svg");
+      }
+    }
+
+    &--france {
+      &::before {
+        background-image: url("../img/France-3@2x.svg");
+      }
+    }
+
+    &--czech {
+      &::before {
+        background-image: url("../img/Chech_republic@2x.svg");
+      }
+    }
+
+    &--usa {
+      &::before {
+        background-image: url("../img/USA@2x.svg");
+      }
+    }
+
+    &--dom {
+      &::before {
+        background-image: url("../img/Dominica@2x.svg");
+      }
+    }
+
+    &--aus {
+      &::before {
+        background-image: url("../img/Australia@2x.svg");
+      }
+    }
+
+    &--uk {
+      &::before {
+        background-image: url("../img/uk@2x.svg");
+      }
+    }
+
+    &--ger {
+      &::before {
+        background-image: url("../img/Germany@2x.svg");
+      }
+    }
+
+    @media (min-width: @screen-md) {
+      height: 24px;
+      font-size: 20px;
+      margin-right: 33px;
+      margin-top: 0;
+      padding-left: 41px;
+    }
+
+    @media (min-width: @screen-xl) {
+      margin-bottom: 9px;
+      padding-left: 63px;
+      padding-bottom: 3px;
     }
   }
 

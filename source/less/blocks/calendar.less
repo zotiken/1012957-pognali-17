@@ -11,7 +11,7 @@
     font-size: 20px;
     font-weight: bold;
     color: #1d2e5b;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     padding-top: 10px;
     margin-bottom: 25px;
 
@@ -38,11 +38,19 @@
       @media (min-width: @screen-xl) {
         font-size: 65px;
         color: rgba(68, 68, 68, 0.3);
+
+        td:first-child {
+          text-align: left;
+        }
+
+        td:last-child {
+          text-align: right;
+        }
       }
     }
 
     tr:last-child {
-      height: 42px;
+      height: 45px;
       vertical-align: bottom;
       color: rgb(85, 85, 85);
 
@@ -81,9 +89,8 @@
 
   &__body {
     td {
-      // color: rgb(44, 86, 122);
       width: 14.28%;
-      height: 30px;
+      height: 28px;
       border: 1px solid #cbced9;
 
       @media (min-width: @screen-md) {
@@ -116,6 +123,10 @@
     &--28 {
       background-color: #1d2e5b;
       color: #ffffff;
+
+      &:hover {
+        background-color: lighten(#1d2e5b, 10%);
+      }
     }
 
     &--29,

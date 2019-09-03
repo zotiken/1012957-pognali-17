@@ -63,6 +63,21 @@
     }
   }
 
+  &--catalog-title {
+    background: none;
+    background-color: #161c35;
+    margin-top: auto;
+    padding-bottom: 0;
+    padding-top: 30px;
+    border-radius: 0 0 20px 20px;
+
+    @media (min-width: @screen-md) {
+      padding: 0 8.6%;
+      padding-top: 87px;
+      border-radius: 0 0 65px 65px;
+    }
+  }
+
   &__box {
     box-sizing: border-box;
     width: 230px;
@@ -123,6 +138,7 @@
         height: auto;
         flex-basis: 25%;
         order: 3;
+        padding-bottom: 12px;
 
         picture {
           margin: 0;
@@ -135,7 +151,7 @@
         position: relative;
 
         picture {
-          bottom: -71px;
+          bottom: -66px;
           position: absolute;
         }
       }
@@ -156,6 +172,22 @@
         margin-left: auto;
         margin-top: 7px;
         margin-right: 0;
+      }
+    }
+
+    &--demin {
+      margin-top: 8px;
+
+      @media (min-width: @screen-xl) {
+        margin-top: -92px;
+      }
+    }
+
+    &--rogova {
+      margin-top: 8px;
+
+      @media (min-width: @screen-xl) {
+        margin-top: -92px;
       }
     }
   }
@@ -217,10 +249,14 @@
     color: @white;
     display: none;
 
+    svg {
+      fill: @white;
+      margin-left: 24px;
+    }
+
     @media (min-width: @screen-md) {
       display: block;
       margin-top: 15px;
-      padding-right: 59px;
       align-self: flex-start;
     }
   }
@@ -280,7 +316,7 @@
         width: auto;
         margin-top: 0;
         font-size: 60px;
-        padding-bottom: 77px;
+        padding-bottom: 74px;
       }
 
       @media (min-width: @screen-xl) {
@@ -328,6 +364,7 @@
       @media (min-width: @screen-xl) {
         padding-top: 87px;
         width: 62.5%;
+        margin-bottom: 64px;
       }
     }
   }
@@ -433,6 +470,11 @@
 
       @media (min-width: @screen-xl) {
         margin-bottom: 30px;
+
+        &:hover {
+          box-shadow: -2px 12px 14px 4px #cccccc;
+          border-radius: 20px;
+        }
       }
     }
 
@@ -442,14 +484,13 @@
       width: 100%;
       background-color: @yellow;
       border-radius: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 23px;
       margin-bottom: 28px;
 
       &:hover {
         transform: none;
         transition: 0.5s ease-in-out;
       }
-
 
       @media (min-width: @screen-md) {
         padding: 4.8%;
@@ -461,6 +502,10 @@
       @media (min-width: @screen-xl) {
         padding: 16.5%;
         padding-top: 48px;
+
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
@@ -566,8 +611,8 @@
       @media (min-width: @screen-md) {
         padding-left: 40px;
         padding-right: 22px;
-        padding-top: 34px;
-        padding-bottom: 10px;
+        padding-top: 30px;
+        padding-bottom: 8px;
       }
 
       @media (min-width: @screen-xl) {
@@ -621,12 +666,6 @@
       background-color: #f97676;
     }
 
-    &--online {
-      &::before {
-        background-color: #81e31e;
-      }
-    }
-
     @media (min-width: @screen-md) {
       a {
         font-size: 24px;
@@ -641,6 +680,18 @@
       line-height: 20px;
       color: #1d2e5b;
 
+      &::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        top: 13%;
+        transform: none;
+        left: 137px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #f97676;
+      }
+
       @media (min-width: @screen-md) {
         width: 50%;
         margin-left: 4px;
@@ -652,10 +703,27 @@
         a {
           font-size: 30px;
         }
+
+        &::before {
+          width: 7px;
+          top: 34%;
+          left: 100%;
+          height: 7px;
+        }
       }
 
       @media (min-width: @screen-xl) {
         margin-top: 47px;
+
+        &::before {
+          left: -9%;
+        }
+      }
+    }
+
+    &--online {
+      &::before {
+        background-color: #81e31e;
       }
     }
   }
@@ -672,7 +740,7 @@
 
     &--catalog {
       width: 74%;
-      text-align-last: left;
+      text-align: left;
       margin-top: 16px;
       font-size: 15px;
       line-height: 18px;
@@ -706,7 +774,7 @@
       margin-bottom: 16px;
       padding: 0 9%;
       padding-top: 10px;
-      padding-bottom: 22px;
+      padding-bottom: 12px;
       text-align: left;
       line-height: 22px;
 
@@ -720,8 +788,8 @@
 
       @media (min-width: @screen-md) {
         order: 5;
-        padding-top: 25px;
-        padding-bottom: 34px;
+        padding-top: 0;
+        padding-bottom: 26px;
         font-size: 20px;
         line-height: 24px;
         color: #444444;
@@ -739,7 +807,7 @@
         margin: 0;
         margin-top: 11px;
         margin-left: -0.6%;
-        padding-bottom: 29px;
+        padding-bottom: 26px;
         padding-right: 3.2%;
 
         legend {
@@ -841,6 +909,23 @@
     }
   }
 
+  &__like {
+    position: absolute;
+    left: 25%;
+    top: 13.2%;
+
+    @media (min-width: @screen-md) {
+      left: 58.8%;
+      top: 52.5%;
+    }
+
+    @media (min-width: @screen-xl) {
+      left: 51.8%;
+      top: 0;
+      bottom: -139px;
+    }
+  }
+
   &__flags {
     display: flex;
     margin: 0 auto;
@@ -864,7 +949,7 @@
       margin: 0;
       margin-right: auto;
       position: static;
-      margin-bottom: 9px;
+      margin-bottom: 0;
       flex-direction: column;
 
       h3 {
@@ -881,18 +966,22 @@
         width: 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
+        border-top: 1px solid #edeff6;
+        margin-top: 9px;
 
         h3 {
           width: 100%;
           margin-bottom: 25px;
           margin-left: 42px;
+          margin-top: -8px;
         }
       }
 
       @media (min-width: @screen-xl) {
         width: 30%;
         flex-direction: column;
-        padding-top: 56px;
+        padding-top: 49px;
+        border: none;
 
         h3 {
           display: none;
@@ -936,7 +1025,7 @@
   &__vehicle {
     h3 {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
       font-size: 15px;
       font-weight: normal;
       color: @greyish-brown;
@@ -956,6 +1045,7 @@
       @media (min-width: @screen-md) {
         display: flex;
         flex-direction: row;
+        margin-top: 6px;
       }
 
       @media (min-width: @screen-xl) {
@@ -973,6 +1063,7 @@
 
       @media (min-width: @screen-xl) {
         flex-direction: row;
+        padding-right: 49px;
       }
     }
 
@@ -1018,14 +1109,26 @@
     @media (min-width: @screen-md) {
       transform: rotate(180deg);
     }
+
+    &--form {
+      border: none;
+      background: none;
+      resize: none;
+      width: 100%;
+      line-height: 22px;
+    }
+  }
+
+  &__box-check {
+    @media (min-width: @screen-md) {
+      transform: rotate(180deg);
+    }
   }
 
   &__check {
     display: none;
 
-    &:checked
-      + .fellow-travellers__check-value
-      .fellow-travellers__vehicle-icon {
+    &:checked + .fellow-travellers__check-value.fellow-travellers__vehicle-icon {
       fill: #1d2e5b;
     }
   }
@@ -1035,9 +1138,6 @@
     display: inline-block;
     width: 26px;
     height: 26px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 60%;
 
     &::before,
     &::after {
@@ -1081,24 +1181,6 @@
       z-index: 1;
     }
 
-    &--bike {
-      background-image: url("../img/bike.png");
-    }
-
-    &--plane {
-      background-image: url("../img/plane-s.png");
-      background-size: 50%;
-    }
-
-    &--bus {
-      background-image: url("../img/bus.png");
-      background-size: 50%;
-    }
-
-    &--run {
-      background-image: url("../img/run.png");
-    }
-
     @media (min-width: @screen-md) {
       width: 24px;
       height: 24px;
@@ -1111,8 +1193,14 @@
       height: 33px;
 
       @media (min-width: @screen-md) {
-        width: 43px;
-        height: 43px;
+        background: none;
+        width: 31px;
+        height: 31px;
+
+        svg {
+          width: 24px;
+          height: 21px;
+        }
       }
     }
 
@@ -1121,6 +1209,32 @@
       background-color: #ffffff;
       width: 33px;
       height: 33px;
+
+      @media (min-width: @screen-md) {
+        width: 43px;
+        height: 43px;
+      }
+    }
+
+    &--catalog-filter {
+      background: none;
+      background-color: #ffffff;
+      border-radius: 50%;
+      width: 33px;
+      height: 33px;
+
+      &:hover {
+        box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.3);
+      }
+
+      &:active {
+        background-color: #e2e5f1;
+        color: rgba(22, 28, 53, 0.2);
+      }
+
+      &:active .fellow-travellers__vehicle-icon {
+        fill: #a3a9bd;
+      }
 
       @media (min-width: @screen-md) {
         width: 43px;
@@ -1165,7 +1279,8 @@
 
     &--catalog {
       position: static;
-      padding-top: 27px;
+      padding-top: 11px;
+      padding-right: 1.5%;
 
       @media (min-width: @screen-xl) {
         padding-top: 0;
@@ -1310,17 +1425,22 @@
     }
 
     &--prev-list {
-      display: block;
+      display: flex;
       width: 50%;
       height: 50px;
       border: none;
       background-color: @white;
-      background-image: url("../img/triangle-arrow-left.svg");
-      background-repeat: no-repeat;
-      background-size: 15px;
-      background-position: 49% 50%;
       border-radius: 20px 0 0 20px;
       margin-right: 2px;
+      padding-bottom: 0;
+
+      &:hover {
+        fill: rgba(22, 28, 53, 0.7);
+      }
+
+      &:active {
+        fill: rgba(22, 28, 53, 0.2);
+      }
 
       @media (min-width: @screen-md) {
         width: 40px;
@@ -1328,16 +1448,21 @@
     }
 
     &--next-list {
-      display: block;
+      display: flex;
       height: 50px;
       width: 50%;
       border: none;
       background-color: @white;
       border-radius: 0 20px 20px 0;
-      background-image: url("../img/triangle-arrow-right.svg");
-      background-repeat: no-repeat;
-      background-size: 15px;
-      background-position: 52% 50%;
+      padding-bottom: 0;
+
+      &:hover {
+        fill: rgba(22, 28, 53, 0.7);
+      }
+
+      &:active {
+        fill: rgba(22, 28, 53, 0.2);
+      }
 
       @media (min-width: @screen-md) {
         width: 40px;
@@ -1378,15 +1503,22 @@
     font-size: 17px;
     font-weight: bold;
     color: #1d2e5b;
+    text-decoration: none;
+    padding-right: 24px;
+    display: flex;
 
-    &::before {
-      content: "";
-      position: absolute;
-      margin-left: -33px;
-      margin-top: -2px;
-      width: 18px;
-      height: 18px;
-      background-image: url("../img/qty-plus-mobile.svg");
+    svg {
+      margin-right: 14px;
+    }
+
+    &:hover {
+      color: rgba(29, 46, 91, 0.7);
+      fill: rgba(29, 46, 91, 0.7);
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+      fill: rgba(29, 46, 91, 0.3);
     }
 
     @media (min-width: @screen-md) {

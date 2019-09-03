@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     display: flex;
     padding-top: 37px;
-    padding-left: 10px;
 
     @media (min-width: @screen-md) {
       justify-content: space-between;
@@ -27,6 +26,7 @@
     }
 
     @media (min-width: @screen-xl) {
+      display: flex;
       padding-left: 5.1%;
       padding-top: 23px;
     }
@@ -45,7 +45,7 @@
       content: "";
       display: block;
       position: absolute;
-      margin-top: 1.5%;
+      margin-top: 4px;
       width: 15px;
       height: 10px;
       background-image: url("../img/filter.svg");
@@ -55,6 +55,12 @@
         width: 19px;
         height: 19px;
         margin-top: 0;
+      }
+
+      @media (min-width: @screen-xl) {
+        margin-left: -19px;
+        width: 23px;
+        height: 15px;
       }
     }
 
@@ -69,6 +75,11 @@
       flex-basis: 22%;
       margin-left: -3px;
       margin-right: 14px;
+
+      &::after {
+        position: absolute;
+        content: " : ";
+      }
     }
   }
 
@@ -84,86 +95,20 @@
     @media (min-width: @screen-md) {
       text-transform: uppercase;
       order: 2;
-      width: 205px;
+      width: 29.5%;
       height: 25px;
       display: block;
       padding-right: 27px;
     }
 
     @media (min-width: @screen-xl) {
-      width: 246px;
-      padding-right: 91px;
+      width: 237px;
+      padding-right: 50px;
     }
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      margin-left: -25%;
-      width: 16px;
-      height: 3px;
-      background-image: url("../img/dots.svg");
-
-      @media (min-width: @screen-md) {
-        margin-left: 81%;
-        width: 13%;
-        height: 5px;
-        margin-top: -8%;
-      }
-    }
-
-    &::before {
-      content: "";
-      display: none;
-      position: absolute;
-      margin-left: -13%;
-      margin-top: -19%;
-      width: 12px;
-      height: 12px;
-      background-image: url("../img/filter-close.svg");
-
-      @media (min-width: @screen-md) {
-        margin-left: 84%;
-        width: 19px;
-        height: 19px;
-        margin-top: 0;
-      }
-    }
-
-    // &--close {
-    //   display: inline-block;
-    //   margin-left: 140px;
-    //   width: 19px;
-    //   height: 19px;
-    //   border: none;
-    //   background-image: url("../img/close.svg");
-    //   background-repeat: no-repeat;
-
-    //   @media (min-width: @screen-md) {
-    //     display: none;
-    //     min-height: 19px;
-    //     width: 19px;
-    //     height: 19px;
-    //     border: none;
-    //     background-image: url("../img/close.svg");
-    //     background-repeat: no-repeat;
-    //   }
-
-    //   &::after,
-    //   &::before {
-    //     content: "";
-    //     display: none;
-    //     position: absolute;
-    //     margin-left: -5px;
-    //     width: 25px;
-    //     height: 2px;
-    //     background: #ffffff;
-    //   }
-    // }
   }
 
   &__toggle-text {
-    display: none;
+    display: flex;
 
     @media (min-width: @screen-md) {
       display: block;
@@ -173,10 +118,33 @@
     }
 
     &--all {
-      display: none;
+      display: flex;
+      width: 17px;
+      height: 18px;
+
+      span {
+        display: none;
+      }
+
+      &:hover {
+        color: rgba(29, 46, 91, 0.7);
+        fill: rgba(29, 46, 91, 0.7);
+      }
+
+      &:active {
+        color: rgba(29, 46, 91, 0.3);
+        fill: rgba(29, 46, 91, 0.3);
+      }
 
       @media (min-width: @screen-md) {
-        display: block;
+        display: flex;
+        width: auto;
+        height: 18px;
+
+        span {
+          display: block;
+          margin-right: 20px;
+        }
       }
 
       @media (min-width: @screen-xl) {
@@ -186,15 +154,40 @@
 
     &--close {
       display: none;
+      width: 17px;
+      height: 18px;
+
+      &:hover {
+        color: rgba(29, 46, 91, 0.7);
+        fill: rgba(29, 46, 91, 0.7);
+      }
+
+      &:active {
+        color: rgba(29, 46, 91, 0.3);
+        fill: rgba(29, 46, 91, 0.3);
+      }
+
+      @media (min-width: @screen-md) {
+        width: auto;
+        height: 18px;
+
+        span {
+          display: block;
+          margin-right: 20px;
+        }
+      }
 
       @media (min-width: @screen-xl) {
-        display: block;
+        display: flex;
+
+        svg {
+          margin-left: 59px;
+        }
       }
     }
   }
 
   &__region {
-    //  display:flex;
     display: none;
     flex-direction: column;
     order: 3;
@@ -212,7 +205,7 @@
     }
 
     @media (min-width: @screen-xl) {
-      width: 28%;
+      width: 27.4%;
       padding: 0;
       margin-right: auto;
     }
@@ -222,6 +215,14 @@
     color: @dark-blue-grey;
     text-transform: uppercase;
     font-weight: 700;
+
+    &:hover {
+      color: rgba(29, 46, 91, 0.5);
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 1);
+    }
 
     @media (min-width: @screen-md) {
       font-size: 20px;
@@ -252,11 +253,20 @@
       background: none;
       width: 65%;
       margin-left: -25px;
+
+      &--form {
+        width: 100%;
+        margin-left: 0;
+      }
     }
 
     @media (min-width: @screen-xl) {
       width: 100%;
       margin-left: 0;
+    }
+
+    &--form {
+      width: 100%;
     }
   }
 
@@ -329,6 +339,15 @@
     color: #1d2e5b;
     font-size: 14px;
 
+    &:hover {
+      border: 1px solid rgba(29, 46, 91, 1);
+    }
+
+    &:active {
+      background-color: rgba(29, 46, 91, 1);
+      color: @white;
+    }
+
     @media (min-width: @screen-md) {
       color: rgba(25, 33, 68, 0.2);
       border: none;
@@ -336,6 +355,21 @@
       line-height: 24px;
       margin-bottom: 12px;
       margin-left: -4px;
+
+      &:hover {
+        border: none;
+        color: rgba(29, 46, 91, 0.7);
+      }
+
+      &:active {
+        background: none;
+        color: rgba(29, 46, 91, 0.3);
+      }
+    }
+
+    &--form {
+      width: 42px;
+      height: 42px;
     }
   }
 
@@ -360,6 +394,14 @@
       text-decoration: none;
       color: @greyish-brown;
       line-height: 22px;
+
+      &:hover {
+        color: rgba(29, 46, 91, 0.3);
+      }
+
+      &:active {
+        color: rgba(29, 46, 91, 1);
+      }
     }
 
     @media (min-width: @screen-md) {
@@ -381,6 +423,10 @@
         display: none;
       }
     }
+
+    &--form {
+      padding: 0 10px;
+    }
   }
 
   &__close {
@@ -391,6 +437,15 @@
     font-weight: 700;
     line-height: 29.5px;
     color: @dark;
+
+    &:hover {
+      background-color: #c8cee8;
+      color: rgba(29, 46, 91, 1);
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+    }
 
     @media (min-width: @screen-md) {
       margin-bottom: 30px;

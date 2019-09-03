@@ -17,6 +17,7 @@
 @import "blocks/country.less";
 @import "blocks/fellow-travellers.less";
 @import "blocks/fellow-travellers-filter.less";
+@import "blocks/like.less";
 @import "blocks/level.less";
 @import "blocks/create-profile.less";
 @import "blocks/advantages.less";
@@ -36,6 +37,8 @@
 @import "blocks/road-map.less";
 @import "blocks/route-select.less";
 @import "blocks/calendar.less";
+@import "blocks/spin.less";
+
 
 .visible-block {
   display: block;
@@ -49,10 +52,19 @@
   display: flex;
 
   @media (min-width: @screen-xl) {
-    display: none;
+    display: flex;
   }
 }
 
 .hidden {
   display: none;
+
+  @media (min-width: @screen-md) {
+    display: flex;
+  }
+
+
+  @media (min-width: @screen-xl) {
+    display: none;
+  }
 }
