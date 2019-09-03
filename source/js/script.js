@@ -64,31 +64,33 @@ for (let q = 0; q < filterToggle.length; q++) {
 
 // меню стран формы
 
-var DropDownHeader = document.querySelector('.route-select__header-dropdown');
+var DropDownHeader = document.querySelectorAll('.route-select__header-dropdown');
 if (DropDownHeader) {
-    var DropDownList = document.querySelector('.route-select__wrapper');
+    var DropDownList = document.querySelectorAll('.route-select__wrapper');
     var CountryIndex = document.querySelectorAll('.country-filter__sumbol a');
     // var CountryItemSelect = CountryIndex.getE
-    // for (let w = 0; w < filterToggle.length; w++) {
-    DropDownHeader.onclick = function() {
-            DropDownList.classList.toggle("visible-block");
+    for (let w = 0; w < DropDownHeader.length; w++) {
+        DropDownHeader[w].onclick = function() {
+            DropDownList[w].classList.toggle("visible-block");
+            DropDownHeader[w].style.backgroundColor = "#192144";
+            DropDownHeader[w].style.color = "#ffffff";
             // filterBlockHidden2.classList.toggle("visible");
             // filterBlockHidden3.classList.toggle("visible-block");
         }
-        // }
-    for (let e = 0; e < CountryIndex.length; e++) {
-        CountryIndex[e].onclick = function() {
-            DropDownList.classList.toggle("visible-block");
-            // filterBlockHidden2.classList.toggle("visible");
-            // filterBlockHidden3.classList.toggle("visible-block");
-            console.log(CountryIndex[e]);
-            alert(CountryIndex[e].text);
-            DropDownHeader.textContent = CountryIndex[e].text;
+
+        for (let e = 0; e < CountryIndex.length; e++) {
+            CountryIndex[e].onclick = function() {
+                DropDownList[w].classList.toggle("visible-block");
+                // filterBlockHidden2.classList.toggle("visible");
+                // filterBlockHidden3.classList.toggle("visible-block");
+                console.log(CountryIndex[e]);
+                alert(CountryIndex[e].text);
+                DropDownHeader[w].textContent = CountryIndex[e].text;
+            }
         }
     }
-
 }
-// console.log(CountryIndex);
+
 
 
 var dropdown = document.querySelectorAll('.dropdown');
