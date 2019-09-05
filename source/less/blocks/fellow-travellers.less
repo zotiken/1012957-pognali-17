@@ -1131,14 +1131,8 @@
     }
   }
 
-  &__check {
-    display: none;
-
-    &:checked
-      + .fellow-travellers__check-value
-      .fellow-travellers__vehicle-icon {
-      fill: #1d2e5b;
-    }
+  &__check + .fellow-travellers__check-value .fellow-travellers__vehicle-icon {
+    fill: #1d2e5b;
   }
 
   &__vehicle-item {
