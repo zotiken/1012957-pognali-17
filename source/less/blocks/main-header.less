@@ -43,11 +43,20 @@
     padding-bottom: 70px;
   }
 
+  &__block-logo {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: @screen-md) {
+      padding-top: 7px;
+    }
+  }
+
   &__logo {
     display: block;
-    width: 100px;
-    height: 19px;
-    background-image: url("../img/logo-mobile-white@1x.png");
+    // width: 100px;
+    // height: 19px;
+    // background-image: url("../img/logo-mobile-white@1x.png");
 
     @media (min-width: @screen-md) {
       box-sizing: border-box;
@@ -61,17 +70,30 @@
   &__wrapper {
     position: relative;
     padding: 0 7.81%;
-    padding-top: 27px;
+    padding-top: 17px;
+    padding-bottom: 22px;
     display: flex;
     justify-content: space-between;
 
-    &--catalog {
-      background-color: @dark;
-    }
-
     @media (min-width: @screen-md) {
       padding: 0 5.21%;
-      padding-top: 40px;
+      padding-top: 35px;
+      padding-bottom: 38px;
+    }
+
+    @media (min-width: @screen-xl) {
+      padding: 0 4.21%;
+      padding-top: 42px;
+      padding-bottom: 2px;
+    }
+
+    &--catalog {
+      background-color: @dark;
+
+      @media (min-width: @screen-md) {
+        padding-top: 40px;
+        padding-bottom: 38px;
+      }
     }
   }
 

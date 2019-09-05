@@ -1,0 +1,60 @@
+.level {
+  &--form {
+    position: static;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: @screen-md) {
+      justify-content: flex-start;
+    }
+
+    @media (min-width: @screen-xl) {
+      justify-content: center;
+      padding-bottom: 146px;
+    }
+  }
+
+  &__circles {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: bold;
+
+    &--catalog {
+      width: 45px;
+      height: 45px;
+
+      @media (min-width: @screen-md) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &--form {
+      position: static;
+      width: 109px;
+      height: 104px;
+      margin-top: -4px;
+      margin-left: 2px;
+
+      @media (min-width: @screen-md) {
+        width: 94px;
+        height: 94px;
+      }
+    }
+  }
+
+  &__circles-percent {
+    @media (min-width: @screen-xl) {
+      fill: @white;
+    }
+  }
+
+  &__circles-text {
+    @media (min-width: @screen-xl) {
+      fill: @white;
+    }
+  }
+}

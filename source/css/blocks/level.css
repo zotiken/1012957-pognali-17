@@ -1,0 +1,10 @@
+.level__circles {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.level__circles--catalog {
+  width: 45px;
+  height: 45px;
+}

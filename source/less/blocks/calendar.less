@@ -1,0 +1,144 @@
+.calendar {
+  width: 102%;
+  text-align: center;
+  border-collapse: collapse;
+
+  @media (min-width: @screen-xl) {
+    width: 100.3%;
+  }
+
+  &__month {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2e5b;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+
+    @media (min-width: @screen-md) {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1d2e5b;
+      padding-bottom: 19px;
+      padding-top: 25px;
+      margin-bottom: 30px;
+    }
+  }
+
+  thead {
+    border-top: 1px solid rgba(68, 68, 68, 0.3);
+
+    tr {
+      border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+    }
+
+    tr:first-child {
+      font-size: 32px;
+
+      @media (min-width: @screen-xl) {
+        font-size: 65px;
+        color: rgba(68, 68, 68, 0.3);
+
+        td:first-child {
+          text-align: left;
+        }
+
+        td:last-child {
+          text-align: right;
+        }
+      }
+    }
+
+    tr:last-child {
+      height: 45px;
+      vertical-align: bottom;
+      color: rgb(85, 85, 85);
+
+      @media (min-width: @screen-md) {
+        height: 66px;
+        font-size: 18px;
+      }
+
+      @media (min-width: @screen-xl) {
+        height: 55px;
+        font-size: 18px;
+        text-align: left;
+        vertical-align: middle;
+
+        td {
+          padding-left: 15px;
+        }
+      }
+    }
+
+    // tr:nth-child(1) td:nth-child(2) {
+    //   color: rgb(50, 50, 50);
+    // }
+
+    tr:nth-child(1) td:nth-child(1):hover,
+    tr:nth-child(1) td:nth-child(3):hover {
+      cursor: pointer;
+    }
+
+    td:nth-child(6),
+    td:nth-child(7),
+    .holiday {
+      color: rgb(231, 140, 92);
+    }
+  }
+
+  &__body {
+    td {
+      width: 14.28%;
+      height: 28px;
+      border: 1px solid #cbced9;
+
+      @media (min-width: @screen-md) {
+        height: 66px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      @media (min-width: @screen-xl) {
+        height: 68px;
+      }
+    }
+
+    // td:nth-child(n + 6),
+    // .holiday {
+    //   color: rgb(231, 140, 92);
+    // }
+
+    td.today {
+      background: rgb(220, 0, 0);
+      color: #ffffff;
+    }
+  }
+
+  &__item {
+    color: rgba(68, 68, 68, 0.3);
+
+    &--26,
+    &--27,
+    &--28 {
+      background-color: #1d2e5b;
+      color: #ffffff;
+
+      &:hover {
+        background-color: lighten(#1d2e5b, 10%);
+      }
+    }
+
+    &--29,
+    &--30,
+    &--31 {
+      background-color: #edeff6;
+      color: #444444;
+    }
+  }
+}
+// @media (min-width: @screen-md) {
+// }
+
+// @media (min-width: @screen-xl) {
+// }

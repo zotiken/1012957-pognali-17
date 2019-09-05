@@ -1,0 +1,54 @@
+.like {
+  display: flex;
+  align-items: center;
+
+  &__box {
+    position: relative;
+    width: 31px;
+    height: 31px;
+    background-color: #f9eaea;
+    border-radius: 50%;
+    display: block;
+    margin-right: 6px;
+
+    &::after,
+    &::before {
+      width: 13px;
+      height: 11px;
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-size: 100%;
+    }
+
+    &::after {
+      background-image: url("../img/heart.svg");
+    }
+
+    @media (min-width: @screen-md) {
+      width: 49px;
+      height: 49px;
+
+      &::after,
+      &::before {
+        width: 20px;
+        height: 17px;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .like__box::before {
+      background-image: url("../img/heart-active.svg");
+    }
+  }
+
+  &__value {
+    font-size: 23px;
+    font-weight: bold;
+  }
+}
