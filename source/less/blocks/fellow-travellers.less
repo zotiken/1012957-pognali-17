@@ -12,6 +12,12 @@
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/smolov-back-desktop@2x.png"),
+      url("../img/rogovaya-back-mobile@2x.png");
+    background-position: 0 100px, 130px 100px, 30px 400px;
+  }
+
   @media (min-width: @screen-md) {
     margin-top: -65px;
     padding-top: 146px;
@@ -1322,8 +1328,9 @@
   &__check {
     display: none;
 
-
-    &:checked + .fellow-travellers__check-value .fellow-travellers__vehicle-icon {
+    &:checked
+      + .fellow-travellers__check-value
+      .fellow-travellers__vehicle-icon {
       fill: #1d2e5b;
     }
   }
@@ -1566,6 +1573,7 @@
   }
 
   &__to-all {
+    display: block;
     position: relative;
     margin-top: 10px;
     padding-left: 26px;
@@ -1574,7 +1582,6 @@
     padding-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
-    width: 100%;
     border-radius: 10px;
     text-align-last: left;
 
