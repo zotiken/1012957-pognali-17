@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="/source/js/picturefill.min.js"></script>
+
 </head>
 
 <body class="body no-js">
@@ -34,7 +36,7 @@
                         C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z" />
       </g>
     </symbol>
-    <symbol viewBox="0 0 30 20" id="icon-vk">
+    <symbol viewBox="0 0 29 20" id="icon-vk">
       <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
                       c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
                       c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
@@ -110,7 +112,7 @@
 
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
-                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="погнали" />
+                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="погнали" />
                         </picture>
                     </a>
                 </div>
@@ -157,7 +159,7 @@
                             <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x"> -->
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали" />
                         </picture>
                     </a>
                     <button class="menu__toggle toggle hidden" type="button"></button>
@@ -295,7 +297,7 @@
  -->
                             <source media="(min-width: 1439px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-tablet@2x.jpg 2x">
-                            <img class="directions__img" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="таиланд" />
+                            <img class="directions__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="таиланд" />
                         </picture>
                         <div class="country__info">
                             <h3 class="country__title">Тайланд</h3>
@@ -313,7 +315,7 @@
                             <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x"> -->
                             <source media="(min-width: 1439px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-tablet@2x.jpg 2x">
-                            <img class="directions__img" src="img/france-mobile@1x.jpg" width="270" height="110" alt="франция" />
+                            <img class="directions__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="франция" />
                         </picture>
                         <div class="country__info">
                             <h3 class="country__title">Франция</h3>
@@ -331,7 +333,7 @@
                             <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x"> -->
                             <source media="(min-width: 1439px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-tablet@2x.jpg 2x">
-                            <img class="directions__img" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="чехия" />
+                            <img class="directions__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="чехия" />
                         </picture>
                         <div class="country__info ">
                             <h3 class="country__title">Чехия</h3>
@@ -360,7 +362,7 @@
                 <div class="fellow-travellers__items">
                     <div class="fellow-travellers__item">
                         <a class="fellow-travellers__avatar-link" href="#">
-                            <img class="fellow-travellers__avatar" src="img/firsova-mobile@1x.jpg" width="270" height="270" alt="фотография попутчика" />
+                            <img class="fellow-travellers__avatar" src="img/av-firsova.jpg" width="270" height="270" alt="фотография попутчика" />
                         </a>
                         <div class="fellow-travellers__info">
                             <h3 class="fellow-travellers__name ">
@@ -467,18 +469,16 @@
                             </div>
                         </div>
                         <div class="fellow-travellers__level level" data-level="80">
-                            <svg class="level__circles" viewbox="90 57 21 87">
-                <g>
-                  <circle r="40" cx="100" cy="100" fill="rgba 0 0 0 " fill-opacity="0.6" />
-                  <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250"
-                    d="M100 60 A1 1 0 0 1 100 140
-                                                              A1 1 0 0 1 100 60" />
-                  <text class="circ-text" text-anchor="middle" x="100" y="100" font-size="32px"
-                    fill="#ffffff">100</text>
-                  <text text-anchor="middle" x="100" y="120" font-size="14px" fill="#ffa">level</text>
-
-                </g>
-              </svg>
+                            <svg class="level__circles" width="60" height="60" viewbox="90 57 21 87">
+                            <g>
+                              <circle r="40" cx="100" cy="100" fill="rgba 0 0 0 " fill-opacity="0.6" />
+                              <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250"
+                                d="M100 60 A1 1 0 0 1 100 140 A1 1 0 0 1 100 60" />
+                              <text class="circ-text" text-anchor="middle" x="100" y="100" font-size="32px"
+                                fill="#ffffff">100</text>
+                              <text text-anchor="middle" x="100" y="120" font-size="14px" fill="#ffa">level</text>
+                            </g>
+                          </svg>
                         </div>
                     </div>
                 </div>
@@ -584,7 +584,7 @@
 
                 <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+                <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали" />
             </picture>
         </a>
         <div class="main-footer__social user-social user-social--footer">

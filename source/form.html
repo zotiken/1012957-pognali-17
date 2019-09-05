@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="/source/js/picturefill.min.js"></script>
 </head>
 
 <body class="catalog no-js">
@@ -107,7 +108,7 @@
                         <picture>
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
-                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="погнали" />
+                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="погнали" />
                         </picture>
                     </a>
                 </div>
@@ -151,7 +152,7 @@
                         <picture>
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали" />
                         </picture>
                     </a>
                     <button class="menu__toggle toggle hidden" type="button"></button>
@@ -313,7 +314,7 @@
             </div>
         </section>
         <section class="add-plane">
-            <form class="add-plane__wrapper">
+            <form class="add-plane__wrapper" action="https://echo.htmlacademy.ru" method="POST">
                 <div class="add-plane__container-title">
                     <h3 class="add-plane__title">Добавить план:</h3>
                     <ul class="add-plane__indicator">
@@ -323,7 +324,7 @@
                     </ul>
                 </div>
                 <div class="add-plane__item step">
-                    <div class="step__wrapper">
+                    <div class="step__wrapper" id="step-1">
                         <div class="step__header">
                             <div class="step__container-title">
                                 <h4 class="step__title"><span>Шаг 1.</span> Даты пребывания</h4>
@@ -370,7 +371,7 @@
                 </div>
                 <div class="add-plane__item step">
                     <div class="step__wrapper step__wrapper--step-2">
-                        <div class="step__header">
+                        <div class="step__header" id="step-2">
                             <div class="step__container-title">
                                 <h4 class="step__title"><span>Шаг 2.</span>Маршрут</h4>
                                 <p class="step__tutorial">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
@@ -808,7 +809,7 @@
                                 </li>
                             </ul>
                             <button class="route-select__button button button--form-next">Следующий шаг</button>
-                            <button class="route-select__show button button--form-show">На шаг назад</button>
+                            <a class="route-select__show button button--form-show" href="#step-1">На шаг назад</a>
                         </div>
 
                     </div>
@@ -837,9 +838,9 @@
                                 <textarea class="step__Entertainment-text" name="plane" cols="25" rows="11" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
                             </li>
                         </ul>
-                        <button class="step__Entertainment-button button button--form-next">Отправить</button>
-                        <button class="step__button route-select__show route-select__show--step-3 button button--form-show">На шаг
-              назад</button>
+                        <button class="step__Entertainment-button button button--form-next" type="submit">Отправить</button>
+                        <a class="step__button route-select__show route-select__show--step-3 button button--form-show" href="#step-2">На шаг
+              назад</a>
                     </div>
                 </div>
             </form>
@@ -850,7 +851,7 @@
             <picture>
                 <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="погнали" />
+                <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="погнали" />
             </picture>
         </a>
         <div class="main-footer__social user-social user-social--footer">

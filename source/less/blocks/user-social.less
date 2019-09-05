@@ -48,6 +48,14 @@
         width: 20px;
         height: 20px;
       }
+
+      @media (min-width: @screen-md) {
+        svg {
+
+        width: 27px;
+        height: 27px;
+        }
+      }
     }
 
     &--circle {
@@ -89,5 +97,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
     fill: black;
+
+    @media (min-width: @screen-md) {
+      width: 27px;
+      height: 27px;
+    }
   }
 }
