@@ -3,10 +3,10 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
-    background-color: #161c35;
+    // background-color: #161c35;
 
     @media (min-width: @screen-md) {
-      background-color: #192144;
+      // background-color: #192144;
     }
 
     @media (min-width: @screen-xl) {
@@ -32,34 +32,46 @@
     padding-bottom: 70px;
   }
 
-  &__logo {
-    display: block;
-    width: 100px;
-    height: 19px;
-    background-image: url("../img/logo-mobile-white@1x.png");
+  &__block-logo {
+    display: flex;
+    align-items: center;
 
     @media (min-width: @screen-md) {
-      display: block;
-      width: 166px;
-      height: 42px;
-      background-image: url("../img/logo-tablet-white@1x.png");
+      padding-top: 7px;
     }
+  }
+
+  &__logo {
+    display: block;
   }
 
   &__wrapper {
     position: relative;
     padding: 0 7.81%;
-    padding-top: 27px;
+    padding-top: 26px;
+    padding-bottom: 22px;
     display: flex;
     justify-content: space-between;
 
-    &--catalog {
-      background-color: @dark;
-    }
-
     @media (min-width: @screen-md) {
       padding: 0 5.21%;
-      padding-top: 40px;
+      padding-top: 35px;
+      padding-bottom: 38px;
+    }
+
+    @media (min-width: @screen-xl) {
+      padding: 0 4.21%;
+      padding-top: 42px;
+      padding-bottom: 2px;
+    }
+
+    &--catalog {
+      background-color: @dark;
+
+      @media (min-width: @screen-md) {
+        padding-top: 40px;
+        padding-bottom: 38px;
+      }
     }
   }
 
@@ -76,7 +88,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // padding-bottom: 65px;
       padding-top: 136px;
       border-radius: 0 0 45px 45px;
     }

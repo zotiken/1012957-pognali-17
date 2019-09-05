@@ -4,61 +4,73 @@
   width: 100%;
   z-index: 7;
   position: relative;
-  padding-top: 36px;
-  padding-bottom: 84px;
+  padding-top: 18px;
+  padding-bottom: 65px;
   background: @background url("../img/about-mobile@1x.png") 100% 100% no-repeat;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: @screen-md) {
-    padding-top: 56px;
+    padding-top: 61px;
     padding-bottom: 88px;
-    background: @background url("../img/about-tablet@1x.png") 100% 100% no-repeat;
+    background: @background url("../img/about-tablet@1x.png") 98% 56% no-repeat;
+    border-radius: 0 0 65px 65px;
   }
 
   @media (min-width: @screen-xl) {
-    padding-top: 90px;
-    padding-bottom: 134px;
-    background: @background url("../img/about-desktop@1x.png") 100% 100% no-repeat;
+    padding-top: 79px;
+    padding-bottom: 163px;
+    background: @background url("../img/about-desktop@1x.png") 93% 100%
+      no-repeat;
   }
 
   &__wrapper {
     padding: 0 25px;
 
     @media (min-width: @screen-md) {
-      padding: 0 35px;
+      padding: 0 5.4%;
     }
   }
 
   &__title {
+    font-weight: 300;
     color: @orange;
     font-size: 24px;
+    margin-bottom: 17px;
 
     @media (min-width: @screen-md) {
       margin: 43px 0;
+      margin-bottom: 38px;
       font-size: 45px;
       line-height: 45px;
+      font-weight: 700;
     }
 
     @media (min-width: @screen-xl) {
-      margin-bottom: 61px;
+      margin-bottom: 58px;
     }
   }
 
   &__text {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
     color: @white;
     font-weight: 300;
     line-height: 22px;
+    padding-right: 10px;
 
     @media (min-width: @screen-md) {
-      width: 298px;
+      width: 300px;
       font-size: 28px;
       line-height: 33px;
-      margin-bottom: 38px;
+      margin-bottom: 34px;
+
+      br {
+        display: none;
+      }
     }
 
     @media (min-width: @screen-xl) {
-      width: 49.1%;
+      width: 52.1%;
+      margin-bottom: 38px;
     }
   }
 
@@ -70,12 +82,12 @@
       width: 291px;
       font-size: 21px;
       line-height: 25px;
-      margin-bottom: 53px;
+      margin-bottom: 51px;
     }
 
     @media (min-width: @screen-xl) {
       width: 35%;
-      margin-bottom: 86px;
+      margin-bottom: 84px;
     }
   }
 
@@ -83,11 +95,12 @@
     display: none;
 
     @media (min-width: @screen-md) {
+      position: relative;
       display: block;
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding-left: 33px;
+      padding-right: 29px;
+      padding-top: 30px;
+      padding-bottom: 27px;
       font-size: 24px;
       line-height: 24px;
       width: 274px;
@@ -101,8 +114,9 @@
         display: block;
         content: "";
         position: absolute;
-        margin-left: 210px;
-        margin-top: 5px;
+        right: 31px;
+        top: 50%;
+        transform: translate(0, -50%);
         border-style: solid;
         border-width: 7px 5px 7px 10px;
         border-color: transparent transparent transparent #1d2e5b;
