@@ -1,6 +1,6 @@
 var toggleMenu = document.querySelectorAll('.toggle');
-var menuBlock = document.querySelector(".menu");
-var toggleClose = document.querySelector(".menu__toggle");
+var menuBlock = document.querySelector('.menu');
+var toggleClose = document.querySelector('.menu__toggle');
 
 var bisnessToggle = document.querySelectorAll('.bisness-toggle');
 var bisnessBlock = document.querySelector('.modal-bisness-price');
@@ -23,7 +23,7 @@ toggleClose.classList.remove('hidden');
 
 for (let q = 0; q < toggleMenu.length; q++) {
     toggleMenu[q].onclick = function() {
-        menuBlock.classList.toggle("visible");
+        menuBlock.classList.toggle('visible');
     }
 }
 
@@ -31,7 +31,7 @@ for (let q = 0; q < toggleMenu.length; q++) {
 
 for (let e = 0; e < bisnessToggle.length; e++) {
     bisnessToggle[e].onclick = function() {
-        bisnessBlock.classList.toggle("visible");
+        bisnessBlock.classList.toggle('visible');
     }
 }
 
@@ -44,7 +44,7 @@ for (let i = 0; i < level.length; i++) {
     var text = level[i].querySelector('svg text.circ-text');
     var percent = level[i].getAttribute('data-level');
     var indicator = (length / 100) * percent;
-    path.setAttribute('stroke-dasharray', indicator + "," + length);
+    path.setAttribute('stroke-dasharray', indicator + ',' + length);
     text.innerHTML = percent;
 }
 
@@ -54,9 +54,9 @@ for (let i = 0; i < level.length; i++) {
 
 for (let q = 0; q < filterToggle.length; q++) {
     filterToggle[q].onclick = function() {
-        filterBlockHidden.classList.toggle("visible");
-        filterBlockHidden2.classList.toggle("visible");
-        filterBlockHidden3.classList.toggle("visible-block");
+        filterBlockHidden.classList.toggle('visible');
+        filterBlockHidden2.classList.toggle('visible');
+        filterBlockHidden3.classList.toggle('visible-block');
     }
 }
 
@@ -71,18 +71,18 @@ if (DropDownHeader) {
     // var CountryItemSelect = CountryIndex.getE
     for (let w = 0; w < DropDownHeader.length; w++) {
         DropDownHeader[w].onclick = function() {
-            DropDownList[w].classList.toggle("visible-block");
-            DropDownHeader[w].style.backgroundColor = "#192144";
-            DropDownHeader[w].style.color = "#ffffff";
-            // filterBlockHidden2.classList.toggle("visible");
-            // filterBlockHidden3.classList.toggle("visible-block");
+            DropDownList[w].classList.toggle('visible-block');
+            DropDownHeader[w].style.backgroundColor = '#192144';
+            DropDownHeader[w].style.color = '#ffffff';
+            // filterBlockHidden2.classList.toggle('visible');
+            // filterBlockHidden3.classList.toggle('visible-block');
         }
 
         for (let e = 0; e < CountryIndex.length; e++) {
             CountryIndex[e].onclick = function() {
-                DropDownList[w].classList.toggle("visible-block");
-                // filterBlockHidden2.classList.toggle("visible");
-                // filterBlockHidden3.classList.toggle("visible-block");
+                DropDownList[w].classList.toggle('visible-block');
+                // filterBlockHidden2.classList.toggle('visible');
+                // filterBlockHidden3.classList.toggle('visible-block');
                 console.log(CountryIndex[e]);
                 alert(CountryIndex[e].text);
                 DropDownHeader[w].textContent = CountryIndex[e].text;
@@ -126,12 +126,12 @@ if (dropdown) {
 
 
 // spin number
-var spins = document.querySelectorAll(".spin");
+var spins = document.querySelectorAll('.spin');
 
 if (spins) {
     for (let t = 0; t < spins.length; t++) {
-        let span = spins[t].querySelectorAll("span"),
-            input = spins[t].querySelector("input");
+        let span = spins[t].querySelectorAll('span'),
+            input = spins[t].querySelector('input');
 
         input.onchange = function() { input.value = +input.value || 0; };
         span[0].onclick = function() { input.value = Math.max(0, input.value - 1); };
@@ -144,7 +144,7 @@ if (spins) {
 
 
 // calendar
-var calendarRec = document.querySelectorAll(".calendar");
+var calendarRec = document.querySelectorAll('.calendar');
 
 if (calendarRec) {
     function Calendar2(id, year, month) {
@@ -153,8 +153,8 @@ if (calendarRec) {
             DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
             DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
             calendar = '<tr>',
-            month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь",
-                "Октябрь", "Ноябрь", "Декабрь"
+            month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+                'Октябрь', 'Ноябрь', 'Декабрь'
             ];
         if (DNfirst != 0) {
             for (var i = 1; i < DNfirst; i++) calendar += '<td>';
@@ -200,7 +200,7 @@ if (calendarRec) {
 }
 
 //
-Calendar2("calendar2", 2019, 2);
+Calendar2('calendar2', 2019, 2);
 
 
 // calendar end

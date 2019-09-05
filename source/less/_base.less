@@ -21,6 +21,7 @@ body {
   font-weight: normal;
   background: #161c35;
   min-width: @screen-sm;
+  margin: 0;
 
   @media (min-width: @screen-md) {
     font-weight: 700;
@@ -48,37 +49,30 @@ body {
   }
 }
 
-// .logotype {
-//   // position: absolute;
-//   // z-index: 10;
-//   display: inline-block;
-//   width: 100px;
-//   height: 19px;
-//   background-image: url("../img/logo-mobile-white@1x.png");
+.visible-block {
+  display: block;
 
-//   @media (min-width: @screen-md) {
-//     display: block;
-//     box-sizing: border-box;
-//     width: 166px;
-//     min-height: 42px;
-//     background-image: url("../img/logo-tablet-white@1x.png");
-//   }
+  @media (min-width: @screen-md) {
+    display: flex;
+  }
+}
 
-//   @media (min-width: @screen-xl) {
-//     width: 200px;
-//     height: 52px;
-//     background-image: url("../img/logo-desktop-white@1x.png");
-//   }
+.visible {
+  display: flex;
 
-//   &--dark {
-//     background-image: url("../img/logo-mobile-blue@1x.png");
+  @media (min-width: @screen-xl) {
+    display: flex;
+  }
+}
 
-//     @media (min-width: @screen-md) {
-//       background-image: url("../img/logo-tablet-blue@1x.png");
-//     }
+.hidden {
+  display: none;
 
-//     @media (min-width: @screen-xl) {
-//       background-image: url("../img/logo-desktop-blue@1x.png");
-//     }
-//   }
-// }
+  @media (min-width: @screen-md) {
+    display: flex;
+  }
+
+  @media (min-width: @screen-xl) {
+    display: none;
+  }
+}
