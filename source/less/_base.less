@@ -1,3 +1,4 @@
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -11,7 +12,6 @@
 img {
   max-width: 100%;
   height: auto;
-  font-size: 12px;
 }
 
 body {
@@ -19,9 +19,8 @@ body {
   font-family: "Blogger Sans", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: normal;
-  background: #161c35;
+  background: @background;
   min-width: @screen-sm;
-  margin: 0;
 
   @media (min-width: @screen-md) {
     font-weight: 700;
@@ -38,41 +37,13 @@ body {
 }
 
 .wrapper {
-  padding: 0 7.9%;
+  padding: 0 7.4%;
 
   @media (min-width: @screen-md) {
-    padding: 0 5%;
+    padding: 0 5.21%;
   }
 
   @media (min-width: @screen-xl) {
-    padding: 0 4%;
-  }
-}
-
-.visible-block {
-  display: block;
-
-  @media (min-width: @screen-md) {
-    display: flex;
-  }
-}
-
-.visible {
-  display: flex;
-
-  @media (min-width: @screen-xl) {
-    display: flex;
-  }
-}
-
-.hidden {
-  display: none;
-
-  @media (min-width: @screen-md) {
-    display: flex;
-  }
-
-  @media (min-width: @screen-xl) {
-    display: none;
+    padding: 0 4.17%;
   }
 }

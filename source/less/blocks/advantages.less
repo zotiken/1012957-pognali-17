@@ -5,11 +5,6 @@
     width: 90%;
   }
 
-  @media (min-width: @screen-xl) {
-    padding-right: 131px;
-    box-sizing: border-box;
-  }
-
   &__item {
     width: 120%;
     position: relative;
@@ -21,13 +16,16 @@
     color: @greyish-brown;
     border-top: 1px solid rgba(3, 3, 3, 0.05);
 
+    @media (min-width: @screen-md) {
+      width: 100%;
+    }
+
     &::before {
-      right: -57px;
-      margin-top: -11px;
+      right: -40px;
+      margin-top: -10px;
       position: absolute;
       content: attr(data-id);
       display: block;
-      color: @white;
       line-height: 34px;
       width: 34px;
       height: 34px;
@@ -37,11 +35,8 @@
     }
 
     @media (min-width: @screen-md) {
-      padding-top: 16px;
-      padding-bottom: 17px;
-      width: 100%;
-      font-size: 28px;
-      font-weight: normal;
+      padding-top: 23px;
+      padding-bottom: 21px;
 
       &::before {
         margin-top: -20px;

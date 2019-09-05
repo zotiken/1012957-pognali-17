@@ -2,19 +2,14 @@
   position: relative;
   z-index: 3;
   background-color: @background;
-  margin-top: -30px;
-  padding-top: 101px;
-  border-radius: 0 0 30px 30px;
+  margin-top: -25px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  border-radius: 0 0 25px 25px;
 
   @media (min-width: @screen-md) {
-    padding-top: 106px;
-    border-radius: 0 0 65px 65px;
-    padding-bottom: 15px;
-  }
-
-  @media (min-width: @screen-xl) {
-    padding-top: 138px;
-    padding-bottom: 66px;
+    border-radius: 0 0 35px 35px;
+    padding-bottom: 80px;
   }
 
   &__wrapper {
@@ -24,7 +19,8 @@
     flex-direction: column;
 
     @media (min-width: @screen-md) {
-      margin: 0;
+      margin: 0 35px;
+      margin-bottom: 67px;
     }
   }
 
@@ -32,12 +28,11 @@
     color: @orange;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 17px;
 
     @media (min-width: @screen-md) {
       font-size: 45px;
       line-height: 45px;
-      margin-bottom: 57px;
+      margin-bottom: 60px;
     }
   }
 
@@ -50,49 +45,25 @@
     line-height: 22px;
     text-align: center;
 
-    a {
-      text-decoration: none;
-      color: @yellow;
-
-      &:hover {
-        color: @orange;
-        text-decoration: underline;
-      }
-
-      &:active {
-        color: rgba(255, 215, 75, 0.2);
-      }
-    }
-
-
     @media (min-width: @screen-md) {
       width: 99%;
       font-size: 28px;
       line-height: 33px;
-
-      br {
-        display: none;
-      }
     }
 
-    @media (min-width: @screen-xl) {
-      a {
-        text-decoration: underline;
-      }
+    a {
+      text-decoration: none;
+      color: @yellow;
     }
   }
 
   &__form {
-    margin-top: 30px;
+    margin-top: 32px;
+    // width: 270px;
 
     @media (min-width: @screen-md) {
       width: 100%;
       box-sizing: border-box;
-      margin-top: 62px;
-    }
-
-    @media (min-width: @screen-xl) {
-      margin-top: 57px;
     }
   }
 }

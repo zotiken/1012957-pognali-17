@@ -10,46 +10,19 @@
   z-index: 8;
   background-color: @white;
   margin-top: -25px;
-  padding-top: 31px;
-  padding-bottom: 21px;
+  padding-top: 38px;
+  padding-bottom: 30px;
   border-radius: 25px 25px 0 0;
 
   @media (min-width: @screen-md) {
     max-width: @screen-xl;
-    padding: 0 5.2%;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -99px;
-    border-radius: 65px 65px 0 0;
-    padding-top: 50px;
-    padding-bottom: 42px;
   }
 
   @media (min-width: @screen-xl) {
-    padding: 0 4%;
+    // width: @screen-xl;
     padding-top: 48px;
-<<<<<<< HEAD
-    border-radius: 60px 60px 0 0;
-=======
-    margin-top: -108px;
-    padding-bottom: 42px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding-top: 50px;
->>>>>>> catalog-pp
-=======
-    // padding-top: 50px;
-=======
->>>>>>> pixPerfect
-  }
-
-  &--catalog {
-    padding-top: 36px;
-
-    @media (min-width: @screen-md) {
-      padding-top: 50px;
-    }
->>>>>>> catalog-pp-2
   }
 
   &__copyright {
@@ -58,48 +31,28 @@
     text-decoration: none;
     color: @greyish-brown;
     font-weight: normal;
-    padding-top: 29px;
+    padding-top: 22px;
     border-top: 1px solid @litegray;
-    display: flex;
-    align-items: center;
 
-    svg {
+    &::before {
       width: 27px;
       height: 34px;
       display: block;
+      content: "";
       position: absolute;
       right: 0;
-    }
-
-    &:hover {
-      color: rgba(68, 68, 68, 0.7);
-      fill: rgba(68, 68, 68, 0.7);
-    }
-
-    &:active {
-      color: rgba(68, 68, 68, 0.3);
-      fill: rgba(68, 68, 68, 0.3);
+      margin-top: -10px;
+      background-image: url("../img/htmlacademy.svg");
     }
 
     @media (min-width: @screen-md) {
       border: none;
-      width: auto;
-<<<<<<< HEAD
-      padding-right: 40px;
-=======
-      padding-top: 0;
-      padding-right: 52px;
-      font-size: 20px;
-
-      &::before {
-        margin-top: auto;
-        right: 1px;
-        top: -4px;
-      }
->>>>>>> decor
     }
 
     @media (min-width: @screen-xl) {
+      flex-basis: 150px;
+      font-size: 20px;
+
       &::before {
         margin-top: -7px;
       }

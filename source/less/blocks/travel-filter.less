@@ -1,23 +1,11 @@
 .travel-filter {
   &__wrapper {
-    box-sizing: border-box;
     list-style: none;
     padding: 0;
-<<<<<<< HEAD
-=======
-    margin-top: 24px;
-<<<<<<< HEAD
->>>>>>> catalog-pp
-=======
-    margin-bottom: -1px;
->>>>>>> catalog-pp-3
 
     @media (min-width: @screen-md) {
-      padding: 29px 0;
-      padding-bottom: 35px;
+      padding: 38px;
       margin: 0;
-      border-top: 1px solid #f3c72b;
-      border-bottom: 1px solid #f3c72b;
     }
 
     @media (min-width: @screen-xl) {
@@ -26,35 +14,16 @@
   }
 
   &__title {
-<<<<<<< HEAD
-=======
-    font-size: 22.5px;
-    line-height: 22.5px;
->>>>>>> catalog-pp
     margin: 0;
     padding: 0;
 
     @media (min-width: @screen-md) {
       font-size: 30px;
-      padding-bottom: 40px;
-    }
-
-    @media (min-width: @screen-xl) {
-      text-align: left;
-      line-height: 30px;
-      padding-bottom: 24px;
+      padding-bottom: 37px;
     }
   }
 
   &__dropdown {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    margin-bottom: 1px;
-
->>>>>>> catalog-pp
-=======
->>>>>>> catalog-pp-3
     a {
       text-decoration: none;
     }
@@ -65,17 +34,11 @@
       color: #1d2e5b;
       font-size: 16px;
       font-weight: 700;
-<<<<<<< HEAD
       // background: blue;
       // @include double-shadow($blue);
       // @include hover-style($blue);
       // @include text-shadow(0 -1px 0 rgba(0,0,0,0.3));
       padding: 10px;
-=======
-      padding: 10px 0;
-      padding-left: 1px;
-      padding-bottom: 11px;
->>>>>>> catalog-pp
       border-bottom: 1px solid #f3c72b;
       text-transform: uppercase;
     }
@@ -84,10 +47,8 @@
       display: flex;
 
       [data-toggle="dropdown"] {
-        width: 25.5%;
+        width: 126px;
         border: none;
-        font-size: 20px;
-        font-weight: 500;
       }
     }
 
@@ -96,22 +57,12 @@
 
       [data-toggle="dropdown"] {
         width: auto;
-        // border-bottom: 1px solid #f3c72b;
-        padding-bottom: 7px;
+        border-bottom: 1px solid #f3c72b;
       }
-    }
-
-    &--vehicle {
-      align-items: center;
-    }
-
-    &--level {
-      align-items: center;
     }
   }
 
   &__dropdown-menu {
-<<<<<<< HEAD
     display: block;
     list-style: none;
     padding: 0;
@@ -122,82 +73,35 @@
       a {
         display: block;
         padding: 10px 10px;
-=======
-    display: none;
-    list-style: none;
-    padding: 0;
-    padding-bottom: 11px;
-
-    li {
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding: 0;
-      padding-top: 2px;
-      padding-bottom: 10px;
-
-      a {
-        display: block;
->>>>>>> catalog-pp
       }
     }
 
     @media (min-width: @screen-md) {
       display: flex;
       width: 100%;
-      padding-bottom: 8px;
 
       li {
         width: 33%;
-        padding: 0;
-        display: flex;
-        align-items: center;
-
-        &:nth-child(1) {
-          width: 37%;
-        }
-
-        &:nth-child(2) {
-          width: 38%;
-        }
       }
     }
 
     @media (min-width: @screen-xl) {
-      flex-direction: column;
+      display: block;
       width: auto;
-      padding-top: 8px;
 
       li {
         width: auto;
-
-        a {
-          margin-top: 7px;
-          margin-bottom: 15px;
-        }
-
-        &:nth-child(1) {
-          width: auto;
-        }
-
-        &:nth-child(2) {
-          width: auto;
-        }
       }
-    }
-
-    &--vehicle {
-      padding-top: 2px;
     }
   }
 
   &__icon-arrow {
     position: absolute;
     display: block;
-    font-size: 0.6em;
+    font-size: 0.7em;
     color: black;
     top: 15px;
-    right: 2px;
+    right: 10px;
 
     &::before {
       content: "\25BC";
@@ -226,280 +130,39 @@
     }
   }
 
-  &__item {
-    display: none;
-
-    &:checked + .travel-filter__item-value .travel-filter__checkbox-mark {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 20%;
-        transform: translate(-50%, 0);
-        width: 9px;
-        height: 9px;
-        background-image: url("../img/tick.svg");
-
-        @media (min-width: @screen-md) {
-          width: 12px;
-          height: 12px;
-        }
-      }
-    }
-  }
-
   &__item-value {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     font-size: 20px;
-=======
-    padding-left: 13px;
-=======
-    padding-left: 9px;
->>>>>>> catalog-pp-3
-=======
-    width: 50%;
-    display: flex;
-    align-items: center;
->>>>>>> pixPerfect
-    font-size: 15px;
->>>>>>> catalog-pp
     color: @greyish-brown;
-
-    @media (min-width: @screen-md) {
-      width: 100%;
-      font-size: 20px;
-      font-weight: normal;
-      line-height: 41px;
-    }
-  }
-
-  &__checkbox-mark {
-    box-sizing: border-box;
-    margin-right: 8%;
-    display: inline-block;
-    position: relative;
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
-    border-radius: 4px;
-    background-color: #ffffff;
-
-    &:hover {
-      border: 1px solid rgba(22, 28, 53, 0.5);
-    }
-
-    &:active {
-      background-color: #e2e5f1;
-      color: rgba(22, 28, 53, 0.2);
-    }
-
-    @media (min-width: @screen-md) {
-      width: 24px;
-      height: 24px;
-    }
   }
 
   &__level {
-<<<<<<< HEAD
     display: flex;
     width: 100%;
   }
 
   &__level-input {
     width: 100%;
-=======
-    padding: 0;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-
-    li {
-      padding: 0;
-    }
 
     @media (min-width: @screen-md) {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-
-      li {
-        &:nth-child(1) {
-          width: 30.8%;
-        }
-
-        &:nth-child(2) {
-          width: 63%;
-        }
-      }
-    }
-
-    @media (min-width: @screen-xl) {
-      margin-top: 9px;
-
-      li {
-        width: 100%;
-
-        &:nth-child(1),
-        &:nth-child(2) {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  &__level-input {
-    position: relative;
-    margin: 0;
-    width: 51%;
-    padding: 6px 0;
-    display: inline-block;
-    text-align: center;
-
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
-      appearance: none;
-      margin: 0;
-    }
-
-    &:hover {
-      border: 1px solid rgba(29, 46, 91, 0.7);
-    }
-
-    &:focus {
-      border: 1px solid rgba(29, 46, 91, 1);
-    }
-
-    &:last-child {
-      margin-left: -6px;
-
-      &::before {
-        position: absolute;
-        content: "";
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #cccccc;
-      }
-    }
->>>>>>> catalog-pp
-
-    @media (min-width: @screen-md) {
-      width: 46%;
+      width: 75px;
     }
 
     @media (min-width: @screen-xl) {
       width: 100%;
-      padding: 8px 0;
-      padding-left: 13px;
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  &__level-range {
-    width: 270px;
-    padding: 18px;
-=======
-  &__level-input-bar {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    left: 50%;
-    transform: translate(-50%, 0);
->>>>>>> catalog-pp-4
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 2px;
-      background-color: #cccccc;
-      top: 50%;
-      transform: translate(0, -50%);
-    }
-
-    @media (min-width: @screen-md) {
-      left: 48%;
-    }
-  }
-
-  &__level-range {
-    width: 100%;
-    padding: 25px 0;
-
-    @media (min-width: @screen-xl) {
-      margin-top: 21px;
-    }
-  }
-
-<<<<<<< HEAD
->>>>>>> catalog-pp
-=======
-  &__level-bar {
-    width: 100%;
-    height: 2px;
-    background-color: #cccccc;
-    position: relative;
-    display: block;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #1d2e5b;
-    }
-
-    &::before {
-      top: -4px;
-      left: 30%;
-    }
-
-    &::after {
-      top: -4px;
-      left: 96%;
-    }
-  }
-
-  &__level-between {
-    display: block;
-    width: 70%;
-    height: 2px;
-    float: right;
-    background-color: #1d2e5b;
-  }
-
->>>>>>> catalog-pp-4
   &__show {
     background-color: @white;
-    width: 105%;
+    width: 100%;
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
     color: @dark;
-<<<<<<< HEAD
-=======
-    padding-top: 7px;
-    padding-bottom: 3px;
-    padding-left: 43px;
-    margin-left: -5px;
-    text-align: center;
-    text-transform: uppercase;
->>>>>>> catalog-pp
 
     @media (min-width: @screen-md) {
-      margin-top: 6px;
       font-size: 20px;
       border-radius: 25px;
-      padding-top: 12px;
-      padding-bottom: 8px;
-      width: 100%;
     }
   }
 }
