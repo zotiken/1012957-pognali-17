@@ -35,6 +35,22 @@ for (let e = 0; e < bisnessToggle.length; e++) {
     }
 }
 
+// скролл шапка
+
+window.onscroll = function() { myFunction() };
+
+var header = document.getElementById("myHeader");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > 100) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
 // левел
 
 var level = document.querySelectorAll('.fellow-travellers__level');

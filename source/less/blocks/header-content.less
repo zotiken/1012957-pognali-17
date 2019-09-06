@@ -70,7 +70,7 @@
     background-size: auto 100%, 100% 170%;
     background-position: 62% 0%, 50% 100%;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/traveller-illustration-mobile@2x.png") no-repeat,
         #161c35 url("../img/globe-back-mobile@2x.jpg") no-repeat;
       background-size: auto 100%, 100% 170%;
@@ -89,7 +89,7 @@
       background-size: auto 76%, auto 105%;
       background-position: 71.7% 0%, 50% 100%;
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background: url("../img/traveller-illustration-tablet@2x.png") no-repeat,
           #161c35 url("../img/globe-back-tablet@2x.jpg") no-repeat;
         background-size: auto 76%, auto 105%;
@@ -107,9 +107,8 @@
       background-size: auto 100%, auto 118%;
       background-position: 59.8% 0%, 51% 100%;
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: url("../img/traveller-illustration-desktop@2x.png")
-            no-repeat,
+      @media (min-resolution: 144dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/traveller-illustration-desktop@2x.png") no-repeat,
           #161c35 url("../img/globe-back-desktop@2x.jpg") no-repeat;
         background-size: auto 100%, auto 118%;
         background-position: 59.8% 0%, 51% 100%;

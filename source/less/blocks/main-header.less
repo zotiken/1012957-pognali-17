@@ -3,10 +3,10 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
-    background-color: #161c35;
+    // background-color: #161c35;
 
     @media (min-width: @screen-md) {
-      background-color: #192144;
+      // background-color: #192144;
     }
 
     @media (min-width: @screen-xl) {
@@ -26,8 +26,13 @@
   &__block-logo {
     padding-top: 10px;
     margin: auto 0;
-    display: inline-block;
     width: 50%;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: @screen-md) {
+      padding-top: 7px;
+    }
 
     @media (min-width: @screen-xl) {
       width: auto;
@@ -43,27 +48,14 @@
     padding-bottom: 70px;
   }
 
-  &__block-logo {
-    display: flex;
-    align-items: center;
-
-    @media (min-width: @screen-md) {
-      padding-top: 7px;
-    }
-  }
-
   &__logo {
     display: block;
-    // width: 100px;
-    // height: 19px;
-    // background-image: url("../img/logo-mobile-white@1x.png");
 
     @media (min-width: @screen-md) {
       box-sizing: border-box;
       display: block;
       width: 166px;
       height: 42px;
-      background-image: url("../img/logo-tablet-white@1x.png");
     }
   }
 
@@ -75,6 +67,10 @@
     display: flex;
     justify-content: space-between;
 
+    & .main-header__logo-stiky {
+      display: none;
+    }
+
     @media (min-width: @screen-md) {
       padding: 0 5.21%;
       padding-top: 35px;
@@ -85,6 +81,7 @@
       padding: 0 4.21%;
       padding-top: 42px;
       padding-bottom: 2px;
+      background-color: #161c35;
     }
 
     &--catalog {
