@@ -4,11 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <script src="/source/js/picturefill.min.js"></script>
 </head>
 
 <body class="catalog no-js">
+
+    <div style="display: none;">
+        <include src="build/img/sprite.svg">
+        </include>
+    </div>
+
     <svg style="display: none;">
     <symbol viewBox="0 0 18 18" id="icon-telefon">
       <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
@@ -354,7 +360,7 @@
                                 type="number" name="number" value="2"><span class="spin__up">+</span></i></label>
                             <label class="step__value-item step__value-item--duration"><span>Длительность:</span><i
                                 class="step__spin spin"><span>&ndash;</span><input type="number" name="number"
-                                  value="2"><span>+</span></i></label>
+                                  value="2"><span>+</span></include></label>
                             <input class="step__value-input-kids" type="checkbox" name="kids" id="kids" checked><label class="step__value-item step__value-item--kids" for="kids"><span
                                 class="step__checkbox-mark"></span><span>Можно с детьми</span></label>
                         </div>
