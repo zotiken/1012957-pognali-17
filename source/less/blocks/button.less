@@ -126,6 +126,22 @@
   }
 
   &--form-show {
+    position: relative;
+
+    &::before {
+      width: 0;
+      height: 0;
+      display: block;
+      content: " ";
+      position: absolute;
+      left: 83px;
+      top: 50%;
+      transform: translate(0, -50%);
+      border-style: solid;
+      border-width: 7px 8px 7px 10px;
+      border-color: transparent #1d2e5b transparent transparent;
+    }
+
     &:hover {
       background: none;
       color: rgba(22, 28, 53, 0.7);

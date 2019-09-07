@@ -193,7 +193,6 @@
         margin-bottom: 16px;
       }
 
-
       [data-toggle="dropdown"] {
         width: 94.5%;
         padding-left: 2.6%;
@@ -616,6 +615,7 @@
     margin-left: -5px;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
 
     @media (min-width: @screen-md) {
       font-size: 24px;
@@ -636,8 +636,26 @@
     }
 
     @media (min-width: @screen-xl) {
-      position: static;
+      position: relative;
       margin-left: 43.6%;
+    }
+  }
+
+  &__button {
+    position: relative;
+
+    &::before {
+      width: 0;
+      height: 0;
+      display: block;
+      content: " ";
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translate(0, -50%);
+      border-style: solid;
+      border-width: 7px 5px 7px 10px;
+      border-color: transparent transparent transparent #1d2e5b;
     }
   }
 }

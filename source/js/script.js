@@ -168,6 +168,7 @@ if (spins) {
 //
 
 
+
 // calendar
 var calendarRec = document.querySelectorAll(".calendar");
 if (document.querySelector(".calendar")) {
@@ -228,3 +229,8 @@ Calendar2("calendar2", 2019, 2);
 
 
 // calendar end
+
+var calendarin = document.querySelector(".calendar__item--26");
+calendarin.innerHTML = "26" + "<span>Заезд</span>";
+var calendarout = document.querySelector(".calendar__item--28");
+calendarout.innerHTML = "28" + "<span>Выезд</span>";

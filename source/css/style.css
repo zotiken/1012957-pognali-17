@@ -362,6 +362,22 @@ body {
 .button--whereabouts:active::before {
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
 }
+.button--form-show {
+  position: relative;
+}
+.button--form-show::before {
+  width: 0;
+  height: 0;
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 83px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-style: solid;
+  border-width: 7px 8px 7px 10px;
+  border-color: transparent #1d2e5b transparent transparent;
+}
 .button--form-show:hover {
   background: none;
   color: rgba(22, 28, 53, 0.7);
@@ -6236,6 +6252,22 @@ body {
     margin-top: 86px;
   }
 }
+.step__button {
+  position: relative;
+}
+.step__button::before {
+  width: 0;
+  height: 0;
+  display: block;
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-style: solid;
+  border-width: 7px 5px 7px 10px;
+  border-color: transparent transparent transparent #1d2e5b;
+}
 .step__Entertainment-in-country {
   list-style: none;
   position: relative;
@@ -6376,6 +6408,20 @@ body {
 }
 .step__Entertainment-button {
   margin-top: 15px;
+  position: relative;
+}
+.step__Entertainment-button::before {
+  width: 0;
+  height: 0;
+  display: block;
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-style: solid;
+  border-width: 7px 5px 7px 10px;
+  border-color: transparent transparent transparent #1d2e5b;
 }
 @media (min-width: 1440px) {
   .step__Entertainment-button {
@@ -7085,6 +7131,7 @@ body {
   margin-left: -5px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 @media (min-width: 768px) {
   .route-select__show {
@@ -7106,9 +7153,25 @@ body {
 }
 @media (min-width: 1440px) {
   .route-select__show {
-    position: static;
+    position: relative;
     margin-left: 43.6%;
   }
+}
+.route-select__button {
+  position: relative;
+}
+.route-select__button::before {
+  width: 0;
+  height: 0;
+  display: block;
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-style: solid;
+  border-width: 7px 5px 7px 10px;
+  border-color: transparent transparent transparent #1d2e5b;
 }
 .calendar {
   width: 102%;
@@ -7233,12 +7296,27 @@ body {
     height: 70.3px;
   }
 }
+@media (min-width: 1440px) {
+  .calendar__body td {
+    height: 70.3px;
+    padding: 1%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+}
 .calendar__body td.today {
   background: #dc0000;
   color: #ffffff;
 }
 .calendar__item {
   color: rgba(68, 68, 68, 0.3);
+}
+.calendar__item--26 span,
+.calendar__item--28 span {
+  display: block;
+  margin-top: 18px;
 }
 .calendar__item--26,
 .calendar__item--27,
@@ -7357,6 +7435,7 @@ body {
 @media (min-width: 1440px) {
   .sticky {
     padding-top: 3px;
+    padding-bottom: 7px;
   }
   .sticky .site-navigation__item--header a {
     color: #000000;
