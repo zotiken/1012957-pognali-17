@@ -35,22 +35,57 @@
     tr:first-child {
       font-size: 32px;
 
+      td:first-child {
+        color: #d4d9eb;
+
+        &:hover {
+          color: rgba(22, 28, 53, 0.7);
+        }
+
+        &:active {
+          color: rgba(22, 28, 53, 0.3);
+        }
+      }
+
+      td:last-child {
+        color: #d4d9eb;
+
+        &:hover {
+          color: rgba(22, 28, 53, 0.7);
+        }
+
+        &:active {
+          color: rgba(22, 28, 53, 0.3);
+        }
+      }
+
+
       @media (min-width: @screen-xl) {
         font-size: 65px;
         color: rgba(68, 68, 68, 0.3);
 
         td:first-child {
           text-align: left;
+          color: #d4d9eb;
+
+          &:hover {
+            color: rgba(22, 28, 53, 0.7);
+          }
+
+          &:active {
+            color: rgba(22, 28, 53, 0.3);
+          }
         }
 
         td:last-child {
           text-align: right;
+          color: #d4d9eb;
         }
       }
     }
 
     tr:last-child {
-      height: 45px;
+      height: 49px;
       vertical-align: bottom;
       color: rgb(85, 85, 85);
 

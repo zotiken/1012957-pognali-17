@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <script src="/source/js/picturefill.min.js"></script>
@@ -122,7 +123,7 @@
         <div class="main-header__container main-header__container--catalog">
             <div class="main-header__wrapper main-header__wrapper--catalog" id="myHeader">
                 <div class="main-header__block-logo">
-                    <a href="/index.html" class="main-header__logo logotype">
+                    <a href="index.html" class="main-header__logo logotype">
                         <picture>
                             <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
@@ -133,7 +134,7 @@
                             <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="погнали" />
                         </picture>
                     </a>
-                    <a href="#" class="main-header__logo-stiky logotype logotype--dark">
+                    <a href="index.html" class="main-header__logo-stiky logotype logotype--dark">
                         <picture>
                             <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
@@ -151,10 +152,10 @@
                             <a href="">О сервисе</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--header">
-                            <a href="/form.html">Направления</a>
+                            <a href="form.html">Направления</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--header">
-                            <a href="/catalog.html">Попутчики</a>
+                            <a href="catalog.html">Попутчики</a>
                         </li>
                     </ul>
                     <div class="main-nav__user user-navigation">
@@ -179,9 +180,10 @@
           </button>
                 </nav>
             </div>
-            <div class="main-header__menu menu visible">
+            <!-- visible открывает меню hidden скрывает -->
+            <div class="main-header__menu menu visible menu-js-off">
                 <div class="menu__wrapper">
-                    <a href="/index.html" class="menu__block-logo logotype logotype--dark">
+                    <a href="index.html" class="menu__block-logo logotype logotype--dark">
                         <picture>
                             <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
@@ -198,10 +200,10 @@
                             <a href="">О сервисе</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--menu">
-                            <a href="/form.html">Направления</a>
+                            <a href="form.html">Направления</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--menu">
-                            <a href="/catalog.html">Попутчики</a>
+                            <a href="catalog.html">Попутчики</a>
                         </li>
                     </ul>
                     <a class="menu__item user-navigation-link user-navigation-link--signin-menu button" href="">авторизация</a>
@@ -629,7 +631,7 @@
                         <ul class="travel-filter__wrapper">
                             <li class="travel-filter__dropdown dropdown">
                                 <a href="#" data-toggle="dropdown">Хобби <i class="travel-filter__icon-arrow icon-arrow"></i></a>
-                                <ul class="travel-filter__dropdown-menu dropdown-menu hidden">
+                                <ul class="travel-filter__dropdown-menu dropdown-menu hidden-drop">
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="sport" checked><label class="travel-filter__item-value" for="sport"><span
                         class="travel-filter__checkbox-mark"></span>Спортзал</label></li>
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="hookah"><label class="travel-filter__item-value" for="hookah"><span
@@ -651,7 +653,7 @@
                             </li>
                             <li class="travel-filter__dropdown dropdown">
                                 <a href="#" data-toggle="dropdown">Еда <i class="travel-filter__icon-arrow icon-arrow"></i></a>
-                                <ul class="travel-filter__dropdown-menu dropdown-menu hidden">
+                                <ul class="travel-filter__dropdown-menu dropdown-menu hidden-drop">
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="meet" checked><label class="travel-filter__item-value" for="meet"><span
                         class="travel-filter__checkbox-mark"></span>Мясоед</label></li>
                                     <li><input class="travel-filter__item " type="checkbox" name="same" id="pp"><label class="travel-filter__item-value" for="pp"><span class="travel-filter__checkbox-mark"></span>Сидит
@@ -664,7 +666,7 @@
                                 <a href="#" data-toggle="dropdown">Транспорт <i class="travel-filter__icon-arrow icon-arrow"></i></a>
                                 <ul class="travel-filter__dropdown-menu dropdown-menu travel-filter__dropdown-menu--vehicle visible-block">
                                     <li class="fellow-travellers__vehicle fellow-travellers__vehicle--catalog">
-                                        <input class="fellow-travellers__check" type="checkbox" name="same" checked id="planec"><label class="fellow-travellers__check-value" for="planec">
+                                        <input class="fellow-travellers__check visually-hidden" type="checkbox" name="same" checked id="planec"><label class="fellow-travellers__check-value" for="planec">
                       <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--plane"
                         data-info="Авиаперелет">
                         <span class="visually-hidden">самолет</span>
@@ -673,7 +675,7 @@
                         </svg>
                       </a>
                     </label>
-                                        <input class="fellow-travellers__check" type="checkbox" name="bus" id="bus-c" checked><label class="fellow-travellers__check-value" for="bus-c">
+                                        <input class="fellow-travellers__check visually-hidden" type="checkbox" name="bus" id="bus-c" checked><label class="fellow-travellers__check-value" for="bus-c">
                       <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--bus"
                         data-info="Автотранспорт">
                         <span class="visually-hidden">автобус</span>
@@ -682,7 +684,7 @@
                         </svg>
                       </a>
                     </label>
-                                        <input class="fellow-travellers__check" type="checkbox" name="same" id="BikeC"><label class="fellow-travellers__check-value" for="BikeC">
+                                        <input class="fellow-travellers__check visually-hidden" type="checkbox" name="same" id="BikeC"><label class="fellow-travellers__check-value" for="BikeC">
                       <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--bike"
                         data-info="Велосипед">
                         <span class="visually-hidden">велосипед</span>
@@ -691,7 +693,7 @@
                         </svg>
                       </a>
                     </label>
-                                        <input class="fellow-travellers__check" type="checkbox" name="same" id="runC" checked><label class="fellow-travellers__check-value" for="runC">
+                                        <input class="fellow-travellers__check visually-hidden" type="checkbox" name="same" id="runC" checked><label class="fellow-travellers__check-value" for="runC">
                       <a class="fellow-travellers__vehicle-item fellow-travellers__vehicle-item--catalog-filter fellow-travellers__vehicle-item--run"
                         data-info="Пешком">
                         <span class="visually-hidden">бег</span>
@@ -1053,7 +1055,7 @@
         </div>
     </main>
     <footer class="main-footer main-footer--catalog">
-        <a href="/index.html" class="main-footer__logo logotype logotype--dark">
+        <a href="index.html" class="main-footer__logo logotype logotype--dark">
             <picture>
                 <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">

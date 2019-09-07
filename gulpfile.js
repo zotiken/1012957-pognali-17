@@ -66,7 +66,7 @@ gulp.task("exportWebP", function() {
 });
 
 gulp.task("svgstore", function() {
-    let src = "source/img/**/*.svg";
+    let src = "source/img/**/icon-*.svg";
     let dest = "build/img";
 
     return gulp.src(src)

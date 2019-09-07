@@ -48,7 +48,11 @@
   }
 
   &__value {
-    font-size: 23px;
+    font-size: 14px;
     font-weight: bold;
+
+    @media (min-width: @screen-md) {
+      font-size: 20px;
+    }
   }
 }

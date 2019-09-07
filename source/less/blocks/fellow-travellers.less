@@ -56,7 +56,7 @@
     background-color: #161c35;
     margin-top: auto;
     padding-bottom: 0;
-    padding-top: 30px;
+    padding-top: 17px;
     border-radius: 0 0 20px 20px;
 
     @media (min-width: @screen-md) {
@@ -126,7 +126,7 @@
         justify-content: center;
         align-items: center;
         width: 30%;
-        margin-left: auto;
+        margin-left: 66%;
         margin-top: -92px;
         margin-right: 22px;
       }
@@ -206,7 +206,7 @@
     }
 
     @media (min-width: @screen-xl) {
-      flex-basis: 50.8%;
+      width: 50.8%;
       padding: 0 73px;
       box-sizing: border-box;
     }
@@ -260,6 +260,22 @@
       margin-left: 24px;
     }
 
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:hover svg {
+      fill: rgba(255, 255, 255, 0.7);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:active svg {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+
     @media (min-width: @screen-md) {
       display: block;
       margin-top: 15px;
@@ -273,6 +289,7 @@
     background-color: #161c35;
     position: absolute;
     top: 0;
+    left: 0;
     border-radius: 0 0 20px 20px;
 
     @media (min-width: @screen-md) {
@@ -282,6 +299,18 @@
 
     @media (min-width: @screen-xl) {
       height: 206px;
+    }
+
+    &--form {
+      height: 53px;
+
+      @media (min-width: @screen-md) {
+        height: 127px;
+      }
+
+      @media (min-width: @screen-xl) {
+        height: 211px;
+      }
     }
   }
 
@@ -316,6 +345,7 @@
         border-radius: 5px;
         background-color: @orange;
         bottom: -2px;
+        left: 0;
       }
 
       @media (min-width: @screen-md) {
@@ -334,7 +364,7 @@
       box-sizing: border-box;
       width: 100%;
       position: relative;
-      padding-bottom: 19px;
+      padding-bottom: 23px;
       font-size: 36px;
       color: @white;
       margin-bottom: 13px;
@@ -352,7 +382,7 @@
 
       @media (min-width: @screen-md) {
         margin-top: 0;
-        padding-bottom: 71px;
+        padding-bottom: 78px;
         font-size: 60px;
         margin-bottom: 67px;
 
@@ -378,7 +408,7 @@
   &__description {
     font-weight: 300;
     font-size: 16px;
-    width: 97.6%;
+    width: 96.6%;
     line-height: 22px;
     color: @white;
     margin-bottom: 22px;
@@ -407,7 +437,7 @@
   &__invite {
     color: @white;
     line-height: 22px;
-    margin-bottom: 56px;
+    margin-bottom: 59px;
 
     br {
       display: none;
@@ -736,6 +766,7 @@
   &__interest {
     text-align: center;
     margin-top: 13px;
+    width: 100%;
 
     @media (min-width: @screen-md) {
       font-size: 20px;
@@ -784,6 +815,10 @@
       text-align: left;
       line-height: 22px;
 
+      &:focus-within {
+        border-color: #999999;
+      }
+
       legend {
         text-align: center;
         color: #1d2e5b;
@@ -794,7 +829,7 @@
 
       @media (min-width: @screen-md) {
         order: 5;
-        padding-top: 0;
+        padding-top: 4px;
         padding-bottom: 26px;
         font-size: 20px;
         line-height: 24px;
@@ -921,7 +956,7 @@
     top: 13.2%;
 
     @media (min-width: @screen-md) {
-      left: 58.8%;
+      left: 59.3%;
       top: 52.5%;
     }
 
@@ -939,12 +974,14 @@
     position: absolute;
     top: -10px;
     margin-left: -3px;
+    transform: translate(-50%, 0);
+    left: 50%;
 
     @media (min-width: @screen-md) {
       order: 3;
       flex-direction: row;
       justify-content: flex-start;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
 
       h3 {
         width: 100%;
@@ -956,6 +993,7 @@
       margin-right: auto;
       position: static;
       margin-bottom: 0;
+      transform: none;
       flex-direction: column;
 
       h3 {
@@ -1082,6 +1120,10 @@
       text-align: center;
       padding-top: 4px;
 
+      &:focus-within {
+        border-color: #999999;
+      }
+
       legend {
         text-align: center;
         color: #1d2e5b;
@@ -1122,6 +1164,10 @@
       resize: none;
       width: 100%;
       line-height: 22px;
+
+      &:focus-within {
+        border-color: #cccccc34;
+      }
     }
   }
 
@@ -1388,7 +1434,7 @@
 
     @media (min-width: @screen-xl) {
       width: 212px;
-      margin-top: -87px;
+      margin-top: -81px;
       margin-left: 74px;
     }
   }
