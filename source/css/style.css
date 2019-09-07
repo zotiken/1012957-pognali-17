@@ -300,6 +300,8 @@ body {
     padding-left: 6%;
     display: inline-block;
     padding-bottom: 25px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 0;
     width: 39.3%;
     text-transform: none;
@@ -309,6 +311,7 @@ body {
 @media (min-width: 1440px) {
   .button--form-next {
     width: 28.6%;
+    padding-left: 3%;
   }
 }
 .button--form-submit {
@@ -2725,7 +2728,7 @@ body {
 }
 @media (min-width: 1440px) {
   .fellow-travellers__background--form {
-    height: 211px;
+    height: 208px;
   }
 }
 .fellow-travellers__title {
@@ -2817,7 +2820,7 @@ body {
   .fellow-travellers__title--form {
     padding-top: 87px;
     width: 62.5%;
-    margin-bottom: 64px;
+    margin-bottom: 57px;
   }
 }
 .fellow-travellers__description {
@@ -6507,8 +6510,12 @@ body {
   .step__tutorial br {
     display: block;
   }
+  .step__tutorial--step-2 {
+    width: 58%;
+  }
   .step__tutorial--step-3 {
-    margin-bottom: 61px;
+    margin-bottom: 3px;
+    width: 65%;
   }
 }
 .step__indicator {
@@ -6840,6 +6847,11 @@ body {
   padding: 0;
   margin-bottom: 0;
 }
+@media (min-width: 1440px) {
+  .step__Entertainment {
+    margin-top: 86px;
+  }
+}
 .step__Entertainment-in-country {
   list-style: none;
   position: relative;
@@ -6991,7 +7003,10 @@ body {
 }
 @media (min-width: 1440px) {
   .step__Entertainment-button {
-    margin-top: 24px;
+    margin-top: 30px;
+    padding-bottom: 26px;
+    padding-left: 0%;
+    padding-right: 104px;
   }
 }
 .road-map {
@@ -7141,10 +7156,18 @@ body {
 }
 @media (min-width: 1440px) {
   .route-select {
-    padding-top: 64px;
+    padding-top: 61px;
   }
   .route-select--add {
     padding-top: 0;
+  }
+  .route-select--form {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1440px) and (min-width: 1440px) {
+  .route-select--form {
+    padding-top: 96px;
   }
 }
 .route-select__list {
@@ -7171,7 +7194,7 @@ body {
 }
 @media (min-width: 1440px) {
   .route-select__list {
-    margin-bottom: 59px;
+    margin-bottom: 55px;
   }
 }
 .route-select__wrapper {
@@ -7309,6 +7332,9 @@ body {
 @media (min-width: 1440px) {
   .route-select__dropdown {
     display: block;
+  }
+  .route-select__dropdown:not(:last-child) {
+    margin-bottom: 16px;
   }
   .route-select__dropdown [data-toggle="dropdown"] {
     width: 94.5%;
@@ -7875,14 +7901,14 @@ body {
 }
 @media (min-width: 768px) {
   .calendar__body td {
-    height: 66px;
+    height: 67.5px;
     text-align: left;
     vertical-align: top;
   }
 }
 @media (min-width: 1440px) {
   .calendar__body td {
-    height: 68px;
+    height: 70.3px;
   }
 }
 .calendar__body td.today {

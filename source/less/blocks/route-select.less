@@ -8,10 +8,18 @@
   }
 
   @media (min-width: @screen-xl) {
-    padding-top: 64px;
+    padding-top: 61px;
 
     &--add {
       padding-top: 0;
+    }
+
+    &--form {
+      padding-top: 0;
+
+      @media (min-width: @screen-xl) {
+        padding-top: 96px;
+      }
     }
   }
 
@@ -38,7 +46,7 @@
     }
 
     @media (min-width: @screen-xl) {
-      margin-bottom: 59px;
+      margin-bottom: 55px;
     }
   }
 
@@ -180,6 +188,11 @@
 
     @media (min-width: @screen-xl) {
       display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
 
       [data-toggle="dropdown"] {
         width: 94.5%;
