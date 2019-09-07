@@ -94,7 +94,8 @@
       width: 29.5%;
       height: 25px;
       display: block;
-      padding-right: 27px;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     @media (min-width: @screen-xl) {
@@ -265,7 +266,7 @@
       width: 100%;
 
       @media (min-width: @screen-md) {
-        width: 68%;
+        width: 42%;
       }
     }
   }
@@ -392,6 +393,7 @@
       @media (min-width: @screen-md) {
         background: none;
         color: @black;
+        margin-bottom: 0;
 
         &--form {
           background-color: @black;
@@ -442,6 +444,10 @@
 
     &--form {
       padding: 0 10px;
+
+      @media (min-width: @screen-xl) {
+        display: none;
+      }
     }
   }
 

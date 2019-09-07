@@ -32,7 +32,10 @@
   &--form-next {
     font-weight: bold;
     font-size: 17px;
-    width: 106%;
+    width: 64%;
+    display: block;
+
+    white-space: nowrap;
     margin-left: -2%;
     padding-top: 12px;
     padding-left: 20%;
@@ -43,7 +46,39 @@
     @media (min-width: @screen-md) {
       font-size: 24px;
       padding-top: 29px;
-      padding-left: 0%;
+      padding-left: 6%;
+      display: inline-block;
+      padding-bottom: 25px;
+      margin-bottom: 0;
+      width: 39.3%;
+      text-transform: none;
+      margin-left: 0;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 28.6%;
+    }
+  }
+
+  &--form-submit {
+    font-weight: bold;
+    font-size: 17px;
+    width: 104%;
+    display: block;
+
+    white-space: nowrap;
+    margin-left: -2%;
+    padding-top: 12px;
+    padding-left: 20%;
+    padding-bottom: 9px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+
+    @media (min-width: @screen-md) {
+      font-size: 24px;
+      padding-top: 29px;
+      padding-left: 6%;
+      display: inline-block;
       padding-bottom: 25px;
       margin-bottom: 0;
       width: 54.3%;

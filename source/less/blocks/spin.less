@@ -1,6 +1,10 @@
 .spin {
   display: flex;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #cccaca;
+
+  &:focus-within {
+    border-color: #000000;
+  }
 
   span {
     display: inline-block;
@@ -8,9 +12,9 @@
     width: 55px;
     height: 35px;
     text-align: center;
-    padding-top: 15px;
     cursor: pointer;
-    font-size: 33px;
+    line-height: 40px;
+    font-size: 30px;
     font-weight: normal;
     color: #d4d9eb;
 
@@ -26,7 +30,7 @@
       width: 93px;
       height: auto;
       text-align: center;
-      padding-top: 30px;
+      line-height: 68px;
       cursor: pointer;
       font-size: 55px;
       font-weight: 300;

@@ -16,7 +16,7 @@
     @media (min-width: @screen-md) {
       margin-top: 0;
       margin-bottom: 0;
-      margin-left: 13%;
+      margin-left: auto;
     }
 
     @media (min-width: @screen-xl) {
@@ -47,6 +47,20 @@
       svg {
         width: 20px;
         height: 20px;
+      }
+
+      &:nth-child(2) {
+        svg {
+          width: 24px;
+          height: 25px;
+        }
+      }
+
+      @media (min-width: @screen-md) {
+        svg {
+          width: 27px;
+          height: 27px;
+        }
       }
     }
 
@@ -89,5 +103,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
     fill: black;
+
+    @media (min-width: @screen-md) {
+      width: 27px;
+      height: 27px;
+    }
   }
 }

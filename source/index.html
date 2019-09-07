@@ -3,116 +3,45 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="/source/js/picturefill.min.js"></script>
+
 </head>
 
 <body class="body no-js">
 
-    <svg style="display:none">
-    <symbol viewBox="0 0 18 18" id="icon-telefon">
-      <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
-                          c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
-                          C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
-                          c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z" />
-      <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z" />
-      <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z" />
-      <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z" />
-    </symbol>
-    <symbol viewBox="0 0 18 14" id="icon-email">
-      <path class="st0"
-        d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z" />
-      <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
-                    c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
-                    c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
-                    L11.9,7.1z" />
-    </symbol>
-    <symbol viewBox="0 0 11 25" id="icon-facebook">
-      <g>
-        <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
-                        V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
-                        C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z" />
-      </g>
-    </symbol>
-    <symbol viewBox="0 0 30 20" id="icon-vk">
-      <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
-                      c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
-                      c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
-                      c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
-                      C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
-                      c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
-                      c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
-                      c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
-                      c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
-                      c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
-                      c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
-                      c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
-                      c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
-                      c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
-                      C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
-                      C18.4,10.9,18.5,10.9,18.6,10.9z" />
-    </symbol>
-    <symbol viewBox="0 0 23 23" id="icon-instagram">
-      <path class="st0"
-        d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
-                              M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z" />
-      <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
-                              c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z" />
-      <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
-    </symbol>
-    <symbol viewBox="0 0 20 20" id="icon-plane">
-      <path
-        d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
-    </symbol>
-    <symbol viewBox="0 0 20 20" id="icon-bus">
-      <path
-        d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
-    </symbol>
-    <symbol viewBox="0 0 20 23" id="icon-bike">
-      <path
-        d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z  M14.8,8.9H19V7.1h-3.2l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
-    </symbol>
-    <symbol viewBox="0 0 20 20" id="icon-run">
-      <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
-      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                    C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                    c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                    c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                    z" />
-    </symbol>
-    <symbol viewBox="0 0 27 34" id="icon-htmlacademy">
-      <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
-      l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
-      l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
-      L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z" />
+    <div style="display: none;">
+        <include src="build/img/sprite.svg">
+        </include>
+    </div>
 
-    </symbol>
-  </svg>
     <header class="main-header">
         <div class="main-header__container">
-            <div class="main-header__wrapper">
+            <div class="main-header__wrapper " id="myHeader">
                 <div class="main-header__block-logo">
                     <a class="main-header__logo logotype">
                         <picture>
-                            <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
-                            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x"> -->
-
+                            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@1x.png 2x">
-                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="погнали" />
+                            <img class="logotype__img logotype__img--catalog" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="погнали" />
                         </picture>
                     </a>
+                    <a href="#" class="main-header__logo-stiky logotype logotype--dark">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+                            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+                            <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
+                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали" />
+                        </picture>
+                    </a>
+
                 </div>
                 <nav class="main-nav">
                     <ul class="main-nav__site site-navigation">
@@ -120,10 +49,10 @@
                             <a href="">О сервисе</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--header">
-                            <a href="../source/form.html">Направления</a>
+                            <a href="form.html">Направления</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--header">
-                            <a href="../source/catalog.html">Попутчики</a>
+                            <a href="catalog.html">Попутчики</a>
                         </li>
                     </ul>
                     <div class="main-nav__user user-navigation">
@@ -132,14 +61,14 @@
                             <a class="user-navigation-link  user-navigation-link--telicon" href="#">
                                 <span class="visually-hidden">8800555-86-28</span>
                                 <svg class="user-navigation-link__icon " width="21" height="21">
-                  <use xlink:href="#icon-telefon"></use>
-                </svg>
+                                  <use xlink:href="#icon-telefon"></use>
+                                </svg>
                             </a>
                             <a class="user-navigation-link  user-navigation-link--mailicon" href="#">
                                 <span class="visually-hidden">mail@htmlacademy.ru</span>
                                 <svg class="user-navigation-link__icon" width="21" height="21">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
+                                  <use xlink:href="#icon-email"></use>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -148,28 +77,30 @@
           </button>
                 </nav>
             </div>
-            <div class="main-header__menu menu visible">
+            <!-- visible открывает меню hidden скрывает -->
+            <div class="main-header__menu menu visible menu-js-off">
                 <div class="menu__wrapper">
-                    <a href="../source/index.html" class="menu__block-logo logotype logotype--dark">
+                    <a href="#" class="menu__block-logo logotype logotype--dark">
                         <picture>
-                            <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-                            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x"> -->
+                            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
                             <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+                            <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали" />
                         </picture>
                     </a>
+                    <!--  hidden скрывает иконку -->
                     <button class="menu__toggle toggle hidden" type="button"></button>
                     <ul class="menu__block site-navigation">
                         <li class="site-navigation__item site-navigation__item--menu">
                             <a href="">О сервисе</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--menu">
-                            <a href="../source/form.html">Направления</a>
+                            <a href="form.html">Направления</a>
                         </li>
                         <li class="site-navigation__item site-navigation__item--menu">
-                            <a href="../source/catalog.html">Попутчики</a>
+                            <a href="catalog.html">Попутчики</a>
                         </li>
                     </ul>
                     <a class="menu__item user-navigation-link user-navigation-link--signin-menu button" href="">авторизация</a>
@@ -184,20 +115,20 @@
                             <div class="menu__block user-navigation__social user-social">
                                 <a class="user-social__item user-social__item--facebook user-social__item--menu" href="">
                                     <svg width="11" height="21">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg>
+                                        <use xlink:href="#icon-facebook"></use>
+                                      </svg>
                                     <span class="visually-hidden">Facebook</span></a>
                                 <a class="user-social__item user-social__item--vkontakte user-social__item--menu" href="">
                                     <span class="visually-hidden">VKontakte</span>
                                     <svg width="20" height="20">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
+                                      <use xlink:href="#icon-vk"></use>
+                                    </svg>
                                 </a>
                                 <a class="user-social__item user-social__item--instagram user-social__item--menu" href="">
                                     <span class="visually-hidden"> Instagram</span>
                                     <svg width="18" height="18">
-                    <use xlink:href="#icon-instagram"></use>
-                  </svg>
+                                      <use xlink:href="#icon-instagram"></use>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -218,14 +149,14 @@
                             <a class="user-navigation-link  user-navigation-link--telicon" href="#">
                                 <span class="visually-hidden">8800555-86-28</span>
                                 <svg class="user-navigation-link__icon " width="21" height="21">
-                  <use xlink:href="#icon-telefon"></use>
-                </svg>
+                                  <use xlink:href="#icon-telefon"></use>
+                                </svg>
                             </a>
                             <a class="user-navigation-link  user-navigation-link--mailicon" href="#">
                                 <span class="visually-hidden">mail@htmlacademy.ru</span>
                                 <svg class="user-navigation-link__icon" width="21" height="21">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
+                                  <use xlink:href="#icon-email"></use>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -289,13 +220,12 @@
                 <div class="directions__list">
                     <a class="directions__item country country--tai" href="#">
                         <picture>
-                            <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-tablet@1x.webp 1x, img/thailand-tablet@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1439px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
                             <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x">
- -->
+
                             <source media="(min-width: 1439px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-tablet@2x.jpg 2x">
-                            <img class="directions__img" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="таиланд" />
+                            <img class="directions__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="таиланд" />
                         </picture>
                         <div class="country__info">
                             <h3 class="country__title">Тайланд</h3>
@@ -308,12 +238,11 @@
                     </a>
                     <a class="directions__item country country--france" href="#">
                         <picture>
-                            <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/france-tablet@1x.webp 1x, img/france-tablet@2x.webp 2x">
-                            <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x"> -->
+                            <source type="image/webp" media="(min-width: 1439px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                            <source type="image/webp" srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.webp 2x">
                             <source media="(min-width: 1439px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-tablet@2x.jpg 2x">
-                            <img class="directions__img" src="img/france-mobile@1x.jpg" width="270" height="110" alt="франция" />
+                            <img class="directions__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="франция" />
                         </picture>
                         <div class="country__info">
                             <h3 class="country__title">Франция</h3>
@@ -326,12 +255,11 @@
                     </a>
                     <a class="directions__item country country--czech" href="#">
                         <picture>
-                            <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-tablet@1x.webp 1x, img/czech-tablet@2x.webp 2x">
-                            <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x"> -->
+                            <source type="image/webp" media="(min-width: 1439px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                            <source type="image/webp" srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
                             <source media="(min-width: 1439px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-tablet@2x.jpg 2x">
-                            <img class="directions__img" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="чехия" />
+                            <img class="directions__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="чехия" />
                         </picture>
                         <div class="country__info ">
                             <h3 class="country__title">Чехия</h3>
@@ -343,7 +271,7 @@
                         </div>
                     </a>
                 </div>
-                <a href="../source/form.html" class="directions__to-all button">
+                <a href="/form.html" class="directions__to-all button">
           Показать все
         </a>
             </section>
@@ -360,7 +288,7 @@
                 <div class="fellow-travellers__items">
                     <div class="fellow-travellers__item">
                         <a class="fellow-travellers__avatar-link" href="#">
-                            <img class="fellow-travellers__avatar" src="img/firsova-mobile@1x.jpg" width="270" height="270" alt="фотография попутчика" />
+                            <img class="fellow-travellers__avatar" src="img/av-firsova.jpg" width="270" height="270" alt="фотография попутчика" />
                         </a>
                         <div class="fellow-travellers__info">
                             <h3 class="fellow-travellers__name ">
@@ -378,26 +306,26 @@
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Авиаперелет">
                                     <span class="visually-hidden">самолет</span>
                                     <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="19" height="21">
-                    <use xlink:href="#icon-plane"></use>
-                  </svg>
+                                      <use xlink:href="#icon-plane"></use>
+                                    </svg>
                                 </a>
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Автотранспорт">
                                     <span class="visually-hidden">автобус</span>
                                     <svg class="fellow-travellers__vehicle-icon" width="24" height="21">
-                    <use xlink:href="#icon-bus"></use>
-                  </svg>
+                                      <use xlink:href="#icon-bus"></use>
+                                    </svg>
                                 </a>
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Велосипед">
                                     <span class="visually-hidden">велосипед</span>
                                     <svg class="fellow-travellers__vehicle-icon" width="24" height="21">
-                    <use xlink:href="#icon-bike"></use>
-                  </svg>
+                                      <use xlink:href="#icon-bike"></use>
+                                    </svg>
                                 </a>
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Пешком">
                                     <span class="visually-hidden">бег</span>
                                     <svg class="fellow-travellers__vehicle-icon " width="20" height="21">
-                    <use xlink:href="#icon-run"></use>
-                  </svg>
+                                      <use xlink:href="#icon-run"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="fellow-travellers__flags country country--visit">
@@ -408,16 +336,16 @@
                         </div>
                         <div class="fellow-travellers__level level" data-level="99">
                             <svg class="level__circles" width="60" height="60" viewbox="90 57 21 87">
-                <g>
-                  <circle r="40" cx="100" cy="100" fill="rgba 0 0 0 " fill-opacity="0.6" />
-                  <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250"
-                    d="M100 60 A1 1 0 0 1 100 140
-                                                  A1 1 0 0 1 100 60" />
-                  <text class="circ-text" text-anchor="middle" x="100" y="100" font-size="32px"
-                    fill="#ffffff">100</text>
-                  <text text-anchor="middle" x="100" y="120" font-size="14px" fill="#ffa">level</text>
-                </g>
-              </svg>
+                              <g>
+                                <circle r="40" cx="100" cy="100" fill="rgba 0 0 0 " fill-opacity="0.6" />
+                                <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250"
+                                  d="M100 60 A1 1 0 0 1 100 140
+                                                                A1 1 0 0 1 100 60" />
+                                <text class="circ-text" text-anchor="middle" x="100" y="100" font-size="32px"
+                                  fill="#ffffff">100</text>
+                                <text text-anchor="middle" x="100" y="120" font-size="14px" fill="#ffa">level</text>
+                              </g>
+                            </svg>
                         </div>
                     </div>
                     <div class="fellow-travellers__item">
@@ -439,26 +367,26 @@
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Авиаперелет">
                                     <span class="visually-hidden">самолет</span>
                                     <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="19" height="21">
-                    <use xlink:href="#icon-plane"></use>
-                  </svg>
+                                      <use xlink:href="#icon-plane"></use>
+                                    </svg>
                                 </a>
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Автотранспорт">
                                     <span class="visually-hidden">автобус</span>
                                     <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked" width="24" height="21">
-                    <use xlink:href="#icon-bus"></use>
-                  </svg>
+                                      <use xlink:href="#icon-bus"></use>
+                                    </svg>
                                 </a>
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Велосипед">
                                     <span class="visually-hidden">велосипед</span>
                                     <svg class="fellow-travellers__vehicle-icon" width="24" height="21">
-                    <use xlink:href="#icon-bike"></use>
-                  </svg>
+                                      <use xlink:href="#icon-bike"></use>
+                                    </svg>
                                 </a>
                                 <a class="fellow-travellers__vehicle-item type-of-transport" data-info="Пешком">
                                     <span class="visually-hidden">бег</span>
                                     <svg class="fellow-travellers__vehicle-icon fellow-travellers__vehicle-icon--checked " width="20" height="21">
-                    <use xlink:href="#icon-run"></use>
-                  </svg>
+                                      <use xlink:href="#icon-run"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="fellow-travellers__flags country country--visit">
@@ -467,22 +395,20 @@
                             </div>
                         </div>
                         <div class="fellow-travellers__level level" data-level="80">
-                            <svg class="level__circles" viewbox="90 57 21 87">
-                <g>
-                  <circle r="40" cx="100" cy="100" fill="rgba 0 0 0 " fill-opacity="0.6" />
-                  <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250"
-                    d="M100 60 A1 1 0 0 1 100 140
-                                                              A1 1 0 0 1 100 60" />
-                  <text class="circ-text" text-anchor="middle" x="100" y="100" font-size="32px"
-                    fill="#ffffff">100</text>
-                  <text text-anchor="middle" x="100" y="120" font-size="14px" fill="#ffa">level</text>
-
-                </g>
-              </svg>
+                            <svg class="level__circles" width="60" height="60" viewbox="90 57 21 87">
+                            <g>
+                              <circle r="40" cx="100" cy="100" fill="rgba 0 0 0 " fill-opacity="0.6" />
+                              <path fill="none" stroke-linecap="round" stroke-width="4" stroke="#ff8d30" stroke-dasharray="250,250"
+                                d="M100 60 A1 1 0 0 1 100 140 A1 1 0 0 1 100 60" />
+                              <text class="circ-text" text-anchor="middle" x="100" y="100" font-size="32px"
+                                fill="#ffffff">100</text>
+                              <text text-anchor="middle" x="100" y="120" font-size="14px" fill="#ffa">level</text>
+                            </g>
+                          </svg>
                         </div>
                     </div>
                 </div>
-                <a href="../source/catalog.html" class="fellow-travellers__to-all button">
+                <a href="/catalog.html" class="fellow-travellers__to-all button">
           Показать всеx
         </a>
             </section>
@@ -517,7 +443,7 @@
                             Кастомный цвет карточки <span class="advantages__coast">59 руб./мес</span>
                         </p>
                     </div>
-                    <a class="create-profile__price bisnes-price-link bisness-toggle">Показать тарифы для бизнеса</a>
+                    <a href="#" class="create-profile__price bisnes-price-link bisness-toggle">Показать тарифы для бизнеса</a>
                 </div>
             </section>
             <section class="feedback-block wrapper">
@@ -562,12 +488,12 @@
                 </div>
                 <div class="whereabouts__maps">
                     <picture>
-                        <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
-                                <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-tablet@1x.webp 1x, img/czech-tablet@2x.webp 2x">
-                                <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x">         -->
-                        <!-- <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x"> -->
-                        <img class="whereabouts__img" src="img/maps-mobile.png" width="320" height="322" alt="ул. Большая Конюшенная, 19/8" />
+                        <source type="image/webp" media="(min-width: 1439px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+                        <source media="(min-width: 1439px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+                        <img class="whereabouts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" width="320" height="322" alt="ул. Большая Конюшенная, 19/8" />
                     </picture>
 
                     <iframe class="whereabouts__maps-win" src="https://yandex.ru/map-widget/v1/-/CCsfeZKz" width="316" height="307"></iframe>
@@ -578,32 +504,32 @@
     <footer class="main-footer">
         <a class="main-footer__logo logotype logotype--dark">
             <picture>
-                <!-- <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-                <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
 
                 <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@1x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@1x.png 2x">
-                <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали" />
+                <img class="logotype__img logotype__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали" />
             </picture>
         </a>
         <div class="main-footer__social user-social user-social--footer">
             <a class="user-social__item user-social__item--facebook user-social__item--circle" href="#">
                 <svg class="user-social__item-icon" width="11" height="21">
-          <use xlink:href="#icon-facebook"></use>
-        </svg>
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
                 <span class="visually-hidden">Facebook</span></a>
             <a class="user-social__item user-social__item--vkontakte user-social__item--circle" href="#">
                 <span class="visually-hidden">VKontakte</span>
                 <svg class="user-social__item-icon" width="20" height="20">
-          <use xlink:href="#icon-vk"></use>
-        </svg>
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
             </a>
             <a class="user-social__item user-social__item--instagram user-social__item--circle" href="#">
                 <span class="visually-hidden"> Instagram</span>
                 <svg class="user-social__item-icon" width="18" height="18">
-          <use xlink:href="#icon-instagram"></use>
-        </svg>
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
             </a>
         </div>
         <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано

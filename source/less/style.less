@@ -1,5 +1,4 @@
-@import "/source/css/normalize.css";
-// @import "../../node_modules/normalize.less/normalize.less";
+@import "_normalize.less";
 @import "_variables.less";
 @import "_fonts.less";
 @import "_base.less";
@@ -41,4 +40,13 @@
 @import "blocks/calendar.less";
 @import "blocks/spin.less";
 @import "blocks/visible.less";
+@import "blocks/sticky.less";
 
+.menu-js-off {
+  position: relative;
+  margin-top: -72px;
+
+  @media (min-width: @screen-md) {
+    margin-top: -122px;
+  }
+}
