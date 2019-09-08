@@ -462,7 +462,9 @@ body {
   }
 }
 .main-header__wrapper {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0 7.81%;
   padding-top: 17px;
   padding-bottom: 22px;
@@ -1058,10 +1060,12 @@ body {
 .header-content {
   background-color: #161c35;
   margin: 0 auto;
+  padding-top: 72px;
 }
 @media (min-width: 768px) {
   .header-content {
     background-color: transparent;
+    padding-top: 122px;
   }
 }
 @media (min-width: 1440px) {
@@ -1070,6 +1074,7 @@ body {
     position: relative;
     min-height: 651px;
     justify-content: space-between;
+    padding-top: 109px;
   }
 }
 .header-content__wrapper {
