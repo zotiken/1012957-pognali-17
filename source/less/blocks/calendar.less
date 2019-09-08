@@ -164,8 +164,12 @@
     &--26,
     &--28 {
       span {
-        display: block;
-        margin-top: 18px;
+        display: none;
+
+        @media (min-width: @screen-xl) {
+          display: block;
+          margin-top: 18px;
+        }
       }
     }
 

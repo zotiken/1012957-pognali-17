@@ -99,6 +99,12 @@ if (DropDownHeader) {
             DropDownList[w].classList.toggle("visible-block");
             DropDownHeader[w].style.backgroundColor = "#192144";
             DropDownHeader[w].style.color = "#ffffff";
+            DropDownHeader[w].style.zIndex = "1";
+            DropDownHeader[w].querySelector(".route-select__icon-arrow").style.background = "transparent";
+            DropDownHeader[w].querySelector(".route-select__icon-arrow").querySelector("svg").style.fill = "#ffffff";
+            DropDownHeader[w].querySelector(".route-select__icon-arrow").querySelector("svg").querySelector(".svg__it1").style.display = "none";
+            DropDownHeader[w].querySelector(".route-select__icon-arrow").querySelector("svg").querySelector(".svg__it2").style.display = "block";
+
             // filterBlockHidden2.classList.toggle("visible");
             // filterBlockHidden3.classList.toggle("visible-block");
         }

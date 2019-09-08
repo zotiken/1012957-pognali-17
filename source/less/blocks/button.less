@@ -30,15 +30,15 @@
   }
 
   &--form-next {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 17px;
-    width: 64%;
+    width: auto;
     display: block;
-
+    color: #1d2e5b;
     white-space: nowrap;
     margin-left: -2%;
     padding-top: 12px;
-    padding-left: 20%;
+    text-align: center;
     padding-bottom: 9px;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -51,7 +51,7 @@
       padding-bottom: 25px;
       box-sizing: border-box;
       margin-bottom: 0;
-      width: 39.3%;
+      width: 54.3%;
       text-transform: none;
       margin-left: 0;
     }
@@ -126,22 +126,6 @@
   }
 
   &--form-show {
-    position: relative;
-
-    &::before {
-      width: 0;
-      height: 0;
-      display: block;
-      content: " ";
-      position: absolute;
-      left: 83px;
-      top: 50%;
-      transform: translate(0, -50%);
-      border-style: solid;
-      border-width: 7px 8px 7px 10px;
-      border-color: transparent #1d2e5b transparent transparent;
-    }
-
     &:hover {
       background: none;
       color: rgba(22, 28, 53, 0.7);
