@@ -786,6 +786,7 @@ body {
 .user-navigation--feedback {
   margin-top: 32px;
   padding-left: 37px;
+  margin-bottom: 18px;
 }
 @media (min-width: 768px) {
   .user-navigation--feedback {
@@ -872,8 +873,9 @@ body {
   width: auto;
   font-weight: 700;
   font-size: 17px;
-  padding-top: 10px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 42px;
 }
 .user-navigation-link--signin:hover {
   background-color: #fec500;
@@ -960,7 +962,7 @@ body {
 }
 .user-navigation-link--yellow::before {
   margin-left: -62px;
-  margin-top: -13px;
+  margin-top: -10px;
 }
 @media (min-width: 768px) {
   .user-navigation-link--yellow::before {
@@ -1060,7 +1062,7 @@ body {
 .header-content {
   background-color: #161c35;
   margin: 0 auto;
-  padding-top: 72px;
+  padding-top: 75px;
 }
 @media (min-width: 768px) {
   .header-content {
@@ -1098,12 +1100,10 @@ body {
 }
 .header-content__title {
   margin: 0;
-  padding-bottom: 6px;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 17px 10px 12px;
   font-weight: 700;
   font-size: 36px;
+  line-height: 40px;
   color: #ffffff;
   text-align: center;
 }
@@ -1209,7 +1209,7 @@ body {
 }
 .user-social--footer {
   margin-top: 34px;
-  margin-bottom: 31px;
+  margin-bottom: 37px;
 }
 @media (min-width: 768px) {
   .user-social--footer {
@@ -2034,7 +2034,7 @@ body {
 }
 .country__flag--visit {
   padding: 0;
-  margin: 0 9px;
+  margin: 0 10px;
   position: relative;
   margin-top: -2px;
 }
@@ -2832,10 +2832,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 25px;
-  padding-left: 47px;
+  padding-top: 24px;
+  padding-left: 45px;
   padding-right: 44px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
 }
@@ -2909,7 +2909,7 @@ body {
   width: 5px;
   top: 50%;
   transform: translate(0, -50%);
-  left: -10px;
+  left: -18px;
   height: 5px;
   border-radius: 50%;
   background-color: #f97676;
@@ -3370,7 +3370,7 @@ body {
 .fellow-travellers__vehicle-item {
   position: relative;
   display: inline-block;
-  width: 26px;
+  width: 29px;
   height: 26px;
 }
 .fellow-travellers__vehicle-item::before,
@@ -3900,7 +3900,7 @@ body {
   position: relative;
   margin-top: -25px;
   padding-top: 62px;
-  padding-bottom: 37px;
+  padding-bottom: 36px;
   border-radius: 0 0 30px 30px;
   background-image: url("../img/rates@1x.png");
   background-repeat: no-repeat;
@@ -3937,7 +3937,7 @@ body {
   box-sizing: border-box;
   padding-top: 15px;
   padding-right: 128px;
-  padding-bottom: 44px;
+  padding-bottom: 40px;
   width: 100%;
   display: block;
   text-decoration: none;
@@ -4032,8 +4032,9 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 21px;
   font-weight: 300;
   color: #444444;
   border-top: 1px solid rgba(3, 3, 3, 0.05);
@@ -4376,10 +4377,12 @@ body {
   }
 }
 .whereabouts__adress {
-  width: 143px;
+  width: 53%;
   text-transform: uppercase;
-  margin-left: 66px;
-  margin-bottom: 35px;
+  margin-left: 23%;
+  margin-bottom: 32px;
+  margin-top: 14px;
+  line-height: 21px;
   font-family: "Blogger Sans", serif;
   font-weight: 700;
 }
@@ -4387,14 +4390,14 @@ body {
   display: block;
   position: absolute;
   margin-left: -62px;
-  margin-top: -7px;
+  margin-top: -2px;
   content: "";
   width: 45px;
   height: 45px;
   background-color: #121936;
   background-image: url("../img/contacts-location\ -\ Copy.svg");
   border-radius: 50%;
-  background-size: 18px;
+  background-size: 15px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -4451,7 +4454,7 @@ body {
   display: block;
   content: "";
   position: absolute;
-  right: 20px;
+  right: 16px;
   top: 50%;
   transform: translate(0, -50%);
   border-style: solid;
@@ -4529,9 +4532,9 @@ body {
   padding: 0 7.81%;
   z-index: 8;
   background-color: #ffffff;
-  margin-top: -25px;
-  padding-top: 31px;
-  padding-bottom: 21px;
+  margin-top: -29px;
+  padding-top: 37px;
+  padding-bottom: 23px;
   border-radius: 25px 25px 0 0;
 }
 @media (min-width: 768px) {
@@ -4568,7 +4571,7 @@ body {
   text-decoration: none;
   color: #444444;
   font-weight: normal;
-  padding-top: 29px;
+  padding-top: 23px;
   border-top: 1px solid #edeff6;
   display: flex;
   align-items: center;
